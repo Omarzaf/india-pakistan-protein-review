@@ -1,0 +1,9 @@
+{
+  "id": "consumption-review",
+  "title": "Supervisor review repairs",
+  "path": "/dashboard/documents/consumption-review.md",
+  "sha256": "863d3085378a0480faf87bed579a8a868c6747a348c2d6afffa59b585caefc40",
+  "originalSourceSha256": "2c197c922fae96b5db688ea910bcf7232013b2f814fc50239c60d1fb160ab748",
+  "text": "# Consumption review repairs\n\n**Public summary of the 13 October repair ledger.** These are historical code and measurement repairs, not human acceptance of the research.\n\n| Recorded repair | Result and remaining limit |\n| --- | --- |\n| H2 and H3: Pakistan complete protein total | Pooled-basket total withdrawn. All 684 Table 23 cells and 38 foods were audited. Named partial-food conversions do not establish a complete diet or confidence interval. |\n| M8 and M10: denominator comparability | India consumer-unit estimates and Pakistan partial-food quantities remain separate. The energy-equivalent consumer unit is not a protein-equivalent person. Pakistan cannot enter adult-reference arithmetic. |\n| M9: residence ranking | Unsupported Pakistan rural/urban model ranking withdrawn. |\n| M11: population prevalence | Unweighted group shares do not represent population deficiency prevalence. |\n| M12: evidence tiers | Derived calculations retain their own status separately from source tiers. |\n| L1 and L3: quantity and sample metadata | Table 23 quantities are per capita. Original fieldwork and sample distinctions remain explicit; unknown values remain blank. |\n\nSource and numerical-integrity checks do not establish scholarly approval. Operational paths, unrelated news annotation and private workflow records are omitted from this summary.\n",
+  "note": "Authored public summary of the hash-bound retained document; private operational material omitted."
+}

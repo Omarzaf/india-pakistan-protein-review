@@ -1,0 +1,9 @@
+{
+  "id": "household-receipt",
+  "title": "Historical numerical recomputation review",
+  "path": "/dashboard/documents/household-receipt.md",
+  "sha256": "a249c758c6f3b3537b77d892f586525fc4b87271ff8efe9536303c77ecb455e7",
+  "originalSourceSha256": "5bec6e890c9202d9fd2e52edafd04ae532d95b5deedea9e547dd54351108138b",
+  "text": "# Historical numerical recomputation review\n\n**Public summary of the 19 October retained recomputation receipt.**\n\nThe review independently checked retained comparison, Sobol and US-calibration numerical tables and their report bindings. Equality was assessed at six published decimal places, not as a claim of full-precision identity. Report tables were also compared at their displayed three-decimal precision.\n\nThe review kept retail plant-based, retail-plus-foodservice cultivated and fermentation scopes separate. It introduced no mixed-scope total, collaborator forecast or accuracy claim. Source/hash bindings and missingness checks were distinct from private raw-chain integrity checks.\n\nThe receipt certifies bounded numerical checks only. It does not certify empirical baseline acceptance, factual forecast validity, team approval, public-reporting permission or scholarly acceptance. The original execution transcript, private commands and raw-chain details remain excluded. Current dashboard source and export hashes identify this summary and its retained original separately.\n",
+  "note": "Authored public summary of the hash-bound retained document; private operational material omitted."
+}

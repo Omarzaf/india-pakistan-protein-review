@@ -1,0 +1,237 @@
+{
+  "id": "d-54039b1293719aefba",
+  "columns": [
+    "field",
+    "value",
+    "numeric_value"
+  ],
+  "rows": [
+    {
+      "field": "edition",
+      "value": "baseline-reconciliation-20261020",
+      "numeric_value": null
+    },
+    {
+      "field": "review_status",
+      "value": "HELD",
+      "numeric_value": null
+    },
+    {
+      "field": "independent_reproduction_pass",
+      "value": true,
+      "numeric_value": null
+    },
+    {
+      "field": "new_estimation_allowed",
+      "value": false,
+      "numeric_value": null
+    },
+    {
+      "field": "projection_allowed",
+      "value": false,
+      "numeric_value": null
+    },
+    {
+      "field": "human_scholarly_approval",
+      "value": "pending",
+      "numeric_value": null
+    },
+    {
+      "field": "limits",
+      "value": "This review retains the existing numerical thresholds and separately checks method support and independent arithmetic. It does not authenticate missing raw lineage, approve design variance, establish new market inputs, or grant human scholarly approval.",
+      "numeric_value": null
+    },
+    {
+      "field": "acceptance_code_sha256",
+      "value": "bbd1e704dd67eea103b4ccbb344f85cdec6d7a5dbd8e0a4a7bee997b6b7e4791",
+      "numeric_value": null
+    },
+    {
+      "field": "baseline_acceptance.status",
+      "value": "FAIL",
+      "numeric_value": null
+    },
+    {
+      "field": "baseline_acceptance.gate_evaluation",
+      "value": "dynamic_complete_baseline_results",
+      "numeric_value": null
+    },
+    {
+      "field": "baseline_acceptance.new_estimation_allowed",
+      "value": false,
+      "numeric_value": null
+    },
+    {
+      "field": "baseline_acceptance.projection_allowed",
+      "value": false,
+      "numeric_value": null
+    },
+    {
+      "field": "baseline_acceptance.limits",
+      "value": "This gate evaluates only the two baseline prerequisites. A passing comparison does not authenticate raw lineage or establish design variance, market inputs, respondent microdata, human coding or forecasts.",
+      "numeric_value": null
+    },
+    {
+      "field": "baseline_acceptance.India.unit",
+      "value": "g/person/day",
+      "numeric_value": null
+    },
+    {
+      "field": "baseline_acceptance.India.numerical_reproduction_pass",
+      "value": false,
+      "numeric_value": null
+    },
+    {
+      "field": "baseline_acceptance.India.method_acceptance_pass",
+      "value": false,
+      "numeric_value": null
+    },
+    {
+      "field": "baseline_acceptance.India.accepted",
+      "value": false,
+      "numeric_value": null
+    },
+    {
+      "field": "baseline_acceptance.India.sectors.rural.estimate",
+      "value": 61.099055354250616,
+      "numeric_value": 61.099055354250616
+    },
+    {
+      "field": "baseline_acceptance.India.sectors.rural.published_target",
+      "value": 61.8,
+      "numeric_value": 61.8
+    },
+    {
+      "field": "baseline_acceptance.India.sectors.rural.absolute_error",
+      "value": 0.7009446457493809,
+      "numeric_value": 0.7009446457493809
+    },
+    {
+      "field": "baseline_acceptance.India.sectors.rural.within_tolerance",
+      "value": false,
+      "numeric_value": null
+    },
+    {
+      "field": "baseline_acceptance.India.sectors.urban.estimate",
+      "value": 62.692730660421674,
+      "numeric_value": 62.692730660421674
+    },
+    {
+      "field": "baseline_acceptance.India.sectors.urban.published_target",
+      "value": 63.4,
+      "numeric_value": 63.4
+    },
+    {
+      "field": "baseline_acceptance.India.sectors.urban.absolute_error",
+      "value": 0.7072693395783247,
+      "numeric_value": 0.7072693395783247
+    },
+    {
+      "field": "baseline_acceptance.India.sectors.urban.within_tolerance",
+      "value": false,
+      "numeric_value": null
+    },
+    {
+      "field": "baseline_acceptance.Pakistan.unit",
+      "value": "kg/person/month",
+      "numeric_value": null
+    },
+    {
+      "field": "baseline_acceptance.Pakistan.estimate",
+      "value": 0.35460168721544993,
+      "numeric_value": 0.35460168721544993
+    },
+    {
+      "field": "baseline_acceptance.Pakistan.published_target",
+      "value": 0.34,
+      "numeric_value": 0.34
+    },
+    {
+      "field": "baseline_acceptance.Pakistan.rounding_interval",
+      "value": "[0.335, 0.345)",
+      "numeric_value": null
+    },
+    {
+      "field": "baseline_acceptance.Pakistan.numerical_reproduction_pass",
+      "value": false,
+      "numeric_value": null
+    },
+    {
+      "field": "baseline_acceptance.Pakistan.method_acceptance_pass",
+      "value": false,
+      "numeric_value": null
+    },
+    {
+      "field": "baseline_acceptance.Pakistan.accepted",
+      "value": false,
+      "numeric_value": null
+    },
+    {
+      "field": "country_source_review.India.method_verified",
+      "value": false,
+      "numeric_value": null
+    },
+    {
+      "field": "country_source_review.India.producer_source_defined_method",
+      "value": false,
+      "numeric_value": null
+    },
+    {
+      "field": "country_source_review.India.audited_source_defined_method",
+      "value": false,
+      "numeric_value": null
+    },
+    {
+      "field": "country_source_review.India.producer_flag_overridden",
+      "value": false,
+      "numeric_value": null
+    },
+    {
+      "field": "country_source_review.India.independent_agreement_pass",
+      "value": true,
+      "numeric_value": null
+    },
+    {
+      "field": "country_source_review.Pakistan.method_verified",
+      "value": false,
+      "numeric_value": null
+    },
+    {
+      "field": "country_source_review.Pakistan.producer_source_defined_method",
+      "value": false,
+      "numeric_value": null
+    },
+    {
+      "field": "country_source_review.Pakistan.audited_source_defined_method",
+      "value": false,
+      "numeric_value": null
+    },
+    {
+      "field": "country_source_review.Pakistan.producer_flag_overridden",
+      "value": false,
+      "numeric_value": null
+    },
+    {
+      "field": "country_source_review.Pakistan.independent_agreement_pass",
+      "value": true,
+      "numeric_value": null
+    },
+    {
+      "field": "receipt_sha256.India",
+      "value": "e532e6cba4a2ba43b8636e67d24e3a0882d0165c444a2289a9a479996f30b56f",
+      "numeric_value": null
+    },
+    {
+      "field": "receipt_sha256.Pakistan",
+      "value": "3c859ed1c7780b3fff0e57ba09eb151f21fd02d67de5de620055ca9f19abcb2e",
+      "numeric_value": null
+    }
+  ],
+  "source": {
+    "path": "/dashboard/tables/d-54039b1293719aefba.json",
+    "title": "Current baseline acceptance fields",
+    "originalSourceSha256": "63390d7ba69c1e32669cddf9e69f91a2300f6ebae83eb65c9b09bb62f460b712",
+    "originalProjectionSha256": "a447c9aedc8b5f9758deec7a937ae5c366229e470aa923fa66110bbfb0c51a8a",
+    "publicationProjection": "Scientific values and missingness retained; internal storage routes removed. Source register limited to referenced identities."
+  }
+}

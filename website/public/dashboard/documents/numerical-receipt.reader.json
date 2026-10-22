@@ -1,0 +1,9 @@
+{
+  "id": "numerical-receipt",
+  "title": "Offline numerical reproduction receipt",
+  "path": "/dashboard/documents/numerical-receipt.json",
+  "sha256": "41cc0253ff8fd04e16ce0590f1986af91a1ec1e0e39cfeafe34e1550a8124769",
+  "originalSourceSha256": "41cc0253ff8fd04e16ce0590f1986af91a1ec1e0e39cfeafe34e1550a8124769",
+  "text": "{\n  \"status\": \"PASS_computational_reproduction_only\",\n  \"proxy_rows\": 127,\n  \"proxy_byte_parity\": true,\n  \"accepted_panel_runs\": 60,\n  \"panel_rows\": 18,\n  \"numeric_panel_checks\": 126,\n  \"panel_tolerance\": 1e-12,\n  \"outputs\": {\n    \"proxy_scenarios.csv\": \"98c5a19c94ecd891be7d1a44d24a9004268f160c96f6212c00386a3976c0e7b4\",\n    \"panel_aggregates.json\": \"111e3e334136b2501b8c8060ae1bba18e1f0adfe69862d89df9c9791f919de8b\",\n    \"tables.md\": \"2d8d9bdbfc1293e944e8146ea929cbbb36214b7d302db0db6abf766dedd2fc7a\"\n  },\n  \"limits\": \"No raw-source reacquisition, model rerun, human verification or empirical calibration is established.\"\n}\n",
+  "note": "Exact checked review-package document. Public dashboard release is author-authorized; human factual/code and scholarly review remain pending."
+}

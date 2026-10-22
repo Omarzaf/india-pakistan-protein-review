@@ -1,0 +1,13 @@
+{
+  "file": "public/index.html",
+  "patches": [
+    {
+      "before": "</head>",
+      "after": "<link rel=\"stylesheet\" href=\"/dashboard/site-nav.css\"></head>"
+    },
+    {
+      "before": "<span class=\"now\" id=\"chapter-current\">Protein evidence edition</span>",
+      "after": "<span class=\"now\" id=\"chapter-current\">Protein evidence edition</span><nav class=\"sf-site-nav\" aria-label=\"Research site\"><a href=\"/\" aria-current=\"page\">Report</a><a href=\"/dashboard/\">Dashboard</a></nav>"
+    }
+  ]
+}

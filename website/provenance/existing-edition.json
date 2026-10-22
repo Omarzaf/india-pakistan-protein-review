@@ -1,0 +1,30 @@
+{
+  "source": "Previously deployed revision-cut-1",
+  "deploymentId": "dpl_6KMLXR5X6R5RL2xnw2ph6KjnescK",
+  "files": [
+    {
+      "path": "index.html",
+      "sha256": "4eb9c5ad68d6a8939663bf3f71f3bf1edf2666cdca624c4bf09dbff01c6cfca7"
+    },
+    {
+      "path": "archive.html",
+      "sha256": "65b519ecd841de700cd557adafcf24b3754eb18c63b886ec3280b24dd5115b72"
+    },
+    {
+      "path": "Protein-Futures-India-Pakistan-Report-2026-10-21.pdf",
+      "sha256": "51a83206f65ac8213a8105743c98bd7264c3ea0563e9e08464374e5bb18b84b2"
+    },
+    {
+      "path": "original/index.html",
+      "sha256": "6ef84f6ba579dd596221e6ea3d7252d0c9c3c6a8388d2e0713f5fcbcdf59176a"
+    },
+    {
+      "path": "lib/D3-LICENSE.txt",
+      "sha256": "3e6849627f74ff73c257a3ae1efb574015d94fc1035c05ec3c15805165efcbc4"
+    },
+    {
+      "path": "original/lib/D3-LICENSE.txt",
+      "sha256": "3e6849627f74ff73c257a3ae1efb574015d94fc1035c05ec3c15805165efcbc4"
+    }
+  ]
+}

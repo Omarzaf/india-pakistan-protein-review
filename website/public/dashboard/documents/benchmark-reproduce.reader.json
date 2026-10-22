@@ -1,0 +1,9 @@
+{
+  "id": "benchmark-reproduce",
+  "title": "Protein-supply benchmark: reproduction boundary",
+  "path": "/dashboard/documents/benchmark-reproduce.md",
+  "sha256": "85b791a1cc258265adf909d6bc17bc0e34052a6a04483d2a3458cbeec3560c08",
+  "originalSourceSha256": "bbfc148a6c68a405d60c02eae89a0c53f992a0681aecfb7f637fd362dcc93073",
+  "text": "# Protein-supply benchmark: reproduction boundary\n\n**Public summary of retained reproduction documentation.** The empirical study is annual and univariate, using four national supply series. It is not a causal, monthly/quarterly or tax-benefit model. The 2035 endpoint is an analyst assumption.\n\nThe original reproduction workflow writes a separate timestamped experiment rather than overwriting frozen results. Source vintage, hashes, package versions, seed and original output preservation are required to compare runs. A later download from a mutable source URL is not the same vintage unless its checksum matches. The benchmark is frozen; this dashboard does not claim an executable environment or a new numerical rerun.\n\nLong-horizon distributions are uncalibrated. Historical pretrained-model overlap is unresolved; the pretrained candidate was excluded from primary selection. Source integrity checks and code tests do not establish qualified scholarly acceptance.\n",
+  "note": "Public summary of a frozen historical source; no fresh model run or environment claim. Original source hash is retained separately."
+}
