@@ -1,0 +1,263 @@
+{
+  "edition": "2026-10-22-review",
+  "selection": "Explicit named file allowlist; manifest itself is the one self-excluded file",
+  "source_commit": "aea076871579620bb3474536f3a06e88972f6faf",
+  "includes_git_history": false,
+  "human_verification": "pending",
+  "publication_authorized": false,
+  "rights_status": "source-specific review pending, including aggregate reuse",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 77,
+      "sha256": "d0ef3e9fa7f626be2e497e8ecd95cc61a13afac1a534eb404b24d051d6cc338d",
+      "purpose": ".gitignore",
+      "release_status": "review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "CITATION.cff",
+      "bytes": 536,
+      "sha256": "c58a0dfd34d22dc77ffc31bdd240dca77404c2a3c8aaadf4e6707233abf6b2d4",
+      "purpose": "CITATION.cff",
+      "release_status": "review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 1376,
+      "sha256": "c71d9ed4be3087800d5494b95562faaa351744797986a750ce126d730cdaa437",
+      "purpose": "CONTRIBUTING.md",
+      "release_status": "review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5171,
+      "sha256": "4ba9c3f811e7563a381ae940a5318e77316df1ba99660fad577e7e4ca574156a",
+      "purpose": "README.md",
+      "release_status": "review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "RIGHTS.md",
+      "bytes": 1695,
+      "sha256": "6fd5490aa56572de83a7d84fb6dbbfdd71197f1dabfff68bb88a02d51cb5a4e2",
+      "purpose": "RIGHTS.md",
+      "release_status": "review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "build/panel_aggregates.json",
+      "bytes": 3659,
+      "sha256": "111e3e334136b2501b8c8060ae1bba18e1f0adfe69862d89df9c9791f919de8b",
+      "purpose": "build",
+      "release_status": "review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "build/proxy_scenarios.csv",
+      "bytes": 73658,
+      "sha256": "98c5a19c94ecd891be7d1a44d24a9004268f160c96f6212c00386a3976c0e7b4",
+      "purpose": "build",
+      "release_status": "review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "build/tables.md",
+      "bytes": 2062,
+      "sha256": "2d8d9bdbfc1293e944e8146ea929cbbb36214b7d302db0db6abf766dedd2fc7a",
+      "purpose": "build",
+      "release_status": "review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "build/verification.json",
+      "bytes": 626,
+      "sha256": "41cc0253ff8fd04e16ce0590f1986af91a1ec1e0e39cfeafe34e1550a8124769",
+      "purpose": "build",
+      "release_status": "review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "data/README.md",
+      "bytes": 2412,
+      "sha256": "ddfa569391158f2446646db103314c9d5ed76b64626707d00a7fec189fdd7101",
+      "purpose": "data",
+      "release_status": "review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "data/altprotein_proxy_inputs.csv",
+      "bytes": 36215,
+      "sha256": "93ae9dddbfa59c1930b1deaba3a31a3cc273fa8a43077f9dcf735c0d9e64aa37",
+      "purpose": "data",
+      "release_status": "review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "data/panel-attempts.csv",
+      "bytes": 20520,
+      "sha256": "a83b85f34f2590914c092e2dd6bd7ccb19f9abeb293b4ec276f8e0d735f26228",
+      "purpose": "data",
+      "release_status": "review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "data/panel_runs.json",
+      "bytes": 22063,
+      "sha256": "5ecbd61f6621acb580ddb009e117c55eb3be7a6e6af611b5ac92bb2adb998aee",
+      "purpose": "data",
+      "release_status": "review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "data/reference_panel_aggregates.json",
+      "bytes": 3673,
+      "sha256": "24205e16492f060cff726dd8c376f09a65a61171f824840916f7ed4a986ccd9d",
+      "purpose": "data",
+      "release_status": "review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "data/reference_proxy_scenarios.csv",
+      "bytes": 73658,
+      "sha256": "98c5a19c94ecd891be7d1a44d24a9004268f160c96f6212c00386a3976c0e7b4",
+      "purpose": "data",
+      "release_status": "review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "methods/measurement-crosswalk.md",
+      "bytes": 2653,
+      "sha256": "df0f05d2f167aa1192245d001b38bd60a1eecabd3e53e86d2b83096dc2c61f3d",
+      "purpose": "methods",
+      "release_status": "review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "methods/panel-supplement.md",
+      "bytes": 12558,
+      "sha256": "8fa1241ec7f7d4e54b473e620a8068a9df14a71024cb1b56a6b81a33b40a516d",
+      "purpose": "methods",
+      "release_status": "review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "methods/proxy.md",
+      "bytes": 14522,
+      "sha256": "f74bddc7a17c67a574b60599e9f7583f48dfe834430460c774b703c0db954354",
+      "purpose": "methods",
+      "release_status": "review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "provenance/claim-review.csv",
+      "bytes": 10677,
+      "sha256": "b505d85db4f1f86ef971d3a9b2a4f7278f049059f08e0d64ac3e555298c3ff0a",
+      "purpose": "provenance",
+      "release_status": "review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "provenance/claims.md",
+      "bytes": 10165,
+      "sha256": "024496a1d3d5d2ffb856808cc74a22f29c924c6add7dda0e5db223d71ffa1727",
+      "purpose": "provenance",
+      "release_status": "review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "provenance/document-build.json",
+      "bytes": 1189,
+      "sha256": "1ce8f04c6e6c74e843af0b2a5ef76a0ac7a6eaadd0b54c1cffe22d03e69c2003",
+      "purpose": "provenance",
+      "release_status": "review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "provenance/proxy-source-ledger.csv",
+      "bytes": 2915,
+      "sha256": "e9e7865bdfbc818769747d98a66bb3887e4b5b4309914a3ce54662fdbd6aa956",
+      "purpose": "provenance",
+      "release_status": "review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "provenance/source-map.json",
+      "bytes": 5281,
+      "sha256": "1c3e4d6048067ef057939b84c2181937eca142864a21e5e5244bb17718f2b4e2",
+      "purpose": "provenance",
+      "release_status": "review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "provenance/sources.md",
+      "bytes": 5315,
+      "sha256": "c83d4dfd0d365413906e382bdeca38c3429179bfcea90362c6ea5774fa19f847",
+      "purpose": "provenance",
+      "release_status": "review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "report/chapter.md",
+      "bytes": 9118,
+      "sha256": "a6af6c8b63e9b32878d42a0a1e9538af260b4cce959bbd2dfdcbc6a96d113954",
+      "purpose": "report",
+      "release_status": "review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "report/limitations-and-ai-use.md",
+      "bytes": 4445,
+      "sha256": "d98311bb7b7e17654d57dbd8f95e3797426605369e174b2631afdf704f862a55",
+      "purpose": "report",
+      "release_status": "review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "report/report.css",
+      "bytes": 3172,
+      "sha256": "96f3f2579fcde7c53cc401447be0e3387d48a30333a2e1cff3223daf5babba68",
+      "purpose": "report",
+      "release_status": "review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "report/review.html",
+      "bytes": 59648,
+      "sha256": "a0bc322bfd8f53f65459142be201450082896fe1ee0382225b85e73ce7895d33",
+      "purpose": "report",
+      "release_status": "review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "report/review.pdf",
+      "bytes": 557275,
+      "sha256": "7e84aa8b92e9c07bb2544899dda40b69a9bbb577c3d538965cc6838605dede63",
+      "purpose": "report",
+      "release_status": "review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "scripts/build_altprotein_proxy.py",
+      "bytes": 26082,
+      "sha256": "06aaabc7b9c1af1d680c2d6b11b021884513e812f3c914e7904be1589decc8bf",
+      "purpose": "scripts",
+      "release_status": "review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "scripts/build_documents.py",
+      "bytes": 3489,
+      "sha256": "b50c7130aebe7c3eb8de493bf731865ee9d07b16ee45bb2f3713f31251bed1ab",
+      "purpose": "scripts",
+      "release_status": "review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "scripts/build_panel.py",
+      "bytes": 4819,
+      "sha256": "8451d59989168293df64e8c5b525ba024085dd5708a0553627b72101cfeb4309",
+      "purpose": "scripts",
+      "release_status": "review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "scripts/check_release.py",
+      "bytes": 7071,
+      "sha256": "43d1933ced271384714f3f052ade8e1d3d07909e07b412d1a4d42ecf97453e17",
+      "purpose": "scripts",
+      "release_status": "review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "scripts/reproduce.py",
+      "bytes": 5186,
+      "sha256": "9d05425e997b26956c9e0b74a749702d8a767586cfc7471bd1c1bb654bdbc5e0",
+      "purpose": "scripts",
+      "release_status": "review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "tests/test_release_boundary.py",
+      "bytes": 6023,
+      "sha256": "67b01748666f16e46b8e2d6d522336f0a156f67b118098c91ad36b84a897c51e",
+      "purpose": "tests",
+      "release_status": "review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "tests/test_reproduction.py",
+      "bytes": 4891,
+      "sha256": "b8e78ee013806f7a4793d51de29b5a4e55f4a863f50f129151460daf4fbb4fc6",
+      "purpose": "tests",
+      "release_status": "review_candidate_human_and_rights_review_pending"
+    }
+  ]
+}

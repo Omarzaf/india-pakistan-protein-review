@@ -1,0 +1,14 @@
+{
+  "status": "AI-assisted review draft; human verification pending",
+  "pandoc": "pandoc 3.10.1",
+  "sources": {
+    "report/chapter.md": "a6af6c8b63e9b32878d42a0a1e9538af260b4cce959bbd2dfdcbc6a96d113954",
+    "methods/proxy.md": "f74bddc7a17c67a574b60599e9f7583f48dfe834430460c774b703c0db954354",
+    "methods/measurement-crosswalk.md": "df0f05d2f167aa1192245d001b38bd60a1eecabd3e53e86d2b83096dc2c61f3d",
+    "methods/panel-supplement.md": "8fa1241ec7f7d4e54b473e620a8068a9df14a71024cb1b56a6b81a33b40a516d",
+    "report/limitations-and-ai-use.md": "d98311bb7b7e17654d57dbd8f95e3797426605369e174b2631afdf704f862a55"
+  },
+  "html_sha256": "a0bc322bfd8f53f65459142be201450082896fe1ee0382225b85e73ce7895d33",
+  "pdf_rendering": "The supplied PDF was rendered with sandboxed Chromium from a temporary print copy with inline CSS and local file hyperlinks removed. Re-rendering must repeat those precautions and inspect PDF metadata, text and link annotations for local paths. Rendering is optional; the supplied PDF is ready to read.",
+  "limits": "Document rendering is separate from numerical reproduction. PDF visual QA and renderer version are recorded in the external release receipt."
+}

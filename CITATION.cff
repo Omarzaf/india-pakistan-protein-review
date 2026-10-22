@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Cite only as an AI-assisted review draft; human verification and team acceptance are pending."
+title: "India and Pakistan: alternative-protein spending scenarios and separate forecast-elicitation methods"
+type: dataset
+authors:
+  - family-names: Zafar
+    given-names: Muhammad Umar
+version: "2026-10-22-review"
+abstract: "Conditional spending scenarios and an offline numerical reproduction package. A proposed unified-report contribution; no claim of calibration, human verification or joint acceptance."

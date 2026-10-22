@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc 3.10.1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Muhammad Umar Zafar" />
+  <title>Alternative-protein spending in India and Pakistan</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="report.css" />
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Alternative-protein spending in India and
+Pakistan</h1>
+<p class="subtitle">Conditional scenarios, exact methods and a separate
+elicitation supplement</p>
+<p class="author">Muhammad Umar Zafar</p>
+<p class="date">22 October 2026 · Review draft</p>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#india-and-pakistan-what-spending-scenarios-can-establish"
+id="toc-india-and-pakistan-what-spending-scenarios-can-establish">India
+and Pakistan: what spending scenarios can establish</a></li>
+<li><a href="#methods-appendix-indiapakistan-spending-scenarios"
+id="toc-methods-appendix-indiapakistan-spending-scenarios">Methods
+appendix: India–Pakistan spending scenarios</a>
+<ul>
+<li><a href="#question-estimand-and-evidence-classes"
+id="toc-question-estimand-and-evidence-classes">1. Question, estimand
+and evidence classes</a></li>
+<li><a href="#source-selection-and-numerical-inputs"
+id="toc-source-selection-and-numerical-inputs">2. Source selection and
+numerical inputs</a></li>
+<li><a href="#exact-implemented-transformations"
+id="toc-exact-implemented-transformations">3. Exact implemented
+transformations</a></li>
+<li><a href="#draws-aggregation-and-output"
+id="toc-draws-aggregation-and-output">4. Draws, aggregation and
+output</a></li>
+<li><a href="#retained-sensitivities-and-external-benchmark"
+id="toc-retained-sensitivities-and-external-benchmark">5. Retained
+sensitivities and external benchmark</a></li>
+<li><a href="#behaviour-policy-and-talent-evidence"
+id="toc-behaviour-policy-and-talent-evidence">6. Behaviour, policy and
+talent evidence</a></li>
+<li><a href="#validation-reproducibility-and-remaining-holds"
+id="toc-validation-reproducibility-and-remaining-holds">7. Validation,
+reproducibility and remaining holds</a></li>
+</ul></li>
+<li><a href="#measurement-contract-and-proposed-harmonization"
+id="toc-measurement-contract-and-proposed-harmonization">Measurement
+contract and proposed harmonization</a></li>
+<li><a href="#separate-forecast-elicitation-supplement"
+id="toc-separate-forecast-elicitation-supplement">Separate
+forecast-elicitation supplement</a>
+<ul>
+<li><a href="#purpose-and-limits" id="toc-purpose-and-limits">1. Purpose
+and limits</a></li>
+<li><a href="#instrument-and-country-scope"
+id="toc-instrument-and-country-scope">2. Instrument and country
+scope</a></li>
+<li><a href="#evidence-selection-and-possible-anchoring"
+id="toc-evidence-selection-and-possible-anchoring">3. Evidence selection
+and possible anchoring</a></li>
+<li><a href="#execution-model-identity-and-dates"
+id="toc-execution-model-identity-and-dates">4. Execution, model identity
+and dates</a></li>
+<li><a href="#attempts-exclusions-and-protocol-change"
+id="toc-attempts-exclusions-and-protocol-change">5. Attempts, exclusions
+and protocol change</a></li>
+<li><a href="#aggregation-and-retained-results"
+id="toc-aggregation-and-retained-results">6. Aggregation and retained
+results</a></li>
+<li><a href="#relationship-to-other-forecasting-studies"
+id="toc-relationship-to-other-forecasting-studies">7. Relationship to
+other forecasting studies</a></li>
+<li><a href="#reproduction-rights-and-acceptance"
+id="toc-reproduction-rights-and-acceptance">8. Reproduction, rights and
+acceptance</a></li>
+</ul></li>
+<li><a href="#limitations-and-ai-use-statements"
+id="toc-limitations-and-ai-use-statements">Limitations and AI-use
+statements</a>
+<ul>
+<li><a href="#main-text-limitations"
+id="toc-main-text-limitations">Main-text limitations</a></li>
+<li><a href="#current-truthful-ai-use-statement"
+id="toc-current-truthful-ai-use-statement">Current, truthful AI-use
+statement</a></li>
+<li><a href="#final-statement-template-do-not-use-until-completed"
+id="toc-final-statement-template-do-not-use-until-completed">Final
+statement template — do not use until completed</a></li>
+<li><a href="#human-review-register-fields"
+id="toc-human-review-register-fields">Human review register
+fields</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="india-and-pakistan-what-spending-scenarios-can-establish">India
+and Pakistan: what spending scenarios can establish</h1>
+<p><strong>AI-assisted contribution draft, 22 October 2026. Human
+verification pending. Proposed for the unified report, subject to team
+agreement.</strong></p>
+<p>India and Pakistan expose a basic difficulty in forecasting
+alternative-protein demand: the available numbers often describe
+something other than purchases. National food accounts measure supply,
+surveys ask about willingness, and company directories record activity.
+Each helps frame a question, but none supplies a national series of
+repeated purchases of meat, dairy or egg alternatives. This section
+therefore asks how spending might evolve under explicit assumptions, and
+which observations would make those assumptions more credible. It does
+not estimate animal-food displacement or returns on funding.</p>
+<p>The starting point is GFI India and Deloitte’s published estimate of
+India’s 2022 smart-protein market: INR 351 crore across plant-based
+meat, dairy and eggs. Its forward domestic scenarios also include
+fermentation-derived meat. This is an external model estimate, not
+audited retail turnover. The source does not clearly state its price
+base or retail valuation. Our calculation assumes nominal 2022 rupees
+and treats the estimate as a retail-spending anchor; inflating it and
+converting at the 2025 exchange rate gives about $45.3 million. The
+retained evidence provides no equivalent Pakistan national sales anchor.
+That missing baseline must not be described as zero sales.<a href="#fn1"
+class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>The proxy model carries India’s estimated spending per person forward
+with real income, urbanisation and an additional growth term. It
+transfers that path to Pakistan using relative income, urban share,
+animal-protein supply and industry-activity proxies. The relationships
+and parameter distributions are analyst choices, not coefficients fitted
+to alternative-protein purchases. The table reports the tenth, fiftieth
+and ninetieth percentiles across 10,000 assumption draws. These are
+conditional scenarios with untested calibration, in millions of US
+dollars at constant 2025 prices.<a href="#fn2" class="footnote-ref"
+id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+<p class="table-hint">Scroll the table horizontally on a narrow screen.</p><div class="table-scroll" role="region" aria-label="Data table 1" tabindex="0"><table>
+<thead>
+<tr>
+<th>Country</th>
+<th style="text-align: right;">Year</th>
+<th style="text-align: right;">Lower</th>
+<th style="text-align: right;">Middle</th>
+<th style="text-align: right;">Upper</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>India</td>
+<td style="text-align: right;">2026</td>
+<td style="text-align: right;">69</td>
+<td style="text-align: right;">93</td>
+<td style="text-align: right;">125</td>
+</tr>
+<tr>
+<td>India</td>
+<td style="text-align: right;">2030</td>
+<td style="text-align: right;">102</td>
+<td style="text-align: right;">188</td>
+<td style="text-align: right;">334</td>
+</tr>
+<tr>
+<td>India</td>
+<td style="text-align: right;">2035</td>
+<td style="text-align: right;">166</td>
+<td style="text-align: right;">448</td>
+<td style="text-align: right;">1,142</td>
+</tr>
+<tr>
+<td>Pakistan</td>
+<td style="text-align: right;">2026</td>
+<td style="text-align: right;">1.5</td>
+<td style="text-align: right;">3.6</td>
+<td style="text-align: right;">6.6</td>
+</tr>
+<tr>
+<td>Pakistan</td>
+<td style="text-align: right;">2030</td>
+<td style="text-align: right;">2.3</td>
+<td style="text-align: right;">6.0</td>
+<td style="text-align: right;">13.7</td>
+</tr>
+<tr>
+<td>Pakistan</td>
+<td style="text-align: right;">2035</td>
+<td style="text-align: right;">3.6</td>
+<td style="text-align: right;">11.8</td>
+<td style="text-align: right;">36.1</td>
+</tr>
+</tbody>
+</table></div>
+<p>The 2035 middle values correspond to roughly $0.28 per person in
+India and $0.040 in Pakistan. India’s value is 1.22% of US plant-based
+retail spending per person observed in 2025; Pakistan’s is about 0.17%.
+These are comparisons with a fixed historical benchmark, not shares of
+the US total market or comparisons with a 2035 US forecast. The US
+GFI/SPINS series covers broader categories, including prepared meals, so
+the ratio is illustrative rather than a matched product comparison.<a
+href="#fn3" class="footnote-ref" id="fnref3"
+role="doc-noteref"><sup>3</sup></a></p>
+<p>The results are sensitive to how the proxies are interpreted. The
+model’s upper additional-growth assumption comes from growth in Indian
+job advertisements. Hiring activity may already reflect income growth;
+counting both could exaggerate expansion. A retained sensitivity that
+reduces this upper assumption lowers India’s 2035 middle value from $448
+million to $215 million. For Pakistan, removing the relative urban-share
+and animal-protein multipliers gives a middle value of $8.3 million and
+a tenth-to-ninetieth-percentile range of $2.6–25.3 million. Neither
+sensitivity is established as the correct specification. Together they
+show why the precision of the output exceeds the strength of the
+underlying relationships.<a href="#fn4" class="footnote-ref" id="fnref4"
+role="doc-noteref"><sup>4</sup></a></p>
+<p>Consumer research does not close that gap. Bryant and colleagues’
+online study found high stated willingness to buy plant-based meat in
+India, but its Indian sample skewed urban, affluent and educated. It
+measured hypothetical intentions, not subsequent purchases. The retained
+bilateral literature uses different samples and questions; it cannot
+support a national India–Pakistan ranking of willingness or conversion.
+Four outcomes need separate measurement: stated willingness, first
+purchase, repeat purchase after incentives end, and a measured reduction
+in animal-food purchases. A larger spending total alone cannot tell us
+which occurred.<a href="#fn5" class="footnote-ref" id="fnref5"
+role="doc-noteref"><sup>5</sup></a></p>
+<p>Policy and technical progress can change the conditions for those
+purchases, but their effects require separate evidence. India’s 2024
+BioE3 announcement includes smart proteins and proposed biomanufacturing
+and Bio-AI infrastructure. This establishes policy intent, not the
+delivery of a particular product or its consumer uptake. Pakistan has
+halal institutions; their existence does not establish food
+authorization for a particular novel product. Product-specific
+regulatory and religious questions therefore remain distinct. The
+present scenarios exclude cultivated meat; a future approval would
+require a newly specified scenario rather than an undocumented addition
+to this one.<a href="#fn6" class="footnote-ref" id="fnref6"
+role="doc-noteref"><sup>6</sup></a></p>
+<p>AI should be treated as a mechanism to investigate, not an automatic
+market-growth bonus. The retained research discusses laboratory
+optimisation and protein design, while company and policy material
+describe possible applications. These sources do not establish a
+country-level AI effect on alternative-protein spending. Improvements in
+conventional dairy or poultry could also change relative
+competitiveness. A useful test would compare validated output,
+production cost and retail prices against a credible non-AI baseline,
+while checking whether any effect is already counted in the model’s
+other growth assumptions.<a href="#fn7" class="footnote-ref" id="fnref7"
+role="doc-noteref"><sup>7</sup></a></p>
+<p>The same discipline should guide talent recommendations. GFI India’s
+talent study draws on 20 industry responses and 19 academic leaders or
+administrators; it offers specific leads, not a national workforce
+census. Job advertisements likewise do not measure successful hiring or
+skill shortages. A bounded next step is to test an employer-nominated
+technical constraint in India and assess the feasibility of an
+ingredient-application pilot in Pakistan, with facilities, staff and
+baseline performance checked first. These are proposals for learning,
+not a ranking of expected returns. Comparable sales and
+repeated-purchase evidence would do more to strengthen the demand
+argument than another layer of proxy complexity.<a href="#fn8"
+class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a></p>
+<h1 id="methods-appendix-indiapakistan-spending-scenarios">Methods
+appendix: India–Pakistan spending scenarios</h1>
+<p><strong>AI-assisted review draft, 22 October 2026. Human factual/code
+verification pending. Proposed joint-report methods contribution;
+definitions are proposed harmonization, not a recorded team
+agreement.</strong></p>
+<h2 id="question-estimand-and-evidence-classes">1. Question, estimand
+and evidence classes</h2>
+<p>The calculation explores domestic alternative-protein spending in
+India and Pakistan in 2026, 2030 and 2035. Its intended scope is
+plant-based replacement foods and fermentation-derived human foods,
+excluding cultivated meat. The 2022 Indian anchor contains plant-based
+meat, dairy and eggs; the source’s forward domestic categories include
+fermentation-derived meat. The model carries one aggregate forward and
+does not separately estimate entry of every proposed product category.
+Its interpretation must retain that limitation.</p>
+<p>The proposed valuation is retail spending in market-exchange-rate US
+dollars at constant 2025 prices. <strong>Retail valuation and the Indian
+source’s nominal-2022 price basis are assumptions.</strong> They are not
+explicit properties established by the original GFI/Deloitte summary. US
+coverage is broader and includes prepared meals. These differences
+prevent a fully matched cross-country market comparison.</p>
+<p>Observed macro quantities, published external market estimates,
+analyst scenarios, model-elicited projections and missing evidence are
+recorded as different classes. The proxy scenarios estimate neither
+adoption probabilities nor physical protein volumes. FAOSTAT supply is
+an input proxy, not household consumption or alternative-protein demand.
+No model output is converted into an observed baseline.</p>
+<p>The model was not fitted to a time series of alternative-protein
+purchases, and its future outcomes are unresolved. Calibration,
+predictive accuracy and probability coverage have not been demonstrated.
+Country-specific inference is limited to India and Pakistan.</p>
+<h2 id="source-selection-and-numerical-inputs">2. Source selection and
+numerical inputs</h2>
+<p>The retained model reads <strong>106 input rows</strong> in
+<code>data/altprotein_proxy_inputs.csv</code>. Each row has an input ID,
+country/year, quantity, unit, source ID, tier, raw locator, capture
+reference/hash where available, and notes. The source collection is
+purposive; it was not a preregistered systematic review. Existing
+acquisition logs record unsuccessful and incomplete retrieval
+separately. Source dates and collection dates must not be conflated.</p>
+<p class="table-hint">Scroll the table horizontally on a narrow screen.</p><div class="table-scroll" role="region" aria-label="Data table 2" tabindex="0"><table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Input family</th>
+<th>Source/vintage and retained use</th>
+<th>Main limitation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Indian market anchor and external scenarios</td>
+<td>GFI India/Deloitte, 2022-context analysis, final-page domestic
+table: 351 crore in 2022; 2030 low/medium/high 7,475/12,779/18,963
+crore</td>
+<td>Published model estimates; price/valuation basis unstated; 2030
+scenarios are not observations or probability bounds.</td>
+</tr>
+<tr>
+<td>US sales benchmark</td>
+<td>GFI/SPINS 2025 plant-based retail sales, $7.9B; reported annual
+dollar change −2%</td>
+<td>Broad US categories; nominal annual sales change is repurposed as a
+real non-income drift bound by assumption.</td>
+</tr>
+<tr>
+<td>Population, GDP growth, inflation</td>
+<td>IMF WEO October 2026: LP, NGDP_RPCH, PCPIPCH</td>
+<td>Mixed historical estimates/outturns and projections; published
+horizon ends in 2031.</td>
+</tr>
+<tr>
+<td>Urban share</td>
+<td>WDI SP.URB.TOTL.IN.ZS, 2015–2025</td>
+<td>National urban definitions differ; future trend is
+extrapolated.</td>
+</tr>
+<tr>
+<td>Exchange rate and income levels</td>
+<td>WDI PA.NUS.FCRF; NY.GDP.PCAP.CN/CD</td>
+<td>Market exchange rates, not PPP; observation years differ in the
+US–India elasticity construction.</td>
+</tr>
+<tr>
+<td>Animal-protein supply</td>
+<td>FAOSTAT 2023 protein supply, seven animal-food groups</td>
+<td>Supply balance, not individual intake, willingness or
+replacement-product demand.</td>
+</tr>
+<tr>
+<td>Industry activity</td>
+<td>AltProtein.Jobs directory described as 2024 and annual vacancies
+2023–2025</td>
+<td>Job-board coverage and country assignment are imperfect; directory
+records may overlap; not employment or skill shortages.</td>
+</tr>
+</tbody>
+</table></div>
+<p>The source ledger and source-specific rights should accompany
+extracted facts. Reproduction from the numeric input CSV does not
+require redistributing source workbooks, full PDFs, cached web pages or
+private team documents.</p>
+<h2 id="exact-implemented-transformations">3. Exact implemented
+transformations</h2>
+<p>Notation: country <code>c</code> is India <code>I</code> or Pakistan
+<code>P</code>; year is <code>t</code>; <code>P_c(t)</code> denotes
+population <strong>in millions</strong>, <code>U_c(t)</code> urban share
+<strong>in percent</strong>, <code>I_c(t)</code> real GDP per person
+relative to 2022, <code>s_c(t)</code> annual dollars per person, and
+<code>M_c(t)</code> total spending <strong>in million dollars</strong>.
+Percentage units cancel in urban-share ratios.</p>
+<h3 id="price-conversion-and-anchors">3.1 Price conversion and
+anchors</h3>
+<p>Let <code>F = (1 + 5.4/100)(1 + 4.6/100)(1 + 2.0/100)</code>, using
+Indian consumer-price inflation in 2023–2025. Let
+<code>X = 87.158448</code> INR per USD, the retained rounded WDI 2025
+period-average exchange rate.</p>
+<pre class="text"><code>Indian anchor A = 351 × 10 × F / X = 45.286640 million USD at 2025 prices
+s_I(2022) = A / P_I(2022) = 0.031771 USD per person
+s_US(2025) = 7.9 × 1,000 / P_US(2025) = 23.106847 USD per person</code></pre>
+<p>The factor 10 converts crore rupees to million rupees. The US 2025
+dollars already use the selected price year. The Indian anchor is
+<strong>a 2022 observation-year estimate converted to 2025
+prices</strong>, not a 2025 market observation.</p>
+<h3 id="population-and-real-income-paths">3.2 Population and real-income
+paths</h3>
+<p>The retained IMF population series is used through 2031. Beyond
+it:</p>
+<pre class="text"><code>P_c(t) = P_c(2031) × [P_c(2031)/P_c(2030)]^(t−2031), for t &gt; 2031
+I_c(2022) = 1
+I_c(t) = product over y=2023…t of [(1 + g_c(min(y,2031))/100)
+                                      / (P_c(y)/P_c(y−1))]</code></pre>
+<p>Here <code>g</code> is real GDP growth. Holding the 2031 GDP and
+population growth rates through 2035 is an analyst extrapolation, not an
+additional IMF forecast. Retained 2035 income indices are 2.167826 for
+India and 1.254629 for Pakistan.</p>
+<p>For each country, ordinary least squares on the eleven annual
+urban-share observations from 2015 through 2025 supplies a slope
+<code>b_c</code>. Future urban share is
+<code>U_c(2025) + b_c(t−2025)</code>. The function uses observed values
+through 2025. No estimated uncertainty or cross-country harmonization is
+added. Retained 2035 shares are 38.831347% and 43.289498%.</p>
+<h3 id="parameter-bounds">3.3 Parameter bounds</h3>
+<p>Four parameters are independently sampled from uniform distributions
+once per draw. The <strong>same sampled parameters are reused across
+years and countries</strong> within that draw; country/year results are
+therefore related, not independent samples.</p>
+<p class="table-hint">Scroll the table horizontally on a narrow screen.</p><div class="table-scroll" role="region" aria-label="Data table 3" tabindex="0"><table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Distribution/bounds</th>
+<th>Construction and interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Income elasticity <code>e</code></td>
+<td>Uniform(1, 1.810389…)</td>
+<td>Lower bound assumes proportional income scaling. Upper bound
+attributes the entire US–India per-person spending gap to the
+market-dollar income gap. It is not an estimated causal elasticity.</td>
+</tr>
+<tr>
+<td>Additional annual drift <code>d</code></td>
+<td>Uniform(−0.02, 0.17832570…)</td>
+<td>Lower bound is US 2025 nominal retail dollar decline; upper bound is
+<code>(529/381)^(1/2)−1</code>, Indian vacancy CAGR for 2023–2025.
+Mapping these into future spending is an assumption.</td>
+</tr>
+<tr>
+<td>Animal-supply weight <code>w</code></td>
+<td>Uniform(0,1)</td>
+<td>Applies none to all of Pakistan’s animal-supply ratio
+multiplicatively.</td>
+</tr>
+<tr>
+<td>Pakistan industry factor <code>k</code></td>
+<td>Uniform(0.102303…,0.667385…)</td>
+<td>Bounds are Pakistan/India directory-row density and vacancy density,
+both divided by 2025 population.</td>
+</tr>
+</tbody>
+</table></div>
+<p>The full-precision values are computed by the retained code from
+inputs, not from the rounded bounds above. Directory counts are 119 for
+India and 2 for Pakistan. 2025 vacancies are 529 and 58. Neither defines
+a complete national industry census.</p>
+<p>For the upper elasticity bound, India’s 2022 GDP per person in local
+currency is inflated by <code>F</code> and divided by <code>X</code>. US
+2025 GDP per person is already in market dollars at 2025 prices.
+Then:</p>
+<pre class="text"><code>e_max = log[s_US(2025)/s_I(2022)]
+        / log[GDPpc_US(2025)/(GDPpc_I(2022, INR) × F/X)]</code></pre>
+<p>The retained spending and income ratios are 727.301293 and 38.081810.
+They have a common price basis but different observation years. A
+same-price-basis conversion does not make them a matched contemporaneous
+comparison. Urbanisation, tastes, availability, category coverage and
+measurement also contribute to the observed gap; attributing it entirely
+to income is only a bounding assumption.</p>
+<h3 id="india-and-pakistan-equations">3.4 India and Pakistan
+equations</h3>
+<pre class="text"><code>s_I(t) = s_I(2022) × I_I(t)^e × [U_I(t)/U_I(2022)] × (1+d)^(t−2022)
+
+R_income(t) = [GDPpc_P(2025)/GDPpc_I(2025)]
+              × [I_P(t)/I_P(2025)] / [I_I(t)/I_I(2025)]
+
+s_P(t) = s_I(t) × R_income(t)^e × [U_P(t)/U_I(t)] × R_animal^w × k
+
+M_c(t) = s_c(t) × P_c(t)
+US comparison percentage_c(t) = 100 × s_c(t)/s_US(2025)</code></pre>
+<p>The 2025 Pakistan/India income ratio is 0.590535.
+<code>R_animal = 31.52/19.67 = 1.602440…</code>, from the sum of bovine
+meat, eggs, fish/seafood, milk excluding butter, mutton/goat, pigmeat
+and poultry protein supply. The industry and dietary multipliers are not
+independently identified effects. Their multiplication may double-count
+correlated conditions.</p>
+<p>No Pakistan retail observation is used to fit or validate the
+transfer equation. Missing baseline evidence is never assigned a zero.
+No separate AI or policy multiplier is applied. No cultivated-meat entry
+term is present.</p>
+<h2 id="draws-aggregation-and-output">4. Draws, aggregation and
+output</h2>
+<p>The implementation uses Python’s standard-library pseudorandom
+generator, <code>random.Random(20261015)</code>, and 10,000 draws. Every
+iteration draws <code>e</code>, <code>d</code>, <code>w</code>,
+<code>k</code> in that order. Results for each country/year are sorted.
+For quantile fraction <code>q</code>, compute <code>h=(n−1)q</code>,
+<code>i=floor(h)</code>, <code>j=ceil(h)</code>, and return
+<code>x[i]+(x[j]−x[i])(h−i)</code> with zero-based indexing. Output CSV
+values are formatted to six decimal places.</p>
+<p>The main table reports q=.1, .5 and .9. They describe variation under
+chosen parameter distributions. They are <strong>not</strong> confidence
+bounds, a calibrated 80% predictive interval, or empirical household
+uncertainty. Display rounding must not imply greater accuracy. The
+chapter uses $448m and $11.8m for the retained 2035 medians 447.504341
+and 11.759263.</p>
+<h2 id="retained-sensitivities-and-external-benchmark">5. Retained
+sensitivities and external benchmark</h2>
+<p>Sensitivities reset the same seed, retaining paired draws. Even a
+fixed or unused parameter is drawn before being replaced; this preserves
+pairing.</p>
+<ol type="1">
+<li><strong>Income/drift overlap:</strong> annual real income growth
+from 2023 to 2025 is 6.548202%. The alternative upper drift is
+<code>d_max − income_growth × e_max = 5.977774%</code>; the lower bound
+stays −2%. India’s 2035 p10/p50/p90 become 134.658168 / 215.060659 /
+341.253412 million; Pakistan’s become 2.382182 / 5.964900 / 11.690860
+million. This is a sensitivity, not a fitted correction.</li>
+<li><strong>Pakistan overlap:</strong> set its relative urban share and
+animal-supply multipliers to 1 while retaining India’s path, income
+ratio and industry factor. Pakistan’s 2035 p10/p50/p90 become 2.575709 /
+8.318219 / 25.341349 million.</li>
+<li><strong>One parameter fixed:</strong> hold each parameter at its
+lower and upper bound while drawing the others. India’s 2035 median
+ranges are 332.438965–622.332639 million for elasticity and
+127.357046–1398.084812 for drift. Pakistan’s corresponding pairs are
+12.293369 / 11.255477 for elasticity, 3.652403 / 40.094912 for drift,
+9.273218 / 14.859778 for animal weight, and 3.468582 / 22.627744 for
+industry factor. These are pairs of conditional medians, not uncertainty
+intervals or variance decompositions. Higher elasticity need not
+increase Pakistan’s transfer estimate because its relative income factor
+is below one.</li>
+</ol>
+<p>The existing comparison converts GFI India’s 2030 external scenarios
+using the <strong>same 2022-to-2025 inflation and exchange-rate
+transformation</strong> as the anchor, yielding 964.437694 / 1648.769136
+/ 2446.639731 million. This assumes the external scenarios share that
+source price base; the summary does not establish it. The fact that all
+retained proxy draws fall below GFI’s low case is a conditional
+disagreement, not a validation test or proof of which forecast is
+correct. Preserve source rupee values alongside any converted comparison
+until the price basis is resolved.</p>
+<h2 id="behaviour-policy-and-talent-evidence">6. Behaviour, policy and
+talent evidence</h2>
+<p>Behavioural evidence is read for the actual question and sampled
+population. Stated willingness, paid first purchase, unsubsidized repeat
+purchase and animal-food displacement are separate outcomes. The
+selective nine-study extraction package has no India finding and is not
+a systematic review of national adoption; the bilateral discussion draws
+on additional studies. Do not turn “not measured in these sources” into
+“does not occur.”</p>
+<p>Policy sources establish the dated instrument or announcement and its
+stated jurisdiction. Implementation, disbursement, product authorization
+and uptake need different evidence. Halal status and food authorization
+are distinct questions. This appendix does not provide a legal
+determination or assume a product’s certification from general
+institutional powers.</p>
+<p>Talent evidence separates job-board advertisements, directory
+entries, sampled employer testimony and national workforce measures. GFI
+India’s study’s 20 industry responses and 19 academic participants are
+study cohorts. Its findings may motivate a pilot; they do not identify a
+nationally optimal training portfolio. Recommendations in the chapter
+are author proposals that require baseline and outcome checks.</p>
+<h2 id="validation-reproducibility-and-remaining-holds">7. Validation,
+reproducibility and remaining holds</h2>
+<p>Run <code>python scripts/reproduce.py</code> from the package root.
+The packaged engine <code>scripts/build_altprotein_proxy.py</code> reads
+the 106 aggregate input rows and writes
+<code>build/proxy_scenarios.csv</code>. Its private
+acquisition/transcription mode has been removed; the mathematical
+engine, random draw order and output format are preserved. No source
+acquisition or model call is required.</p>
+<p>The 22 October package verification regenerated all 127 rows byte for
+byte against <code>data/reference_proxy_scenarios.csv</code>.
+Independent denominator and sensitivity checks are included in
+<code>tests/test_reproduction.py</code>. Clean-folder verification is
+recorded in the release receipt. Reproduction establishes consistency
+with the specified assumptions, not empirical validity.</p>
+<p>Human reviewers must resolve the Indian price/retail basis, judge the
+crosswalk and proxy assumptions, verify included sources/data/code, and
+sign off the final claims. A new national sales series should be
+documented as new evidence and evaluated explicitly rather than silently
+replacing the original anchor. The separate supply benchmark’s
+out-of-sample performance does not validate alternative-protein
+spending. Full source/capture pointers and rights limits are in <a
+href="../provenance/claims.md">claim map</a> and <a
+href="../provenance/sources.md">source ledger</a>.</p>
+<h1 id="measurement-contract-and-proposed-harmonization">Measurement
+contract and proposed harmonization</h1>
+<p><strong>Proposed for review, 22 October 2026. No team agreement is
+asserted.</strong></p>
+<p class="table-hint">Scroll the table horizontally on a narrow screen.</p><div class="table-scroll" role="region" aria-label="Data table 4" tabindex="0"><table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>Strand</th>
+<th>Outcome / channel</th>
+<th>Technology and category</th>
+<th>Geography / time</th>
+<th>Uncertainty meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Regional proxy</td>
+<td>Intended domestic retail spending; the Indian source’s retail basis
+is assumed</td>
+<td>Plant-based replacement foods plus fermentation-derived human foods;
+no cultivated meat; aggregate anchor limits category detail</td>
+<td>India/Pakistan; 2022 Indian estimate converted to 2025 prices;
+2026/2030/2035 scenarios</td>
+<td>Percentiles under analyst-selected parameter distributions; no
+demonstrated coverage</td>
+</tr>
+<tr>
+<td>Regional panel</td>
+<td>Headline retail spending; excludes foodservice and conventional
+staples</td>
+<td>Plant-based replacements, all dairy alternatives and other included
+plant-based replacements; headline excludes fermentation/cultivated
+technologies</td>
+<td>India/Pakistan; 2026/2030/2035; million market-exchange-rate USD at
+2025 prices</td>
+<td>Percentiles of ten accepted response medians by requested model; not
+predictive bounds</td>
+</tr>
+<tr>
+<td>Separate panel US arm</td>
+<td>Original all-category plant-based retail question; additional
+technology questions have their own scope</td>
+<td>Broader US plant-based basket, with distinct cultivated and
+fermentation questions</td>
+<td>US methodological comparator in the author’s supplement</td>
+<td>Same descriptive run-median aggregation; prompts and supplied
+evidence differ by region</td>
+</tr>
+<tr>
+<td>Historical US benchmark</td>
+<td>GFI/SPINS observed retail sales</td>
+<td>Broad basket including prepared meals</td>
+<td>Fixed 2025 observation; per-person denominator</td>
+<td>Source estimate; not a 2035 US forecast</td>
+</tr>
+<tr>
+<td>Conventional food evidence</td>
+<td>Supply balance or reported household food quantities</td>
+<td>Animal foods and conventional categories</td>
+<td>Source-specific year, sample and geography</td>
+<td>Measurement/sampling properties; does not establish
+alternative-protein purchases</td>
+</tr>
+</tbody>
+</table></div>
+<p>For any other contribution to the unified report, record the actual
+executed question, product basket, channel, currency, price year, source
+vintage and uncertainty measure before comparing it. A common label
+introduced after collection does not make different protocols
+equivalent.</p>
+<p>The main research question is what the evidence supports about demand
+and what would reduce decision-relevant uncertainty. Keep stated
+willingness, paid first purchase, repeat purchase and animal-food
+displacement separate. Model output, policy intent, company activity and
+missing data are different evidence classes. Do not sum regional results
+into a global market, pool proxy draws with model responses, or
+attribute disagreement to one cause without a design that identifies
+it.</p>
+<h1 id="separate-forecast-elicitation-supplement">Separate
+forecast-elicitation supplement</h1>
+<p><strong>AI-assisted methods draft, 22 October 2026. Human
+verification pending. Authored for Muhammad Umar Zafar. This is a
+separate protocol and sample, not an accepted joint result.</strong></p>
+<h2 id="purpose-and-limits">1. Purpose and limits</h2>
+<p>The exercise records repeated model-generated projections under
+specified prompts and execution conditions. It can describe
+within-workflow repetition and between-workflow disagreement. It cannot
+establish forecast calibration, independent expert opinion, causal
+effects of AI on food demand, or why a provider’s outputs differ from
+another’s.</p>
+<p>The approved target was ten accepted responses per requested model
+and region: two models across India, Pakistan and the US, giving six
+cells and 60 accepted responses. All registered cells reached ten
+accepted responses. “Complete” describes that target, not scientific
+acceptance.</p>
+<h2 id="instrument-and-country-scope">2. Instrument and country
+scope</h2>
+<p>The US questionnaire preserves the author-designated source text
+received for this execution. The source DOCX and derived text hashes are
+retained. Byte agreement proves provenance of this supplied version; it
+does not prove that every run in another study used exactly that prompt,
+background material or software. The original instrument and regional
+adaptations are local private inputs because public redistribution
+rights are not established.</p>
+<p class="table-hint">Scroll the table horizontally on a narrow screen.</p><div class="table-scroll" role="region" aria-label="Data table 5" tabindex="0"><table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Arm</th>
+<th>Outcome and product scope</th>
+<th>Conditioning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>India/Pakistan</td>
+<td>Retail plant-based meat/seafood replacements; all dairy
+alternatives; other in-scope plant-based replacement products. Headline
+excludes fermentation and cultivated technologies, conventional staples
+and foodservice.</td>
+<td>Country-adapted questions plus frozen public evidence
+summaries.</td>
+</tr>
+<tr>
+<td>US</td>
+<td>Original broad all-category plant-based retail question. Separate
+cultivated and fermentation questions retain their original
+retail/foodservice and pet-food inclusions.</td>
+<td>Original questionnaire; no added project market figures in the US
+evidence pack.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Forecast years are 2026, 2030 and 2035. Headline unit is
+<strong>million USD at constant 2025 prices</strong>. Regional category
+medians must sum to headline medians; marginal tail quantiles are not
+required to sum. All dairy alternatives in the questionnaire are broader
+than the milk-only calibration used in a separate household simulator.
+Results must not be relabelled as milk-only or as that simulator’s
+validated inputs.</p>
+<p>The regional instrument also requests stated-intent conversion, Bass
+coefficients, price-parity conditions, AI-attributed manufacturing-cost
+decline and separately defined trade/listing/external-estimate proxies.
+Those variables have different units and resolution conditions; none is
+a substitute for measured headline retail demand. The India/Pakistan
+national headline is presently unresolvable from a complete observed
+series. A null parity year denotes the stated unknown/never condition,
+not zero. AI manufacturing-cost decline is not retail pass-through. A
+“first legal sale” question is distinct from a sales total.</p>
+<h2 id="evidence-selection-and-possible-anchoring">3. Evidence selection
+and possible anchoring</h2>
+<p>Country evidence packs were frozen on 19 October 2026. India includes
+the external GFI/Deloitte estimate and forward scenarios, conventional
+household consumption context, sample-specific stated-intent research,
+trade-proxy limitations and policy context. Pakistan includes
+conventional household context, an upstream trade observation, the same
+non-Pakistan intent comparison, and explicitly identified India-only
+external estimates. Neither pack includes project household-model
+results, internal price ratios, project market forecasts or unit-record
+data.</p>
+<p>The packets themselves disclose that some cited sources rely on
+earlier catalogue review rather than a fresh freeze-day retrieval. An
+empty Comtrade capture means missing data, not zero trade. Upstream
+protein concentrates and listing counts are not alternative-protein
+retail sales. The GFI forward scenarios may anchor respondents; their
+broader technology scope differs from the regional headline.</p>
+<p>The US evidence file does not receive the added regional facts.
+Therefore “all runs had the same evidence pack” is false across regions.
+Similar isolation rules also do not establish equal executed retrieval.
+Evidence-conditioned elicitation differs from a blank-slate protocol
+that omits supplied historical observations and external forecasts. This
+exercise does not isolate that effect and is not a controlled experiment
+on evidence provision.</p>
+<h2 id="execution-model-identity-and-dates">4. Execution, model identity
+and dates</h2>
+<p>Requested model labels were <code>gpt-6-astra</code> and
+<code>claude-opus-5-5</code>. Every accepted Claude receipt reports
+<code>claude-opus-5-5</code>. Accepted Astra receipts have an empty
+<code>reported_models</code> field; their identity is documented as
+requested, <strong>not independently confirmed by provider-returned
+model metadata</strong>. Different service names do not establish
+independent architectures or independent evidence.</p>
+<p class="table-hint">Scroll the table horizontally on a narrow screen.</p><div class="table-scroll" role="region" aria-label="Data table 6" tabindex="0"><table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Requested model</th>
+<th>Accepted-run time window, UTC</th>
+<th>Accepted cells</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>gpt-6-astra</td>
+<td>19 October 2026, 18:40:58–19:50:24</td>
+<td>Ten India, ten Pakistan, ten US</td>
+</tr>
+<tr>
+<td>claude-opus-5-5</td>
+<td>20 October 2026, 19:15:23 to 21 October 2026, 15:12:55</td>
+<td>Ten India, ten Pakistan, ten US</td>
+</tr>
+</tbody>
+</table></div>
+<p>Each attempt uses a fresh temporary working directory, no resumed
+conversation and no prior model answers. Claude is configured with
+WebSearch/WebFetch, restricted mode, an explicit system instruction, no
+user/project settings and an empty strict MCP configuration. Codex is
+configured to disable shell, project instructions, memories, apps, skill
+discovery and delegation, and to use read-only sandboxing with
+provider-event auditing. The runner documents that Codex has no
+demonstrated blanket end-user tool allowlist; observed prohibited
+command/file/MCP/delegation use is rejected. These are implementation
+and configuration claims, not proof that every possible contamination
+route was absent.</p>
+<p>The retained receipt audit establishes configured web access for
+completed recorded attempts. It does <strong>not</strong> establish that
+all runs executed the same searches, fetched the same pages or had
+equivalent tool behavior. Search parity requires a separate event-level
+extraction and is not asserted here. Prompts, provider events and
+answers stay private; their hashes and sanitized metadata can support
+integrity checks without redistributing their contents.</p>
+<h2 id="attempts-exclusions-and-protocol-change">5. Attempts, exclusions
+and protocol change</h2>
+<p>The receipt inventory contains <strong>79 recorded attempts</strong>,
+not 79 demonstrated completed model calls:</p>
+<p class="table-hint">Scroll the table horizontally on a narrow screen.</p><div class="table-scroll" role="region" aria-label="Data table 7" tabindex="0"><table>
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 21%" />
+<col style="width: 21%" />
+<col style="width: 21%" />
+<col style="width: 21%" />
+</colgroup>
+<thead>
+<tr>
+<th>Requested model / region</th>
+<th style="text-align: right;">Accepted</th>
+<th style="text-align: right;">Rejected</th>
+<th style="text-align: right;">Execution error</th>
+<th style="text-align: right;">Incomplete RUNNING record</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Astra / India</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>Astra / Pakistan</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>Astra / US</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>Claude / India</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>Claude / Pakistan</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>Claude / US</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>60</strong></td>
+<td style="text-align: right;"><strong>15</strong></td>
+<td style="text-align: right;"><strong>3</strong></td>
+<td style="text-align: right;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>Seven rejected Claude India receipts cite a first-sale-year
+validation rule. Six Claude US receipts cite an unapproved reported
+model, and two cite JSON parsing. The three execution errors are
+retained separately. The RUNNING record lacks a command receipt; its
+existence alone establishes neither a sent call nor completion. No
+attempt is retroactively renamed accepted to make the design look
+cleaner. <code>data/panel-attempts.csv</code> contains sanitized record
+states, model identities, dates, reason categories and receipt/parsed
+hashes.</p>
+<p>On 20 October, a parser amendment allowed a cultivated first-sale
+year accompanying a “no” answer to be normalized to null. The original
+supplied year is retained as
+<code>cultivated_conditional_year_dropped</code>. Before that amendment,
+seven of eleven Claude India attempts had been rejected for this
+condition alone, compared with zero of the thirty Astra attempts.
+Previously rejected receipts remained rejected. Ten accepted responses
+per cell therefore do not imply equal selection mechanisms. The
+amendment, failures and retries may affect the accepted distributions;
+this supplement does not estimate that selection effect.</p>
+<p>The runner validates units, finite values, year coverage, monotone
+quantiles, category coherence and prohibited source/tool contamination.
+It retains failures and uses fresh retries. Configuration defaults
+include bounded validation attempts and a 900-second timeout; actual
+slot histories can exceed one default batch through continuation. The
+attempt table, not a default-limit description, is the executed count
+record. No rerun was performed for this drafting task.</p>
+<h2 id="aggregation-and-retained-results">6. Aggregation and retained
+results</h2>
+<p>For each model, region, measure and year, the summary takes each
+accepted response’s stated P50 and computes empirical percentiles across
+those run medians. It does <strong>not</strong> pool all response
+P10/P50/P90 values into one predictive distribution. Original quantiles
+are retained in the numeric response archive. Missing conditional values
+are excluded for that measure and <code>n_nonmissing</code> is reported;
+missingness is not filled with zero.</p>
+<p>Sort the run medians as <code>x[0]…x[n−1]</code>. For fraction
+<code>q</code>, let <code>h=(n−1)q</code>, <code>i=floor(h)</code>,
+<code>j=min(i+1,n−1)</code>; return <code>x[i]+(x[j]−x[i])(h−i)</code>.
+For ten nonmissing runs, the median is the mean of the fifth and sixth
+ordered values, P10 is <code>0.1×first + 0.9×second</code>, and P90 is
+<code>0.9×ninth + 0.1×tenth</code>.</p>
+<p>For a purely illustrative ordered set of ten run medians
+<code>1,2,…,10</code>, this rule gives P10=1.9, P50=5.5 and P90=9.1.
+These example numbers explain the interpolation; they are not study
+results or a model’s own predictive quantiles.</p>
+<p class="table-hint">Scroll the table horizontally on a narrow screen.</p><div class="table-scroll" role="region" aria-label="Data table 8" tabindex="0"><table>
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 22%" />
+<col style="width: 22%" />
+<col style="width: 22%" />
+</colgroup>
+<thead>
+<tr>
+<th>Region</th>
+<th>Requested model</th>
+<th style="text-align: right;">2035 P10 of run medians</th>
+<th style="text-align: right;">Median of run medians</th>
+<th style="text-align: right;">P90 of run medians</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>India</td>
+<td>Astra</td>
+<td style="text-align: right;">324</td>
+<td style="text-align: right;">370</td>
+<td style="text-align: right;">422</td>
+</tr>
+<tr>
+<td>India</td>
+<td>Claude</td>
+<td style="text-align: right;">84.2</td>
+<td style="text-align: right;">157.5</td>
+<td style="text-align: right;">190.7</td>
+</tr>
+<tr>
+<td>Pakistan</td>
+<td>Astra</td>
+<td style="text-align: right;">27.6</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: right;">60</td>
+</tr>
+<tr>
+<td>Pakistan</td>
+<td>Claude</td>
+<td style="text-align: right;">7.96</td>
+<td style="text-align: right;">9.35</td>
+<td style="text-align: right;">15.32</td>
+</tr>
+<tr>
+<td>US</td>
+<td>Astra</td>
+<td style="text-align: right;">10,500</td>
+<td style="text-align: right;">10,650</td>
+<td style="text-align: right;">11,000</td>
+</tr>
+<tr>
+<td>US</td>
+<td>Claude</td>
+<td style="text-align: right;">6,880</td>
+<td style="text-align: right;">7,000</td>
+<td style="text-align: right;">7,320</td>
+</tr>
+</tbody>
+</table></div>
+<p>All values are million USD at 2025 prices; each cell has ten
+accepted, nonmissing headline medians. These are descriptive workflow
+outputs, <strong>not calibrated predictive intervals</strong>. No
+provider weights or grand pooled median are introduced. The
+India/Pakistan panel excludes fermentation whereas the proxy model
+includes it; their differences cannot be attributed solely to model
+optimism or evidence conditioning. The US arm remains in this separately
+authored methods supplement and does not expand Umar’s main regional
+chapter into a US research claim.</p>
+<h2 id="relationship-to-other-forecasting-studies">7. Relationship to
+other forecasting studies</h2>
+<p>Any comparison requires the other study’s executed-method record and
+author approval. Product scope, prompts, supplied evidence, execution
+date, tool use, model identity, number of submissions and aggregation
+can all differ. An envelope formed from minimum P10 and maximum P90 is
+not the same statistic as percentiles of repeated-run medians. An
+internally aggregated submission must not be counted as several
+equivalent observed runs.</p>
+<p>A terminology decision after execution cannot change those
+differences. Discuss compatible summaries side by side with their
+definitions; do not pool them into a larger supposedly independent
+panel. This package contains no collaborator draft, private result table
+or claim of another author’s approval.</p>
+<h2 id="reproduction-rights-and-acceptance">8. Reproduction, rights and
+acceptance</h2>
+<p>Run <code>python scripts/reproduce.py</code> from the package root to
+reconstruct the <strong>headline table</strong> from
+<code>data/panel_runs.json</code>. The packaged
+<code>scripts/build_panel.py</code> implements the linear quantile rule
+above; it checks all six ten-run cells and rejects invalid units,
+duplicate slots and non-finite, negative or crossed quantiles. The
+reproduced 18 summaries are compared with
+<code>data/reference_panel_aggregates.json</code> at absolute tolerance
+1e-12. This route uses only the Python standard library and no private
+answers, questionnaire text, provider logs, credentials or new model
+calls.</p>
+<p>The complete elicitation is not independently rerunnable from a
+public package while questionnaire rights remain unresolved. An
+integrity hash does not grant redistribution rights. Retain original
+records privately and state this reproducibility boundary. Publicly
+proposed rows and metadata still require a content/rights review and
+human verification.</p>
+<p>No other author’s acceptance or agreement is claimed. Human
+factual/code review, author approval and source-specific release review
+are outstanding. Joint inclusion requires a separate editorial decision.
+Source pointers and hashes are recorded in the companion claim map and
+provenance files.</p>
+<h1 id="limitations-and-ai-use-statements">Limitations and AI-use
+statements</h1>
+<p><strong>Draft, 22 October 2026. Human verification
+pending.</strong></p>
+<h2 id="main-text-limitations">Main-text limitations</h2>
+<p>The India–Pakistan results are conditional spending scenarios. The
+Indian anchor is an external modeled estimate with an unstated price and
+valuation basis; the analysis assumes nominal 2022 rupees and retail
+value. Pakistan lacks a comparable verified national baseline in the
+retained evidence. Proxy coefficients and distributions are analyst
+choices, with possible overlap among income, urbanisation,
+animal-protein supply and industry activity. The reported simulation
+percentiles have no demonstrated probability coverage. Macro projections
+beyond 2031 extend the last available growth rates. The US comparison
+uses a different product basket and a 2025 observation rather than a
+matched forecast-year benchmark. National supply, stated intention, paid
+purchase, repeat purchase and animal-food displacement remain different
+outcomes. The source collection is selective and does not establish that
+evidence absent from this collection is absent everywhere.</p>
+<p>The separate model-elicitation supplement is a repetition and
+disagreement exercise under recorded workflows. Its regional prompts,
+evidence conditioning, execution dates, tools and technology scope can
+differ from other contributors’ studies. Model versions and
+attempted-run selection also matter. The accepted set excludes rejected
+and errored attempts, and a parser rule changed during collection. The
+spread of run medians is not a predictive interval. Similar answers do
+not prove calibration or independent evidence; different answers do not
+isolate the effect of a model, prompt or AI assumption. The supplement
+is authored as Umar’s work and is not represented as an accepted joint
+result.</p>
+<h2 id="current-truthful-ai-use-statement">Current, truthful AI-use
+statement</h2>
+<p>AI tools assisted source discovery and summarization, code
+development, quantitative scenario construction, structured forecast
+elicitation, and drafting/editing. The separate elicitation requested
+<code>gpt-6-astra</code> and <code>claude-opus-5-5</code>; provider
+identity evidence is reported in its methods rather than assumed. Codex
+assisted this 22 October writing and methodological audit, including
+inspection of retained calculations and execution receipts. The human
+author’s scope choices and approvals are recorded separately from
+factual verification. Human verification of the included claims,
+citations, statistics, quotations, datasets and code is pending. These
+materials are review drafts and must not be represented as final or
+accepted programme outputs.</p>
+<p>This statement describes known workflow categories. Before final
+submission, the human author must complete a tool/version/task register
+for substantive earlier AI use as well; this drafting pass cannot
+certify the full historical record.</p>
+<h2 id="final-statement-template-do-not-use-until-completed">Final
+statement template — do not use until completed</h2>
+<blockquote>
+<p>AI assistance was used for [verified list of tools and substantive
+tasks]. [Named humans] checked [scope and dated review records],
+including the cited originals, numerical transformations and executable
+code. Remaining limitations are reported in [locations]. [Insert the
+programme’s required attestation only after it is true.]</p>
+</blockquote>
+<p>The programme policy requires human verification of
+<strong>all</strong> included AI-produced or AI-edited claims,
+citations, statistics, quotations, datasets and code. Prioritize
+load-bearing claims, but do not narrow the requirement to those claims
+alone. Code review includes reading, running and testing. Agent checks
+do not substitute for human review. Scholarly peer review may remain
+pending and labelled after factual/code verification; that label is not
+an alternative to verification.</p>
+<p>Private review drafts may retain explicitly marked unverified
+material for review. Final submission/public release must omit it or
+complete the verification. Source: Sentient Futures Project Incubator AI
+Use Policy, 20 August 2026, Verification, Transparency and Attestation
+sections. The policy document is not bundled; participants should
+consult their programme copy.</p>
+<h2 id="human-review-register-fields">Human review register fields</h2>
+<p>Claim ID; exact manuscript sentence/table; original-source locator;
+source vintage; numerical transformation/code revision; reviewer name;
+review date; disposition (verified/corrected/omit/unresolved);
+restrictions; author sign-off. A blank reviewer field remains pending.
+No reviewer identity or approval is inferred from possession of a
+file.</p>
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p>GFI India and Deloitte, <em>Smart Protein Economic
+Analysis</em>, 2022-context analysis, methodology and final-page
+domestic-market table, <a
+href="https://gfi-india.org/wp-content/uploads/2024/06/GFI-India-economic-analysis.pdf">original
+report</a>. Precise publication date and price base are unstated; the
+upload path is not a publication date. Source mapping: C01–C03 in <a
+href="../provenance/claims.md">claim map</a>.<a href="#fnref1"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Retained <code>altprotein_proxy_inputs.csv</code>,
+<code>altprotein_proxy_scenarios.csv</code> and
+<code>build_altprotein_proxy.py</code>; exact equations and assumptions
+in <a href="../methods/proxy.md">proxy methods</a>. IMF WEO October 2026
+and World Bank WDI provide macro inputs. Mapping: C04–C06.<a
+href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p><a href="https://gfi.org/marketresearch/">GFI US retail
+market data</a>, 2025 sales; IMF population; retained comparison rows.
+The US anchor is $7.9 billion, or $23.106847 per person. Mapping:
+C07–C08.<a href="#fnref3" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>Retained 2035 sensitivity rows
+<code>market_value_drift_overlap_adjusted</code> and
+<code>market_value_without_urban_animal</code>; see methods for the
+exact changes. Mapping: C09–C10.<a href="#fnref4" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>Christopher Bryant et al., “A Survey of Consumer
+Perceptions of Plant-Based and Clean Meat in the USA, India, and China,”
+<em>Frontiers in Sustainable Food Systems</em> 3 (2019), <a
+href="https://doi.org/10.3389/fsufs.2019.00011">doi:10.3389/fsufs.2019.00011</a>;
+retained bilateral review and measurement audit. Mapping: C11–C12. The
+selective nine-study extraction package is not presented as a systematic
+national review.<a href="#fnref5" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>Government of India, <a
+href="https://www.pib.gov.in/PressReleasePage.aspx?PRID=2048568&amp;lang=2&amp;reg=3">BioE3
+Cabinet approval, 24 August 2024</a>; Pakistan, <a
+href="https://pakistancode.gov.pk/pdffiles/administrator1d376dbb967abb1d9ed2dcb3ae978dbc.pdf"><em>Pakistan
+Halal Authority Act, 2016</em></a>, especially establishment and
+functions. These are dated institutional sources, not a legal
+determination for a particular product. Mapping: C13–C14.<a
+href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p>Dated source review in the retained AI-mechanism review,
+including Cosenza et al., <a
+href="https://doi.org/10.1002/elsc.202300005">doi:10.1002/elsc.202300005</a>,
+and Watson et al., <a
+href="https://doi.org/10.1038/s41586-023-06415-8">doi:10.1038/s41586-023-06415-8</a>.
+The former’s primary full text was not freshly recovered for this
+drafting pass. Mapping: C15.<a href="#fnref7" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p>Amrutha Girivasan and Chandana Tekkatte, GFI India, <a
+href="https://gfi-india.org/resource/smart-protein-skills-mapping/"><em>A
+comprehensive analysis of India’s talent landscape for the smart protein
+sector</em></a>, physical PDF page 10. The official website listing is
+dated 19 December 2025; the PDF itself is undated. Retained
+AltProtein.Jobs extracts and the author’s capacity proposals are mapped
+in C16–C17. Pakistan’s proposed pilot is a recommendation, not an
+observed programme.<a href="#fnref8" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+</body>
+</html>
