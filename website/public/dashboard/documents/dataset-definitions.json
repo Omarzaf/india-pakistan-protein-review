@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "datasets": {
+    "altprotein_proxy_inputs": {
+      "path": "/dashboard/tables/d-0e76106c1a8a4ad182.json",
+      "derived": false,
+      "primary_source_columns": [
+        "source_id"
+      ],
+      "audience": "report_only",
+      "copy_mode": "byte_identical",
+      "publicationNote": "Historical audience label retained as source metadata; this focused publication was authorized on 22 October 2026."
+    },
+    "diet_composition": {
+      "path": "/dashboard/tables/d-8cb538eced29ce7828.json",
+      "derived": false,
+      "primary_source_columns": [
+        "source_id"
+      ],
+      "audience": "edition_and_report",
+      "copy_mode": "byte_identical",
+      "publicationNote": "Historical audience label retained as source metadata; this focused publication was authorized on 22 October 2026."
+    },
+    "meat_regional": {
+      "path": "/dashboard/tables/d-48737a333af766bd36.json",
+      "derived": false,
+      "primary_source_columns": [
+        "source_id"
+      ],
+      "audience": "edition_and_report",
+      "copy_mode": "byte_identical",
+      "publicationNote": "Historical audience label retained as source metadata; this focused publication was authorized on 22 October 2026."
+    },
+    "meat_supply_national": {
+      "path": "/dashboard/tables/d-3f1eb99cec2d57a134.json",
+      "derived": false,
+      "primary_source_columns": [
+        "source_id"
+      ],
+      "audience": "edition_and_report",
+      "copy_mode": "byte_identical",
+      "publicationNote": "Historical audience label retained as source metadata; this focused publication was authorized on 22 October 2026."
+    },
+    "protein_intake_consumer_unit": {
+      "path": "/dashboard/tables/d-6c0f48be64167d913b.json",
+      "derived": false,
+      "primary_source_columns": [
+        "source_id"
+      ],
+      "audience": "edition_and_report",
+      "copy_mode": "byte_identical",
+      "publicationNote": "Historical audience label retained as source metadata; this focused publication was authorized on 22 October 2026."
+    },
+    "protein_intake_modelled": {
+      "path": "/dashboard/tables/d-dfd45acbb6bac45a9e.json",
+      "derived": false,
+      "primary_source_columns": [
+        "source_id"
+      ],
+      "audience": "edition_and_report",
+      "copy_mode": "byte_identical",
+      "publicationNote": "Historical audience label retained as source metadata; this focused publication was authorized on 22 October 2026."
+    },
+    "protein_intake_observed": {
+      "path": "/dashboard/tables/d-a171d4f71a7174c180.json",
+      "derived": false,
+      "primary_source_columns": [
+        "source_id"
+      ],
+      "audience": "edition_and_report",
+      "copy_mode": "byte_identical",
+      "publicationNote": "Historical audience label retained as source metadata; this focused publication was authorized on 22 October 2026."
+    }
+  },
+  "publicationProjection": "Only definitions corresponding to retained focused tables are included. Original audience distinctions are historical metadata."
+}

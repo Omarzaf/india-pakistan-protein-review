@@ -1,0 +1,9 @@
+{
+  "id": "household-freeze",
+  "title": "Household workstream freeze",
+  "path": "/dashboard/documents/household-freeze.md",
+  "sha256": "99699d7ff579298976cb4e7823bf026f40d6a3afca2b032c961cf30adeb582cf",
+  "originalSourceSha256": "a794b140200150826096cb3907cb380b6a048bb71dcaf57bf6dd1eb7f72f6f2f",
+  "text": "# Household-demand workstream freeze\n\nFrozen on 22 October 2026: the wider household-demand model is not part of the current India–Pakistan report contribution. Household modelling, interactive diagnostics and further acquisition remain frozen. The separately retained 60-response forecast panel remains an active report input.\n\nExisting diagnostic records are preserved for inspection. Their publication does not authorize a new model run, accept empirical inputs or reopen the research workstream. Any future extension requires a named report-linked question, explicit empirical inputs, acceptance checks and stopping conditions.\n",
+  "note": "Authored public summary of the hash-bound retained document; private operational material omitted."
+}

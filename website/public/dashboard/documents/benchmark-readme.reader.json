@@ -1,0 +1,9 @@
+{
+  "id": "benchmark-readme",
+  "title": "Protein-supply benchmark: historical scope",
+  "path": "/dashboard/documents/benchmark-readme.md",
+  "sha256": "4fbc8c96abd76c610e34c39cfe8558cfd77bcc6c3777cd462085306f7888c9f6",
+  "originalSourceSha256": "2f93499cc86bead45074c47ceb371b8a2e96f42993dc9c9a9d099c7ba2830a1c",
+  "text": "# Protein-supply benchmark: historical scope\n\n**Public summary of frozen exploratory research.** The outcome is national available protein supply, not alternative-protein adoption or individual intake. Human scholarly review remains pending.\n\nThe retained benchmark uses 56 frozen FAOSTAT estimates: total and animal-origin supply, 2010–2023, in India and Pakistan. Six implementations cover naive, classical, regression and pretrained forecasting. With only two distinct selection years, the protocol defaults to persistence for all four series. Nominal 80% intervals cover 1/6 held-out cells in each Indian series and 6/6 in each Pakistani series. Cells overlap; neither result establishes calibration. Forecasts through 2035 remain exploratory extrapolations.\n\nThis dashboard contains the source-status summary, not a fresh benchmark rerun or a national adoption forecast.\n",
+  "note": "Public summary of a frozen historical source; no fresh model run or environment claim. Original source hash is retained separately."
+}

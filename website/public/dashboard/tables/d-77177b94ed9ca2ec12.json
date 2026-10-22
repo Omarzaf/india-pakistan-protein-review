@@ -1,0 +1,221 @@
+{
+  "id": "d-77177b94ed9ca2ec12",
+  "columns": [
+    "model",
+    "region",
+    "year",
+    "n",
+    "p10",
+    "p50",
+    "p90",
+    "run_p10_median",
+    "run_p90_median"
+  ],
+  "rows": [
+    {
+      "model": "gpt-6-astra",
+      "region": "us",
+      "year": 2026,
+      "n": 10,
+      "p10": 7550,
+      "p50": 7600,
+      "p90": 7650,
+      "run_p10_median": 7100,
+      "run_p90_median": 8100
+    },
+    {
+      "model": "gpt-6-astra",
+      "region": "us",
+      "year": 2030,
+      "n": 10,
+      "p10": 8200,
+      "p50": 8300,
+      "p90": 8500,
+      "run_p10_median": 5750,
+      "run_p90_median": 11850
+    },
+    {
+      "model": "gpt-6-astra",
+      "region": "us",
+      "year": 2035,
+      "n": 10,
+      "p10": 10500,
+      "p50": 10650,
+      "p90": 11000,
+      "run_p10_median": 4500,
+      "run_p90_median": 19500
+    },
+    {
+      "model": "gpt-6-astra",
+      "region": "india",
+      "year": 2026,
+      "n": 10,
+      "p10": 65,
+      "p50": 70,
+      "p90": 75.5,
+      "run_p10_median": 35,
+      "run_p90_median": 140
+    },
+    {
+      "model": "gpt-6-astra",
+      "region": "india",
+      "year": 2030,
+      "n": 10,
+      "p10": 138,
+      "p50": 155,
+      "p90": 166.5,
+      "run_p10_median": 50,
+      "run_p90_median": 445
+    },
+    {
+      "model": "gpt-6-astra",
+      "region": "india",
+      "year": 2035,
+      "n": 10,
+      "p10": 324,
+      "p50": 370,
+      "p90": 422,
+      "run_p10_median": 65,
+      "run_p90_median": 1500
+    },
+    {
+      "model": "gpt-6-astra",
+      "region": "pakistan",
+      "year": 2026,
+      "n": 10,
+      "p10": 5,
+      "p50": 6,
+      "p90": 7.199999999999999,
+      "run_p10_median": 1.5,
+      "run_p90_median": 21
+    },
+    {
+      "model": "gpt-6-astra",
+      "region": "pakistan",
+      "year": 2030,
+      "n": 10,
+      "p10": 10.9,
+      "p50": 14.5,
+      "p90": 18.4,
+      "run_p10_median": 2.5,
+      "run_p90_median": 65
+    },
+    {
+      "model": "gpt-6-astra",
+      "region": "pakistan",
+      "year": 2035,
+      "n": 10,
+      "p10": 27.6,
+      "p50": 37,
+      "p90": 60,
+      "run_p10_median": 4,
+      "run_p90_median": 200
+    },
+    {
+      "model": "claude-opus-5-5",
+      "region": "us",
+      "year": 2026,
+      "n": 10,
+      "p10": 7595,
+      "p50": 7600,
+      "p90": 7655,
+      "run_p10_median": 7250,
+      "run_p90_median": 8000
+    },
+    {
+      "model": "claude-opus-5-5",
+      "region": "us",
+      "year": 2030,
+      "n": 10,
+      "p10": 7090,
+      "p50": 7200,
+      "p90": 7300,
+      "run_p10_median": 5800,
+      "run_p90_median": 8800
+    },
+    {
+      "model": "claude-opus-5-5",
+      "region": "us",
+      "year": 2035,
+      "n": 10,
+      "p10": 6880,
+      "p50": 7000,
+      "p90": 7320,
+      "run_p10_median": 5000,
+      "run_p90_median": 10000
+    },
+    {
+      "model": "claude-opus-5-5",
+      "region": "india",
+      "year": 2026,
+      "n": 10,
+      "p10": 30.9,
+      "p50": 50,
+      "p90": 65,
+      "run_p10_median": 27.5,
+      "run_p90_median": 90
+    },
+    {
+      "model": "claude-opus-5-5",
+      "region": "india",
+      "year": 2030,
+      "n": 10,
+      "p10": 49.8,
+      "p50": 91,
+      "p90": 108.2,
+      "run_p10_median": 43,
+      "run_p90_median": 205
+    },
+    {
+      "model": "claude-opus-5-5",
+      "region": "india",
+      "year": 2035,
+      "n": 10,
+      "p10": 84.2,
+      "p50": 157.5,
+      "p90": 190.7,
+      "run_p10_median": 57.5,
+      "run_p90_median": 415
+    },
+    {
+      "model": "claude-opus-5-5",
+      "region": "pakistan",
+      "year": 2026,
+      "n": 10,
+      "p10": 2.45,
+      "p50": 3.35,
+      "p90": 5.23,
+      "run_p10_median": 1.35,
+      "run_p90_median": 7.5
+    },
+    {
+      "model": "claude-opus-5-5",
+      "region": "pakistan",
+      "year": 2030,
+      "n": 10,
+      "p10": 4.44,
+      "p50": 5.5,
+      "p90": 9.01,
+      "run_p10_median": 2.15,
+      "run_p90_median": 14.5
+    },
+    {
+      "model": "claude-opus-5-5",
+      "region": "pakistan",
+      "year": 2035,
+      "n": 10,
+      "p10": 7.96,
+      "p50": 9.35,
+      "p90": 15.32,
+      "run_p10_median": 3,
+      "run_p90_median": 32.5
+    }
+  ],
+  "source": {
+    "path": "/dashboard/tables/d-77177b94ed9ca2ec12.json",
+    "title": "Panel summaries by requested model and region",
+    "originalSourceSha256": "24205e16492f060cff726dd8c376f09a65a61171f824840916f7ed4a986ccd9d",
+    "originalProjectionSha256": "94907114c6b74d0c84825478caf32e2025f838058e9f7d71b64ff0c261fbaf13",
+    "publicationProjection": "Scientific values and missingness retained; internal storage routes removed. Source register limited to referenced identities."
+  }
+}

@@ -1,0 +1,5 @@
+# Scientific and publication receipts bind exact bytes across platforms.
+* -text
+# Retained generated SVG path spacing and source CSV CRLF are intentional bytes.
+website/public/index.html -whitespace
+website/public/dashboard/documents/claim-review.csv whitespace=cr-at-eol

@@ -2,6 +2,8 @@
 
 **Muhammad Umar Zafar · 22 October 2026 · Review edition**
 
+**Public dashboard:** [consumption, projections, runs and reviews](https://pakistan-india-protein.vercel.app/dashboard/). The original report remains in the adjacent Report tab. [Website verification and release instructions](https://github.com/Omarzaf/india-pakistan-protein-review/blob/review/WEBSITE.md) describe the separate publication boundary.
+
 This repository contains a proposed India–Pakistan contribution to a unified research report, its methods, and an offline reproduction of the retained numbers. Team agreement and human factual/code verification are pending. It is ready for a bounded review; it is not a final programme submission or an accepted research finding.
 
 ## Read, inspect, reproduce
@@ -10,11 +12,11 @@ This repository contains a proposed India–Pakistan contribution to a unified r
 2. **Inspect:** [measurement crosswalk](methods/measurement-crosswalk.md), [source ledger](provenance/sources.md), [claim review register](provenance/claim-review.csv), and [data dictionary](data/README.md).
 3. **Reproduce:** use Python 3.12 (verified on 3.12.13). The numerical path uses the standard library, packaged aggregate inputs and no network or model calls.
 
-The checker verifies a file-only export and deliberately rejects Git metadata. If you cloned this repository, first export its tracked files into a temporary directory; skip this step when using GitHub's Download ZIP or the supplied review ZIP:
+The checker verifies a file-only export and deliberately rejects Git metadata. If you cloned this repository, first export its tracked files into a temporary directory; skip this step only when using the original supplied 37-file review ZIP:
 
 ```sh
 review_export=$(mktemp -d)
-git archive HEAD | tar -x -C "$review_export"
+node website/tools/export-review.mjs "$review_export"
 cd "$review_export"
 ```
 

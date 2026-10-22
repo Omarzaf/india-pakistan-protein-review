@@ -1,0 +1,8 @@
+/* Shared Report / Dashboard navigation; no changes to the retained edition. */
+.sf-site-nav {display:flex;align-items:center;gap:4px;flex-shrink:0;font:500 11px/1.35 ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.03em;text-transform:none;}
+.sf-site-nav a {display:inline-block;padding:8px 11px;border:1px solid transparent;border-radius:3px;text-decoration:none;color:var(--ink-3,var(--muted,#5a554b));white-space:nowrap;}
+.sf-site-nav a[aria-current="page"] {border-color:var(--rule,var(--line,#d6cfbd));color:var(--ink-1,var(--ink,#1f1c18));background:var(--paper-2,#ece7dc);}
+.sf-site-nav a:hover {color:var(--ink-1,var(--ink,#1f1c18));text-decoration:underline;text-underline-offset:4px;}
+.sf-site-nav a:focus-visible {outline:3px solid var(--accent,var(--focus,#a26321));outline-offset:3px;}
+@media (max-width:650px) { .bar-in {flex-wrap:wrap;gap:8px 12px;}.bar .now{display:none;}.bar .sf-site-nav{margin-left:auto;}.bar .sf-site-nav a{padding:7px 9px;} }
+@media (max-width:360px) { .bar .mark{flex-basis:100%;}.bar .sf-site-nav{margin-left:0;margin-right:auto;} }

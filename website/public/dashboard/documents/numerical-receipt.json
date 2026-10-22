@@ -1,0 +1,15 @@
+{
+  "status": "PASS_computational_reproduction_only",
+  "proxy_rows": 127,
+  "proxy_byte_parity": true,
+  "accepted_panel_runs": 60,
+  "panel_rows": 18,
+  "numeric_panel_checks": 126,
+  "panel_tolerance": 1e-12,
+  "outputs": {
+    "proxy_scenarios.csv": "98c5a19c94ecd891be7d1a44d24a9004268f160c96f6212c00386a3976c0e7b4",
+    "panel_aggregates.json": "111e3e334136b2501b8c8060ae1bba18e1f0adfe69862d89df9c9791f919de8b",
+    "tables.md": "2d8d9bdbfc1293e944e8146ea929cbbb36214b7d302db0db6abf766dedd2fc7a"
+  },
+  "limits": "No raw-source reacquisition, model rerun, human verification or empirical calibration is established."
+}

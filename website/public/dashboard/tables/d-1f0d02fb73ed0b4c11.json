@@ -1,0 +1,322 @@
+{
+  "id": "d-1f0d02fb73ed0b4c11",
+  "columns": [
+    "claim_id",
+    "claim_or_scope",
+    "source_locator",
+    "reviewer",
+    "reviewed_date",
+    "disposition",
+    "correction_or_limit",
+    "release_permission"
+  ],
+  "rows": [
+    {
+      "claim_id": "C01",
+      "claim_or_scope": "GFI/Deloitte estimated India's 2022 domestic market at INR351crore across meat100/dairy250/eggs1; forward categories include fermentation-derived meat.",
+      "source_locator": "GFI India/Deloitte, Smart Protein Economic Analysis, final physical page 4; input gfi_india_domestic_2022_central. https://gfi-india.org/wp-content/uploads/2024/06/GFI-India-economic-analysis.pdf",
+      "reviewer": "",
+      "reviewed_date": "",
+      "disposition": "pending",
+      "correction_or_limit": "Published modeled estimate, not audited retail observation. Original extraction re-read here. Source PDF redistribution rights unresolved; cite/link rather than bundle.",
+      "release_permission": "pending"
+    },
+    {
+      "claim_id": "C02",
+      "claim_or_scope": "Nominal2022 rupees and retail value are assumptions, not documented source properties.",
+      "source_locator": "Same original, source valuation/price basis unstated; methods/proxy.md sections 1 and 3.1.",
+      "reviewer": "",
+      "reviewed_date": "",
+      "disposition": "pending",
+      "correction_or_limit": "Methodological limitation. Do not silently promote an assumption to a source fact.",
+      "release_permission": "pending"
+    },
+    {
+      "claim_id": "C03",
+      "claim_or_scope": "Converted Indian anchor is45.286640mUSD2025.",
+      "source_locator": "data/reference_proxy_scenarios.csv: india_2022_anchor_market_value_value; data/altprotein_proxy_inputs.csv: Indian 2023–25 inflation and 2025 exchange-rate rows.",
+      "reviewer": "",
+      "reviewed_date": "",
+      "disposition": "pending",
+      "correction_or_limit": "Derived conditional conversion. Exact full-precision code, not displayed rounded values, should reproduce it.",
+      "release_permission": "pending"
+    },
+    {
+      "claim_id": "C04",
+      "claim_or_scope": "Six country/year lower/middle/upper scenario rows in chapter.",
+      "source_locator": "data/reference_proxy_scenarios.csv: record_type=scenario, quantity=market_value, country/year/statistic; scripts/build_altprotein_proxy.py.",
+      "reviewer": "",
+      "reviewed_date": "",
+      "disposition": "pending",
+      "correction_or_limit": "Analyst scenarios. No calibrated coverage; no newly simulated values in this drafting pass.",
+      "release_permission": "pending"
+    },
+    {
+      "claim_id": "C05",
+      "claim_or_scope": "India2035 median447.504341 displays448; range165.637239–1141.553050.",
+      "source_locator": "data/reference_proxy_scenarios.csv: india_2035_market_value_p10, p50, p90.",
+      "reviewer": "",
+      "reviewed_date": "",
+      "disposition": "pending",
+      "correction_or_limit": "Conditional spending estimate, millionUSD2025; not measured demand.",
+      "release_permission": "pending"
+    },
+    {
+      "claim_id": "C06",
+      "claim_or_scope": "Pakistan2035 median11.759263 displays11.8; range3.592500–36.099518.",
+      "source_locator": "data/reference_proxy_scenarios.csv: pakistan_2035_market_value_p10, p50, p90.",
+      "reviewer": "",
+      "reviewed_date": "",
+      "disposition": "pending",
+      "correction_or_limit": "Transferred scenario without fitted national sales anchor.",
+      "release_permission": "pending"
+    },
+    {
+      "claim_id": "C07",
+      "claim_or_scope": "US2025 retail benchmark$7.9B, $23.106847 per person; categories include prepared meals.",
+      "source_locator": "GFI/SPINS 2025 retail series, https://gfi.org/marketresearch/; input gfi_us_retail_sales_2025; output united_states_2025_retail_per_capita_value.",
+      "reviewer": "",
+      "reviewed_date": "",
+      "disposition": "pending",
+      "correction_or_limit": "Published retail scan estimate; broad scope. Captured baseline/decline phrases rechecked locally. Full webpage not a release input.",
+      "release_permission": "pending"
+    },
+    {
+      "claim_id": "C08",
+      "claim_or_scope": "India2035 middle spending per person is1.223414% of US2025 benchmark, displayed1.22%; Pakistan about0.17%.",
+      "source_locator": "data/reference_proxy_scenarios.csv: country_2035_per_capita_share_of_us_2025_p50; tests/test_reproduction.py denominator check.",
+      "reviewer": "",
+      "reviewed_date": "",
+      "disposition": "pending",
+      "correction_or_limit": "Ratio of per-person spending, not total-market share or matched2035 forecast. Keep base year and category caveat.",
+      "release_permission": "pending"
+    },
+    {
+      "claim_id": "C09",
+      "claim_or_scope": "Reduced-overlap India2035 middle scenario215.060659m; adjusted upperdrift5.977774%.",
+      "source_locator": "data/reference_proxy_scenarios.csv: india_2035_market_value_drift_overlap_adjusted_p50 and india_2022_adoption_drift_overlap_adjusted_high.",
+      "reviewer": "",
+      "reviewed_date": "",
+      "disposition": "pending",
+      "correction_or_limit": "Sensitivity, not established correction or new forecast.",
+      "release_permission": "pending"
+    },
+    {
+      "claim_id": "C10",
+      "claim_or_scope": "Pakistan2035 without relativeurban/animal multipliers:2.575709/8.318219/25.341349m.",
+      "source_locator": "data/reference_proxy_scenarios.csv: pakistan_2035_market_value_without_urban_animal_p10, p50, p90.",
+      "reviewer": "",
+      "reviewed_date": "",
+      "disposition": "pending",
+      "correction_or_limit": "Conditional paired-draw sensitivity. Median8.3 is an existing retained output even though the original display ledger emphasized endpoints.",
+      "release_permission": "pending"
+    },
+    {
+      "claim_id": "C11",
+      "claim_or_scope": "Bryant et al. Indian sample skewed urban/affluent/educated; intention does not establish paid repeat purchase.",
+      "source_locator": "Bryant et al. (2019), sample description and limitations, https://doi.org/10.3389/fsufs.2019.00011.",
+      "reviewer": "",
+      "reviewed_date": "",
+      "disposition": "pending",
+      "correction_or_limit": "Sample-specific stated intent. No India/Pakistan ranking; no Pakistan sample in this paper. Article states CC BY; confirm attribution/conditions if anything beyond brief paraphrase is distributed.",
+      "release_permission": "pending"
+    },
+    {
+      "claim_id": "C12",
+      "claim_or_scope": "Four behavioural outcomes are distinct; retained sources do not establish national repeated-purchase or displacement rates.",
+      "source_locator": "Measurement distinction and retained-source review; comparators https://doi.org/10.3390/su12114377, https://doi.org/10.17509/ajsee.v2i1.38766, https://hau.repository.guildhe.ac.uk/id/eprint/17927/. Selective corpus, not a national census.",
+      "reviewer": "",
+      "reviewed_date": "",
+      "disposition": "pending",
+      "correction_or_limit": "Corpus-bounded absence/measurement statement. The selective nine-study package has no India finding; do not label it exhaustive or systematic. No new primary inspection of these three comparators in this drafting pass.",
+      "release_permission": "pending"
+    },
+    {
+      "claim_id": "C13",
+      "claim_or_scope": "BioE3 announcement includes smart proteins and biomanufacturing/Bio-AI infrastructure.",
+      "source_locator": "PIB BioE3 Cabinet announcement, 24 August 2024, https://www.pib.gov.in/PressReleasePage.aspx?PRID=2048568&lang=2&reg=3.",
+      "reviewer": "",
+      "reviewed_date": "",
+      "disposition": "pending",
+      "correction_or_limit": "Dated policy intent, not a product approval, grant-disbursement total or observed commercial outcome.",
+      "release_permission": "pending"
+    },
+    {
+      "claim_id": "C14",
+      "claim_or_scope": "Pakistan has halal institutions; general institutional authority does not establish a particular product's food authorization.",
+      "source_locator": "Pakistan Halal Authority Act 2016, establishment/functions; https://pakistancode.gov.pk/pdffiles/administrator1d376dbb967abb1d9ed2dcb3ae978dbc.pdf. Dated institutional text, not an exhaustive current legal opinion.",
+      "reviewer": "",
+      "reviewed_date": "",
+      "disposition": "pending",
+      "correction_or_limit": "Dated institutional text, not current product legal advice. Commencement notifications for s17–20 were not verified; do not assert an exhaustive current legal position. PDF redistribution licence not established.",
+      "release_permission": "pending"
+    },
+    {
+      "claim_id": "C15",
+      "claim_or_scope": "AI mechanism is a research question; retained laboratory/company/policy sources do not identify country-level spending effects.",
+      "source_locator": "Mechanism boundary; https://doi.org/10.1002/elsc.202300005 and https://doi.org/10.1038/s41586-023-06415-8. Fresh full-text verification of the former remains unresolved.",
+      "reviewer": "",
+      "reviewed_date": "",
+      "disposition": "pending",
+      "correction_or_limit": "Mechanism and evidence-boundary statement. Cosenza fresh publisher retrieval failed in prior review; do not claim fresh full-text verification. No technical-gain percentages used. Company evidence is not independent performance validation.",
+      "release_permission": "pending"
+    },
+    {
+      "claim_id": "C16",
+      "claim_or_scope": "GFI India talent study includes 20 industry responses and 19 academic leaders/administrators.",
+      "source_locator": "Girivasan and Tekkatte, A comprehensive analysis of India's talent landscape for the smart protein sector, GFI India, physical PDF page 10. https://gfi-india.org/resource/smart-protein-skills-mapping/ ; website listing dated 19 December 2025, PDF undated.",
+      "reviewer": "",
+      "reviewed_date": "",
+      "disposition": "pending",
+      "correction_or_limit": "Cohorts, not national workforce totals. Original extraction and public PDF rechecked. Official resource index lists 19 December 2025; PDF itself undated. Public URL resolved; full PDF not bundled.",
+      "release_permission": "pending"
+    },
+    {
+      "claim_id": "C17",
+      "claim_or_scope": "Employer-linked India trial and Pakistan ingredient-application feasibility pilot are author proposals.",
+      "source_locator": "Author proposal informed by sampled talent evidence and aggregate vacancy counts; no established returns estimate or Pakistan facility-capacity claim.",
+      "reviewer": "",
+      "reviewed_date": "",
+      "disposition": "pending",
+      "correction_or_limit": "Recommendation, not empirical returns ranking or proven Pakistan facility capacity. Confirm facilities/staff before any equipment decision. Private workbook/directory not bundled.",
+      "release_permission": "pending"
+    },
+    {
+      "claim_id": "C18",
+      "claim_or_scope": "106proxyinputrows,10,000draws,seed20261015; four independent uniform draws reused across country/year.",
+      "source_locator": "data/altprotein_proxy_inputs.csv (106 rows); scripts/build_altprotein_proxy.py; methods/proxy.md sections 3–4.",
+      "reviewer": "",
+      "reviewed_date": "",
+      "disposition": "pending",
+      "correction_or_limit": "Implementation fact. Reproduction and human code review remain separate.",
+      "release_permission": "pending"
+    },
+    {
+      "claim_id": "C19",
+      "claim_or_scope": "Population/GDP extrapolation holds2031growth; urban future continues2015–2025slope.",
+      "source_locator": "Same code; IMF/WDI source IDs and observations in input CSV; methods/proxy.md section 3.2.",
+      "reviewer": "",
+      "reviewed_date": "",
+      "disposition": "pending",
+      "correction_or_limit": "Analyst extrapolation beyond source horizon. URLs are source pointers, not required runtime calls.",
+      "release_permission": "pending"
+    },
+    {
+      "claim_id": "C20",
+      "claim_or_scope": "60accepted results across6cells;79recorded attempts =60accepted+15rejected+3errors+1incomplete.",
+      "source_locator": "data/panel-attempts.csv; 79 recorded entries, four statuses; data/panel_runs.json (60 accepted records). Private receipt hashes retained in the sanitized ledger.",
+      "reviewer": "",
+      "reviewed_date": "",
+      "disposition": "pending",
+      "correction_or_limit": "Record-state counts; not79completedcalls. Private raw paths/commands are absent from public candidateCSV.",
+      "release_permission": "pending"
+    },
+    {
+      "claim_id": "C21",
+      "claim_or_scope": "AcceptedClaude20–21October;Astra19October; acceptedAstra identity metadata absent.",
+      "source_locator": "data/panel-attempts.csv: requested_model, provider_reported_models, UTC dates; methods/panel-supplement.md section 4.",
+      "reviewer": "",
+      "reviewed_date": "",
+      "disposition": "pending",
+      "correction_or_limit": "Requested vs provider-reported identity. No architecture independence inference.",
+      "release_permission": "pending"
+    },
+    {
+      "claim_id": "C22",
+      "claim_or_scope": "Regional panel excludes fermentation/cultivated; proxy scope differs; evidence packets asymmetric.",
+      "source_locator": "methods/measurement-crosswalk.md and methods/panel-supplement.md sections 2–3. Descriptive scope summary; private instruments excluded.",
+      "reviewer": "",
+      "reviewed_date": "",
+      "disposition": "pending",
+      "correction_or_limit": "Executed-scope difference. Public short summaries are candidates; original questionnaires/adaptations remain redistribution-prohibited absent rights decision.",
+      "release_permission": "pending"
+    },
+    {
+      "claim_id": "C23",
+      "claim_or_scope": "Median and spread are empirical percentiles of accepted runP50s, linear interpolation h=(n−1)q.",
+      "source_locator": "scripts/build_panel.py; data/panel_runs.json; data/reference_panel_aggregates.json; analytic quantile unit test.",
+      "reviewer": "",
+      "reviewed_date": "",
+      "disposition": "pending",
+      "correction_or_limit": "Not predictive coverage. Model-run independence in a code label does not establish independent knowledge.",
+      "release_permission": "pending"
+    },
+    {
+      "claim_id": "C24",
+      "claim_or_scope": "20October conditional-year parser amendment; prior rejected receipts retained; unequal rejection patterns.",
+      "source_locator": "methods/panel-supplement.md section 5; data/panel-attempts.csv reason categories. Original parser and receipts retained privately; table reproduction does not execute that parser.",
+      "reviewer": "",
+      "reviewed_date": "",
+      "disposition": "pending",
+      "correction_or_limit": "Disclosed deviation/possible selection effect; no causal estimate of its impact.",
+      "release_permission": "pending"
+    },
+    {
+      "claim_id": "C26",
+      "claim_or_scope": "No shared-definitions agreement record is available; unified contribution is proposed pending team agreement.",
+      "source_locator": "Editorial status stated in README: unified contribution proposed, common definitions not agreed. No empirical source required.",
+      "reviewer": "",
+      "reviewed_date": "",
+      "disposition": "pending",
+      "correction_or_limit": "User/editorial instruction, not external empirical claim. No backdated consensus.",
+      "release_permission": "pending"
+    },
+    {
+      "claim_id": "ALL-TEXT",
+      "claim_or_scope": "All remaining prose, recommendations and edits",
+      "source_locator": "Entire allowlisted package",
+      "reviewer": "",
+      "reviewed_date": "",
+      "disposition": "pending",
+      "correction_or_limit": "Agent checks do not substitute for human review",
+      "release_permission": "pending"
+    },
+    {
+      "claim_id": "ALL-CITATIONS",
+      "claim_or_scope": "All bibliographic entries, links and source versions",
+      "source_locator": "Entire allowlisted package",
+      "reviewer": "",
+      "reviewed_date": "",
+      "disposition": "pending",
+      "correction_or_limit": "Agent checks do not substitute for human review",
+      "release_permission": "pending"
+    },
+    {
+      "claim_id": "ALL-DATA",
+      "claim_or_scope": "Every included numerical input, output and statistic",
+      "source_locator": "Entire allowlisted package",
+      "reviewer": "",
+      "reviewed_date": "",
+      "disposition": "pending",
+      "correction_or_limit": "Agent checks do not substitute for human review",
+      "release_permission": "pending"
+    },
+    {
+      "claim_id": "ALL-CODE",
+      "claim_or_scope": "Read, run and test every included executable script",
+      "source_locator": "Entire allowlisted package",
+      "reviewer": "",
+      "reviewed_date": "",
+      "disposition": "pending",
+      "correction_or_limit": "Agent checks do not substitute for human review",
+      "release_permission": "pending"
+    },
+    {
+      "claim_id": "ALL-RIGHTS",
+      "claim_or_scope": "Author, source, aggregate-data and instrument-derived release rights",
+      "source_locator": "Entire allowlisted package",
+      "reviewer": "",
+      "reviewed_date": "",
+      "disposition": "pending",
+      "correction_or_limit": "Agent checks do not substitute for human review",
+      "release_permission": "pending"
+    }
+  ],
+  "source": {
+    "path": "/dashboard/tables/d-1f0d02fb73ed0b4c11.json",
+    "title": "Current human review register",
+    "originalSourceSha256": "b505d85db4f1f86ef971d3a9b2a4f7278f049059f08e0d64ac3e555298c3ff0a",
+    "originalProjectionSha256": "26126d2f4a5f23044fb1b83e4c9d09f623c543666d2466aac65563f0a395bd68",
+    "publicationProjection": "Scientific values and missingness retained; internal storage routes removed. Source register limited to referenced identities."
+  }
+}

@@ -1,0 +1,3403 @@
+{
+  "schemaVersion": 1,
+  "asOf": "2026-10-22",
+  "snapshotId": "pk-in-20261022-9e52388367c5c881-public",
+  "title": "Pakistan–India demand and consumption",
+  "freshness": "Explicit retained-file snapshot. No live acquisition, model execution or automatic refresh.",
+  "datasets": {
+    "proxy": {
+      "path": "/dashboard/tables/d-9502ed61e9e519cdbe.json",
+      "table": "$",
+      "title": "Retained alternative-protein spending scenarios",
+      "evidenceClass": "Conditional proxy scenario",
+      "period": "2026, 2030, 2035 horizons; 2022 anchor; 2025 price base",
+      "unit": "million USD at 2025 prices for market_value; inspect row-level units for other quantities",
+      "denominator": "Domestic country retail-spending total",
+      "scope": "Plant-based replacements plus fermentation-derived human foods; cultivated meat excluded",
+      "channel": "Intended retail; source retail basis assumed",
+      "caveat": "Analyst-selected parameter distributions are not calibrated forecasts. No fitted Pakistan national sales anchor. Different product scope from the panel.",
+      "edition": "Corrected 22 October review package",
+      "acceptance": "Computational reproduction only; human review pending",
+      "documents": [
+        "chapter",
+        "proxy-method",
+        "measurement",
+        "proxy-ledger",
+        "claim-review",
+        "numerical-receipt"
+      ],
+      "run": "Retained proxy calculation; 10,000 assumption draws",
+      "reportSection": "chapter: six country/year spending-scenario table; proxy-method §4–5",
+      "selectors": {
+        "main": {
+          "record_type": "scenario",
+          "quantity": "market_value",
+          "statistic": [
+            "p10",
+            "p50",
+            "p90"
+          ]
+        },
+        "indiaSensitivity": {
+          "country": "India",
+          "quantity": "market_value_drift_overlap_adjusted"
+        },
+        "pakistanSensitivity": {
+          "country": "Pakistan",
+          "quantity": "market_value_without_urban_animal"
+        }
+      },
+      "id": "d-9502ed61e9e519cdbe",
+      "sha256": "c46b0dff8ac4583b77ce58cb417938a08c67d0a32e2873c4f580d8176c8c05a8",
+      "projectionSha256": "c46b0dff8ac4583b77ce58cb417938a08c67d0a32e2873c4f580d8176c8c05a8",
+      "rowCount": 127,
+      "columns": [
+        {
+          "name": "row_id",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 127
+        },
+        {
+          "name": "record_type",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 4
+        },
+        {
+          "name": "country",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 3
+        },
+        {
+          "name": "year",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 127,
+          "distinct": 6
+        },
+        {
+          "name": "quantity",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 31
+        },
+        {
+          "name": "statistic",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 8
+        },
+        {
+          "name": "value",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 127,
+          "distinct": 125
+        },
+        {
+          "name": "unit",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 12
+        },
+        {
+          "name": "tier",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "source_ids",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 16
+        },
+        {
+          "name": "method",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 2
+        },
+        {
+          "name": "notes",
+          "type": "text",
+          "missing": 12,
+          "numericValues": 0,
+          "distinct": 32
+        }
+      ],
+      "sourceEdition": "Corrected 22 October review package",
+      "reviewState": "Human factual/code and scholarly review pending; computational checks are separate",
+      "originalSourceSha256": "98c5a19c94ecd891be7d1a44d24a9004268f160c96f6212c00386a3976c0e7b4",
+      "originalProjectionSha256": "7102f4667fd6edaa9aa852f5566d4953f8aa174d23427b75577d3cf6b168c66b",
+      "publicationProjection": "Scientific values and missingness retained; internal storage routes removed. Source register limited to referenced identities."
+    },
+    "proxyInputs": {
+      "path": "/dashboard/tables/d-0e76106c1a8a4ad182.json",
+      "table": "$",
+      "title": "Proxy aggregate inputs and assumptions",
+      "evidenceClass": "Aggregate inputs with source lineage",
+      "period": "Source-specific 2022–2035; inspect row year",
+      "unit": "Mixed; each input retains its own unit",
+      "denominator": "Input-specific; do not pool",
+      "scope": "India/Pakistan and historical US comparator",
+      "caveat": "Source-backed macro inputs, external estimates and analyst assumptions have different evidence status.",
+      "documents": [
+        "proxy-method",
+        "proxy-ledger",
+        "source-map",
+        "measurement"
+      ],
+      "reportSection": "proxy-method §2–3",
+      "id": "d-0e76106c1a8a4ad182",
+      "sha256": "3e7743c4e584b04dcfd6dea49647bbedbf6925ea77efab1b6e95df71f6f6c55a",
+      "projectionSha256": "3e7743c4e584b04dcfd6dea49647bbedbf6925ea77efab1b6e95df71f6f6c55a",
+      "rowCount": 106,
+      "columns": [
+        {
+          "name": "input_id",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 106
+        },
+        {
+          "name": "country",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 3
+        },
+        {
+          "name": "year",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 106,
+          "distinct": 17
+        },
+        {
+          "name": "quantity",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 14
+        },
+        {
+          "name": "value",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 106,
+          "distinct": 100
+        },
+        {
+          "name": "unit",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 12
+        },
+        {
+          "name": "source_id",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 9
+        },
+        {
+          "name": "tier",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 3
+        },
+        {
+          "name": "raw_sha256",
+          "type": "text",
+          "missing": 14,
+          "numericValues": 0,
+          "distinct": 11
+        },
+        {
+          "name": "raw_locator",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 103
+        },
+        {
+          "name": "notes",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 10
+        }
+      ],
+      "sourceEdition": "Retained 22 October 2026 snapshot",
+      "reviewState": "Human factual/code and scholarly review pending; computational checks are separate",
+      "originalSourceSha256": "93ae9dddbfa59c1930b1deaba3a31a3cc273fa8a43077f9dcf735c0d9e64aa37",
+      "originalProjectionSha256": "466c2217044383223659164636a9b080e2d213824efc55f4b7a7736f03c7e0f3",
+      "publicationProjection": "Scientific values and missingness retained; internal storage routes removed. Source register limited to referenced identities."
+    },
+    "panelRuns": {
+      "path": "/dashboard/tables/d-06d8c0ae7e1ea78434.json",
+      "table": "runs",
+      "title": "Accepted forecast-elicitation responses",
+      "evidenceClass": "Model-elicited response",
+      "period": "Retained 19–21 October attempts; horizons 2026, 2030, 2035",
+      "unit": "million USD, 2025 prices",
+      "denominator": "Headline domestic retail spending, separately by requested model and region",
+      "scope": "Regional plant-based replacements; US question has broader basket",
+      "caveat": "60 accepted responses: 40 India/Pakistan and 20 US context. Repeated responses are not independent human forecasters. Requested identity is not provider identity.",
+      "documents": [
+        "panel-method",
+        "measurement",
+        "claim-review",
+        "numerical-receipt"
+      ],
+      "runKeys": [
+        "model",
+        "region",
+        "slot"
+      ],
+      "reportSection": "panel-method §6. Aggregation and retained results",
+      "id": "d-06d8c0ae7e1ea78434",
+      "sha256": "77532d6e9bb939686ddaed76ada3b1d0a82fda3e886cc442549a3274eaf8aad4",
+      "projectionSha256": "77532d6e9bb939686ddaed76ada3b1d0a82fda3e886cc442549a3274eaf8aad4",
+      "rowCount": 60,
+      "columns": [
+        {
+          "name": "model",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 2
+        },
+        {
+          "name": "region",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 3
+        },
+        {
+          "name": "slot",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 60,
+          "distinct": 10
+        },
+        {
+          "name": "n_sources",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 60,
+          "distinct": 20
+        },
+        {
+          "name": "h2026",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 49
+        },
+        {
+          "name": "h2030",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 58
+        },
+        {
+          "name": "h2035",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 57
+        }
+      ],
+      "sourceEdition": "Retained 22 October 2026 snapshot",
+      "reviewState": "Human factual/code and scholarly review pending; computational checks are separate",
+      "originalSourceSha256": "5ecbd61f6621acb580ddb009e117c55eb3be7a6e6af611b5ac92bb2adb998aee",
+      "originalProjectionSha256": "d3ba4a2939afb4eba5986ffccd9763a3432dd057e6fa62dc65ee014d38dddc54",
+      "publicationProjection": "Scientific values and missingness retained; internal storage routes removed. Source register limited to referenced identities."
+    },
+    "panelAggregates": {
+      "path": "/dashboard/tables/d-77177b94ed9ca2ec12.json",
+      "table": "$",
+      "title": "Panel summaries by requested model and region",
+      "evidenceClass": "Descriptive elicitation summary",
+      "period": "2026, 2030, 2035 horizons",
+      "unit": "million USD, 2025 prices",
+      "denominator": "Ten accepted run medians per requested model/region/year",
+      "scope": "Regional plant-based retail; fermentation and cultivated headline excluded",
+      "caveat": "p10/p50/p90 describe the spread of accepted run medians, not predictive uncertainty. Within-response bounds are separate columns. No cross-model ensemble.",
+      "documents": [
+        "panel-method",
+        "measurement",
+        "claim-review",
+        "numerical-receipt"
+      ],
+      "reportSection": "panel-method §6. Aggregation and retained results",
+      "id": "d-77177b94ed9ca2ec12",
+      "sha256": "553bbdb36111980b30cb0d4bf83689757789dc92dd619e90ab3cf1a9132fd651",
+      "projectionSha256": "553bbdb36111980b30cb0d4bf83689757789dc92dd619e90ab3cf1a9132fd651",
+      "rowCount": 18,
+      "columns": [
+        {
+          "name": "model",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 2
+        },
+        {
+          "name": "region",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 3
+        },
+        {
+          "name": "year",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 18,
+          "distinct": 3
+        },
+        {
+          "name": "n",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 18,
+          "distinct": 1
+        },
+        {
+          "name": "p10",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 18,
+          "distinct": 18
+        },
+        {
+          "name": "p50",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 18,
+          "distinct": 17
+        },
+        {
+          "name": "p90",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 18,
+          "distinct": 18
+        },
+        {
+          "name": "run_p10_median",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 18,
+          "distinct": 18
+        },
+        {
+          "name": "run_p90_median",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 18,
+          "distinct": 18
+        }
+      ],
+      "sourceEdition": "Retained 22 October 2026 snapshot",
+      "reviewState": "Human factual/code and scholarly review pending; computational checks are separate",
+      "originalSourceSha256": "24205e16492f060cff726dd8c376f09a65a61171f824840916f7ed4a986ccd9d",
+      "originalProjectionSha256": "94907114c6b74d0c84825478caf32e2025f838058e9f7d71b64ff0c261fbaf13",
+      "publicationProjection": "Scientific values and missingness retained; internal storage routes removed. Source register limited to referenced identities."
+    },
+    "panelAttempts": {
+      "path": "/dashboard/tables/d-3fda9d53ffc67b21ca.json",
+      "table": "$",
+      "title": "All retained panel attempts",
+      "evidenceClass": "Sanitized execution record",
+      "period": "October 2026; source UTC timestamps retained",
+      "unit": "Recorded attempts",
+      "denominator": "All 79 recorded attempts",
+      "scope": "Requested Astra and Claude; India, Pakistan and US",
+      "caveat": "Retries reuse accepted slots. The one RUNNING record is historical, not evidence of a live job. Parsed/raw receipt hashes refer to private retained originals, not served transcripts.",
+      "documents": [
+        "panel-method",
+        "numerical-receipt"
+      ],
+      "runKeys": [
+        "original row index",
+        "model",
+        "region",
+        "slot",
+        "receipt_sha256"
+      ],
+      "reportSection": "panel-method §4–5. Execution and attempts",
+      "id": "d-3fda9d53ffc67b21ca",
+      "sha256": "77badf54c2c5c5cd3a36a571f0d678a6ac5835ac8c9430ab87385cee563b5bfe",
+      "projectionSha256": "77badf54c2c5c5cd3a36a571f0d678a6ac5835ac8c9430ab87385cee563b5bfe",
+      "rowCount": 79,
+      "columns": [
+        {
+          "name": "model",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 2
+        },
+        {
+          "name": "region",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 3
+        },
+        {
+          "name": "slot",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 79,
+          "distinct": 10
+        },
+        {
+          "name": "status",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 4
+        },
+        {
+          "name": "requested_model",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 2
+        },
+        {
+          "name": "provider_reported_models",
+          "type": "text",
+          "missing": 34,
+          "numericValues": 0,
+          "distinct": 2
+        },
+        {
+          "name": "started_at_utc",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 79
+        },
+        {
+          "name": "ended_at_utc",
+          "type": "text",
+          "missing": 1,
+          "numericValues": 0,
+          "distinct": 78
+        },
+        {
+          "name": "reason_category",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 6
+        },
+        {
+          "name": "receipt_sha256",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 79
+        },
+        {
+          "name": "parsed_sha256",
+          "type": "text",
+          "missing": 6,
+          "numericValues": 0,
+          "distinct": 73
+        }
+      ],
+      "sourceEdition": "Retained 22 October 2026 snapshot",
+      "reviewState": "Human factual/code and scholarly review pending; computational checks are separate",
+      "originalSourceSha256": "a83b85f34f2590914c092e2dd6bd7ccb19f9abeb293b4ec276f8e0d735f26228",
+      "originalProjectionSha256": "a3001ae1f0cfc9755c373646a138d6c9bbe1adfbd5c8ac9e71284b2882ff8ecd",
+      "publicationProjection": "Scientific values and missingness retained; internal storage routes removed. Source register limited to referenced identities."
+    },
+    "intake": {
+      "evidenceClass": "Published source extraction",
+      "channel": "Household food reporting; not alternative-protein purchases",
+      "acceptance": "Human verification pending",
+      "edition": "13 October supervisor snapshot; retained 22 October",
+      "frozen": true,
+      "documents": [
+        "source-guide",
+        "dataset-definitions",
+        "consumption-report",
+        "consumption-review",
+        "baseline-report",
+        "baseline-gate"
+      ],
+      "run": "Published source extraction; no model run",
+      "reviewState": "Source-bound interpretation; human scholarly acceptance pending",
+      "path": "/dashboard/tables/d-a171d4f71a7174c180.json",
+      "table": "$",
+      "title": "India published household-derived protein intake",
+      "period": "HCES 2023–24; fieldwork August 2023–July 2024; year label 2024",
+      "unit": "g/person/day",
+      "denominator": "Per-person household-derived mean, MPCE population fractiles formed within rural/urban sectors",
+      "scope": "India; 12 expenditure fractiles plus overlapping sector total for each residence",
+      "caveat": "Group means do not estimate individual habitual intake or deficiency prevalence. All-India sector totals overlap the fractiles and must not be summed with them.",
+      "selectors": {
+        "totals": {
+          "fractile": "All-India"
+        },
+        "residence": [
+          "rural",
+          "urban"
+        ]
+      },
+      "reportSection": "consumption-report: The Indian benchmark is a scenario and the Pakistan total is missing",
+      "id": "d-a171d4f71a7174c180",
+      "sha256": "2d045edadfb167e77013ea3d09444a51bc93a0e85b25b072a2c7ad5380950660",
+      "projectionSha256": "2d045edadfb167e77013ea3d09444a51bc93a0e85b25b072a2c7ad5380950660",
+      "rowCount": 26,
+      "columns": [
+        {
+          "name": "country",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "region",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "group",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 26
+        },
+        {
+          "name": "year",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 26,
+          "distinct": 1
+        },
+        {
+          "name": "source_id",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "residence",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 2
+        },
+        {
+          "name": "fractile",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 13
+        },
+        {
+          "name": "period",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "sample_size",
+          "type": "text",
+          "missing": 26,
+          "numericValues": 0,
+          "distinct": 0
+        },
+        {
+          "name": "sample_basis",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "survey_sample_size",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 26,
+          "distinct": 2
+        },
+        {
+          "name": "survey_sample_basis",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "sample_source_id",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "denominator",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "fieldwork_start",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "fieldwork_end",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "raw_locator",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "method",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "notes",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "intake_g",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 26,
+          "distinct": 25
+        },
+        {
+          "name": "unit",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "intake_basis",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "tier",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "source_tier",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        }
+      ],
+      "sourceEdition": "13 October supervisor snapshot; retained 22 October",
+      "originalSourceSha256": "d1dfea6f6a667471c92da167f8e4be81b8129bc5215ada7c1725690b2aff06ca",
+      "originalProjectionSha256": "dd17e149043758a812363916ba7f00bf1da84bbf864e4bcd608d7937b7dd94e7",
+      "publicationProjection": "Scientific values and missingness retained; internal storage routes removed. Source register limited to referenced identities."
+    },
+    "consumerUnit": {
+      "evidenceClass": "Published source extraction",
+      "channel": "Household food reporting; not alternative-protein purchases",
+      "acceptance": "Human verification pending",
+      "edition": "13 October supervisor snapshot; retained 22 October",
+      "frozen": true,
+      "documents": [
+        "source-guide",
+        "dataset-definitions",
+        "consumption-report",
+        "consumption-review",
+        "baseline-report",
+        "baseline-gate"
+      ],
+      "run": "Published source extraction; no model run",
+      "reviewState": "Source-bound interpretation; human scholarly acceptance pending",
+      "path": "/dashboard/tables/d-6c0f48be64167d913b.json",
+      "table": "$",
+      "title": "India published protein per consumer unit",
+      "period": "HCES 2023–24",
+      "unit": "g/consumer_unit/day",
+      "denominator": "Energy-equivalent consumer unit, not a protein requirement scale",
+      "scope": "India; the same 26 rural/urban expenditure-group cells",
+      "caveat": "Different denominator from per-person intake. Energy equivalence does not establish protein adequacy or deficiency prevalence.",
+      "reportSection": "consumption-report: The Indian benchmark is a scenario and the Pakistan total is missing",
+      "id": "d-6c0f48be64167d913b",
+      "sha256": "66541aa00b6befc367d028f72a224ecd79001622e96c349937c5be1c291cee61",
+      "projectionSha256": "66541aa00b6befc367d028f72a224ecd79001622e96c349937c5be1c291cee61",
+      "rowCount": 26,
+      "columns": [
+        {
+          "name": "country",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "region",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "group",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 26
+        },
+        {
+          "name": "year",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 26,
+          "distinct": 1
+        },
+        {
+          "name": "source_id",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "residence",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 2
+        },
+        {
+          "name": "fractile",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 13
+        },
+        {
+          "name": "period",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "sample_size",
+          "type": "text",
+          "missing": 26,
+          "numericValues": 0,
+          "distinct": 0
+        },
+        {
+          "name": "sample_basis",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "survey_sample_size",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 26,
+          "distinct": 2
+        },
+        {
+          "name": "survey_sample_basis",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "sample_source_id",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "denominator",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "fieldwork_start",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "fieldwork_end",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "raw_locator",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "method",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "notes",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "intake_g",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 26,
+          "distinct": 26
+        },
+        {
+          "name": "unit",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "intake_basis",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "tier",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "denominator_locator",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "source_tier",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        }
+      ],
+      "sourceEdition": "13 October supervisor snapshot; retained 22 October",
+      "originalSourceSha256": "36ee003539958111d8dc2fc67735bd3226e50b1509c0b4803e70c1bccc94848a",
+      "originalProjectionSha256": "7423ecb77261006aaea3def48a0be706d2ec5b4e7c9c1dd42c9904760fc0032c",
+      "publicationProjection": "Scientific values and missingness retained; internal storage routes removed. Source register limited to referenced identities."
+    },
+    "pakistanIntake": {
+      "evidenceClass": "Explicit missing outcome",
+      "channel": "Household food reporting; not alternative-protein purchases",
+      "acceptance": "Human verification pending",
+      "edition": "13 October supervisor snapshot; retained 22 October",
+      "frozen": true,
+      "documents": [
+        "source-guide",
+        "dataset-definitions",
+        "consumption-report",
+        "consumption-review",
+        "baseline-report",
+        "baseline-gate"
+      ],
+      "run": "Published source extraction; no model run",
+      "reviewState": "Source-bound interpretation; human scholarly acceptance pending",
+      "path": "/dashboard/tables/d-dfd45acbb6bac45a9e.json",
+      "table": "$",
+      "title": "Pakistan complete protein intake: unavailable",
+      "period": "HIES 2024–25; fieldwork end month unresolved",
+      "unit": "g/person/day unavailable",
+      "denominator": "No compatible complete-diet protein denominator established",
+      "scope": "Pakistan national total and five expenditure quintiles",
+      "caveat": "All six rows retain missing complete-diet totals and false headline/adequacy eligibility. Physical subtotals cannot fill this missing outcome.",
+      "reportSection": "consumption-report: The Indian benchmark is a scenario and the Pakistan total is missing",
+      "id": "d-dfd45acbb6bac45a9e",
+      "sha256": "0edebfc71aae7c976ea55d59e81844f939355bb51b02ac0a410aa8acabdd96e3",
+      "projectionSha256": "0edebfc71aae7c976ea55d59e81844f939355bb51b02ac0a410aa8acabdd96e3",
+      "rowCount": 6,
+      "columns": [
+        {
+          "name": "country",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "region",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "group",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 6
+        },
+        {
+          "name": "group_id",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 6
+        },
+        {
+          "name": "year",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 6,
+          "distinct": 1
+        },
+        {
+          "name": "year_basis",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "period",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "residence",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "quintile",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 6
+        },
+        {
+          "name": "reporting_level",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 2
+        },
+        {
+          "name": "sample_size",
+          "type": "text",
+          "missing": 6,
+          "numericValues": 0,
+          "distinct": 0
+        },
+        {
+          "name": "sample_basis",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "survey_sample_size",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 6,
+          "distinct": 6
+        },
+        {
+          "name": "survey_sample_basis",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "sample_source_id",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "sample_locator",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "denominator",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "fieldwork_start",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "fieldwork_end",
+          "type": "text",
+          "missing": 6,
+          "numericValues": 0,
+          "distinct": 0
+        },
+        {
+          "name": "fieldwork_note",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "sample_size_unit",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "source_id",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "source_tier",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "source_grade_basis",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "tier",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "raw_sha256",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "raw_locator",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 6
+        },
+        {
+          "name": "group_definition",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "grouping_basis",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "headline_eligible",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "official_estimate",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "official_pbs_estimate",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "measured_individual_intake",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "whole_diet_total_eligible",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "adequacy_eligible",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "residence_ranking_eligible",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "denominator_compatible",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "calculation_receipt_sha256",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "limitations",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "intake_g",
+          "type": "text",
+          "missing": 6,
+          "numericValues": 0,
+          "distinct": 0
+        },
+        {
+          "name": "total_g_per_member_day",
+          "type": "text",
+          "missing": 6,
+          "numericValues": 0,
+          "distinct": 0
+        },
+        {
+          "name": "whole_diet_protein_g_person_day",
+          "type": "text",
+          "missing": 6,
+          "numericValues": 0,
+          "distinct": 0
+        },
+        {
+          "name": "whole_diet_total",
+          "type": "text",
+          "missing": 6,
+          "numericValues": 0,
+          "distinct": 0
+        },
+        {
+          "name": "source_converted_g",
+          "type": "text",
+          "missing": 6,
+          "numericValues": 0,
+          "distinct": 0
+        },
+        {
+          "name": "source_g_per_member_day",
+          "type": "text",
+          "missing": 6,
+          "numericValues": 0,
+          "distinct": 0
+        },
+        {
+          "name": "imputed_at_home_g",
+          "type": "text",
+          "missing": 6,
+          "numericValues": 0,
+          "distinct": 0
+        },
+        {
+          "name": "imputed_prepared_g",
+          "type": "text",
+          "missing": 6,
+          "numericValues": 0,
+          "distinct": 0
+        },
+        {
+          "name": "imputed_share",
+          "type": "text",
+          "missing": 6,
+          "numericValues": 0,
+          "distinct": 0
+        },
+        {
+          "name": "gap_g",
+          "type": "text",
+          "missing": 6,
+          "numericValues": 0,
+          "distinct": 0
+        },
+        {
+          "name": "adequacy_ratio",
+          "type": "text",
+          "missing": 6,
+          "numericValues": 0,
+          "distinct": 0
+        },
+        {
+          "name": "population_deficiency_prevalence",
+          "type": "text",
+          "missing": 6,
+          "numericValues": 0,
+          "distinct": 0
+        },
+        {
+          "name": "population_affected",
+          "type": "text",
+          "missing": 6,
+          "numericValues": 0,
+          "distinct": 0
+        },
+        {
+          "name": "unit",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "metric",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "estimate_status",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "estimate_type",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "estimate_author",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "intake_basis",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "evidence_status",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "below_requirement",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "source_ids",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "method",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "calculation_sha256",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        }
+      ],
+      "sourceEdition": "13 October supervisor snapshot; retained 22 October",
+      "originalSourceSha256": "5e2ef03e1eb6a9e1ebcd7586c6f7ea385248bd8cf98e81627a41b7ec955eb0a6",
+      "originalProjectionSha256": "7b9a0d2028f233a65b66233ea48e8e8be43515aac03038c321b28cd8f720e1f5",
+      "publicationProjection": "Scientific values and missingness retained; internal storage routes removed. Source register limited to referenced identities."
+    },
+    "composition": {
+      "evidenceClass": "Published source extraction",
+      "channel": "Household food reporting; not alternative-protein purchases",
+      "acceptance": "Human verification pending",
+      "edition": "13 October supervisor snapshot; retained 22 October",
+      "frozen": true,
+      "documents": [
+        "source-guide",
+        "dataset-definitions",
+        "consumption-report",
+        "consumption-review",
+        "baseline-report",
+        "baseline-gate"
+      ],
+      "run": "Published source extraction; no model run",
+      "reviewState": "Source-bound interpretation; human scholarly acceptance pending",
+      "path": "/dashboard/tables/d-8cb538eced29ce7828.json",
+      "table": "$",
+      "title": "Food composition and reported quantities",
+      "period": "India HCES 2023–24; Pakistan HIES 2024–25",
+      "unit": "India: percent of protein; Pakistan: kg, g, litre or count per person/month",
+      "denominator": "India within-residence MPCE groups; Pakistan national consumption-expenditure quintiles",
+      "scope": "130 India protein-share cells and 684 Pakistan physical-quantity cells",
+      "caveat": "Country panels have different measures. Do not stack physical quantities into protein shares or combine different units. Pakistan quintiles are national, not within-residence.",
+      "selectors": {
+        "india": {
+          "country": "India",
+          "metric": "share_of_protein_intake"
+        },
+        "pakistan": {
+          "country": "Pakistan",
+          "metric": "monthly_per_capita_consumption_quantity"
+        }
+      },
+      "reportSection": "consumption-report: Food budgets and protein shares show different dietary structures",
+      "id": "d-8cb538eced29ce7828",
+      "sha256": "36dc08f11be375961ebeddaed5798dbd2385713029878e217650490da1a3c26b",
+      "projectionSha256": "36dc08f11be375961ebeddaed5798dbd2385713029878e217650490da1a3c26b",
+      "rowCount": 814,
+      "columns": [
+        {
+          "name": "country",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 2
+        },
+        {
+          "name": "region",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 2
+        },
+        {
+          "name": "group",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 44
+        },
+        {
+          "name": "year",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 814,
+          "distinct": 2
+        },
+        {
+          "name": "food_group",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 43
+        },
+        {
+          "name": "metric",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 2
+        },
+        {
+          "name": "value",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 814,
+          "distinct": "200+"
+        },
+        {
+          "name": "unit",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 5
+        },
+        {
+          "name": "source_id",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 2
+        },
+        {
+          "name": "denominator",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 2
+        },
+        {
+          "name": "display_value",
+          "type": "number",
+          "missing": 130,
+          "numericValues": 684,
+          "distinct": "200+"
+        },
+        {
+          "name": "fieldwork_end",
+          "type": "text",
+          "missing": 684,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "fieldwork_note",
+          "type": "text",
+          "missing": 130,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "fieldwork_start",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 2
+        },
+        {
+          "name": "food_group_basis",
+          "type": "text",
+          "missing": 130,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "fractile",
+          "type": "text",
+          "missing": 684,
+          "numericValues": 0,
+          "distinct": 13
+        },
+        {
+          "name": "mapping_gap",
+          "type": "text",
+          "missing": 130,
+          "numericValues": 0,
+          "distinct": 10
+        },
+        {
+          "name": "method",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 2
+        },
+        {
+          "name": "native_unit",
+          "type": "text",
+          "missing": 130,
+          "numericValues": 0,
+          "distinct": 4
+        },
+        {
+          "name": "notes",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 2
+        },
+        {
+          "name": "nutrient_conversion_status",
+          "type": "text",
+          "missing": 130,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "period",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 2
+        },
+        {
+          "name": "quintile",
+          "type": "text",
+          "missing": 130,
+          "numericValues": 0,
+          "distinct": 6
+        },
+        {
+          "name": "raw_locator",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": "200+"
+        },
+        {
+          "name": "raw_sha256",
+          "type": "text",
+          "missing": 130,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "residence",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 3
+        },
+        {
+          "name": "sample_basis",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 2
+        },
+        {
+          "name": "sample_locator",
+          "type": "text",
+          "missing": 130,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "sample_size",
+          "type": "text",
+          "missing": 814,
+          "numericValues": 0,
+          "distinct": 0
+        },
+        {
+          "name": "sample_source_id",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 2
+        },
+        {
+          "name": "source_cell_format",
+          "type": "text",
+          "missing": 130,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "source_food_item",
+          "type": "text",
+          "missing": 130,
+          "numericValues": 0,
+          "distinct": 40
+        },
+        {
+          "name": "source_footnote",
+          "type": "text",
+          "missing": 796,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "survey_sample_basis",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 2
+        },
+        {
+          "name": "survey_sample_size",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 814,
+          "distinct": 20
+        },
+        {
+          "name": "tier",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "source_tier",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        }
+      ],
+      "sourceEdition": "13 October supervisor snapshot; retained 22 October",
+      "originalSourceSha256": "e25b26772f609292e701b437aede4ccfc60a61efb6fc626747597c0a76fa3f03",
+      "originalProjectionSha256": "da06949668e0b1402253ad6daeccc791411e531bd00dcc02c14434ca4fd84c71",
+      "publicationProjection": "Scientific values and missingness retained; internal storage routes removed. Source register limited to referenced identities."
+    },
+    "regional": {
+      "evidenceClass": "Published source extraction",
+      "channel": "Household food reporting; not alternative-protein purchases",
+      "acceptance": "Human verification pending",
+      "edition": "13 October supervisor snapshot; retained 22 October",
+      "frozen": true,
+      "documents": [
+        "source-guide",
+        "dataset-definitions",
+        "consumption-report",
+        "consumption-review",
+        "baseline-report",
+        "baseline-gate"
+      ],
+      "run": "Published source extraction; no model run",
+      "reviewState": "Source-bound interpretation; human scholarly acceptance pending",
+      "path": "/dashboard/tables/d-48737a333af766bd36.json",
+      "table": "$",
+      "title": "Regional food quantities and frequency",
+      "period": "Source-specific: India NFHS 2019–21/HCES 2023–24; Pakistan NNS 2018–19/HIES 2018–19 and 2024–25",
+      "unit": "Source-specific; quantity, percent and production kept separate",
+      "denominator": "Source-specific age, sex, residence, geography and recall period",
+      "scope": "India states/UTs and Pakistan provinces/source-defined domains",
+      "caveat": "NFHS weekly frequency and NNS previous-day frequency are different outcomes. Production and livestock rows are context, not consumption. Incompatible historical boundaries remain explicit.",
+      "reportSection": "consumption-report: Regional food frequency and household quantities answer different questions",
+      "id": "d-48737a333af766bd36",
+      "sha256": "9149d370cc1e920aeb21d0f7f00be4c277507acf3755a8012925b4e59ce15363",
+      "projectionSha256": "9149d370cc1e920aeb21d0f7f00be4c277507acf3755a8012925b4e59ce15363",
+      "rowCount": 2393,
+      "columns": [
+        {
+          "name": "country",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 2
+        },
+        {
+          "name": "region",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 45
+        },
+        {
+          "name": "region_type",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 8
+        },
+        {
+          "name": "year",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 2393,
+          "distinct": 7
+        },
+        {
+          "name": "year_semantics",
+          "type": "text",
+          "missing": 1889,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "indicator",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 38
+        },
+        {
+          "name": "value",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 2393,
+          "distinct": "200+"
+        },
+        {
+          "name": "unit",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 8
+        },
+        {
+          "name": "source_id",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 7
+        },
+        {
+          "name": "sex",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 3
+        },
+        {
+          "name": "age_group",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 2
+        },
+        {
+          "name": "residence",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 3
+        },
+        {
+          "name": "quintile",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 6
+        },
+        {
+          "name": "period",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 8
+        },
+        {
+          "name": "sample_size",
+          "type": "number",
+          "missing": 2053,
+          "numericValues": 340,
+          "distinct": 90
+        },
+        {
+          "name": "sample_basis",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 9
+        },
+        {
+          "name": "survey_sample_size",
+          "type": "number",
+          "missing": 989,
+          "numericValues": 1404,
+          "distinct": "200+"
+        },
+        {
+          "name": "survey_sample_basis",
+          "type": "text",
+          "missing": 485,
+          "numericValues": 0,
+          "distinct": 6
+        },
+        {
+          "name": "denominator",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 9
+        },
+        {
+          "name": "fieldwork_start",
+          "type": "text",
+          "missing": 210,
+          "numericValues": 0,
+          "distinct": 13
+        },
+        {
+          "name": "fieldwork_end",
+          "type": "text",
+          "missing": 660,
+          "numericValues": 0,
+          "distinct": 13
+        },
+        {
+          "name": "fieldwork_note",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 7
+        },
+        {
+          "name": "method",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 7
+        },
+        {
+          "name": "raw_locator",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": "200+"
+        },
+        {
+          "name": "sample_source_id",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 36
+        },
+        {
+          "name": "sample_locator",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": "200+"
+        },
+        {
+          "name": "display_value",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 2393,
+          "distinct": "200+"
+        },
+        {
+          "name": "notes",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 9
+        },
+        {
+          "name": "species",
+          "type": "text",
+          "missing": 1889,
+          "numericValues": 0,
+          "distinct": 7
+        },
+        {
+          "name": "source_region_label",
+          "type": "text",
+          "missing": 522,
+          "numericValues": 0,
+          "distinct": 66
+        },
+        {
+          "name": "source_year",
+          "type": "number",
+          "missing": 522,
+          "numericValues": 1871,
+          "distinct": 3
+        },
+        {
+          "name": "source_vintage",
+          "type": "text",
+          "missing": 1889,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "raw_sha256",
+          "type": "text",
+          "missing": 1457,
+          "numericValues": 0,
+          "distinct": 2
+        },
+        {
+          "name": "missingness",
+          "type": "text",
+          "missing": 1457,
+          "numericValues": 0,
+          "distinct": 2
+        },
+        {
+          "name": "staging_status",
+          "type": "text",
+          "missing": 1457,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "boundary_shape_id",
+          "type": "text",
+          "missing": 347,
+          "numericValues": 0,
+          "distinct": 43
+        },
+        {
+          "name": "boundary_source_id",
+          "type": "text",
+          "missing": 347,
+          "numericValues": 0,
+          "distinct": 2
+        },
+        {
+          "name": "boundary_match_status",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 4
+        },
+        {
+          "name": "food_group",
+          "type": "text",
+          "missing": 2033,
+          "numericValues": 0,
+          "distinct": 5
+        },
+        {
+          "name": "daily_component",
+          "type": "number",
+          "missing": 2335,
+          "numericValues": 58,
+          "distinct": 46
+        },
+        {
+          "name": "weekly_component",
+          "type": "number",
+          "missing": 2335,
+          "numericValues": 58,
+          "distinct": 56
+        },
+        {
+          "name": "boundary_match_note",
+          "type": "text",
+          "missing": 2289,
+          "numericValues": 0,
+          "distinct": 2
+        },
+        {
+          "name": "estimate_type",
+          "type": "text",
+          "missing": 1458,
+          "numericValues": 0,
+          "distinct": 3
+        },
+        {
+          "name": "tier",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "source_tier",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        }
+      ],
+      "sourceEdition": "13 October supervisor snapshot; retained 22 October",
+      "originalSourceSha256": "aa47fe7102173de1a58bc08157c7e0b482c0713302befb6605115787da63257c",
+      "originalProjectionSha256": "e25e6edd6c8ea148b0af010a895a4556b9579da6648fd07ff6437cc093331d6d",
+      "publicationProjection": "Scientific values and missingness retained; internal storage routes removed. Source register limited to referenced identities."
+    },
+    "supply": {
+      "evidenceClass": "National supply accounts and external projections",
+      "channel": "Household food reporting; not alternative-protein purchases",
+      "acceptance": "Human verification pending",
+      "edition": "13 October supervisor snapshot; retained 22 October",
+      "frozen": true,
+      "documents": [
+        "source-guide",
+        "dataset-definitions",
+        "consumption-report",
+        "consumption-review",
+        "baseline-report",
+        "baseline-gate"
+      ],
+      "run": "Published source extraction; no model run",
+      "reviewState": "Source-bound interpretation; human scholarly acceptance pending",
+      "path": "/dashboard/tables/d-3f1eb99cec2d57a134.json",
+      "table": "$",
+      "title": "Conventional food availability and outlook",
+      "period": "FAOSTAT 2010–23; OECD–FAO history/base 2010–24 and projection 2025–34; other vintages separate",
+      "unit": "Row-specific kg/capita/year, g/capita/day or physical totals",
+      "denominator": "Population availability or national total, depending on metric",
+      "scope": "Conventional food categories; India and Pakistan",
+      "caveat": "Supply/availability is not measured individual intake or alternative-protein demand. Same source, metric, item and unit required for a bilateral comparison.",
+      "reportSection": "consumption-report: Pakistan has more poultry availability while India has more pulses",
+      "selectors": {
+        "faostat": {
+          "source_id": "fao_fbs_2025_10_28",
+          "metric": "food_supply_quantity"
+        },
+        "outlook": {
+          "source_id": "oecd_fao_outlook_2025_2034",
+          "metric": [
+            "oecd_human_consumption_historical_or_base_estimate",
+            "oecd_human_consumption_projection"
+          ]
+        }
+      },
+      "id": "d-3f1eb99cec2d57a134",
+      "sha256": "86c7fd6ede412a7aff3751f6c7cd1e7791bfe4847d64d8665897543fc41b0a7a",
+      "projectionSha256": "86c7fd6ede412a7aff3751f6c7cd1e7791bfe4847d64d8665897543fc41b0a7a",
+      "rowCount": 3221,
+      "columns": [
+        {
+          "name": "country",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 2
+        },
+        {
+          "name": "year",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 3221,
+          "distinct": 25
+        },
+        {
+          "name": "item",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 36
+        },
+        {
+          "name": "metric",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 26
+        },
+        {
+          "name": "value",
+          "type": "number",
+          "missing": 16,
+          "numericValues": 3205,
+          "distinct": "200+"
+        },
+        {
+          "name": "unit",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 13
+        },
+        {
+          "name": "source_id",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 9
+        },
+        {
+          "name": "flag",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 64
+        },
+        {
+          "name": "method",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 11
+        },
+        {
+          "name": "period",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 1932,
+          "distinct": 35
+        },
+        {
+          "name": "raw_locator",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": "200+"
+        },
+        {
+          "name": "notes",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 13
+        },
+        {
+          "name": "item_code",
+          "type": "text",
+          "missing": 1331,
+          "numericValues": 1890,
+          "distinct": 21
+        },
+        {
+          "name": "source_vintage",
+          "type": "text",
+          "missing": 3190,
+          "numericValues": 0,
+          "distinct": 2
+        },
+        {
+          "name": "sample_size",
+          "type": "text",
+          "missing": 3221,
+          "numericValues": 0,
+          "distinct": 0
+        },
+        {
+          "name": "sample_basis",
+          "type": "text",
+          "missing": 3190,
+          "numericValues": 0,
+          "distinct": 2
+        },
+        {
+          "name": "tier",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 3
+        },
+        {
+          "name": "source_tier",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 2
+        }
+      ],
+      "sourceEdition": "13 October supervisor snapshot; retained 22 October",
+      "originalSourceSha256": "9686f4145b1e23464753fcedec56d4f9045f7fec99f1e579815e2388eb3714c7",
+      "originalProjectionSha256": "1869154a0ac4f1ff1d8a3f09f30477d389b90d3a6d6fa012c6e181e86cb0093f",
+      "publicationProjection": "Scientific values and missingness retained; internal storage routes removed. Source register limited to referenced identities."
+    },
+    "claims": {
+      "path": "/dashboard/tables/d-1f0d02fb73ed0b4c11.json",
+      "table": "$",
+      "title": "Current human review register",
+      "evidenceClass": "Review status",
+      "period": "22 October 2026 review edition",
+      "unit": "Claims",
+      "denominator": "Thirty listed review items",
+      "scope": "Current chapter, panel, code and release boundaries",
+      "caveat": "Blank reviewer/date and pending disposition are unresolved human review, not approval.",
+      "documents": [
+        "claim-review",
+        "chapter",
+        "limitations"
+      ],
+      "id": "d-1f0d02fb73ed0b4c11",
+      "sha256": "b05b93f4e5245f0f6ceebf0223a17ce4c503717385a94e735aaea7d2f48492f0",
+      "projectionSha256": "b05b93f4e5245f0f6ceebf0223a17ce4c503717385a94e735aaea7d2f48492f0",
+      "rowCount": 30,
+      "columns": [
+        {
+          "name": "claim_id",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 30
+        },
+        {
+          "name": "claim_or_scope",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 30
+        },
+        {
+          "name": "source_locator",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 26
+        },
+        {
+          "name": "reviewer",
+          "type": "text",
+          "missing": 30,
+          "numericValues": 0,
+          "distinct": 0
+        },
+        {
+          "name": "reviewed_date",
+          "type": "text",
+          "missing": 30,
+          "numericValues": 0,
+          "distinct": 0
+        },
+        {
+          "name": "disposition",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "correction_or_limit",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 26
+        },
+        {
+          "name": "release_permission",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        }
+      ],
+      "sourceEdition": "Retained 22 October 2026 snapshot",
+      "reviewState": "Human factual/code and scholarly review pending; computational checks are separate",
+      "originalSourceSha256": "b505d85db4f1f86ef971d3a9b2a4f7278f049059f08e0d64ac3e555298c3ff0a",
+      "originalProjectionSha256": "26126d2f4a5f23044fb1b83e4c9d09f623c543666d2466aac65563f0a395bd68",
+      "publicationProjection": "Scientific values and missingness retained; internal storage routes removed. Source register limited to referenced identities."
+    },
+    "sources": {
+      "path": "/dashboard/tables/d-f2cc9b6079756b1ffb.json",
+      "table": "$",
+      "title": "Canonical source registry",
+      "evidenceClass": "Bibliographic source metadata",
+      "period": "Source-specific publication and capture dates",
+      "unit": "Source identities",
+      "denominator": "Registered sources, not independent studies",
+      "scope": "Retained India–Pakistan research library",
+      "caveat": "Registration and hash identity do not establish claim validity, current availability or reuse rights.",
+      "documents": [
+        "source-guide",
+        "source-map"
+      ],
+      "id": "d-f2cc9b6079756b1ffb",
+      "sha256": "1c3f23aa1e203c05389449bfdbfe515d9a8c59e234470a31a27ce2807849c956",
+      "projectionSha256": "1c3f23aa1e203c05389449bfdbfe515d9a8c59e234470a31a27ce2807849c956",
+      "rowCount": 65,
+      "columns": [
+        {
+          "name": "source_id",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 65
+        },
+        {
+          "name": "title",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 65
+        },
+        {
+          "name": "publisher",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 23
+        },
+        {
+          "name": "url",
+          "type": "text",
+          "missing": 1,
+          "numericValues": 0,
+          "distinct": 65
+        },
+        {
+          "name": "year",
+          "type": "text",
+          "missing": 1,
+          "numericValues": 680,
+          "distinct": 14
+        },
+        {
+          "name": "accessed",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 4
+        },
+        {
+          "name": "tier",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 3
+        },
+        {
+          "name": "access_method",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 25
+        },
+        {
+          "name": "license",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 24
+        },
+        {
+          "name": "notes",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 34
+        }
+      ],
+      "sourceEdition": "Retained 22 October 2026 snapshot",
+      "reviewState": "Human factual/code and scholarly review pending; computational checks are separate",
+      "originalSourceSha256": "b651fa2133af7959527ab8c44053d96dcf85df9a58c6e935eddad504c54adbbe",
+      "originalProjectionSha256": "ff0f1c23794aba97068c3d67ed1e855becf439a90ea49116d3576b5a97ea39da",
+      "publicationProjection": "Scientific values and missingness retained; internal storage routes removed. Source register limited to referenced identities."
+    },
+    "baselineGate": {
+      "path": "/dashboard/tables/d-54039b1293719aefba.json",
+      "table": "$ (fields)",
+      "title": "Current baseline acceptance fields",
+      "evidenceClass": "Held acceptance gate",
+      "period": "20 October 2026 reconciliation",
+      "unit": "Field-specific",
+      "denominator": "Two prerequisite official baselines",
+      "scope": "India rural/urban protein and Pakistan chicken quantities",
+      "caveat": "Independent arithmetic passes, both official baselines remain held. New estimation and projection flags remain false.",
+      "documents": [
+        "baseline-gate",
+        "baseline-report",
+        "baseline-questions",
+        "baseline-review"
+      ],
+      "id": "d-54039b1293719aefba",
+      "sha256": "0a2b1f2d495347cc77ae40a6a819d8ac9fdf905c1656c106bfff3a8563b830b9",
+      "projectionSha256": "0a2b1f2d495347cc77ae40a6a819d8ac9fdf905c1656c106bfff3a8563b830b9",
+      "rowCount": 44,
+      "columns": [
+        {
+          "name": "field",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 44
+        },
+        {
+          "name": "value",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 8,
+          "distinct": 23
+        },
+        {
+          "name": "numeric_value",
+          "type": "number",
+          "missing": 36,
+          "numericValues": 8,
+          "distinct": 8
+        }
+      ],
+      "sourceEdition": "Retained 22 October 2026 snapshot",
+      "reviewState": "Human factual/code and scholarly review pending; computational checks are separate",
+      "originalSourceSha256": "63390d7ba69c1e32669cddf9e69f91a2300f6ebae83eb65c9b09bb62f460b712",
+      "originalProjectionSha256": "a447c9aedc8b5f9758deec7a937ae5c366229e470aa923fa66110bbfb0c51a8a",
+      "publicationProjection": "Scientific values and missingness retained; internal storage routes removed. Source register limited to referenced identities."
+    },
+    "householdScenarios": {
+      "path": "/dashboard/tables/d-94f138e54bfe84454d.json",
+      "table": "$",
+      "title": "Historical household-demand scenarios",
+      "evidenceClass": "Frozen diagnostic scenario",
+      "period": "19 October edition; 2026/2030/2035 horizons",
+      "unit": "million USD, 2025 prices",
+      "denominator": "India plant-meat and liquid-milk diagnostic spending subtotal",
+      "scope": "India only; Pakistan synthetic placeholder results excluded",
+      "caveat": "18 retained cells, six assumptions and three horizons. Observed-spending transfer diagnostics do not validate adoption, repeat purchase or displacement.",
+      "frozen": true,
+      "documents": [
+        "household-report",
+        "household-audit",
+        "household-receipt",
+        "household-freeze"
+      ],
+      "run": "Historical 10,000 draws, seed 20261018",
+      "id": "d-94f138e54bfe84454d",
+      "sha256": "d39a6d162566c1fb0106a0de83f79a04f92f2e4b62cb424070bda9a4c41e47b4",
+      "projectionSha256": "d39a6d162566c1fb0106a0de83f79a04f92f2e4b62cb424070bda9a4c41e47b4",
+      "rowCount": 18,
+      "columns": [
+        {
+          "name": "country",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "year",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 18,
+          "distinct": 3
+        },
+        {
+          "name": "scenario",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 6
+        },
+        {
+          "name": "p10",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 18,
+          "distinct": 15
+        },
+        {
+          "name": "p50",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 18,
+          "distinct": 15
+        },
+        {
+          "name": "p90",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 18,
+          "distinct": 15
+        },
+        {
+          "name": "paired_delta_p10",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 18,
+          "distinct": 13
+        },
+        {
+          "name": "paired_delta_p50",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 18,
+          "distinct": 13
+        },
+        {
+          "name": "paired_delta_p90",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 18,
+          "distinct": 13
+        },
+        {
+          "name": "unit",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "status",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "n_draws",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 18,
+          "distinct": 1
+        },
+        {
+          "name": "seed",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 18,
+          "distinct": 1
+        },
+        {
+          "name": "ceiling_binding_share",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 18,
+          "distinct": 1
+        },
+        {
+          "name": "scope",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "assumption",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 3
+        }
+      ],
+      "sourceEdition": "Retained 22 October 2026 snapshot",
+      "reviewState": "Human factual/code and scholarly review pending; computational checks are separate",
+      "originalSourceSha256": "850fd74e29bfb36cc9ae6719c9eb4c80e65c7cb6a4daff0e4bf49ca86a25949e",
+      "originalProjectionSha256": "2d3f7fe83344b50dcd91d88f62567cac7e267361f9a797dd452d726d326a7b99",
+      "publicationProjection": "Scientific values and missingness retained; internal storage routes removed. Source register limited to referenced identities."
+    },
+    "householdSobol": {
+      "path": "/dashboard/tables/d-195de66042cd655308.json",
+      "table": "$",
+      "title": "Historical household sensitivity",
+      "evidenceClass": "Frozen diagnostic sensitivity",
+      "period": "19 October edition; 2026/2030/2035",
+      "unit": "Sobol indices",
+      "denominator": "Specified diagnostic model output variance",
+      "scope": "India only",
+      "caveat": "Sensitivity rankings depend on assumed ranges and model structure; they do not establish research priorities or empirical validity.",
+      "frozen": true,
+      "documents": [
+        "household-report",
+        "household-audit",
+        "household-freeze"
+      ],
+      "id": "d-195de66042cd655308",
+      "sha256": "52db98cdc1652cafaf42d5f0c0fce7c47b23a70cd22baf0f931f0bb2425d9bf6",
+      "projectionSha256": "52db98cdc1652cafaf42d5f0c0fce7c47b23a70cd22baf0f931f0bb2425d9bf6",
+      "rowCount": 48,
+      "columns": [
+        {
+          "name": "parameter",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 8
+        },
+        {
+          "name": "first_order",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 48,
+          "distinct": 31
+        },
+        {
+          "name": "total",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 48,
+          "distinct": 31
+        },
+        {
+          "name": "country",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "year",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 48,
+          "distinct": 3
+        },
+        {
+          "name": "n_base",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 48,
+          "distinct": 2
+        },
+        {
+          "name": "status",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "factor_kind",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 2
+        },
+        {
+          "name": "rank_total",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 48,
+          "distinct": 6
+        }
+      ],
+      "sourceEdition": "Retained 22 October 2026 snapshot",
+      "reviewState": "Human factual/code and scholarly review pending; computational checks are separate",
+      "originalSourceSha256": "f22a84e9437963506b89a25965aaa95f8718424381699c6f187867935a8ca345",
+      "originalProjectionSha256": "e61ff1209d32b67a4fa02d0db422a7497abb5d81c62377b05fc8fe61b1631f5f",
+      "publicationProjection": "Scientific values and missingness retained; internal storage routes removed. Source register limited to referenced identities."
+    },
+    "householdHoldout": {
+      "path": "/dashboard/tables/d-b1d562b6635b2a01de.json",
+      "table": "$",
+      "title": "Historical state holdout diagnostics",
+      "evidenceClass": "Frozen observed-spending transfer check",
+      "period": "19 October edition; underlying HCES 2023–24",
+      "unit": "INR/person/month at survey prices",
+      "denominator": "36 state/UT holdout cells",
+      "scope": "Demographic transfer of observed-item animal-food spending, not complete baskets or adoption",
+      "caveat": "27 of 36 nominal-80% intervals contain the held-out value; zero complete animal baskets. This is not future-market forecast validation.",
+      "frozen": true,
+      "documents": [
+        "household-report",
+        "household-audit",
+        "household-receipt",
+        "household-freeze"
+      ],
+      "id": "d-b1d562b6635b2a01de",
+      "sha256": "a94187e77917076dc08f9901b96539a7674c2fc1d62d01e9428b96c55c8bf614",
+      "projectionSha256": "a94187e77917076dc08f9901b96539a7674c2fc1d62d01e9428b96c55c8bf614",
+      "rowCount": 36,
+      "columns": [
+        {
+          "name": "state",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 36,
+          "distinct": 36
+        },
+        {
+          "name": "observed",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 36,
+          "distinct": 36
+        },
+        {
+          "name": "predicted",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 36,
+          "distinct": 36
+        },
+        {
+          "name": "abs_error",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 36,
+          "distinct": 36
+        },
+        {
+          "name": "interval_hit",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 2
+        },
+        {
+          "name": "lower_10",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 36,
+          "distinct": 36
+        },
+        {
+          "name": "upper_90",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 36,
+          "distinct": 36
+        },
+        {
+          "name": "n_households",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 36,
+          "distinct": 35
+        },
+        {
+          "name": "n_evaluated",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 36,
+          "distinct": 35
+        },
+        {
+          "name": "n_missing_outcome",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 36,
+          "distinct": 34
+        },
+        {
+          "name": "n_invalid_design",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 36,
+          "distinct": 1
+        },
+        {
+          "name": "n_training",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 36,
+          "distinct": 35
+        },
+        {
+          "name": "n_nested_states",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 36,
+          "distinct": 1
+        },
+        {
+          "name": "interval_method",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "status",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "fold_status",
+          "type": "text",
+          "missing": 0,
+          "numericValues": 0,
+          "distinct": 1
+        },
+        {
+          "name": "fit_error",
+          "type": "text",
+          "missing": 36,
+          "numericValues": 0,
+          "distinct": 0
+        },
+        {
+          "name": "complete_basket_households",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 36,
+          "distinct": 1
+        },
+        {
+          "name": "mean_observed_groups",
+          "type": "number",
+          "missing": 0,
+          "numericValues": 36,
+          "distinct": 36
+        }
+      ],
+      "sourceEdition": "Retained 22 October 2026 snapshot",
+      "reviewState": "Human factual/code and scholarly review pending; computational checks are separate",
+      "originalSourceSha256": "c439a7c5df98fa3653fdf821d0f1f5ad8d1a18e8e26d3bb97a43cef7562fe7ed",
+      "originalProjectionSha256": "b1c92a2f49a1e7735dcf336957fe7727e7d82ca40527f2fd5bbb0a1e19e58fbd",
+      "publicationProjection": "Scientific values and missingness retained; internal storage routes removed. Source register limited to referenced identities."
+    }
+  },
+  "documents": [
+    {
+      "id": "chapter",
+      "title": "Current India–Pakistan contribution",
+      "path": "/dashboard/documents/chapter.md",
+      "sha256": "a6af6c8b63e9b32878d42a0a1e9538af260b4cce959bbd2dfdcbc6a96d113954",
+      "kind": "report",
+      "section": "India and Pakistan: what spending scenarios can establish",
+      "originalSourceSha256": "a6af6c8b63e9b32878d42a0a1e9538af260b4cce959bbd2dfdcbc6a96d113954",
+      "exportSha256": "a6af6c8b63e9b32878d42a0a1e9538af260b4cce959bbd2dfdcbc6a96d113954",
+      "publicationProjection": "exact",
+      "publicationNote": "Exact checked review-package document. Public dashboard release is author-authorized; human factual/code and scholarly review remain pending.",
+      "readerPath": "/dashboard/documents/chapter.reader.json"
+    },
+    {
+      "id": "review-pdf",
+      "title": "Current chapter and methods · 17-page PDF",
+      "path": "/dashboard/documents/review-pdf.pdf",
+      "sha256": "7e84aa8b92e9c07bb2544899dda40b69a9bbb577c3d538965cc6838605dede63",
+      "kind": "pdf",
+      "originalSourceSha256": "7e84aa8b92e9c07bb2544899dda40b69a9bbb577c3d538965cc6838605dede63",
+      "exportSha256": "7e84aa8b92e9c07bb2544899dda40b69a9bbb577c3d538965cc6838605dede63",
+      "publicationProjection": "exact",
+      "publicationNote": "Exact checked review-package document. Public dashboard release is author-authorized; human factual/code and scholarly review remain pending."
+    },
+    {
+      "id": "proxy-method",
+      "title": "Exact spending-proxy method",
+      "path": "/dashboard/documents/proxy-method.md",
+      "sha256": "f74bddc7a17c67a574b60599e9f7583f48dfe834430460c774b703c0db954354",
+      "kind": "method",
+      "section": "3. Exact implemented transformations",
+      "originalSourceSha256": "f74bddc7a17c67a574b60599e9f7583f48dfe834430460c774b703c0db954354",
+      "exportSha256": "f74bddc7a17c67a574b60599e9f7583f48dfe834430460c774b703c0db954354",
+      "publicationProjection": "exact",
+      "publicationNote": "Exact checked review-package document. Public dashboard release is author-authorized; human factual/code and scholarly review remain pending.",
+      "readerPath": "/dashboard/documents/proxy-method.reader.json"
+    },
+    {
+      "id": "panel-method",
+      "title": "Executed forecast-elicitation method",
+      "path": "/dashboard/documents/panel-method.md",
+      "sha256": "8fa1241ec7f7d4e54b473e620a8068a9df14a71024cb1b56a6b81a33b40a516d",
+      "kind": "method",
+      "section": "5. Attempts, exclusions and protocol change",
+      "originalSourceSha256": "8fa1241ec7f7d4e54b473e620a8068a9df14a71024cb1b56a6b81a33b40a516d",
+      "exportSha256": "8fa1241ec7f7d4e54b473e620a8068a9df14a71024cb1b56a6b81a33b40a516d",
+      "publicationProjection": "exact",
+      "publicationNote": "Exact checked review-package document. Public dashboard release is author-authorized; human factual/code and scholarly review remain pending.",
+      "readerPath": "/dashboard/documents/panel-method.reader.json"
+    },
+    {
+      "id": "measurement",
+      "title": "Measurement crosswalk",
+      "path": "/dashboard/documents/measurement.md",
+      "sha256": "df0f05d2f167aa1192245d001b38bd60a1eecabd3e53e86d2b83096dc2c61f3d",
+      "kind": "method",
+      "section": "Measurement contract and proposed harmonization",
+      "originalSourceSha256": "df0f05d2f167aa1192245d001b38bd60a1eecabd3e53e86d2b83096dc2c61f3d",
+      "exportSha256": "df0f05d2f167aa1192245d001b38bd60a1eecabd3e53e86d2b83096dc2c61f3d",
+      "publicationProjection": "exact",
+      "publicationNote": "Exact checked review-package document. Public dashboard release is author-authorized; human factual/code and scholarly review remain pending.",
+      "readerPath": "/dashboard/documents/measurement.reader.json"
+    },
+    {
+      "id": "limitations",
+      "title": "Limitations and AI use",
+      "path": "/dashboard/documents/limitations.md",
+      "sha256": "d98311bb7b7e17654d57dbd8f95e3797426605369e174b2631afdf704f862a55",
+      "kind": "review",
+      "originalSourceSha256": "d98311bb7b7e17654d57dbd8f95e3797426605369e174b2631afdf704f862a55",
+      "exportSha256": "d98311bb7b7e17654d57dbd8f95e3797426605369e174b2631afdf704f862a55",
+      "publicationProjection": "exact",
+      "publicationNote": "Exact checked review-package document. Public dashboard release is author-authorized; human factual/code and scholarly review remain pending.",
+      "readerPath": "/dashboard/documents/limitations.reader.json"
+    },
+    {
+      "id": "numerical-receipt",
+      "title": "Offline numerical reproduction receipt",
+      "path": "/dashboard/documents/numerical-receipt.json",
+      "sha256": "41cc0253ff8fd04e16ce0590f1986af91a1ec1e0e39cfeafe34e1550a8124769",
+      "kind": "receipt",
+      "originalSourceSha256": "41cc0253ff8fd04e16ce0590f1986af91a1ec1e0e39cfeafe34e1550a8124769",
+      "exportSha256": "41cc0253ff8fd04e16ce0590f1986af91a1ec1e0e39cfeafe34e1550a8124769",
+      "publicationProjection": "exact",
+      "publicationNote": "Exact checked review-package document. Public dashboard release is author-authorized; human factual/code and scholarly review remain pending.",
+      "readerPath": "/dashboard/documents/numerical-receipt.reader.json"
+    },
+    {
+      "id": "claim-review",
+      "title": "Current human claim-review register",
+      "path": "/dashboard/documents/claim-review.csv",
+      "sha256": "b505d85db4f1f86ef971d3a9b2a4f7278f049059f08e0d64ac3e555298c3ff0a",
+      "kind": "review",
+      "originalSourceSha256": "b505d85db4f1f86ef971d3a9b2a4f7278f049059f08e0d64ac3e555298c3ff0a",
+      "exportSha256": "b505d85db4f1f86ef971d3a9b2a4f7278f049059f08e0d64ac3e555298c3ff0a",
+      "publicationProjection": "exact",
+      "publicationNote": "Exact checked review-package document. Public dashboard release is author-authorized; human factual/code and scholarly review remain pending.",
+      "readerPath": "/dashboard/documents/claim-review.reader.json"
+    },
+    {
+      "id": "proxy-ledger",
+      "title": "Proxy source ledger",
+      "path": "/dashboard/documents/proxy-ledger.csv",
+      "sha256": "e9e7865bdfbc818769747d98a66bb3887e4b5b4309914a3ce54662fdbd6aa956",
+      "kind": "method",
+      "originalSourceSha256": "e9e7865bdfbc818769747d98a66bb3887e4b5b4309914a3ce54662fdbd6aa956",
+      "exportSha256": "e9e7865bdfbc818769747d98a66bb3887e4b5b4309914a3ce54662fdbd6aa956",
+      "publicationProjection": "exact",
+      "publicationNote": "Exact checked review-package document. Public dashboard release is author-authorized; human factual/code and scholarly review remain pending.",
+      "readerPath": "/dashboard/documents/proxy-ledger.reader.json"
+    },
+    {
+      "id": "source-map",
+      "title": "Current package source map",
+      "path": "/dashboard/documents/source-map.json",
+      "sha256": "d06253d8e9c831e533c191f506a70764fa0bc7b3fdaa6692ad37303f2ace5170",
+      "kind": "method",
+      "originalSourceSha256": "1c3e4d6048067ef057939b84c2181937eca142864a21e5e5244bb17718f2b4e2",
+      "exportSha256": "d06253d8e9c831e533c191f506a70764fa0bc7b3fdaa6692ad37303f2ace5170",
+      "publicationProjection": "metadata-projection",
+      "publicationNote": "Source-map projection: original digests and transformations retained; internal source paths omitted.",
+      "readerPath": "/dashboard/documents/source-map.reader.json"
+    },
+    {
+      "id": "source-guide",
+      "title": "Canonical consumption data guide",
+      "path": "/dashboard/documents/source-guide.md",
+      "sha256": "b8e351737e22edccdf7386fe643070d5dd002155ccd0ac610f50f06f64e76998",
+      "kind": "method",
+      "originalSourceSha256": "9b23a1bce1213bae9c8f8741d7461d89aa48122a985a7463919ab2705f4ab492",
+      "exportSha256": "b8e351737e22edccdf7386fe643070d5dd002155ccd0ac610f50f06f64e76998",
+      "publicationProjection": "public-summary",
+      "publicationNote": "Authored public summary of the hash-bound retained document; private operational material omitted.",
+      "readerPath": "/dashboard/documents/source-guide.reader.json"
+    },
+    {
+      "id": "dataset-definitions",
+      "title": "Canonical dataset definitions and audiences",
+      "path": "/dashboard/documents/dataset-definitions.json",
+      "sha256": "d4a7e0298b4b53799cc3a209b64422439a8f3ce39af09935060fe7e5b1ea55de",
+      "kind": "method",
+      "originalSourceSha256": "0cf1eb07c7b9331e55d6b9959d1a51a46d2e4766a4cbe7367c96f70056c1bdb2",
+      "exportSha256": "d4a7e0298b4b53799cc3a209b64422439a8f3ce39af09935060fe7e5b1ea55de",
+      "publicationProjection": "metadata-projection",
+      "publicationNote": "Focused subset of the original dataset definitions; public routes replace internal data routes.",
+      "readerPath": "/dashboard/documents/dataset-definitions.reader.json"
+    },
+    {
+      "id": "consumption-report",
+      "title": "Retained supervisor report · consumption sections",
+      "path": "/dashboard/documents/consumption-report.md",
+      "sha256": "7ab10975187d15f3fd31ea26f62fafe98a0a520c83296c6e59d99e3aaeffbf22",
+      "kind": "report",
+      "originalSourceSha256": "e3f6b2022416dd2e0a9870288233ab3e1a81880dd2ece3eb48782484d8cefbaf",
+      "exportSha256": "7ab10975187d15f3fd31ea26f62fafe98a0a520c83296c6e59d99e3aaeffbf22",
+      "publicationProjection": "public-excerpt",
+      "publicationNote": "Selected consumption and supply sections from the retained supervisor report. Later industry, job-directory, source-ledger and claim-ledger sections are outside this excerpt.",
+      "readerPath": "/dashboard/documents/consumption-report.reader.json"
+    },
+    {
+      "id": "consumption-review",
+      "title": "Supervisor review repairs",
+      "path": "/dashboard/documents/consumption-review.md",
+      "sha256": "863d3085378a0480faf87bed579a8a868c6747a348c2d6afffa59b585caefc40",
+      "kind": "review",
+      "originalSourceSha256": "2c197c922fae96b5db688ea910bcf7232013b2f814fc50239c60d1fb160ab748",
+      "exportSha256": "863d3085378a0480faf87bed579a8a868c6747a348c2d6afffa59b585caefc40",
+      "publicationProjection": "public-summary",
+      "publicationNote": "Authored public summary of the hash-bound retained document; private operational material omitted.",
+      "readerPath": "/dashboard/documents/consumption-review.reader.json"
+    },
+    {
+      "id": "baseline-report",
+      "title": "20 October baseline reconciliation",
+      "path": "/dashboard/documents/baseline-report.md",
+      "sha256": "07bf8a8d7e732ec0d373feb145262b55aa4065187913c57f282b20f24b0eac7c",
+      "kind": "report",
+      "originalSourceSha256": "e3466187120977e23726f5ad2014adaab708b725dc7f5bf27640f68c52d5314e",
+      "exportSha256": "07bf8a8d7e732ec0d373feb145262b55aa4065187913c57f282b20f24b0eac7c",
+      "publicationProjection": "public-excerpt",
+      "publicationNote": "The original reconciliation findings and acceptance limits are preserved. Private execution references and unpublished operational receipts are omitted. This is a dated review, not a new calculation.",
+      "readerPath": "/dashboard/documents/baseline-report.reader.json"
+    },
+    {
+      "id": "baseline-gate",
+      "title": "Current held baseline gate",
+      "path": "/dashboard/documents/baseline-gate.json",
+      "sha256": "63390d7ba69c1e32669cddf9e69f91a2300f6ebae83eb65c9b09bb62f460b712",
+      "kind": "receipt",
+      "originalSourceSha256": "63390d7ba69c1e32669cddf9e69f91a2300f6ebae83eb65c9b09bb62f460b712",
+      "exportSha256": "63390d7ba69c1e32669cddf9e69f91a2300f6ebae83eb65c9b09bb62f460b712",
+      "publicationProjection": "exact",
+      "publicationNote": "Exact retained source text. Its historical date and scientific limits remain unchanged.",
+      "readerPath": "/dashboard/documents/baseline-gate.reader.json"
+    },
+    {
+      "id": "baseline-questions",
+      "title": "Unresolved official-method questions",
+      "path": "/dashboard/documents/baseline-questions.md",
+      "sha256": "3d6d7bff7313530084ec86572142d28340a384e2e578955272c0620750a3f017",
+      "kind": "method",
+      "originalSourceSha256": "3d6d7bff7313530084ec86572142d28340a384e2e578955272c0620750a3f017",
+      "exportSha256": "3d6d7bff7313530084ec86572142d28340a384e2e578955272c0620750a3f017",
+      "publicationProjection": "exact",
+      "publicationNote": "Exact retained source text. Its historical date and scientific limits remain unchanged.",
+      "readerPath": "/dashboard/documents/baseline-questions.reader.json"
+    },
+    {
+      "id": "baseline-review",
+      "title": "Baseline independent review",
+      "path": "/dashboard/documents/baseline-review.md",
+      "sha256": "1ec37646b8e2ff10351ad46a04f2ec287043222a8c1efc504f5c2b7cc05a6810",
+      "kind": "review",
+      "originalSourceSha256": "51954babd9ccf7a9aed8064b2210af85ee83505266c0677302bef1c1e7c231f3",
+      "exportSha256": "1ec37646b8e2ff10351ad46a04f2ec287043222a8c1efc504f5c2b7cc05a6810",
+      "publicationProjection": "public-excerpt",
+      "publicationNote": "Verification and bounded moderator findings from the historical review. Internal receipt navigation, policy-amendment proposals and retrospective instructions are omitted.",
+      "readerPath": "/dashboard/documents/baseline-review.reader.json"
+    },
+    {
+      "id": "retail-report",
+      "title": "20 October dated retail audit",
+      "path": "/dashboard/documents/retail-report.md",
+      "sha256": "0909e47d224b864091195a979d679cd78d062c2a64dedf2e210b96487d6d8a20",
+      "kind": "report",
+      "originalSourceSha256": "0909e47d224b864091195a979d679cd78d062c2a64dedf2e210b96487d6d8a20",
+      "exportSha256": "0909e47d224b864091195a979d679cd78d062c2a64dedf2e210b96487d6d8a20",
+      "publicationProjection": "exact",
+      "publicationNote": "Exact retained source text. Its historical date and scientific limits remain unchanged.",
+      "readerPath": "/dashboard/documents/retail-report.reader.json"
+    },
+    {
+      "id": "completion-report",
+      "title": "Available-evidence completion and remaining gaps",
+      "path": "/dashboard/documents/completion-report.md",
+      "sha256": "f8a5199e8022b7c7529b94dc9b11b31bf91a688d3d164ddae0c73b59735d0e54",
+      "kind": "review",
+      "originalSourceSha256": "4dd9b84eb8690b207435f79a0a4d5ae087ea494f30a9c6ebc763b14a9df209ed",
+      "exportSha256": "f8a5199e8022b7c7529b94dc9b11b31bf91a688d3d164ddae0c73b59735d0e54",
+      "publicationProjection": "public-excerpt",
+      "publicationNote": "Scientific findings, completed work and unresolved holds from the available-evidence audit. Private outgoing drafts, local navigation and execution commands are omitted.",
+      "readerPath": "/dashboard/documents/completion-report.reader.json"
+    },
+    {
+      "id": "scope-review",
+      "title": "22 October scope and freeze decision",
+      "path": "/dashboard/documents/scope-review.md",
+      "sha256": "b8f7b9c23a953901f31a5e4fd57eda988d9f4936cc336553d4b492c45e3be0ee",
+      "kind": "review",
+      "originalSourceSha256": "df05a49093bc1fad5ce729516ed8e2bca6da766f05149c70349e9862729c5409",
+      "exportSha256": "b8f7b9c23a953901f31a5e4fd57eda988d9f4936cc336553d4b492c45e3be0ee",
+      "publicationProjection": "public-summary",
+      "publicationNote": "Authored public summary of the hash-bound retained document; private operational material omitted.",
+      "readerPath": "/dashboard/documents/scope-review.reader.json"
+    },
+    {
+      "id": "household-report",
+      "title": "Historical household-demand diagnostics",
+      "path": "/dashboard/documents/household-report.md",
+      "sha256": "cb6a1940cb39e94d9c68c89cf87c9b6df3bcbe5c5a5f90cb14cd4a83a30834ab",
+      "kind": "report",
+      "originalSourceSha256": "c4ba2ead7636dd190f8df1564255af9e36d4f97744822f122158e71758a4edac",
+      "exportSha256": "cb6a1940cb39e94d9c68c89cf87c9b6df3bcbe5c5a5f90cb14cd4a83a30834ab",
+      "publicationProjection": "public-excerpt",
+      "publicationNote": "Historical household-model methods, results, scenarios, sensitivity and validation sections only. The broader historical elicitation appendix and private execution/provenance routes are omitted. These diagnostics use a narrower meat-and-liquid-milk estimand and do not supersede the current proxy or 60-response panel. Footnote markers refer to the original report; this excerpt does not claim a complete bibliography.",
+      "readerPath": "/dashboard/documents/household-report.reader.json"
+    },
+    {
+      "id": "household-audit",
+      "title": "Historical household completion audit",
+      "path": "/dashboard/documents/household-audit.md",
+      "sha256": "60c9634d846e12f041770c71b9e55afb5fdea5feb41e0e1efe0a1a12fc9544cd",
+      "kind": "review",
+      "originalSourceSha256": "bdc16c48a6bf6c8e450357a21e8243f966ecc0d8e672ef8d8cb05489832d2bab",
+      "exportSha256": "60c9634d846e12f041770c71b9e55afb5fdea5feb41e0e1efe0a1a12fc9544cd",
+      "publicationProjection": "public-summary",
+      "publicationNote": "Authored public summary of the hash-bound retained document; private operational material omitted.",
+      "readerPath": "/dashboard/documents/household-audit.reader.json"
+    },
+    {
+      "id": "household-receipt",
+      "title": "Historical numerical recomputation review",
+      "path": "/dashboard/documents/household-receipt.md",
+      "sha256": "a249c758c6f3b3537b77d892f586525fc4b87271ff8efe9536303c77ecb455e7",
+      "kind": "receipt",
+      "originalSourceSha256": "5bec6e890c9202d9fd2e52edafd04ae532d95b5deedea9e547dd54351108138b",
+      "exportSha256": "a249c758c6f3b3537b77d892f586525fc4b87271ff8efe9536303c77ecb455e7",
+      "publicationProjection": "public-summary",
+      "publicationNote": "Authored public summary of the hash-bound retained document; private operational material omitted.",
+      "readerPath": "/dashboard/documents/household-receipt.reader.json"
+    },
+    {
+      "id": "household-freeze",
+      "title": "Household workstream freeze",
+      "path": "/dashboard/documents/household-freeze.md",
+      "sha256": "99699d7ff579298976cb4e7823bf026f40d6a3afca2b032c961cf30adeb582cf",
+      "kind": "review",
+      "originalSourceSha256": "a794b140200150826096cb3907cb380b6a048bb71dcaf57bf6dd1eb7f72f6f2f",
+      "exportSha256": "99699d7ff579298976cb4e7823bf026f40d6a3afca2b032c961cf30adeb582cf",
+      "publicationProjection": "public-summary",
+      "publicationNote": "Authored public summary of the hash-bound retained document; private operational material omitted.",
+      "readerPath": "/dashboard/documents/household-freeze.reader.json"
+    },
+    {
+      "id": "benchmark-readme",
+      "title": "Protein-supply benchmark: historical scope",
+      "path": "/dashboard/documents/benchmark-readme.md",
+      "sha256": "4fbc8c96abd76c610e34c39cfe8558cfd77bcc6c3777cd462085306f7888c9f6",
+      "exportSha256": "4fbc8c96abd76c610e34c39cfe8558cfd77bcc6c3777cd462085306f7888c9f6",
+      "originalSourceSha256": "2f93499cc86bead45074c47ceb371b8a2e96f42993dc9c9a9d099c7ba2830a1c",
+      "readerPath": "/dashboard/documents/benchmark-readme.reader.json",
+      "kind": "review",
+      "publicationProjection": "public-summary",
+      "publicationNote": "Public summary of a frozen historical source; no fresh model run or environment claim. Original source hash is retained separately."
+    },
+    {
+      "id": "benchmark-reproduce",
+      "title": "Protein-supply benchmark: reproduction boundary",
+      "path": "/dashboard/documents/benchmark-reproduce.md",
+      "sha256": "85b791a1cc258265adf909d6bc17bc0e34052a6a04483d2a3458cbeec3560c08",
+      "exportSha256": "85b791a1cc258265adf909d6bc17bc0e34052a6a04483d2a3458cbeec3560c08",
+      "originalSourceSha256": "bbfc148a6c68a405d60c02eae89a0c53f992a0681aecfb7f637fd362dcc93073",
+      "readerPath": "/dashboard/documents/benchmark-reproduce.reader.json",
+      "kind": "review",
+      "publicationProjection": "public-summary",
+      "publicationNote": "Public summary of a frozen historical source; no fresh model run or environment claim. Original source hash is retained separately."
+    },
+    {
+      "id": "benchmark-review",
+      "title": "Protein-supply benchmark: review limits",
+      "path": "/dashboard/documents/benchmark-review.md",
+      "sha256": "81a56a5bb3954e6e4e54786ff3837fbc7accf15ebcaacb41b6d50c31916421c3",
+      "exportSha256": "81a56a5bb3954e6e4e54786ff3837fbc7accf15ebcaacb41b6d50c31916421c3",
+      "originalSourceSha256": "13649da2f4240f0c7704f8e6997a9de602046866b38494b28dc23a012aa297b1",
+      "readerPath": "/dashboard/documents/benchmark-review.reader.json",
+      "kind": "review",
+      "publicationProjection": "public-summary",
+      "publicationNote": "Public summary of a frozen historical source; no fresh model run or environment claim. Original source hash is retained separately."
+    }
+  ],
+  "linkedSources": [
+    {
+      "id": "benchmark-readme",
+      "path": "/dashboard/documents/benchmark-readme.md",
+      "sha256": "4fbc8c96abd76c610e34c39cfe8558cfd77bcc6c3777cd462085306f7888c9f6",
+      "originalSourceSha256": "2f93499cc86bead45074c47ceb371b8a2e96f42993dc9c9a9d099c7ba2830a1c",
+      "access": "Public historical source summary",
+      "status": "Frozen supply benchmark; retained documentation, not a fresh rerun"
+    },
+    {
+      "id": "benchmark-reproduce",
+      "path": "/dashboard/documents/benchmark-reproduce.md",
+      "sha256": "85b791a1cc258265adf909d6bc17bc0e34052a6a04483d2a3458cbeec3560c08",
+      "originalSourceSha256": "bbfc148a6c68a405d60c02eae89a0c53f992a0681aecfb7f637fd362dcc93073",
+      "access": "Public historical source summary",
+      "status": "Frozen supply benchmark; retained documentation, not a fresh rerun"
+    },
+    {
+      "id": "benchmark-review",
+      "path": "/dashboard/documents/benchmark-review.md",
+      "sha256": "81a56a5bb3954e6e4e54786ff3837fbc7accf15ebcaacb41b6d50c31916421c3",
+      "originalSourceSha256": "13649da2f4240f0c7704f8e6997a9de602046866b38494b28dc23a012aa297b1",
+      "access": "Public historical source summary",
+      "status": "Frozen supply benchmark; retained documentation, not a fresh rerun"
+    }
+  ],
+  "counts": {
+    "datasets": 17,
+    "documents": 28,
+    "proxyIntervals": 6,
+    "acceptedRuns": 60,
+    "bilateralAcceptedRuns": 40,
+    "usComparatorRuns": 20,
+    "panelSummaries": 18,
+    "bilateralPanelSummaries": 12,
+    "attempts": 79,
+    "acceptedAttempts": 60,
+    "rejectedAttempts": 15,
+    "executionErrors": 3,
+    "historicalRunning": 1,
+    "publishedIndiaIntakeRows": 26,
+    "pakistanMissingIntakeRows": 6,
+    "claimReviewItems": 30,
+    "humanReviewedClaims": 0,
+    "sourceRegisterRows": 65,
+    "tableRows": 7117
+  },
+  "historical": [
+    {
+      "id": "supply-benchmark",
+      "title": "Separate protein-supply benchmark",
+      "sourcePaths": [
+        "/dashboard/documents/benchmark-readme.md",
+        "/dashboard/documents/benchmark-reproduce.md",
+        "/dashboard/documents/benchmark-review.md"
+      ],
+      "status": "Frozen exploratory context; retained source summaries, no rerun",
+      "acceptance": "Protein supply, not household intake or alternative-protein adoption; human scholarly review pending",
+      "documents": [
+        "benchmark-readme",
+        "benchmark-reproduce",
+        "benchmark-review"
+      ]
+    },
+    {
+      "id": "household-20261019",
+      "title": "19 October household-demand diagnostic",
+      "datasets": [
+        "householdScenarios",
+        "householdSobol",
+        "householdHoldout"
+      ],
+      "documents": [
+        "household-report",
+        "household-audit",
+        "household-receipt",
+        "household-freeze"
+      ],
+      "status": "Frozen 22 October; no model rerun authorized",
+      "panelState": "Historical 30 Astra responses / Claude deferred; superseded by the separate 60-response retained panel",
+      "acceptance": "Numerical checks only; human scholarly acceptance pending"
+    },
+    {
+      "id": "supervisor-20261013",
+      "title": "13 October consumption evidence snapshot",
+      "datasets": [
+        "intake",
+        "consumerUnit",
+        "pakistanIntake",
+        "composition",
+        "regional",
+        "supply"
+      ],
+      "documents": [
+        "consumption-report",
+        "consumption-review"
+      ],
+      "status": "Retained source extraction; wider dashboard research frozen",
+      "acceptance": "Complete Pakistan protein estimate withdrawn; no individual deficiency estimate"
+    }
+  ],
+  "sourceHashes": {
+    "dataset:proxy": "98c5a19c94ecd891be7d1a44d24a9004268f160c96f6212c00386a3976c0e7b4",
+    "dataset:proxyInputs": "93ae9dddbfa59c1930b1deaba3a31a3cc273fa8a43077f9dcf735c0d9e64aa37",
+    "dataset:panelRuns": "5ecbd61f6621acb580ddb009e117c55eb3be7a6e6af611b5ac92bb2adb998aee",
+    "dataset:panelAggregates": "24205e16492f060cff726dd8c376f09a65a61171f824840916f7ed4a986ccd9d",
+    "dataset:panelAttempts": "a83b85f34f2590914c092e2dd6bd7ccb19f9abeb293b4ec276f8e0d735f26228",
+    "dataset:intake": "d1dfea6f6a667471c92da167f8e4be81b8129bc5215ada7c1725690b2aff06ca",
+    "dataset:consumerUnit": "36ee003539958111d8dc2fc67735bd3226e50b1509c0b4803e70c1bccc94848a",
+    "dataset:pakistanIntake": "5e2ef03e1eb6a9e1ebcd7586c6f7ea385248bd8cf98e81627a41b7ec955eb0a6",
+    "dataset:composition": "e25b26772f609292e701b437aede4ccfc60a61efb6fc626747597c0a76fa3f03",
+    "dataset:regional": "aa47fe7102173de1a58bc08157c7e0b482c0713302befb6605115787da63257c",
+    "dataset:supply": "9686f4145b1e23464753fcedec56d4f9045f7fec99f1e579815e2388eb3714c7",
+    "dataset:claims": "b505d85db4f1f86ef971d3a9b2a4f7278f049059f08e0d64ac3e555298c3ff0a",
+    "dataset:sources": "b651fa2133af7959527ab8c44053d96dcf85df9a58c6e935eddad504c54adbbe",
+    "dataset:baselineGate": "63390d7ba69c1e32669cddf9e69f91a2300f6ebae83eb65c9b09bb62f460b712",
+    "dataset:householdScenarios": "850fd74e29bfb36cc9ae6719c9eb4c80e65c7cb6a4daff0e4bf49ca86a25949e",
+    "dataset:householdSobol": "f22a84e9437963506b89a25965aaa95f8718424381699c6f187867935a8ca345",
+    "dataset:householdHoldout": "c439a7c5df98fa3653fdf821d0f1f5ad8d1a18e8e26d3bb97a43cef7562fe7ed",
+    "document:chapter": "a6af6c8b63e9b32878d42a0a1e9538af260b4cce959bbd2dfdcbc6a96d113954",
+    "document:review-pdf": "7e84aa8b92e9c07bb2544899dda40b69a9bbb577c3d538965cc6838605dede63",
+    "document:proxy-method": "f74bddc7a17c67a574b60599e9f7583f48dfe834430460c774b703c0db954354",
+    "document:panel-method": "8fa1241ec7f7d4e54b473e620a8068a9df14a71024cb1b56a6b81a33b40a516d",
+    "document:measurement": "df0f05d2f167aa1192245d001b38bd60a1eecabd3e53e86d2b83096dc2c61f3d",
+    "document:limitations": "d98311bb7b7e17654d57dbd8f95e3797426605369e174b2631afdf704f862a55",
+    "document:numerical-receipt": "41cc0253ff8fd04e16ce0590f1986af91a1ec1e0e39cfeafe34e1550a8124769",
+    "document:claim-review": "b505d85db4f1f86ef971d3a9b2a4f7278f049059f08e0d64ac3e555298c3ff0a",
+    "document:proxy-ledger": "e9e7865bdfbc818769747d98a66bb3887e4b5b4309914a3ce54662fdbd6aa956",
+    "document:source-map": "1c3e4d6048067ef057939b84c2181937eca142864a21e5e5244bb17718f2b4e2",
+    "document:source-guide": "9b23a1bce1213bae9c8f8741d7461d89aa48122a985a7463919ab2705f4ab492",
+    "document:dataset-definitions": "0cf1eb07c7b9331e55d6b9959d1a51a46d2e4766a4cbe7367c96f70056c1bdb2",
+    "document:consumption-report": "e3f6b2022416dd2e0a9870288233ab3e1a81880dd2ece3eb48782484d8cefbaf",
+    "document:consumption-review": "2c197c922fae96b5db688ea910bcf7232013b2f814fc50239c60d1fb160ab748",
+    "document:baseline-report": "e3466187120977e23726f5ad2014adaab708b725dc7f5bf27640f68c52d5314e",
+    "document:baseline-gate": "63390d7ba69c1e32669cddf9e69f91a2300f6ebae83eb65c9b09bb62f460b712",
+    "document:baseline-questions": "3d6d7bff7313530084ec86572142d28340a384e2e578955272c0620750a3f017",
+    "document:baseline-review": "51954babd9ccf7a9aed8064b2210af85ee83505266c0677302bef1c1e7c231f3",
+    "document:retail-report": "0909e47d224b864091195a979d679cd78d062c2a64dedf2e210b96487d6d8a20",
+    "document:completion-report": "4dd9b84eb8690b207435f79a0a4d5ae087ea494f30a9c6ebc763b14a9df209ed",
+    "document:scope-review": "df05a49093bc1fad5ce729516ed8e2bca6da766f05149c70349e9862729c5409",
+    "document:household-report": "c4ba2ead7636dd190f8df1564255af9e36d4f97744822f122158e71758a4edac",
+    "document:household-audit": "bdc16c48a6bf6c8e450357a21e8243f966ecc0d8e672ef8d8cb05489832d2bab",
+    "document:household-receipt": "5bec6e890c9202d9fd2e52edafd04ae532d95b5deedea9e547dd54351108138b",
+    "document:household-freeze": "a794b140200150826096cb3907cb380b6a048bb71dcaf57bf6dd1eb7f72f6f2f",
+    "document:benchmark-readme": "2f93499cc86bead45074c47ceb371b8a2e96f42993dc9c9a9d099c7ba2830a1c",
+    "document:benchmark-reproduce": "bbfc148a6c68a405d60c02eae89a0c53f992a0681aecfb7f637fd362dcc93073",
+    "document:benchmark-review": "13649da2f4240f0c7704f8e6997a9de602046866b38494b28dc23a012aa297b1"
+  },
+  "acceptance": {
+    "technical": "Retained computation and source identity are checked separately from empirical validity",
+    "humanFactualCodeReview": "pending",
+    "scholarlyAcceptance": "pending",
+    "releasePermission": "Author authorized publication of the focused dashboard on 2026-10-22",
+    "publication": "Public focused dashboard; research review status unchanged",
+    "sourceRights": "Source-specific rights notes retained. No full source PDFs, workbooks, respondent microdata, prompts or raw provider events are included."
+  },
+  "missingLinks": [
+    "Published extraction has no model run.",
+    "Raw provider transcripts and household microdata are excluded.",
+    "No national Pakistan sales anchor, complete protein-intake total, or nationally calibrated adoption series is established."
+  ],
+  "publication": {
+    "authorizedDate": "2026-10-22",
+    "inputSnapshotId": "pk-in-20261022-9e52388367c5c881",
+    "projection": "Focused public aggregate export",
+    "noNewAcquisitionOrModelRun": true,
+    "originalAndExportDigestsSeparate": true
+  }
+}
