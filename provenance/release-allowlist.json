@@ -269,7 +269,7 @@
     {
       "path": "provenance/document-build.json",
       "bytes": 1477,
-      "sha256": "c86eabf06253550d45bfe7d0e40a3248eb5fae0f85623ce37c8549e81599b222",
+      "sha256": "b08eedeae8dfa9a0ea498ad55dac9b6ecc0c8fb5cf4af721c44ff7c3df3fdcdc",
       "purpose": "provenance/document-build.json",
       "release_status": "local_review_candidate_human_and_rights_review_pending"
     },
@@ -283,7 +283,7 @@
     {
       "path": "provenance/source-map.json",
       "bytes": 16773,
-      "sha256": "40ee55963e313de199818e9b104fbf6df66d30a4991a258f41cbc262f55cdcfa",
+      "sha256": "5db9c23ac686da9cadcb1467c2c5d106feb1f2627bcc8cc2f57a2caec9728463",
       "purpose": "provenance/source-map.json",
       "release_status": "local_review_candidate_human_and_rights_review_pending"
     },
@@ -296,8 +296,8 @@
     },
     {
       "path": "report/chapter.md",
-      "bytes": 13941,
-      "sha256": "df42994ebdf6bb5620b654ea3d618cbf64a43a30117083a481b2a57c74f04c47",
+      "bytes": 14445,
+      "sha256": "43773fe5f6b9873c8647e21ccd182be8d505575a684de34a57ee948170cc374b",
       "purpose": "report/chapter.md",
       "release_status": "local_review_candidate_human_and_rights_review_pending"
     },
@@ -338,15 +338,15 @@
     },
     {
       "path": "report/review.html",
-      "bytes": 111722,
-      "sha256": "7b55e823e09a23210d2f6a64525dd75b1fea7138b62a4c04a489f98080f9ab75",
+      "bytes": 112484,
+      "sha256": "414e3b2f88f0218d113bb9920833dadf6f496b7906f304be25db6b50bc13b1f5",
       "purpose": "report/review.html",
       "release_status": "local_review_candidate_human_and_rights_review_pending"
     },
     {
       "path": "report/review.pdf",
-      "bytes": 934016,
-      "sha256": "cf10a221da8d5c851c26af43560d4575efa04dafe94bcbefa222e4ad8b5b6c99",
+      "bytes": 954264,
+      "sha256": "6926427821ba937e78cd57254585009b856d04015be81306095b2c49060d0dbf",
       "purpose": "report/review.pdf",
       "release_status": "local_review_candidate_human_and_rights_review_pending"
     },
