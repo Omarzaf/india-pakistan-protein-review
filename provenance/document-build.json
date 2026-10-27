@@ -4,14 +4,14 @@
   "sources": {
     "report/chapter.md": "43773fe5f6b9873c8647e21ccd182be8d505575a684de34a57ee948170cc374b",
     "methods/proxy.md": "ec9f19469f08ca2d43b7ebbb04336f2820e22a62ec9257e38db877d04fad1805",
-    "methods/gfi-gap.md": "1b55a81c1d94996a462b7a9c3bd02f78d7f9d0345172fc91bb82709e420d8e5c",
+    "methods/gfi-gap.md": "3babdc57173e2e615083e4103c3875baaae032dca8e346cf23e715570d02bf3d",
     "methods/drivers.md": "d16a4ffe2665aa57d7765cc49a455b0b1cd7d2e6ca5cfb0c3693bebf5e401c97",
     "methods/dated-context.md": "52daeb7a13b1522fea3f055d155ea4c2ff4d5d09f8c3ca7ddb6b1c483fb1d4da",
     "methods/measurement-crosswalk.md": "df0f05d2f167aa1192245d001b38bd60a1eecabd3e53e86d2b83096dc2c61f3d",
     "methods/panel-supplement.md": "8fa1241ec7f7d4e54b473e620a8068a9df14a71024cb1b56a6b81a33b40a516d",
     "report/limitations-and-ai-use.md": "54fa99a15e210c357e29cd46d55ef417c04f860fde377b51ee572a03eb15953f"
   },
-  "html_sha256": "414e3b2f88f0218d113bb9920833dadf6f496b7906f304be25db6b50bc13b1f5",
+  "html_sha256": "68780e196ea4c8f0c5c032c0aec14154f55828d66aed27ace6465029b7993ef0",
   "pdf_rendering": "The supplied PDF was rendered with sandboxed Chromium from a temporary print copy with inline CSS and local file hyperlinks removed. Re-rendering must repeat those precautions and inspect PDF metadata, text and link annotations for local paths. Rendering is optional; the supplied PDF is ready to read.",
   "limits": "Document rendering is separate from numerical reproduction. PDF visual QA and renderer version are recorded in the external release receipt."
 }

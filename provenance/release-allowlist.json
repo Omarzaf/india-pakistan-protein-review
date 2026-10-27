@@ -44,22 +44,22 @@
     },
     {
       "path": "build/gfi-gap/REPORT.md",
-      "bytes": 12411,
-      "sha256": "4afec7aa3f901cbf46568959abe06eba9afbe907e8acc11af5656462d51946c6",
+      "bytes": 12465,
+      "sha256": "bb7f4ba9ef061fdc835c1d0173165deea475b0fb40264a003dbe661a44100388",
       "purpose": "build/gfi-gap/REPORT.md",
       "release_status": "local_review_candidate_human_and_rights_review_pending"
     },
     {
       "path": "build/gfi-gap/artifact-hashes.json",
       "bytes": 1373,
-      "sha256": "b068325ce25e59c7c5fe7e090ea349a734ade9258bae91c409c409251d19d209",
+      "sha256": "b85b3cc27542e747a062b7dd640609617ff95120fe4e5d64ffa07ad774ddb991",
       "purpose": "build/gfi-gap/artifact-hashes.json",
       "release_status": "local_review_candidate_human_and_rights_review_pending"
     },
     {
       "path": "build/gfi-gap/category-growth.csv",
-      "bytes": 1965,
-      "sha256": "df4e01db0dd097ed5e02038ede7963378609027e7106e3b5c00d3ec2002be5ce",
+      "bytes": 1913,
+      "sha256": "f7f42bc35f8ff8e466b53cd3665104a42a47230467fbed465465905961f7bfba",
       "purpose": "build/gfi-gap/category-growth.csv",
       "release_status": "local_review_candidate_human_and_rights_review_pending"
     },
@@ -72,50 +72,50 @@
     },
     {
       "path": "build/gfi-gap/diagnostics.json",
-      "bytes": 110412,
-      "sha256": "52915781db8e6294a8f05ed5369fdff205260b0517359e4014491de006752d8b",
+      "bytes": 105866,
+      "sha256": "51c10816c94ed7cd954d85d8b91318e3bb723eeda0156898122b112eea9666f5",
       "purpose": "build/gfi-gap/diagnostics.json",
       "release_status": "local_review_candidate_human_and_rights_review_pending"
     },
     {
       "path": "build/gfi-gap/factor-draws.csv",
-      "bytes": 2718179,
-      "sha256": "2ee440668464737b02af0cfb51b28ee6f17c70152e3c26058a12dc5fda9adb74",
+      "bytes": 2098332,
+      "sha256": "ad067eb76db6a9710b4dc7ca3de97e35eb604331301cf06e145036a78cea8acf",
       "purpose": "build/gfi-gap/factor-draws.csv",
       "release_status": "local_review_candidate_human_and_rights_review_pending"
     },
     {
       "path": "build/gfi-gap/midpoint-factors.csv",
-      "bytes": 492,
-      "sha256": "bb633badbf9b79f498bcfa470462020dd012a034cd576c2d4f4927ef5befad5e",
+      "bytes": 436,
+      "sha256": "a754b61f7932fee9306efbb495e5e23f749650ae802cd6af6158ab19a9214ce2",
       "purpose": "build/gfi-gap/midpoint-factors.csv",
       "release_status": "local_review_candidate_human_and_rights_review_pending"
     },
     {
       "path": "build/gfi-gap/reference-checks.csv",
-      "bytes": 5192,
-      "sha256": "058cc2d4453dd5cfd6940a042cd641f6b33654faff9b907e1c79612b3cb28019",
+      "bytes": 4693,
+      "sha256": "abeaa119e5b86493fe0db33500a2aa22e376cdb382cb2ded108f6e77e7d260b6",
       "purpose": "build/gfi-gap/reference-checks.csv",
       "release_status": "local_review_candidate_human_and_rights_review_pending"
     },
     {
       "path": "build/gfi-gap/required-growth.csv",
-      "bytes": 10061,
-      "sha256": "6b0615530048f8cc888da8126ae8725ed741be2b2d81683670eebfe567ff4399",
+      "bytes": 8588,
+      "sha256": "401611319255d9d25c80503800de8c3102830a1be3f22c51ceea8dfae671962e",
       "purpose": "build/gfi-gap/required-growth.csv",
       "release_status": "local_review_candidate_human_and_rights_review_pending"
     },
     {
       "path": "build/gfi-gap/sensitivity-summary.csv",
-      "bytes": 14406,
-      "sha256": "a413edd276ce2df9b6713ff34f369f829cc7dfbbedef5152543018de661dc216",
+      "bytes": 12098,
+      "sha256": "d1bfa243bee7c4851b671b0ae3ee4776f3a20909756208d1eecede5a65bc50d7",
       "purpose": "build/gfi-gap/sensitivity-summary.csv",
       "release_status": "local_review_candidate_human_and_rights_review_pending"
     },
     {
       "path": "build/gfi-gap/target-comparison.csv",
-      "bytes": 912,
-      "sha256": "9a149eef120481590adec9862d5ad53c8176258b02d3bb6f5f6eca04772c13da",
+      "bytes": 794,
+      "sha256": "c44120cd7574a01b603254fd2137f211e1ac5de03d6636113bc3c4f859983029",
       "purpose": "build/gfi-gap/target-comparison.csv",
       "release_status": "local_review_candidate_human_and_rights_review_pending"
     },
@@ -226,8 +226,8 @@
     },
     {
       "path": "methods/gfi-gap.md",
-      "bytes": 11755,
-      "sha256": "1b55a81c1d94996a462b7a9c3bd02f78d7f9d0345172fc91bb82709e420d8e5c",
+      "bytes": 11768,
+      "sha256": "3babdc57173e2e615083e4103c3875baaae032dca8e346cf23e715570d02bf3d",
       "purpose": "methods/gfi-gap.md",
       "release_status": "local_review_candidate_human_and_rights_review_pending"
     },
@@ -269,7 +269,7 @@
     {
       "path": "provenance/document-build.json",
       "bytes": 1477,
-      "sha256": "b08eedeae8dfa9a0ea498ad55dac9b6ecc0c8fb5cf4af721c44ff7c3df3fdcdc",
+      "sha256": "8f583fa55c184cd52f5c48f7d30c288397516bf721cca368013309bcde4de4a9",
       "purpose": "provenance/document-build.json",
       "release_status": "local_review_candidate_human_and_rights_review_pending"
     },
@@ -283,7 +283,7 @@
     {
       "path": "provenance/source-map.json",
       "bytes": 16773,
-      "sha256": "5db9c23ac686da9cadcb1467c2c5d106feb1f2627bcc8cc2f57a2caec9728463",
+      "sha256": "a7dc83c029be7c1aa5d7fcce26ddcc26d8659737fafda62af270f37ffaa85206",
       "purpose": "provenance/source-map.json",
       "release_status": "local_review_candidate_human_and_rights_review_pending"
     },
@@ -303,8 +303,8 @@
     },
     {
       "path": "report/figures/figure-data.json",
-      "bytes": 704,
-      "sha256": "fa40213e816854b0cef6e813426f39eea8eb4b94e834643e82f252b53e2d2550",
+      "bytes": 659,
+      "sha256": "2088cdc9c4c1f5cdb1e7d18aaa77b19a2eb31a3e677c80e7f80257cfa16834a6",
       "purpose": "report/figures/figure-data.json",
       "release_status": "local_review_candidate_human_and_rights_review_pending"
     },
@@ -338,15 +338,15 @@
     },
     {
       "path": "report/review.html",
-      "bytes": 112484,
-      "sha256": "414e3b2f88f0218d113bb9920833dadf6f496b7906f304be25db6b50bc13b1f5",
+      "bytes": 112497,
+      "sha256": "68780e196ea4c8f0c5c032c0aec14154f55828d66aed27ace6465029b7993ef0",
       "purpose": "report/review.html",
       "release_status": "local_review_candidate_human_and_rights_review_pending"
     },
     {
       "path": "report/review.pdf",
-      "bytes": 954264,
-      "sha256": "6926427821ba937e78cd57254585009b856d04015be81306095b2c49060d0dbf",
+      "bytes": 954283,
+      "sha256": "e4a31b6259c94d29fa31212f580a7bed8b766af78f39b500c21294749264ba01",
       "purpose": "report/review.pdf",
       "release_status": "local_review_candidate_human_and_rights_review_pending"
     },
@@ -380,8 +380,8 @@
     },
     {
       "path": "scripts/gfi_gap.py",
-      "bytes": 39457,
-      "sha256": "f51e32134c8e5fa08b2b66b4297bb09e39792df26b87b20e32ca7cf39da9277f",
+      "bytes": 40048,
+      "sha256": "f60a34c6510ca9667daf567426254856164de6960771c0a5161c29a09f264c89",
       "purpose": "scripts/gfi_gap.py",
       "release_status": "local_review_candidate_human_and_rights_review_pending"
     },
