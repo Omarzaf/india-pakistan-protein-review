@@ -1,6 +1,19 @@
 # Methods appendix: India–Pakistan spending scenarios
 
-**AI-assisted review draft, 22 October 2026. Human factual/code verification pending. Proposed joint-report methods contribution; definitions are proposed harmonization, not a recorded team agreement.**
+**AI-assisted review draft, 27 October 2026. Human factual/code verification pending. Proposed joint-report methods contribution; definitions are proposed harmonization, not a recorded team agreement.**
+
+## Read this first: the calculation in plain language
+
+We ask how domestic spending on alternative-protein foods might develop in India and Pakistan in 2026, 2030 and 2035. We do not measure national adoption or predict how much conventional meat will be replaced. The following steps explain the retained model; the exact equations below are unchanged.
+
+1. **Start with India.** GFI India/Deloitte estimates a 2022 market of INR 351 crore for plant-based meat, dairy and eggs. We assume a 2022 price basis and retail valuation, then convert it to 2025-price dollars: about $45.3 million. These interpretations are assumptions because the source does not specify them.
+2. **Carry spending per person forward.** Income growth and urbanisation raise or lower the path. An additional annual growth term represents other changes imperfectly; its bounds come from a US sales decline and Indian vacancy growth. These are chosen proxies, not relationships fitted to purchases.
+3. **Construct Pakistan's conditional path.** There is no equivalent verified national sales anchor in the retained evidence. We transfer India's per-person path using relative income, urban share, animal-protein supply and industry-activity proxies, then multiply by Pakistan's population. This adds uncertainty and does not establish observed Pakistani sales.
+4. **Repeat under different assumptions.** The model draws four parameters 10,000 times. Each draw is reused across countries and years. The lower, middle and upper values are the 10th, 50th and 90th percentiles of those calculations; they are not calibrated probabilities of future sales.
+5. **Change assumptions deliberately.** Retained sensitivities test overlapping income/industry growth and Pakistan multipliers. The new GFI companion also changes the US-derived growth floor and elasticity assumptions separately and calculates the extra growth required to reach GFI's targets. It leaves the historical reference results unchanged.
+6. **Interpret the limits.** GFI's domestic scenarios, our assumption percentiles and repeated AI responses are different objects. Shared GFI inputs prevent treating their agreement as independent confirmation. The main empirical need is comparable sales and repeat-purchase evidence, especially for Pakistan.
+
+For the numerical comparison, see [Why these scenarios sit below GFI India](gfi-gap.md). [Drivers and proposed tests](drivers.md) explain the mechanisms that the aggregate equation cannot identify separately.
 
 ## 1. Question, estimand and evidence classes
 

@@ -1,0 +1,36 @@
+{
+  "capturedFrom": "22 October published artifact retained in repository",
+  "archivePrefix": "editions/2026-10-22",
+  "files": [
+    {
+      "path": "editions/2026-10-22/index.html",
+      "sha256": "4a44b59c8e570c590cefba41b9d2e37e3e49a2ae3f5ef54d5227fa9c7ddd86d3",
+      "bytes": 9279418
+    },
+    {
+      "path": "editions/2026-10-22/archive.html",
+      "sha256": "65b519ecd841de700cd557adafcf24b3754eb18c63b886ec3280b24dd5115b72",
+      "bytes": 885
+    },
+    {
+      "path": "editions/2026-10-22/Protein-Futures-India-Pakistan-Report-2026-10-21.pdf",
+      "sha256": "51a83206f65ac8213a8105743c98bd7264c3ea0563e9e08464374e5bb18b84b2",
+      "bytes": 1286048
+    },
+    {
+      "path": "editions/2026-10-22/original/index.html",
+      "sha256": "6ef84f6ba579dd596221e6ea3d7252d0c9c3c6a8388d2e0713f5fcbcdf59176a",
+      "bytes": 5928666
+    },
+    {
+      "path": "editions/2026-10-22/lib/D3-LICENSE.txt",
+      "sha256": "3e6849627f74ff73c257a3ae1efb574015d94fc1035c05ec3c15805165efcbc4",
+      "bytes": 731
+    },
+    {
+      "path": "editions/2026-10-22/original/lib/D3-LICENSE.txt",
+      "sha256": "3e6849627f74ff73c257a3ae1efb574015d94fc1035c05ec3c15805165efcbc4",
+      "bytes": 731
+    }
+  ]
+}

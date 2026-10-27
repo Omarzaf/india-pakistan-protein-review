@@ -8,7 +8,7 @@ const root = path.join(website, 'public');
 const allowed = new Set(JSON.parse(fs.readFileSync(path.join(root, 'release.json'))).files.map(file => file.path));
 allowed.add('release.json');
 const config = JSON.parse(fs.readFileSync(path.join(website, 'vercel.json')));
-const mime = {'.html': 'text/html; charset=utf-8', '.mjs': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.json': 'application/json; charset=utf-8', '.md': 'text/plain; charset=utf-8', '.csv': 'text/csv; charset=utf-8', '.pdf': 'application/pdf', '.txt': 'text/plain; charset=utf-8'};
+const mime = {'.html': 'text/html; charset=utf-8', '.mjs': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.json': 'application/json; charset=utf-8', '.md': 'text/plain; charset=utf-8', '.csv': 'text/csv; charset=utf-8', '.pdf': 'application/pdf', '.txt': 'text/plain; charset=utf-8', '.svg': 'image/svg+xml', '.png': 'image/png', '.py': 'text/plain; charset=utf-8'};
 const server = http.createServer((request, response) => {
   if (!['GET', 'HEAD'].includes(request.method)) {response.writeHead(405); response.end(); return;}
   let route;

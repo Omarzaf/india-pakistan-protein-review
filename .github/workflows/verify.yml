@@ -20,7 +20,7 @@ jobs:
         run: |
           node website/tools/verify.mjs
           node --test website/tests/*.test.mjs
-      - name: Reproduce the original review package in isolation
+      - name: Reproduce the selected review package in isolation
         run: |
           node website/tools/export-review.mjs "$RUNNER_TEMP/protein-review"
           cd "$RUNNER_TEMP/protein-review"

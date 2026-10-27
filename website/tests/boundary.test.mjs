@@ -31,10 +31,10 @@ test('extra files and altered publication bytes fail the committed receipt', () 
   try {
     for (const item of ['public', 'provenance', 'vercel.json']) fs.cpSync(path.join(website, item), path.join(temporary, item), {recursive: true});
     fs.writeFileSync(path.join(temporary, 'public', 'unreviewed.txt'), 'Unexpected payload');
-    let result = verify(temporary, {syntax: false});
+    let result = verify(temporary, {syntax: false, sourceParity: false});
     assert(result.errors.includes('Public allowlist differs from actual files'));
     fs.appendFileSync(path.join(temporary, 'public/dashboard/app.mjs'), '\n// changed\n');
-    result = verify(temporary, {syntax: false});
+    result = verify(temporary, {syntax: false, sourceParity: false});
     assert(result.errors.some(error => error.includes('Hash/size mismatch: dashboard/app.mjs')));
   } finally {fs.rmSync(temporary, {recursive: true});}
 });

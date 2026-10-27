@@ -1,8 +1,8 @@
 # India and Pakistan: alternative-protein spending scenarios
 
-**Muhammad Umar Zafar · 22 October 2026 · Review edition**
+**Muhammad Umar Zafar · 27 October 2026 · Local revision candidate**
 
-**Public dashboard:** [consumption, projections, runs and reviews](https://pakistan-india-protein.vercel.app/dashboard/). The original report remains in the adjacent Report tab. [Website verification and release instructions](https://github.com/Omarzaf/india-pakistan-protein-review/blob/review/WEBSITE.md) describe the separate publication boundary.
+**Existing public dashboard (22 October edition; this revision is not deployed):** [consumption, projections, runs and reviews](https://pakistan-india-protein.vercel.app/dashboard/). The local candidate adds a revised Report and preserves the previous edition. [Website verification and release instructions](https://github.com/Omarzaf/india-pakistan-protein-review/blob/review/WEBSITE.md) describe the separate publication boundary.
 
 This repository contains a proposed India–Pakistan contribution to a unified research report, its methods, and an offline reproduction of the retained numbers. Team agreement and human factual/code verification are pending. It is ready for a bounded review; it is not a final programme submission or an accepted research finding.
 
@@ -12,7 +12,7 @@ This repository contains a proposed India–Pakistan contribution to a unified r
 2. **Inspect:** [measurement crosswalk](methods/measurement-crosswalk.md), [source ledger](provenance/sources.md), [claim review register](provenance/claim-review.csv), and [data dictionary](data/README.md).
 3. **Reproduce:** use Python 3.12 (verified on 3.12.13). The numerical path uses the standard library, packaged aggregate inputs and no network or model calls.
 
-The checker verifies a file-only export and deliberately rejects Git metadata. If you cloned this repository, first export its tracked files into a temporary directory; skip this step only when using the original supplied 37-file review ZIP:
+The checker verifies a file-only export and deliberately rejects Git metadata. If you cloned this repository, first export its tracked files into a temporary directory; skip this step only when using the original supplied original review ZIP:
 
 ```sh
 review_export=$(mktemp -d)
@@ -31,7 +31,7 @@ python -m unittest discover -s tests -v
 python scripts/check_release.py
 ```
 
-No package installation is needed. These commands regenerate 127 proxy-output rows and 18 panel summaries from 60 retained responses. Reproduction checks byte agreement for the proxy CSV and a maximum absolute difference of 1e-12 for the panel summaries. The tests also reject corrupt runs and check the comparison denominator. Other Python versions have not been certified for byte-identical output.
+No package installation is needed. These commands regenerate the unchanged 127 proxy-output rows, 18 panel summaries from 60 retained responses, and the separate GFI diagnostic artifacts. Reproduction checks byte agreement for the proxy CSV and a maximum absolute difference of 1e-12 for the panel summaries. The tests also reject corrupt runs and check the comparison denominator. Other Python versions have not been certified for byte-identical output.
 
 ## The argument
 
@@ -55,6 +55,8 @@ This file-only edition contains no Git history, raw questionnaire, collaborator 
 
 [RIGHTS.md](RIGHTS.md) records source-specific boundaries. No blanket content or software licence is granted. Human verification must cover all included AI-produced or AI-edited claims, citations, statistics, quotations, data and code. The [AI-use statement](report/limitations-and-ai-use.md) and blank review register make that remaining work explicit.
 
+The revision adds [GFI diagnostics](methods/gfi-gap.md), [driver evidence](methods/drivers.md), [dated context](methods/dated-context.md) and [proposed tests](data/recommendations.csv). No historical headline, panel response or reference output was replaced. GFI matching remains a diagnostic, not a new main scenario.
+
 To rebuild the readable HTML with the optional Pandoc tool, run `python scripts/build_documents.py`. The checked PDF is supplied; rendering precautions are recorded in `provenance/document-build.json`, and its renderer is identified in the PDF metadata. Document rendering is separate from numerical reproduction.
 
 ## Proposed integration
@@ -62,3 +64,7 @@ To rebuild the readable HTML with the optional Pandoc tool, run `python scripts/
 The chapter is modular: place it after the US contribution in a unified report, with exact methods in an appendix. Common definitions remain proposals until authors agree. Retain each strand's actual products, channels, years and uncertainty labels. Write the cross-regional synthesis and abstract only after those contributions are accepted. This package does not imply another contributor's approval.
 
 For a correction, identify the exact sentence or data row, the original source and its date, the proposed change and its effect on the outputs. [CONTRIBUTING.md](CONTRIBUTING.md) explains the review sequence.
+
+## Local revision status
+
+This candidate is local only. Human factual/code verification, rights and joint-report acceptance remain pending. Existing US panel rows are preserved; no new original-panel equivalence or collaborator approval is claimed. The PDF is separately rendered and visually inspected; the HTML builder does not generate it. The optional `scripts/plot_gfi_gap.py` uses existing Matplotlib tooling to regenerate the supplied figure; offline numerical reproduction uses only the Python standard library.

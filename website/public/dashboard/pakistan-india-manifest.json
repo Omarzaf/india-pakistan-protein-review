@@ -3,7 +3,7 @@
   "asOf": "2026-10-22",
   "snapshotId": "pk-in-20261022-9e52388367c5c881-public",
   "title": "Pakistan–India demand and consumption",
-  "freshness": "Explicit retained-file snapshot. No live acquisition, model execution or automatic refresh.",
+  "freshness": "Retained 22 October data snapshot; chapter and methods revised 27 October. No new forecasts or source acquisition; new arithmetic diagnostics are separate.",
   "datasets": {
     "proxy": {
       "path": "/dashboard/tables/d-9502ed61e9e519cdbe.json",
@@ -2270,13 +2270,13 @@
     "claims": {
       "path": "/dashboard/tables/d-1f0d02fb73ed0b4c11.json",
       "table": "$",
-      "title": "Current human review register",
+      "title": "Retained 22 October claim inventory",
       "evidenceClass": "Review status",
       "period": "22 October 2026 review edition",
       "unit": "Claims",
       "denominator": "Thirty listed review items",
       "scope": "Current chapter, panel, code and release boundaries",
-      "caveat": "Blank reviewer/date and pending disposition are unresolved human review, not approval.",
+      "caveat": "Historical 30-row inventory. Read the current manuscript review document for the 27 October revision; all human review remains pending.",
       "documents": [
         "claim-review",
         "chapter",
@@ -2894,40 +2894,46 @@
   "documents": [
     {
       "id": "chapter",
-      "title": "Current India–Pakistan contribution",
+      "title": "Current India–Pakistan chapter · 27 October",
       "path": "/dashboard/documents/chapter.md",
-      "sha256": "a6af6c8b63e9b32878d42a0a1e9538af260b4cce959bbd2dfdcbc6a96d113954",
+      "sha256": "df42994ebdf6bb5620b654ea3d618cbf64a43a30117083a481b2a57c74f04c47",
       "kind": "report",
       "section": "India and Pakistan: what spending scenarios can establish",
-      "originalSourceSha256": "a6af6c8b63e9b32878d42a0a1e9538af260b4cce959bbd2dfdcbc6a96d113954",
-      "exportSha256": "a6af6c8b63e9b32878d42a0a1e9538af260b4cce959bbd2dfdcbc6a96d113954",
+      "originalSourceSha256": "df42994ebdf6bb5620b654ea3d618cbf64a43a30117083a481b2a57c74f04c47",
+      "exportSha256": "df42994ebdf6bb5620b654ea3d618cbf64a43a30117083a481b2a57c74f04c47",
       "publicationProjection": "exact",
-      "publicationNote": "Exact checked review-package document. Public dashboard release is author-authorized; human factual/code and scholarly review remain pending.",
-      "readerPath": "/dashboard/documents/chapter.reader.json"
+      "publicationNote": "Exact local review-candidate document, revised 27 October. Publication approval and human factual/code review remain pending.",
+      "readerPath": "/dashboard/documents/chapter.reader.json",
+      "manuscriptRevision": "2026-10-27",
+      "packagePath": "report/chapter.md"
     },
     {
       "id": "review-pdf",
-      "title": "Current chapter and methods · 17-page PDF",
+      "title": "Current chapter and methods PDF · 27 October",
       "path": "/dashboard/documents/review-pdf.pdf",
-      "sha256": "7e84aa8b92e9c07bb2544899dda40b69a9bbb577c3d538965cc6838605dede63",
+      "sha256": "cf10a221da8d5c851c26af43560d4575efa04dafe94bcbefa222e4ad8b5b6c99",
       "kind": "pdf",
-      "originalSourceSha256": "7e84aa8b92e9c07bb2544899dda40b69a9bbb577c3d538965cc6838605dede63",
-      "exportSha256": "7e84aa8b92e9c07bb2544899dda40b69a9bbb577c3d538965cc6838605dede63",
+      "originalSourceSha256": "cf10a221da8d5c851c26af43560d4575efa04dafe94bcbefa222e4ad8b5b6c99",
+      "exportSha256": "cf10a221da8d5c851c26af43560d4575efa04dafe94bcbefa222e4ad8b5b6c99",
       "publicationProjection": "exact",
-      "publicationNote": "Exact checked review-package document. Public dashboard release is author-authorized; human factual/code and scholarly review remain pending."
+      "publicationNote": "Exact local review-candidate document, revised 27 October. Publication approval and human factual/code review remain pending.",
+      "manuscriptRevision": "2026-10-27",
+      "packagePath": "report/review.pdf"
     },
     {
       "id": "proxy-method",
-      "title": "Exact spending-proxy method",
+      "title": "Plain-language walkthrough and exact proxy method",
       "path": "/dashboard/documents/proxy-method.md",
-      "sha256": "f74bddc7a17c67a574b60599e9f7583f48dfe834430460c774b703c0db954354",
+      "sha256": "ec9f19469f08ca2d43b7ebbb04336f2820e22a62ec9257e38db877d04fad1805",
       "kind": "method",
       "section": "3. Exact implemented transformations",
-      "originalSourceSha256": "f74bddc7a17c67a574b60599e9f7583f48dfe834430460c774b703c0db954354",
-      "exportSha256": "f74bddc7a17c67a574b60599e9f7583f48dfe834430460c774b703c0db954354",
+      "originalSourceSha256": "ec9f19469f08ca2d43b7ebbb04336f2820e22a62ec9257e38db877d04fad1805",
+      "exportSha256": "ec9f19469f08ca2d43b7ebbb04336f2820e22a62ec9257e38db877d04fad1805",
       "publicationProjection": "exact",
-      "publicationNote": "Exact checked review-package document. Public dashboard release is author-authorized; human factual/code and scholarly review remain pending.",
-      "readerPath": "/dashboard/documents/proxy-method.reader.json"
+      "publicationNote": "Exact local review-candidate document, revised 27 October. Publication approval and human factual/code review remain pending.",
+      "readerPath": "/dashboard/documents/proxy-method.reader.json",
+      "manuscriptRevision": "2026-10-27",
+      "packagePath": "methods/proxy.md"
     },
     {
       "id": "panel-method",
@@ -2957,15 +2963,17 @@
     },
     {
       "id": "limitations",
-      "title": "Limitations and AI use",
+      "title": "Current limitations and AI-use statement",
       "path": "/dashboard/documents/limitations.md",
-      "sha256": "d98311bb7b7e17654d57dbd8f95e3797426605369e174b2631afdf704f862a55",
-      "kind": "review",
-      "originalSourceSha256": "d98311bb7b7e17654d57dbd8f95e3797426605369e174b2631afdf704f862a55",
-      "exportSha256": "d98311bb7b7e17654d57dbd8f95e3797426605369e174b2631afdf704f862a55",
+      "sha256": "54fa99a15e210c357e29cd46d55ef417c04f860fde377b51ee572a03eb15953f",
+      "kind": "method",
+      "originalSourceSha256": "54fa99a15e210c357e29cd46d55ef417c04f860fde377b51ee572a03eb15953f",
+      "exportSha256": "54fa99a15e210c357e29cd46d55ef417c04f860fde377b51ee572a03eb15953f",
       "publicationProjection": "exact",
-      "publicationNote": "Exact checked review-package document. Public dashboard release is author-authorized; human factual/code and scholarly review remain pending.",
-      "readerPath": "/dashboard/documents/limitations.reader.json"
+      "publicationNote": "Exact local review-candidate document, revised 27 October. Publication approval and human factual/code review remain pending.",
+      "readerPath": "/dashboard/documents/limitations.reader.json",
+      "manuscriptRevision": "2026-10-27",
+      "packagePath": "report/limitations-and-ai-use.md"
     },
     {
       "id": "numerical-receipt",
@@ -2981,15 +2989,17 @@
     },
     {
       "id": "claim-review",
-      "title": "Current human claim-review register",
+      "title": "Current manuscript human-review register",
       "path": "/dashboard/documents/claim-review.csv",
-      "sha256": "b505d85db4f1f86ef971d3a9b2a4f7278f049059f08e0d64ac3e555298c3ff0a",
+      "sha256": "edbc6985d1600f8cc1fd6892fc8ae42a26d6f36b15cb1fcda9ca45a6b52dbde7",
       "kind": "review",
-      "originalSourceSha256": "b505d85db4f1f86ef971d3a9b2a4f7278f049059f08e0d64ac3e555298c3ff0a",
-      "exportSha256": "b505d85db4f1f86ef971d3a9b2a4f7278f049059f08e0d64ac3e555298c3ff0a",
+      "originalSourceSha256": "edbc6985d1600f8cc1fd6892fc8ae42a26d6f36b15cb1fcda9ca45a6b52dbde7",
+      "exportSha256": "edbc6985d1600f8cc1fd6892fc8ae42a26d6f36b15cb1fcda9ca45a6b52dbde7",
       "publicationProjection": "exact",
-      "publicationNote": "Exact checked review-package document. Public dashboard release is author-authorized; human factual/code and scholarly review remain pending.",
-      "readerPath": "/dashboard/documents/claim-review.reader.json"
+      "publicationNote": "Exact local review-candidate document, revised 27 October. Publication approval and human factual/code review remain pending.",
+      "readerPath": "/dashboard/documents/claim-review.reader.json",
+      "manuscriptRevision": "2026-10-27",
+      "packagePath": "provenance/claim-review.csv"
     },
     {
       "id": "proxy-ledger",
@@ -3005,15 +3015,17 @@
     },
     {
       "id": "source-map",
-      "title": "Current package source map",
+      "title": "Current source-to-export map",
       "path": "/dashboard/documents/source-map.json",
-      "sha256": "d06253d8e9c831e533c191f506a70764fa0bc7b3fdaa6692ad37303f2ace5170",
+      "sha256": "40ee55963e313de199818e9b104fbf6df66d30a4991a258f41cbc262f55cdcfa",
       "kind": "method",
-      "originalSourceSha256": "1c3e4d6048067ef057939b84c2181937eca142864a21e5e5244bb17718f2b4e2",
-      "exportSha256": "d06253d8e9c831e533c191f506a70764fa0bc7b3fdaa6692ad37303f2ace5170",
-      "publicationProjection": "metadata-projection",
-      "publicationNote": "Source-map projection: original digests and transformations retained; internal source paths omitted.",
-      "readerPath": "/dashboard/documents/source-map.reader.json"
+      "originalSourceSha256": "40ee55963e313de199818e9b104fbf6df66d30a4991a258f41cbc262f55cdcfa",
+      "exportSha256": "40ee55963e313de199818e9b104fbf6df66d30a4991a258f41cbc262f55cdcfa",
+      "publicationProjection": "exact",
+      "publicationNote": "Exact local review-candidate document, revised 27 October. Publication approval and human factual/code review remain pending.",
+      "readerPath": "/dashboard/documents/source-map.reader.json",
+      "manuscriptRevision": "2026-10-27",
+      "packagePath": "provenance/source-map.json"
     },
     {
       "id": "source-guide",
@@ -3230,6 +3242,76 @@
       "kind": "review",
       "publicationProjection": "public-summary",
       "publicationNote": "Public summary of a frozen historical source; no fresh model run or environment claim. Original source hash is retained separately."
+    },
+    {
+      "id": "gfi-gap",
+      "title": "Why the scenarios sit below GFI India",
+      "path": "/dashboard/documents/gfi-gap.md",
+      "kind": "method",
+      "sha256": "1b55a81c1d94996a462b7a9c3bd02f78d7f9d0345172fc91bb82709e420d8e5c",
+      "originalSourceSha256": "1b55a81c1d94996a462b7a9c3bd02f78d7f9d0345172fc91bb82709e420d8e5c",
+      "exportSha256": "1b55a81c1d94996a462b7a9c3bd02f78d7f9d0345172fc91bb82709e420d8e5c",
+      "publicationProjection": "exact",
+      "publicationNote": "Exact local review-candidate document, revised 27 October. Publication approval and human factual/code review remain pending.",
+      "manuscriptRevision": "2026-10-27",
+      "packagePath": "methods/gfi-gap.md",
+      "readerPath": "/dashboard/documents/gfi-gap.reader.json"
+    },
+    {
+      "id": "drivers",
+      "title": "Drivers, obstacles and linked proposals",
+      "path": "/dashboard/documents/drivers.md",
+      "kind": "report",
+      "sha256": "d16a4ffe2665aa57d7765cc49a455b0b1cd7d2e6ca5cfb0c3693bebf5e401c97",
+      "originalSourceSha256": "d16a4ffe2665aa57d7765cc49a455b0b1cd7d2e6ca5cfb0c3693bebf5e401c97",
+      "exportSha256": "d16a4ffe2665aa57d7765cc49a455b0b1cd7d2e6ca5cfb0c3693bebf5e401c97",
+      "publicationProjection": "exact",
+      "publicationNote": "Exact local review-candidate document, revised 27 October. Publication approval and human factual/code review remain pending.",
+      "manuscriptRevision": "2026-10-27",
+      "packagePath": "methods/drivers.md",
+      "readerPath": "/dashboard/documents/drivers.reader.json"
+    },
+    {
+      "id": "dated-context",
+      "title": "Dated evidence on earlier sector expectations",
+      "path": "/dashboard/documents/dated-context.md",
+      "kind": "method",
+      "sha256": "52daeb7a13b1522fea3f055d155ea4c2ff4d5d09f8c3ca7ddb6b1c483fb1d4da",
+      "originalSourceSha256": "52daeb7a13b1522fea3f055d155ea4c2ff4d5d09f8c3ca7ddb6b1c483fb1d4da",
+      "exportSha256": "52daeb7a13b1522fea3f055d155ea4c2ff4d5d09f8c3ca7ddb6b1c483fb1d4da",
+      "publicationProjection": "exact",
+      "publicationNote": "Exact local review-candidate document, revised 27 October. Publication approval and human factual/code review remain pending.",
+      "manuscriptRevision": "2026-10-27",
+      "packagePath": "methods/dated-context.md",
+      "readerPath": "/dashboard/documents/dated-context.reader.json"
+    },
+    {
+      "id": "recommendations",
+      "title": "Proposed tests and outcome register",
+      "path": "/dashboard/documents/recommendations.csv",
+      "kind": "report",
+      "sha256": "349cc5c2dd72d142819d5675c70d55c663603dfac18c0d2a8a12cfc2ce380ed7",
+      "originalSourceSha256": "349cc5c2dd72d142819d5675c70d55c663603dfac18c0d2a8a12cfc2ce380ed7",
+      "exportSha256": "349cc5c2dd72d142819d5675c70d55c663603dfac18c0d2a8a12cfc2ce380ed7",
+      "publicationProjection": "exact",
+      "publicationNote": "Exact local review-candidate document, revised 27 October. Publication approval and human factual/code review remain pending.",
+      "manuscriptRevision": "2026-10-27",
+      "packagePath": "data/recommendations.csv",
+      "readerPath": "/dashboard/documents/recommendations.reader.json"
+    },
+    {
+      "id": "driver-evidence",
+      "title": "Country-specific driver evidence ledger",
+      "path": "/dashboard/documents/driver-evidence.json",
+      "kind": "method",
+      "sha256": "8665627070f2d697aa91b6ad0032108b9f69d61907249a68074565082ce4a4da",
+      "originalSourceSha256": "8665627070f2d697aa91b6ad0032108b9f69d61907249a68074565082ce4a4da",
+      "exportSha256": "8665627070f2d697aa91b6ad0032108b9f69d61907249a68074565082ce4a4da",
+      "publicationProjection": "exact",
+      "publicationNote": "Exact local review-candidate document, revised 27 October. Publication approval and human factual/code review remain pending.",
+      "manuscriptRevision": "2026-10-27",
+      "packagePath": "data/driver-evidence.json",
+      "readerPath": "/dashboard/documents/driver-evidence.reader.json"
     }
   ],
   "linkedSources": [
@@ -3260,7 +3342,7 @@
   ],
   "counts": {
     "datasets": 17,
-    "documents": 28,
+    "documents": 33,
     "proxyIntervals": 6,
     "acceptedRuns": 60,
     "bilateralAcceptedRuns": 40,
@@ -3277,7 +3359,8 @@
     "claimReviewItems": 30,
     "humanReviewedClaims": 0,
     "sourceRegisterRows": 65,
-    "tableRows": 7117
+    "tableRows": 7117,
+    "retainedClaimReviewItems": 30
   },
   "historical": [
     {
@@ -3351,16 +3434,16 @@
     "dataset:householdScenarios": "850fd74e29bfb36cc9ae6719c9eb4c80e65c7cb6a4daff0e4bf49ca86a25949e",
     "dataset:householdSobol": "f22a84e9437963506b89a25965aaa95f8718424381699c6f187867935a8ca345",
     "dataset:householdHoldout": "c439a7c5df98fa3653fdf821d0f1f5ad8d1a18e8e26d3bb97a43cef7562fe7ed",
-    "document:chapter": "a6af6c8b63e9b32878d42a0a1e9538af260b4cce959bbd2dfdcbc6a96d113954",
-    "document:review-pdf": "7e84aa8b92e9c07bb2544899dda40b69a9bbb577c3d538965cc6838605dede63",
-    "document:proxy-method": "f74bddc7a17c67a574b60599e9f7583f48dfe834430460c774b703c0db954354",
+    "document:chapter": "df42994ebdf6bb5620b654ea3d618cbf64a43a30117083a481b2a57c74f04c47",
+    "document:review-pdf": "cf10a221da8d5c851c26af43560d4575efa04dafe94bcbefa222e4ad8b5b6c99",
+    "document:proxy-method": "ec9f19469f08ca2d43b7ebbb04336f2820e22a62ec9257e38db877d04fad1805",
     "document:panel-method": "8fa1241ec7f7d4e54b473e620a8068a9df14a71024cb1b56a6b81a33b40a516d",
     "document:measurement": "df0f05d2f167aa1192245d001b38bd60a1eecabd3e53e86d2b83096dc2c61f3d",
-    "document:limitations": "d98311bb7b7e17654d57dbd8f95e3797426605369e174b2631afdf704f862a55",
+    "document:limitations": "54fa99a15e210c357e29cd46d55ef417c04f860fde377b51ee572a03eb15953f",
     "document:numerical-receipt": "41cc0253ff8fd04e16ce0590f1986af91a1ec1e0e39cfeafe34e1550a8124769",
-    "document:claim-review": "b505d85db4f1f86ef971d3a9b2a4f7278f049059f08e0d64ac3e555298c3ff0a",
+    "document:claim-review": "edbc6985d1600f8cc1fd6892fc8ae42a26d6f36b15cb1fcda9ca45a6b52dbde7",
     "document:proxy-ledger": "e9e7865bdfbc818769747d98a66bb3887e4b5b4309914a3ce54662fdbd6aa956",
-    "document:source-map": "1c3e4d6048067ef057939b84c2181937eca142864a21e5e5244bb17718f2b4e2",
+    "document:source-map": "40ee55963e313de199818e9b104fbf6df66d30a4991a258f41cbc262f55cdcfa",
     "document:source-guide": "9b23a1bce1213bae9c8f8741d7461d89aa48122a985a7463919ab2705f4ab492",
     "document:dataset-definitions": "0cf1eb07c7b9331e55d6b9959d1a51a46d2e4766a4cbe7367c96f70056c1bdb2",
     "document:consumption-report": "e3f6b2022416dd2e0a9870288233ab3e1a81880dd2ece3eb48782484d8cefbaf",
@@ -3378,7 +3461,12 @@
     "document:household-freeze": "a794b140200150826096cb3907cb380b6a048bb71dcaf57bf6dd1eb7f72f6f2f",
     "document:benchmark-readme": "2f93499cc86bead45074c47ceb371b8a2e96f42993dc9c9a9d099c7ba2830a1c",
     "document:benchmark-reproduce": "bbfc148a6c68a405d60c02eae89a0c53f992a0681aecfb7f637fd362dcc93073",
-    "document:benchmark-review": "13649da2f4240f0c7704f8e6997a9de602046866b38494b28dc23a012aa297b1"
+    "document:benchmark-review": "13649da2f4240f0c7704f8e6997a9de602046866b38494b28dc23a012aa297b1",
+    "document:gfi-gap": "1b55a81c1d94996a462b7a9c3bd02f78d7f9d0345172fc91bb82709e420d8e5c",
+    "document:drivers": "d16a4ffe2665aa57d7765cc49a455b0b1cd7d2e6ca5cfb0c3693bebf5e401c97",
+    "document:dated-context": "52daeb7a13b1522fea3f055d155ea4c2ff4d5d09f8c3ca7ddb6b1c483fb1d4da",
+    "document:recommendations": "349cc5c2dd72d142819d5675c70d55c663603dfac18c0d2a8a12cfc2ce380ed7",
+    "document:driver-evidence": "8665627070f2d697aa91b6ad0032108b9f69d61907249a68074565082ce4a4da"
   },
   "acceptance": {
     "technical": "Retained computation and source identity are checked separately from empirical validity",
@@ -3394,10 +3482,17 @@
     "No national Pakistan sales anchor, complete protein-intake total, or nationally calibrated adoption series is established."
   ],
   "publication": {
-    "authorizedDate": "2026-10-22",
+    "authorizedDate": null,
     "inputSnapshotId": "pk-in-20261022-9e52388367c5c881",
     "projection": "Focused public aggregate export",
-    "noNewAcquisitionOrModelRun": true,
-    "originalAndExportDigestsSeparate": true
-  }
+    "noNewAcquisitionOrModelRun": false,
+    "originalAndExportDigestsSeparate": true,
+    "priorAuthorizedDate": "2026-10-22",
+    "manuscriptRevision": "2026-10-27",
+    "publicationAuthorized": false,
+    "state": "LOCAL_REVIEW_CANDIDATE",
+    "noNewSourceAcquisitionOrElicitation": true,
+    "newNumericalDiagnostics": true
+  },
+  "manuscriptRevision": "2026-10-27"
 }
