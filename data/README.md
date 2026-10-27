@@ -13,3 +13,12 @@ All data here are aggregate inputs or quantitative model outputs. No row represe
 `build/proxy_scenarios.csv` and `build/panel_aggregates.json` are reproduced outputs, not additional evidence. `build/tables.md` uses display rounding; use full-precision CSV/JSON for checks. `build/verification.json` reports computational reproduction only.
 
 Price year, observation year and forecast year are different fields in the interpretation. India's 2022 anchor is converted to 2025 prices. Comparisons with the US use its fixed 2025 per-person value. Product categories differ between the fermentation-inclusive proxy and the plant-based regional panel; consult the measurement crosswalk before comparing them.
+
+## 27 October diagnostic and driver inputs
+
+- `gfi_categories.csv`: 20 source cells from physical page 4 of the GFI/Deloitte PDF, preserving the fermentation dash and source locators.
+- `driver-evidence.json`: eight scoped factors, dated source records and explicit missing/evidence limits.
+- `recommendations.csv`: seven author proposals, linked to driver IDs with proposed baselines, comparators and outcomes.
+- `../build/gfi-gap/`: separate deterministic diagnostics; `factor-draws.csv` contains 10,000 draw-level factorizations for offline inspection and is excluded from the website payload.
+
+These additions do not change the retained 106 inputs, 127 reference rows or panel response/reference files. Missing values and unreviewed claims retain their status.

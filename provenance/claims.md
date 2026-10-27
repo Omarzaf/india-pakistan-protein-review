@@ -31,3 +31,19 @@ Every claim remains pending human factual verification. C25 from the private coo
 | C26 | No shared-definitions agreement record is available; unified contribution is proposed pending team agreement. | Editorial status stated in README: unified contribution proposed, common definitions not agreed. No empirical source required. | User/editorial instruction, not external empirical claim. No backdated consensus. |
 
 The review register also includes whole-document, bibliography, code, data and rights rows. Checking headline claims alone does not fulfil the programme requirement to human-verify all AI-produced or AI-edited material. A blank reviewer remains pending.
+
+## 27 October revision claims
+
+Agent source/arithmetic review is recorded separately from the pending human register.
+
+| ID | Claim / permitted use | Locator | Acceptance limit |
+|---|---|---|---|
+| C27 | GFI domestic category values, eight-year source-value growth and the undefined fermentation baseline. | data/gfi_categories.csv; build/gfi-gap/category-growth.csv; GFI PDF physical page 4. | Source price basis unresolved; dash is not a verified zero. |
+| C28 | India2030 sampled maximum458.448499m and analytical maximum462.029988m remain below conditional GFI low964.437694m. | build/gfi-gap/diagnostics.json: maxima and target_comparison; scripts/gfi_gap.py. | Property of selected parameter bounds under conditional price conversion; not validation. |
+| C29 | Paired zero-floor sensitivity raises India2030 median187.811844m to202.213809m; separate elasticity and combined cases cover both countries. | build/gfi-gap/sensitivity-summary.csv; methods/gfi-gap.md. | Diagnostic alternatives; not estimated South Asian corrections. |
+| C30 | Midpoint-parameter factorization yields188.113110m, distinct from the Monte Carlo median; factors multiply within each draw. | build/gfi-gap/midpoint-factors.csv and factor-draws.csv. | Mechanical factorization, not causal attribution; marginal medians need not multiply to outcome median. |
+| C31 | Required extra-growth ranges29.19–35.65%,38.14–45.05%,45.13–52.39% exceed the17.832570% retained ceiling. | build/gfi-gap/required-growth.csv; report/figures/figure-data.json. | Inverse-model diagnostic conditional on source price basis; ranges vary elasticity, not probability coverage. |
+| C32 | Proxy baseline and regional elicitation share GFI evidence; original US panel and supplementary US arm remain distinct. | methods/panel-supplement.md sections2–3 and7; methods/gfi-gap.md. | No independent corroboration or other-author acceptance inferred. |
+| C33 | Eight factors distinguish mechanisms, evidence, country scope, model treatment and missing observations. | data/driver-evidence.json; methods/drivers.md; source-specific locators in ledger. | Selective source set; no exhaustive driver census or national causal ranking. |
+| C34 | R01–R07 link proposed price, meal-fit, assurance, technical, AI and policy tests to driver IDs and outcomes. | data/recommendations.csv; methods/drivers.md; report/chapter.md. | Author proposals with uncommitted actors/design horizons; no established returns or blanket product authorization. |
+| C35 | Dated2021–22 US releases contain upbeat messaging and evidence of slowdown; attribution to Deloitte assumptions remains untested. | methods/dated-context.md; GFI/PBFA dated releases6April2021 and24March2022. | Retained2026captures of dated pages; no causal sentiment estimate or hindsight inference. |
