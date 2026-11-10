@@ -70,8 +70,8 @@
     {
       "source": "methods/drivers.md",
       "path": "review/methods/drivers.md",
-      "sourceSha256": "7315a79ec0564af69b1b9fa3110638c2faa36f05c82a9fbaf13d7730ff8e2e3b",
-      "exportSha256": "7315a79ec0564af69b1b9fa3110638c2faa36f05c82a9fbaf13d7730ff8e2e3b"
+      "sourceSha256": "4c23955dded5adceea60bae16c42e0349d4aacc3496b9459590f7d62912d2f13",
+      "exportSha256": "4c23955dded5adceea60bae16c42e0349d4aacc3496b9459590f7d62912d2f13"
     },
     {
       "source": "methods/dated-context.md",
@@ -94,8 +94,8 @@
     {
       "source": "data/README.md",
       "path": "review/data/README.md",
-      "sourceSha256": "6c1fb5a2db596f46f3c2c97f567ef5616eb9f06ca0f9bcb361ad4e36aade9328",
-      "exportSha256": "6c1fb5a2db596f46f3c2c97f567ef5616eb9f06ca0f9bcb361ad4e36aade9328"
+      "sourceSha256": "ffd18a1dd6036dabe512cd4b780880eac7004c928b5b2dd6277a6dbed7f4b756",
+      "exportSha256": "ffd18a1dd6036dabe512cd4b780880eac7004c928b5b2dd6277a6dbed7f4b756"
     },
     {
       "source": "data/altprotein_proxy_inputs.csv",
@@ -136,14 +136,14 @@
     {
       "source": "data/driver-evidence.json",
       "path": "review/data/driver-evidence.json",
-      "sourceSha256": "8665627070f2d697aa91b6ad0032108b9f69d61907249a68074565082ce4a4da",
-      "exportSha256": "8665627070f2d697aa91b6ad0032108b9f69d61907249a68074565082ce4a4da"
+      "sourceSha256": "d50325643aba6180299482ea2b23a0db3a865d0e4088c937876e7c6a7e114461",
+      "exportSha256": "d50325643aba6180299482ea2b23a0db3a865d0e4088c937876e7c6a7e114461"
     },
     {
       "source": "data/recommendations.csv",
       "path": "review/data/recommendations.csv",
-      "sourceSha256": "349cc5c2dd72d142819d5675c70d55c663603dfac18c0d2a8a12cfc2ce380ed7",
-      "exportSha256": "349cc5c2dd72d142819d5675c70d55c663603dfac18c0d2a8a12cfc2ce380ed7"
+      "sourceSha256": "78206bc99e65050a62c69f2e14eeffd5a26534b5a5e9c306c57946bac6c5109e",
+      "exportSha256": "78206bc99e65050a62c69f2e14eeffd5a26534b5a5e9c306c57946bac6c5109e"
     },
     {
       "source": "provenance/claims.md",

@@ -177,8 +177,8 @@
     },
     {
       "path": "data/README.md",
-      "bytes": 3178,
-      "sha256": "6c1fb5a2db596f46f3c2c97f567ef5616eb9f06ca0f9bcb361ad4e36aade9328",
+      "bytes": 3243,
+      "sha256": "ffd18a1dd6036dabe512cd4b780880eac7004c928b5b2dd6277a6dbed7f4b756",
       "purpose": "data/README.md",
       "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
@@ -191,8 +191,8 @@
     },
     {
       "path": "data/driver-evidence.json",
-      "bytes": 26622,
-      "sha256": "8665627070f2d697aa91b6ad0032108b9f69d61907249a68074565082ce4a4da",
+      "bytes": 26739,
+      "sha256": "d50325643aba6180299482ea2b23a0db3a865d0e4088c937876e7c6a7e114461",
       "purpose": "data/driver-evidence.json",
       "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
@@ -240,8 +240,8 @@
     },
     {
       "path": "data/recommendations.csv",
-      "bytes": 7039,
-      "sha256": "349cc5c2dd72d142819d5675c70d55c663603dfac18c0d2a8a12cfc2ce380ed7",
+      "bytes": 7825,
+      "sha256": "78206bc99e65050a62c69f2e14eeffd5a26534b5a5e9c306c57946bac6c5109e",
       "purpose": "data/recommendations.csv",
       "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
@@ -380,8 +380,8 @@
     },
     {
       "path": "methods/drivers.md",
-      "bytes": 13373,
-      "sha256": "7315a79ec0564af69b1b9fa3110638c2faa36f05c82a9fbaf13d7730ff8e2e3b",
+      "bytes": 13624,
+      "sha256": "4c23955dded5adceea60bae16c42e0349d4aacc3496b9459590f7d62912d2f13",
       "purpose": "methods/drivers.md",
       "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
@@ -443,8 +443,8 @@
     },
     {
       "path": "provenance/human-verification-2026-11-10.md",
-      "bytes": 2348,
-      "sha256": "933d5eb836b5f094c1ce96ec76c120fba453a0dc1d010a36d7d5d5d4861b8e10",
+      "bytes": 2533,
+      "sha256": "bc83046e83414fab7d6897bb005939bf5c00c1cac2d67a503a699af3b47381ee",
       "purpose": "provenance/human-verification-2026-11-10.md",
       "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
@@ -597,8 +597,8 @@
     },
     {
       "path": "tests/test_human_verification.py",
-      "bytes": 4554,
-      "sha256": "1b0bb99e1055101fda104ee73a2da046672f49c534a59353742715d01f4eec22",
+      "bytes": 4895,
+      "sha256": "e05c213f8301473298eff1f3a1d01396881045ec64167c79e71b231008f17bc0",
       "purpose": "tests/test_human_verification.py",
       "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
@@ -618,8 +618,8 @@
     },
     {
       "path": "tests/test_revision_contract.py",
-      "bytes": 19965,
-      "sha256": "0bb2fac27bfbfcc73fbd40355149fbce73237270af68db07159626297da16c7c",
+      "bytes": 20126,
+      "sha256": "af0b1ccd4e3ac3c3800b314e53ebc0e6464f7cd9f1cf2ed6ea6034ba8234bd6e",
       "purpose": "tests/test_revision_contract.py",
       "release_status": "author_verified_2026-11-10_rights_review_pending"
     }

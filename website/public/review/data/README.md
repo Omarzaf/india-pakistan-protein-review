@@ -18,7 +18,7 @@ Price year, observation year and forecast year are different fields in the inter
 
 - `gfi_categories.csv`: 20 source cells from physical page 4 of the GFI/Deloitte PDF, preserving the fermentation dash and source locators.
 - `driver-evidence.json`: eight scoped factors, dated source records and explicit missing/evidence limits.
-- `recommendations.csv`: seven author proposals, linked to driver IDs with proposed baselines, comparators and outcomes.
+- `recommendations.csv`: eight author proposals (R08 added from the final South Asia report on 10 November 2026), linked to driver IDs with proposed baselines, comparators and outcomes.
 - `../build/gfi-gap/`: separate deterministic diagnostics; `factor-draws.csv` contains 10,000 draw-level factorizations for offline inspection and is excluded from the website payload.
 
 These additions do not change the retained 106 inputs, 127 reference rows or panel response/reference files. Missing values and unreviewed claims retain their status.

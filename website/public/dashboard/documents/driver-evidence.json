@@ -204,10 +204,11 @@
       "signpost": "Revisions to real income and actual replacement-food purchases by defined income group.",
       "us_theme": "No direct mapping established.",
       "recommendation_ids": [
-        "R01"
+        "R01",
+        "R08"
       ],
       "obstacle_disposition": "Monitor macro revisions and measure segmented purchases.",
-      "review_disposition": "pending_human_review",
+      "review_disposition": "verified_by_author_2026-11-10",
       "causal_effect_identified": false
     },
     {
@@ -239,10 +240,11 @@
       "us_theme": "Health and R&D are reviewer-supplied prompts; no causal transfer from US sales is assumed.",
       "recommendation_ids": [
         "R01",
-        "R02"
+        "R02",
+        "R08"
       ],
       "obstacle_disposition": "Bounded retail audit and purchase study.",
-      "review_disposition": "pending_human_review",
+      "review_disposition": "verified_by_author_2026-11-10",
       "causal_effect_identified": false
     },
     {
@@ -277,7 +279,7 @@
         "R02"
       ],
       "obstacle_disposition": "Study product/meal fit and distinguish perceptions from health evidence.",
-      "review_disposition": "pending_human_review",
+      "review_disposition": "verified_by_author_2026-11-10",
       "causal_effect_identified": false
     },
     {
@@ -310,7 +312,7 @@
         "R02"
       ],
       "obstacle_disposition": "Bounded study; no national acceptance ranking.",
-      "review_disposition": "pending_human_review",
+      "review_disposition": "verified_by_author_2026-11-10",
       "causal_effect_identified": false
     },
     {
@@ -344,7 +346,7 @@
         "R07"
       ],
       "obstacle_disposition": "Obtain qualified product-specific clarification before any pilot sale.",
-      "review_disposition": "pending_human_review",
+      "review_disposition": "verified_by_author_2026-11-10",
       "causal_effect_identified": false
     },
     {
@@ -378,7 +380,7 @@
         "R07"
       ],
       "obstacle_disposition": "Monitor specific implementation stages; do not forecast approvals.",
-      "review_disposition": "pending_human_review",
+      "review_disposition": "verified_by_author_2026-11-10",
       "causal_effect_identified": false
     },
     {
@@ -413,10 +415,11 @@
         "R01",
         "R04",
         "R05",
-        "R06"
+        "R06",
+        "R08"
       ],
       "obstacle_disposition": "India employer-linked bottleneck trial; Pakistan feasibility first; retail availability audit.",
-      "review_disposition": "pending_human_review",
+      "review_disposition": "verified_by_author_2026-11-10",
       "causal_effect_identified": false
     },
     {
@@ -450,7 +453,7 @@
         "R06"
       ],
       "obstacle_disposition": "Only a feasible benchmarked technical trial; otherwise monitor.",
-      "review_disposition": "pending_human_review",
+      "review_disposition": "verified_by_author_2026-11-10",
       "causal_effect_identified": false
     }
   ]

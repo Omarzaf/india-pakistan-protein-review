@@ -105,7 +105,7 @@ class RevisionContractTests(unittest.TestCase):
         self.assertEqual(len(recommendations), len(self.recommendations))
         self.assertEqual(set(drivers), {f"D{number:02d}" for number in range(1, 9)})
         self.assertEqual(
-            set(recommendations), {f"R{number:02d}" for number in range(1, 8)}
+            set(recommendations), {f"R{number:02d}" for number in range(1, 9)}
         )
         for source in sources.values():
             self.assertTrue(source["title"].strip())
@@ -169,7 +169,9 @@ class RevisionContractTests(unittest.TestCase):
                 self.assertIn(recommendation_id, proposals)
                 self.assertEqual(driver_ids, proposals[recommendation_id])
                 linked.add(recommendation_id)
-        self.assertEqual(linked, set(proposals))
+        # R08 comes from the final South Asia report (10 November 2026). The
+        # 27 October chapter is kept as written, so it does not list R08.
+        self.assertEqual(linked, set(proposals) - {"R08"})
 
     def test_figure_receipt_and_rendered_labels_match_the_source_table(self) -> None:
         """Bind the plotted labels, range and ceiling to the exact CSV revision."""
