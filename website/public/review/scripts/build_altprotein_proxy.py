@@ -1,0 +1,799 @@
+"""Reproduce conditional India-Pakistan market scenarios using packaged inputs.
+
+Adapted from the preserved research engine by removing private source extraction
+and adding an output argument. Equations, random draw order and numerical
+formatting are unchanged. See provenance/source-map.json for source hashes.
+The source labels inside generated CSV rows preserve the original engine path.
+No network request or model-provider invocation is part of this command.
+"""
+
+from __future__ import annotations
+
+import argparse
+import csv
+import hashlib
+import json
+import math
+import random
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+INPUTS = ROOT / "data/altprotein_proxy_inputs.csv"
+OUTPUTS = ROOT / "data/altprotein_proxy_scenarios.csv"
+RAW_PREFIX = "data/raw/altprotein/proxy/"
+
+IMF = "imf_weo_2026_10"
+URBAN = "worldbank_wdi_urban_population_share_2026"
+FX = "worldbank_wdi_official_exchange_rate_2026"
+GDP_PC = "worldbank_wdi_gdp_per_capita_2026"
+GFI_US = "gfi_us_plant_based_retail_2025"
+GFI_INDIA = "gfi_india_smart_protein_economic_analysis_2022"
+FAO = "fao_fbs_2025_10_28"
+JOBS_DIRECTORY = "altprotein_jobs_company_directory_2024"
+JOBS_VACANCY = "altprotein_jobs_vacancy_2023_2025"
+
+SEED = 20261015
+DRAWS = 10000
+YEARS = (2026, 2030, 2035)
+ANCHOR_YEAR = 2022
+PRICE_YEAR = 2025
+LAST_IMF_YEAR = 2031
+ANIMAL_ITEMS = (
+    "Bovine Meat",
+    "Eggs",
+    "Fish, Seafood",
+    "Milk - Excluding Butter",
+    "Mutton & Goat Meat",
+    "Pigmeat",
+    "Poultry Meat",
+)
+INPUT_FIELDS = [
+    "input_id",
+    "country",
+    "year",
+    "quantity",
+    "value",
+    "unit",
+    "source_id",
+    "tier",
+    "raw_file",
+    "raw_sha256",
+    "raw_locator",
+    "notes",
+]
+OUTPUT_FIELDS = [
+    "row_id",
+    "record_type",
+    "country",
+    "year",
+    "quantity",
+    "statistic",
+    "value",
+    "unit",
+    "tier",
+    "source_ids",
+    "method",
+    "notes",
+]
+
+
+def sha256(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def read_csv(path: Path) -> list[dict[str, str]]:
+    with path.open(newline="", encoding="utf-8-sig") as stream:
+        return list(csv.DictReader(stream))
+
+
+def quantile(values: list[float], q: float) -> float:
+    """Linear interpolation between order statistics (numpy's default method)."""
+    ordered = sorted(values)
+    position = (len(ordered) - 1) * q
+    low = math.floor(position)
+    high = math.ceil(position)
+    return ordered[low] + (ordered[high] - ordered[low]) * (position - low)
+
+
+def us_comparison_row(
+    country: str,
+    year: int,
+    statistic: str,
+    value_per_person: float,
+    us_year: int,
+    us_value_per_person: float,
+    source_ids: list[str],
+    method: str,
+    notes: str = "",
+) -> dict[str, str]:
+    """Build a share row from a supplied, same-price-basis US year and value.
+
+    The country scenario year is stored in ``year`` and the US comparison year
+    in ``quantity`` and ``row_id``. Supply comparator forecasts explicitly when
+    available; this function neither forecasts nor fills missing US values.
+    """
+    if not isinstance(us_year, int) or isinstance(us_year, bool) or us_year <= 0:
+        raise ValueError("US comparison year must be a positive integer")
+    if not math.isfinite(us_value_per_person) or us_value_per_person <= 0:
+        raise ValueError("US value per person must be finite and positive")
+    if not math.isfinite(value_per_person) or value_per_person < 0:
+        raise ValueError("Country value per person must be finite and nonnegative")
+    quantity = f"per_capita_share_of_us_{us_year}"
+    return {
+        "row_id": f"{country.lower().replace(' ', '_')}_{year}_{quantity}_{statistic}",
+        "record_type": "scenario",
+        "country": country,
+        "year": str(year),
+        "quantity": quantity,
+        "statistic": statistic,
+        "value": f"{value_per_person / us_value_per_person * 100:.6f}",
+        "unit": "percent of US retail value per person in the US observation year",
+        "tier": "derived",
+        "source_ids": json.dumps(sorted(source_ids)),
+        "method": method,
+        "notes": notes,
+    }
+
+
+class Inputs:
+    def __init__(self, rows: list[dict[str, str]]):
+        self.rows = {r["input_id"]: r for r in rows}
+        self.used: set[str] = set()
+
+    def get(self, key: str) -> float:
+        row = self.rows[key]
+        self.used.add(row["source_id"])
+        return float(row["value"])
+
+
+def run_model() -> None:
+    """Carry the one observed Indian market estimate forward with proxy scenarios."""
+    data = Inputs(read_csv(INPUTS))
+    rows: list[dict[str, str]] = []
+    all_sources = sorted({r["source_id"] for r in data.rows.values()})
+
+    def emit(
+        record_type,
+        country,
+        year,
+        quantity,
+        statistic,
+        value,
+        unit,
+        sources,
+        method,
+        notes="",
+    ):
+        rows.append(
+            {
+                "row_id": f"{country.lower().replace(' ', '_')}_{year}_{quantity}_{statistic}",
+                "record_type": record_type,
+                "country": country,
+                "year": str(year),
+                "quantity": quantity,
+                "statistic": statistic,
+                "value": f"{value:.6f}",
+                "unit": unit,
+                "tier": "derived",
+                "source_ids": json.dumps(sorted(sources)),
+                "method": method,
+                "notes": notes,
+            }
+        )
+
+    # Population, million people. WEO stops in 2031; later years keep the 2031 growth rate.
+    def population(iso: str, year: int) -> float:
+        if year <= LAST_IMF_YEAR:
+            return data.get(f"imf_lp_{iso}_{year}")
+        last = data.get(f"imf_lp_{iso}_{LAST_IMF_YEAR}")
+        growth = last / data.get(f"imf_lp_{iso}_{LAST_IMF_YEAR - 1}")
+        return last * growth ** (year - LAST_IMF_YEAR)
+
+    # Real GDP per person index, 2022 = 1, from real GDP growth and population growth.
+    def income_index(iso: str, year: int) -> float:
+        index = 1.0
+        for y in range(ANCHOR_YEAR + 1, year + 1):
+            g = data.get(f"imf_ngdp_rpch_{iso}_{min(y, LAST_IMF_YEAR)}") / 100
+            pop_ratio = population(iso, y) / population(iso, y - 1)
+            index *= (1 + g) / pop_ratio
+        return index
+
+    # Urban share: 2025 observation plus the 2015-2025 least-squares slope.
+    def urban(iso: str, year: int) -> float:
+        points = [
+            (y, data.get(f"wdi_urban_share_{iso}_{y}")) for y in range(2015, 2026)
+        ]
+        if year <= 2025:
+            return dict(points)[year]
+        mean_x = sum(x for x, _ in points) / len(points)
+        mean_y = sum(y for _, y in points) / len(points)
+        slope = sum((x - mean_x) * (y - mean_y) for x, y in points) / sum(
+            (x - mean_x) ** 2 for x, _ in points
+        )
+        return dict(points)[2025] + slope * (year - 2025)
+
+    cpi_factor = 1.0
+    for year in range(ANCHOR_YEAR + 1, PRICE_YEAR + 1):
+        cpi_factor *= 1 + data.get(f"imf_pcpipch_ind_{year}") / 100
+    fx = data.get(f"wdi_exchange_rate_ind_{PRICE_YEAR}")
+
+    def crore_to_usd_million(crore: float) -> float:
+        return crore * 1e7 * cpi_factor / fx / 1e6
+
+    india_2022_usd_million = crore_to_usd_million(
+        data.get("gfi_india_domestic_2022_central")
+    )
+    india_2022_per_capita = india_2022_usd_million / data.get("imf_lp_ind_2022")
+    us_per_capita = (
+        data.get("gfi_us_retail_sales_2025") * 1000 / data.get("imf_lp_usa_2025")
+    )
+    # India 2022 income gets the anchor's own conversion: 2022 rupees inflated to 2025
+    # with IMF consumer prices, then the 2025 exchange rate. US 2025 dollars are
+    # already 2025 prices. Both sides are then market dollars at 2025 prices.
+    india_2022_income = data.get("wdi_gdp_per_capita_lcu_ind_2022") * cpi_factor / fx
+    income_ratio_us_india = (
+        data.get(f"wdi_gdp_per_capita_usd_usa_{PRICE_YEAR}") / india_2022_income
+    )
+    elasticity_low = 1.0
+    elasticity_high = math.log(us_per_capita / india_2022_per_capita) / math.log(
+        income_ratio_us_india
+    )
+    drift_low = data.get("gfi_us_retail_dollar_change_2025") / 100
+    drift_high = (
+        data.get("jobs_vacancies_india_2025") / data.get("jobs_vacancies_india_2023")
+    ) ** 0.5 - 1
+    income_growth_2023_2025 = (
+        income_index("ind", 2025) / income_index("ind", 2023)
+    ) ** 0.5 - 1
+    drift_high_without_income = drift_high - income_growth_2023_2025 * elasticity_high
+    animal = {
+        c: sum(
+            float(r["value"])
+            for r in data.rows.values()
+            if r["quantity"] == "animal_protein_supply_item" and r["country"] == c
+        )
+        for c in ("India", "Pakistan")
+    }
+    data.used.add(FAO)
+    animal_ratio = animal["Pakistan"] / animal["India"]
+    per_million = {
+        c: (
+            data.get(f"jobs_directory_rows_{c.lower()}") / population(iso, 2025),
+            data.get(f"jobs_vacancies_{c.lower()}_2025") / population(iso, 2025),
+        )
+        for c, iso in (("India", "ind"), ("Pakistan", "pak"))
+    }
+    ecosystem_low = per_million["Pakistan"][0] / per_million["India"][0]
+    ecosystem_high = per_million["Pakistan"][1] / per_million["India"][1]
+    income_ratio_pak_india_2025 = data.get(
+        f"wdi_gdp_per_capita_usd_pak_{PRICE_YEAR}"
+    ) / data.get(f"wdi_gdp_per_capita_usd_ind_{PRICE_YEAR}")
+
+    def india_per_capita(year: int, elasticity: float, drift: float) -> float:
+        return (
+            india_2022_per_capita
+            * income_index("ind", year) ** elasticity
+            * urban("ind", year)
+            / urban("ind", ANCHOR_YEAR)
+            * (1 + drift) ** (year - ANCHOR_YEAR)
+        )
+
+    def pakistan_per_capita(
+        year: int,
+        india_value: float,
+        elasticity: float,
+        weight: float,
+        ecosystem: float,
+        drop_overlap: bool = False,
+    ) -> float:
+        relative_income = (
+            income_ratio_pak_india_2025
+            * (income_index("pak", year) / income_index("pak", 2025))
+            / (income_index("ind", year) / income_index("ind", 2025))
+        )
+        return (
+            india_value
+            * relative_income**elasticity
+            * (1.0 if drop_overlap else urban("pak", year))
+            / (1.0 if drop_overlap else urban("ind", year))
+            * (1.0 if drop_overlap else animal_ratio**weight)
+            * ecosystem
+        )
+
+    def simulate(
+        fixed: dict[str, float] | None = None,
+        *,
+        drift_upper: float = drift_high,
+        drop_pakistan_overlap: bool = False,
+    ) -> dict[tuple[str, int], list[float]]:
+        """Use paired draws, retaining unused weights when overlap is dropped."""
+        fixed = fixed or {}
+        rng = random.Random(SEED)
+        result: dict[tuple[str, int], list[float]] = {
+            (c, y): [] for c in ("India", "Pakistan") for y in YEARS
+        }
+        for _ in range(DRAWS):
+            elasticity = rng.uniform(elasticity_low, elasticity_high)
+            drift = rng.uniform(drift_low, drift_upper)
+            weight = rng.uniform(0.0, 1.0)
+            ecosystem = rng.uniform(ecosystem_low, ecosystem_high)
+            elasticity = fixed.get("elasticity", elasticity)
+            drift = fixed.get("drift", drift)
+            weight = fixed.get("weight", weight)
+            ecosystem = fixed.get("ecosystem", ecosystem)
+            for year in YEARS:
+                india = india_per_capita(year, elasticity, drift)
+                result[("India", year)].append(india)
+                result[("Pakistan", year)].append(
+                    pakistan_per_capita(
+                        year,
+                        india,
+                        elasticity,
+                        weight,
+                        ecosystem,
+                        drop_pakistan_overlap,
+                    )
+                )
+        return result
+
+    model_sources = all_sources
+    parameter_method = (
+        "Calculated from altprotein_proxy_inputs.csv by tools/build_altprotein_proxy.py"
+    )
+    emit(
+        "parameter",
+        "India",
+        ANCHOR_YEAR,
+        "anchor_market_value",
+        "value",
+        india_2022_usd_million,
+        "million US dollars at constant prices",
+        [GFI_INDIA, IMF, FX],
+        parameter_method,
+        "GFI India 2022 domestic smart-protein estimate inflated with IMF consumer prices and converted at the 2025 WDI rate. Treats the source value as nominal 2022 rupees, which the source does not state.",
+    )
+    emit(
+        "parameter",
+        "India",
+        ANCHOR_YEAR,
+        "anchor_per_capita",
+        "value",
+        india_2022_per_capita,
+        "US dollars per person at constant prices",
+        [GFI_INDIA, IMF, FX],
+        parameter_method,
+    )
+    emit(
+        "parameter",
+        "United States",
+        PRICE_YEAR,
+        "retail_per_capita",
+        "value",
+        us_per_capita,
+        "US dollars per person at constant prices",
+        [GFI_US, IMF],
+        parameter_method,
+        "GFI/SPINS retail sales divided by IMF population.",
+    )
+    emit(
+        "parameter",
+        "United States",
+        PRICE_YEAR,
+        "per_capita_ratio_to_india_anchor",
+        "value",
+        us_per_capita / india_2022_per_capita,
+        "ratio",
+        [GFI_US, GFI_INDIA, IMF, FX],
+        parameter_method,
+    )
+    emit(
+        "parameter",
+        "United States",
+        PRICE_YEAR,
+        "market_income_ratio_to_india_anchor",
+        "value",
+        income_ratio_us_india,
+        "ratio",
+        [GDP_PC, IMF, FX],
+        parameter_method,
+        "US 2025 GDP per person over India 2022 GDP per person, both in market-exchange-rate US dollars at 2025 prices. India uses the anchor's CPI and exchange-rate conversion.",
+    )
+    emit(
+        "parameter",
+        "United States",
+        PRICE_YEAR,
+        "retail_dollar_decline",
+        "value",
+        -drift_low * 100,
+        "percent",
+        [GFI_US],
+        parameter_method,
+        "Size of the 2025 fall in US plant-based retail dollar sales.",
+    )
+    emit(
+        "parameter",
+        "India",
+        ANCHOR_YEAR,
+        "monte_carlo_draws",
+        "value",
+        DRAWS,
+        "draws",
+        [IMF],
+        parameter_method,
+        f"Fixed seed {SEED}.",
+    )
+    emit(
+        "parameter",
+        "India",
+        ANCHOR_YEAR,
+        "income_elasticity",
+        "low",
+        elasticity_low,
+        "elasticity",
+        [IMF],
+        parameter_method,
+        "Assumption: spending rises in proportion to income.",
+    )
+    emit(
+        "parameter",
+        "India",
+        ANCHOR_YEAR,
+        "income_elasticity",
+        "high",
+        elasticity_high,
+        "elasticity",
+        [GFI_US, GFI_INDIA, GDP_PC, IMF, FX],
+        parameter_method,
+        "Elasticity that would explain the whole US-India per-person gap by income alone, with spending and income both in market dollars at 2025 prices.",
+    )
+    emit(
+        "parameter",
+        "India",
+        ANCHOR_YEAR,
+        "adoption_drift",
+        "low",
+        drift_low * 100,
+        "percent per year",
+        [GFI_US],
+        parameter_method,
+        "US 2025 plant-based retail dollar change, used as the low non-income drift.",
+    )
+    emit(
+        "parameter",
+        "India",
+        ANCHOR_YEAR,
+        "adoption_drift",
+        "high",
+        drift_high * 100,
+        "percent per year",
+        [JOBS_VACANCY],
+        parameter_method,
+        "India job-board vacancy growth 2023-2025, used as the high non-income drift.",
+    )
+    emit(
+        "parameter",
+        "India",
+        2023,
+        "real_income_per_capita_growth_to_2025",
+        "value",
+        income_growth_2023_2025 * 100,
+        "percent per year",
+        [IMF],
+        parameter_method,
+        "Compound annual real GDP per person growth from 2023 to 2025, matching the vacancy-growth period.",
+    )
+    emit(
+        "parameter",
+        "India",
+        ANCHOR_YEAR,
+        "adoption_drift_overlap_adjusted",
+        "high",
+        drift_high_without_income * 100,
+        "percent per year",
+        [JOBS_VACANCY, IMF, GFI_US, GFI_INDIA, GDP_PC, FX],
+        parameter_method,
+        "Vacancy growth minus 2023-2025 real GDP per person growth times the upper income elasticity; low drift bound unchanged.",
+    )
+    emit(
+        "parameter",
+        "India",
+        2023,
+        "animal_protein_supply",
+        "value",
+        animal["India"],
+        "g/capita/day",
+        [FAO],
+        parameter_method,
+        "Sum of seven FAOSTAT animal-source items.",
+    )
+    emit(
+        "parameter",
+        "Pakistan",
+        2023,
+        "animal_protein_supply",
+        "value",
+        animal["Pakistan"],
+        "g/capita/day",
+        [FAO],
+        parameter_method,
+        "Sum of seven FAOSTAT animal-source items.",
+    )
+    emit(
+        "parameter",
+        "Pakistan",
+        2023,
+        "animal_protein_ratio_to_india",
+        "value",
+        animal_ratio,
+        "ratio",
+        [FAO],
+        parameter_method,
+    )
+    emit(
+        "parameter",
+        "Pakistan",
+        2025,
+        "ecosystem_factor",
+        "low",
+        ecosystem_low,
+        "ratio",
+        [JOBS_DIRECTORY, IMF],
+        parameter_method,
+        "Pakistan over India job-board directory rows per million people.",
+    )
+    emit(
+        "parameter",
+        "Pakistan",
+        2025,
+        "ecosystem_factor",
+        "high",
+        ecosystem_high,
+        "ratio",
+        [JOBS_VACANCY, IMF],
+        parameter_method,
+        "Pakistan over India 2025 job-board vacancies per million people.",
+    )
+    emit(
+        "parameter",
+        "Pakistan",
+        2025,
+        "market_income_ratio_to_india",
+        "value",
+        income_ratio_pak_india_2025,
+        "ratio",
+        [GDP_PC],
+        parameter_method,
+        "Pakistan over India 2025 GDP per person, current US dollars.",
+    )
+    for iso, country in (("ind", "India"), ("pak", "Pakistan")):
+        for year in (2025, 2035):
+            emit(
+                "parameter",
+                country,
+                year,
+                "urban_share",
+                "value",
+                urban(iso, year),
+                "percent of total population",
+                [URBAN],
+                parameter_method,
+                "Observed" if year <= 2025 else "Linear 2015-2025 trend continued",
+            )
+        emit(
+            "parameter",
+            country,
+            2035,
+            "income_index_from_2022",
+            "value",
+            income_index(iso, 2035),
+            "ratio",
+            [IMF],
+            parameter_method,
+            "Real GDP per person in 2035 relative to 2022; WEO projections to 2031, 2031 growth held to 2035.",
+        )
+        for year in YEARS:
+            emit(
+                "parameter",
+                country,
+                year,
+                "population",
+                "value",
+                population(iso, year),
+                "million people",
+                [IMF],
+                parameter_method,
+            )
+
+    draws = simulate()
+    scenario_method = f"Monte Carlo, {DRAWS} draws, seed {SEED}, linear-interpolation quantiles; tools/build_altprotein_proxy.py"
+    for (country, year), values in draws.items():
+        iso = "ind" if country == "India" else "pak"
+        pop = population(iso, year)
+        for label, q in (("p10", 0.1), ("p50", 0.5), ("p90", 0.9)):
+            per_capita = quantile(values, q)
+            emit(
+                "scenario",
+                country,
+                year,
+                "market_value",
+                label,
+                per_capita * pop,
+                "million US dollars at constant prices",
+                model_sources,
+                scenario_method,
+                "Speculative scenario quantile, not an observed value.",
+            )
+            emit(
+                "scenario",
+                country,
+                year,
+                "per_capita_value",
+                label,
+                per_capita,
+                "US dollars per person at constant prices",
+                model_sources,
+                scenario_method,
+                "Speculative scenario quantile, not an observed value.",
+            )
+            rows.append(
+                us_comparison_row(
+                    country,
+                    year,
+                    label,
+                    per_capita,
+                    PRICE_YEAR,
+                    us_per_capita,
+                    model_sources,
+                    scenario_method,
+                    "Speculative scenario quantile, not an observed value.",
+                )
+            )
+
+    variants = (
+        (
+            "market_value_drift_overlap_adjusted",
+            simulate(drift_upper=drift_high_without_income),
+            "High drift subtracts the income contribution; all other assumptions and paired draws unchanged.",
+        ),
+        (
+            "market_value_without_urban_animal",
+            simulate(drop_pakistan_overlap=True),
+            "Pakistan's relative urban-share and animal-protein multipliers set to one; India path, income, industry activity and paired draws unchanged.",
+        ),
+    )
+    for quantity, variant_draws, notes in variants:
+        for (country, year), values in variant_draws.items():
+            if quantity == "market_value_without_urban_animal" and (country, year) != (
+                "Pakistan",
+                2035,
+            ):
+                continue
+            iso = "ind" if country == "India" else "pak"
+            for label, q in (("p10", 0.1), ("p50", 0.5), ("p90", 0.9)):
+                emit(
+                    "sensitivity",
+                    country,
+                    year,
+                    quantity,
+                    label,
+                    quantile(values, q) * population(iso, year),
+                    "million US dollars at constant prices",
+                    model_sources,
+                    scenario_method,
+                    notes,
+                )
+
+    gfi_sources = [GFI_INDIA, IMF, FX]
+    india_2030 = [v * population("ind", 2030) for v in draws[("India", 2030)]]
+    for column in ("low", "central", "high"):
+        converted = crore_to_usd_million(data.get(f"gfi_india_domestic_2030_{column}"))
+        emit(
+            "benchmark",
+            "India",
+            2030,
+            "gfi_india_domestic_scenario",
+            column,
+            converted,
+            "million US dollars at constant prices",
+            gfi_sources,
+            parameter_method,
+            "GFI India 2030 domestic scenario converted on the same nominal-rupee assumption as the anchor.",
+        )
+        emit(
+            "benchmark",
+            "India",
+            2030,
+            "draws_below_gfi_scenario",
+            column,
+            100 * sum(v < converted for v in india_2030) / DRAWS,
+            "percent of draws",
+            model_sources,
+            scenario_method,
+        )
+
+    years_to_2030 = 2030 - ANCHOR_YEAR
+    anchor_crore = data.get("gfi_india_domestic_2022_central")
+    for column in ("low", "central"):
+        implied = (data.get(f"gfi_india_domestic_2030_{column}") / anchor_crore) ** (
+            1 / years_to_2030
+        ) - 1
+        emit(
+            "benchmark",
+            "India",
+            2030,
+            "gfi_india_implied_growth",
+            column,
+            implied * 100,
+            "percent per year",
+            [GFI_INDIA],
+            parameter_method,
+            "Yearly growth from the GFI 2022 estimate to the GFI 2030 scenario, both in the source's rupees.",
+        )
+    fastest = (
+        max(v * population("ind", 2030) for v in draws[("India", 2030)])
+        / india_2022_usd_million
+    )
+    emit(
+        "benchmark",
+        "India",
+        2030,
+        "fastest_draw_growth",
+        "max",
+        (fastest ** (1 / years_to_2030) - 1) * 100,
+        "percent per year",
+        model_sources,
+        scenario_method,
+        "Yearly growth of the market total from 2022 to 2030 in the fastest of the draws.",
+    )
+
+    swings = {
+        "elasticity": (elasticity_low, elasticity_high),
+        "drift": (drift_low, drift_high),
+        "weight": (0.0, 1.0),
+        "ecosystem": (ecosystem_low, ecosystem_high),
+    }
+    for name, (low, high) in swings.items():
+        for label, value in (("low", low), ("high", high)):
+            fixed = simulate({name: value})
+            for country in ("India", "Pakistan"):
+                if country == "India" and name in ("weight", "ecosystem"):
+                    continue
+                iso = "ind" if country == "India" else "pak"
+                median = quantile(fixed[(country, 2035)], 0.5) * population(iso, 2035)
+                emit(
+                    "sensitivity",
+                    country,
+                    2035,
+                    f"market_value_{name}_fixed",
+                    label,
+                    median,
+                    "million US dollars at constant prices",
+                    model_sources,
+                    scenario_method,
+                    f"Median with {name} fixed at its {label} bound and other parameters drawn.",
+                )
+
+    with OUTPUTS.open("w", newline="", encoding="utf-8") as stream:
+        writer = csv.DictWriter(stream, fieldnames=OUTPUT_FIELDS, lineterminator="\n")
+        writer.writeheader()
+        writer.writerows(rows)
+    print(json.dumps({"scenarios": str(OUTPUTS.relative_to(ROOT)), "rows": len(rows)}))
+
+
+def main() -> None:
+    """Reproduce the frozen scenarios from packaged aggregate inputs only."""
+    global OUTPUTS
+    parser = argparse.ArgumentParser(
+        description="Offline conditional proxy scenario reproduction"
+    )
+    parser.add_argument(
+        "--output", type=Path, default=ROOT / "build/proxy_scenarios.csv"
+    )
+    args = parser.parse_args()
+    OUTPUTS = args.output.resolve()
+    OUTPUTS.parent.mkdir(parents=True, exist_ok=True)
+    run_model()
+
+
+if __name__ == "__main__":
+    main()

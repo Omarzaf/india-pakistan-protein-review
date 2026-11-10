@@ -26,7 +26,7 @@ export function sensitiveCategories(text) {
   return patterns.filter(([, pattern]) => pattern.test(text)).map(([name]) => name);
 }
 
-export function verify(root = website, {syntax = true} = {}) {
+export function verify(root = website, {syntax = true, sourceParity = true} = {}) {
   const publicRoot = path.join(root, 'public'), errors = [];
   const require = (condition, message) => {if (!condition) errors.push(message);};
   const load = relative => JSON.parse(fs.readFileSync(path.join(publicRoot, relative), 'utf8'));
@@ -40,12 +40,12 @@ export function verify(root = website, {syntax = true} = {}) {
     if (!target.startsWith(publicRoot + path.sep) || !fs.existsSync(target)) {errors.push(`Missing/outside file: ${file.path}`); continue;}
     const bytes = fs.readFileSync(target);
     require(bytes.length === file.bytes && sha256(bytes) === file.sha256, `Hash/size mismatch: ${file.path}`);
-    if (file.path.startsWith('dashboard/')) {
+    if (file.path.startsWith('dashboard/') || file.path.startsWith('review/') || file.path === 'index.html') {
       for (const category of sensitiveCategories(bytes.toString())) errors.push(`${category}: ${file.path}`);
       require(!/catalogue\.json|inventory\.json|sessions\.json/.test(file.path), `Private Atlas artifact: ${file.path}`);
       if (file.path.endsWith('.html')) {
         const html = bytes.toString();
-        require(!/<(?:iframe|object|embed|form)\b|\son\w+\s*=|<script(?![^>]*src=)/i.test(html), `Unsafe dashboard markup: ${file.path}`);
+        require(!/<(?:iframe|object|embed|form)\b|\son\w+\s*=|<script(?![^>]*src=)/i.test(html), `Unsafe candidate markup: ${file.path}`);
         require(!/<(?:script|link)[^>]*(?:src|href)=["'](?:https?:)?\/\//i.test(html), `External runtime dependency: ${file.path}`);
       }
     }
@@ -75,14 +75,47 @@ export function verify(root = website, {syntax = true} = {}) {
   }
   const preserved = JSON.parse(fs.readFileSync(path.join(root, 'provenance/existing-edition.json')));
   const patch = JSON.parse(fs.readFileSync(path.join(root, 'provenance/navigation-patch.json')));
-  let original = fs.readFileSync(path.join(publicRoot, 'index.html'), 'utf8');
+  const currentPath = path.join(root, 'provenance/current-revision.json');
+  const current = fs.existsSync(currentPath) ? JSON.parse(fs.readFileSync(currentPath)) : null;
+  const historicalRoot = current ? path.join(publicRoot, current.historicalArchive) : publicRoot;
+  let original = fs.readFileSync(path.join(historicalRoot, 'index.html'), 'utf8');
   for (const change of [...patch.patches].reverse()) {
     require(original.split(change.after).length === 2, 'Navigation patch must occur exactly once');
     original = original.replace(change.after, change.before);
   }
   for (const file of preserved.files) {
-    const bytes = file.path === 'index.html' ? original : fs.readFileSync(path.join(publicRoot, file.path));
+    const bytes = file.path === 'index.html' ? original : fs.readFileSync(path.join(historicalRoot, file.path));
     require(sha256(bytes) === file.sha256, `Existing edition altered outside navigation: ${file.path}`);
+  }
+  if (current) {
+    const historical = JSON.parse(fs.readFileSync(path.join(root, 'provenance/historical-capture.json')));
+    for (const file of historical.files) require(sha256(fs.readFileSync(path.join(publicRoot, file.path))) === file.sha256, `Historical published bytes changed: ${file.path}`);
+    require(receipt.publicationAuthorized === false && current.publicationAuthorized === false, 'Local candidate cannot inherit publication approval');
+    require(manifest.publication.publicationAuthorized === false, 'Dashboard cannot inherit prior manuscript approval');
+    require(receipt.snapshotDate === '2026-10-22' && manifest.manuscriptRevision === current.revision, 'Retained data and manuscript dates must remain distinct');
+    require(sha256(fs.readFileSync(path.join(publicRoot, 'index.html'))) === current.rootHtmlSha256, 'Current root report hash');
+    const repository = path.resolve(root, '..');
+    for (const item of current.assets) {
+      require(sha256(fs.readFileSync(path.join(publicRoot, item.path))) === item.exportSha256, `Current export hash: ${item.path}`);
+      const source = path.join(repository, item.source);
+      if (sourceParity) {
+        require(fs.existsSync(source), `Missing current report source: ${item.source}`);
+        if (fs.existsSync(source)) require(sha256(fs.readFileSync(source)) === item.sourceSha256, `Current source/export drift: ${item.source}`);
+      }
+    }
+    for (const relative of ['index.html', 'review/report/review.html']) {
+      const html = fs.readFileSync(path.join(publicRoot, relative), 'utf8');
+      const ownIds = new Set([...html.matchAll(/\bid="([^"]+)"/g)].map(match => match[1]));
+      for (const match of html.matchAll(/\b(?:href|src)="([^"]+)"/g)) {
+        const href = match[1].replaceAll('&amp;', '&');
+        if (/^[a-z][a-z0-9+.-]*:/i.test(href) || href.startsWith('//')) continue;
+        const parsed = new URL(href, `https://report.invalid/${relative}`);
+        let target = decodeURIComponent(parsed.pathname).replace(/^\//, '');
+        if (!target || target.endsWith('/')) target += 'index.html';
+        require(declared.includes(target), `Unexported local report link: ${relative} -> ${target}`);
+        if (target === relative && parsed.hash) require(ownIds.has(decodeURIComponent(parsed.hash.slice(1))), `Missing report anchor: ${relative} ${parsed.hash}`);
+      }
+    }
   }
   const config = JSON.parse(fs.readFileSync(path.join(root, 'vercel.json')));
   require(config.outputDirectory === 'public', 'Deploy only public/');

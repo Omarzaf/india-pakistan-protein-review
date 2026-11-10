@@ -1,4 +1,4 @@
-// Preserve the original passive 37-file review package and its strict checker.
+// Export the current explicit passive review allowlist for its unchanged strict checker.
 import fs from 'node:fs';
 import path from 'node:path';
 import {website, sha256} from './verify.mjs';

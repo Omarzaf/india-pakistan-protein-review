@@ -39,6 +39,7 @@ def main() -> None:
     reference = ROOT / "data/reference_proxy_scenarios.csv"
     if proxy.read_bytes() != reference.read_bytes():
         raise ValueError("Proxy reproduction differs from the preserved reference")
+    subprocess.run([sys.executable, str(ROOT / "scripts/gfi_gap.py")], check=True)
     panel = aggregate(json.loads((ROOT / "data/panel_runs.json").read_text()))
     expected = json.loads((ROOT / "data/reference_panel_aggregates.json").read_text())
     if len(panel) != len(expected):

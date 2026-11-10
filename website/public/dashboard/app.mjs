@@ -25,6 +25,6 @@ try {
   const heading=document.createElement('h1');heading.textContent='The dashboard could not load.';
   const message=document.createElement('p');message.textContent=error.message;
   const retry=document.createElement('button');retry.textContent='Retry dashboard';retry.addEventListener('click',()=>location.reload());
-  const report=document.createElement('a');report.href='/';report.textContent='Read the retained report';
+  const report=document.createElement('a');report.href='/';report.textContent='Read the current report';
   container.append(heading,message,retry,document.createTextNode(' '),report);
 }

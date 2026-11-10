@@ -8,6 +8,6 @@ const files = inventory(root).filter(file => file !== 'release.json').map(relati
   const bytes = fs.readFileSync(path.join(root, relative));
   return {path: relative, bytes: bytes.length, sha256: sha256(bytes)};
 });
-const receipt = {schemaVersion: 1, releaseId: 'protein-dashboard-2026-10-22', snapshotDate: '2026-10-22', publicationAuthorized: true, humanFactualCodeReview: 'pending', scholarlyAcceptance: 'pending', files};
+const receipt = {schemaVersion: 1, releaseId: 'protein-review-2026-10-27-local', snapshotDate: '2026-10-22', manuscriptRevision: '2026-10-27', state: 'LOCAL_REVIEW_CANDIDATE', publicationAuthorized: false, humanFactualCodeReview: 'pending', scholarlyAcceptance: 'pending', files};
 fs.writeFileSync(path.join(root, 'release.json'), JSON.stringify(receipt, null, 2) + '\n');
 console.log(`Sealed ${files.length} public files; release.json is the sole self-excluded receipt.`);

@@ -309,3 +309,6 @@ body[data-view="pakistan-india"] main { padding-top: 24px; }
     justify-self: stretch;
   }
 }
+
+.pi-source-notes li { margin-bottom:14px; overflow-wrap:anywhere; }
+.pi-reader-content sup a { padding-inline:2px; }
