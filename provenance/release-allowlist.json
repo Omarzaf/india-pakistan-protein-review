@@ -1,5 +1,5 @@
 {
-  "edition": "2026-10-27-local-review",
+  "edition": "2026-11-07-consolidated-review",
   "selection": "Explicit named file allowlist; manifest itself is the one self-excluded file",
   "source_commit": "aea076871579620bb3474536f3a06e88972f6faf",
   "includes_git_history": false,
@@ -30,8 +30,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 6517,
-      "sha256": "c192b9a939a895d282a0759d31e5cf5c1271a9cd4224e8abe559e79b5410063a",
+      "bytes": 6940,
+      "sha256": "deffb462cd6c2d3f8ed980024b804a53eac684f856902973cf6719926971322d",
       "purpose": "README.md",
       "release_status": "local_review_candidate_human_and_rights_review_pending"
     },
@@ -120,6 +120,34 @@
       "release_status": "local_review_candidate_human_and_rights_review_pending"
     },
     {
+      "path": "build/pakistan-topdown/extracted-inputs.json",
+      "bytes": 15609,
+      "sha256": "0bfaf93639bdd15e3c3b5b9904af73fea25958474a50cc44aae5d641c6b448c8",
+      "purpose": "build/pakistan-topdown/extracted-inputs.json",
+      "release_status": "local_review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "build/pakistan-topdown/naheed_normalized.csv",
+      "bytes": 8261,
+      "sha256": "1502e50038fa0ad73447f6612930ab6d7d179b31149aee113ee28e8f70ef80e4",
+      "purpose": "build/pakistan-topdown/naheed_normalized.csv",
+      "release_status": "local_review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "build/pakistan-topdown/pakistan_topdown.csv",
+      "bytes": 95193,
+      "sha256": "2e4b92a0d9c3b5f7f4a650ffb2f5c63c83cb9959f8c1e4611308a8c43686e955",
+      "purpose": "build/pakistan-topdown/pakistan_topdown.csv",
+      "release_status": "local_review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "build/pakistan-topdown/receipt.json",
+      "bytes": 503,
+      "sha256": "8a385c4f47b49b883896aab0dc0deb9337bb31b11269d951852a30f0068e4604",
+      "purpose": "build/pakistan-topdown/receipt.json",
+      "release_status": "local_review_candidate_human_and_rights_review_pending"
+    },
+    {
       "path": "build/panel_aggregates.json",
       "bytes": 3659,
       "sha256": "111e3e334136b2501b8c8060ae1bba18e1f0adfe69862d89df9c9791f919de8b",
@@ -176,6 +204,27 @@
       "release_status": "local_review_candidate_human_and_rights_review_pending"
     },
     {
+      "path": "data/pakistan-topdown/README.md",
+      "bytes": 6726,
+      "sha256": "77dce60971575e429ce4024224d7a1a451bcea68df375f97462c78445e607401",
+      "purpose": "data/pakistan-topdown/README.md",
+      "release_status": "local_review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "data/pakistan-topdown/input-manifest.json",
+      "bytes": 2831,
+      "sha256": "ec807db276b09b57871f3b1f886dae46f6efa672ace78072737b3d247f8d772e",
+      "purpose": "data/pakistan-topdown/input-manifest.json",
+      "release_status": "local_review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "data/pakistan-topdown/sources.json",
+      "bytes": 6239,
+      "sha256": "671e25ffae2324bda4c3eff479d4869b9b8e5195715f725772c9ffb1f99f2775",
+      "purpose": "data/pakistan-topdown/sources.json",
+      "release_status": "local_review_candidate_human_and_rights_review_pending"
+    },
+    {
       "path": "data/panel-attempts.csv",
       "bytes": 20520,
       "sha256": "a83b85f34f2590914c092e2dd6bd7ccb19f9abeb293b4ec276f8e0d735f26228",
@@ -208,6 +257,118 @@
       "bytes": 73658,
       "sha256": "98c5a19c94ecd891be7d1a44d24a9004268f160c96f6212c00386a3976c0e7b4",
       "purpose": "data/reference_proxy_scenarios.csv",
+      "release_status": "local_review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "desk-research/README.md",
+      "bytes": 4487,
+      "sha256": "a7b6b1e89d300497157798ad52ede59c4aea8acfe0428bdd6f79194d0e85683c",
+      "purpose": "desk-research/README.md",
+      "release_status": "local_review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "desk-research/comparative-research-log-2026-09-13.md",
+      "bytes": 6764,
+      "sha256": "54eb94cb298f856b823ce83f9efe3f28f4e8847f65a2a6e7e4ca8b6795aac135",
+      "purpose": "desk-research/comparative-research-log-2026-09-13.md",
+      "release_status": "local_review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "desk-research/evidence-ledger-2026-10-13.csv",
+      "bytes": 516394,
+      "sha256": "b651fa2133af7959527ab8c44053d96dcf85df9a58c6e935eddad504c54adbbe",
+      "purpose": "desk-research/evidence-ledger-2026-10-13.csv",
+      "release_status": "local_review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "desk-research/halal-phase1-research-log-2026-09-30.md",
+      "bytes": 2546,
+      "sha256": "e05d76021c154b8f7b9f565e66e44c68f1ac791d1cd13a174aef54f092ae24f6",
+      "purpose": "desk-research/halal-phase1-research-log-2026-09-30.md",
+      "release_status": "local_review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "desk-research/halal-search-log-2026-10-02.json",
+      "bytes": 93373,
+      "sha256": "683fae3eb50021ed1ade990ef34508e67a99e2f910b4b2e76f8708236d965649",
+      "purpose": "desk-research/halal-search-log-2026-10-02.json",
+      "release_status": "local_review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "desk-research/india-pakistan-source-register-2026-09-14.json",
+      "bytes": 38154,
+      "sha256": "1a17f860facc0d95b7008be38f487aeda4b08834bd72f7fc7cabbebf505964a0",
+      "purpose": "desk-research/india-pakistan-source-register-2026-09-14.json",
+      "release_status": "local_review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "desk-research/literature-query-log-2026-09-12.md",
+      "bytes": 6128,
+      "sha256": "eb4308ec9f172a0a6e4fd055c4d47e985f332c1d3d617f23cced19ccea61d92b",
+      "purpose": "desk-research/literature-query-log-2026-09-12.md",
+      "release_status": "local_review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "desk-research/public-data-search-log-2026-10-11.json",
+      "bytes": 5662,
+      "sha256": "87a60592bad3b00c938fa531254554204962312b7bfb0b5f990e6858c2001991",
+      "purpose": "desk-research/public-data-search-log-2026-10-11.json",
+      "release_status": "local_review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "desk-research/purchase-literature-queries-2026-10-20.json",
+      "bytes": 2009,
+      "sha256": "45f87e5dbdd4d28488813d65333ba80b867fc837f77455a475d17a4fbff74f6c",
+      "purpose": "desk-research/purchase-literature-queries-2026-10-20.json",
+      "release_status": "local_review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "desk-research/purchase-literature-screening-2026-10-20.json",
+      "bytes": 15500,
+      "sha256": "4f782b6244324f72412a5930e535e6d7d9ef31244c22f38c50213e599e299c63",
+      "purpose": "desk-research/purchase-literature-screening-2026-10-20.json",
+      "release_status": "local_review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "desk-research/raw-file-manifest-2026-10-13.csv",
+      "bytes": 965418,
+      "sha256": "79396c4fb475ef8bc2d974bd15b89f27598c891285ca1c02ceb79711e34cd102",
+      "purpose": "desk-research/raw-file-manifest-2026-10-13.csv",
+      "release_status": "local_review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "desk-research/survey-findings-2026-09-30.csv",
+      "bytes": 5469,
+      "sha256": "383e756c2d4cab5ca9f9bafff58dce264801695c6ff8b8e4e7a67cd99e368106",
+      "purpose": "desk-research/survey-findings-2026-09-30.csv",
+      "release_status": "local_review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "desk-research/survey-studies-2026-09-30.csv",
+      "bytes": 6580,
+      "sha256": "0b6f101672e8137a166d007b63d2dec8decade6471778cd56a478a20edc1c303",
+      "purpose": "desk-research/survey-studies-2026-09-30.csv",
+      "release_status": "local_review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "halal/README.md",
+      "bytes": 1335,
+      "sha256": "c191e83cb52fb50682335f555a73ad0b179fa404518c4648eb967876ab2409a5",
+      "purpose": "halal/README.md",
+      "release_status": "local_review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "halal/institution-matrix.md",
+      "bytes": 29128,
+      "sha256": "add4d10c899ca19fde3a7055ee5f620f60b11d538c40e4f10775ce001f353e27",
+      "purpose": "halal/institution-matrix.md",
+      "release_status": "local_review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "halal/phase1-review.md",
+      "bytes": 54784,
+      "sha256": "5824f3d4b27383876f6ff81826f464879411a0e73c26e8f3432f1f1c0fbdd104",
+      "purpose": "halal/phase1-review.md",
       "release_status": "local_review_candidate_human_and_rights_review_pending"
     },
     {
@@ -257,6 +418,13 @@
       "bytes": 13502,
       "sha256": "edbc6985d1600f8cc1fd6892fc8ae42a26d6f36b15cb1fcda9ca45a6b52dbde7",
       "purpose": "provenance/claim-review.csv",
+      "release_status": "local_review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "provenance/claims-by-section-2026-10-30.csv",
+      "bytes": 226781,
+      "sha256": "1371881a0270741d88c230bcd6c507c3a6b67dcea8cfa8598776e9f2918e24ed",
+      "purpose": "provenance/claims-by-section-2026-10-30.csv",
       "release_status": "local_review_candidate_human_and_rights_review_pending"
     },
     {
@@ -386,6 +554,13 @@
       "release_status": "local_review_candidate_human_and_rights_review_pending"
     },
     {
+      "path": "scripts/pakistan_topdown.py",
+      "bytes": 20380,
+      "sha256": "ee26fcb452f6ebf06977d90dfcf1713cab263da8cd81d7d9076db4ac8904f55f",
+      "purpose": "scripts/pakistan_topdown.py",
+      "release_status": "local_review_candidate_human_and_rights_review_pending"
+    },
+    {
       "path": "scripts/plot_gfi_gap.py",
       "bytes": 4526,
       "sha256": "2195251cc0602f8a2c68d6bc01151a3caf00518006e162b910421f469453d5bd",
@@ -397,6 +572,13 @@
       "bytes": 5269,
       "sha256": "44c9431cec08265ee7756f20dfa61e606a016f91b66a159fdc6ea0fca172fa24",
       "purpose": "scripts/reproduce.py",
+      "release_status": "local_review_candidate_human_and_rights_review_pending"
+    },
+    {
+      "path": "tests/test_consolidation.py",
+      "bytes": 3846,
+      "sha256": "afe68c1606f8237bf31acfb1600c62dab9a8245fb9ff15afd52988ef1cb56d5c",
+      "purpose": "tests/test_consolidation.py",
       "release_status": "local_review_candidate_human_and_rights_review_pending"
     },
     {

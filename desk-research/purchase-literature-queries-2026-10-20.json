@@ -1,0 +1,51 @@
+{
+  "scope": "Bounded methods and contribution positioning, not a systematic review or proof of worldwide evidence absence",
+  "before": "2026-10-20",
+  "after": null,
+  "priority": "default",
+  "difficulty": 7,
+  "followup_rounds": 1,
+  "orx_queries": [
+    {
+      "query": "(plant-based meat OR meat alternatives) AND (India OR Pakistan OR purchase)",
+      "round": "initial",
+      "source": "PubMed",
+      "limit": 12,
+      "artifact": "pubmed-initial.json"
+    },
+    {
+      "query": "\"plant-based meat\"[Title/Abstract] AND (purchase[Title/Abstract] OR consumer[Title/Abstract])",
+      "round": "single_followup_round",
+      "source": "PubMed",
+      "limit": 12,
+      "artifact": "pubmed-purchase-followup.json"
+    },
+    {
+      "query": "(\"plant-based meat\"[Title/Abstract] OR \"cultured meat\"[Title/Abstract] OR \"meat alternatives\"[Title/Abstract]) AND (India[Title/Abstract] OR Pakistan[Title/Abstract])",
+      "round": "single_followup_round",
+      "source": "PubMed",
+      "limit": 12,
+      "artifact": "pubmed-country-followup.json"
+    }
+  ],
+  "unavailable": {
+    "source": "OpenAlex",
+    "query": "plant based meat India Pakistan consumer purchase affordability",
+    "outcome": "HTTP429",
+    "retry_after_seconds": 21633,
+    "empty_output_not_results": true
+  },
+  "web_fallback_reason": "OpenAlex unavailable; PubMed returned little direct purchase-panel evidence",
+  "web_queries": [
+    "plant based meat household scanner panel purchases repeat buying India Pakistan study",
+    "India Pakistan plant based meat consumer actual purchase study",
+    "plant based meat alternatives household scanner purchase repeat study retailer data"
+  ],
+  "retained_anchors": [
+    "Bryant2019",
+    "GFI/Kantar2023"
+  ],
+  "ranked_sources": 7,
+  "original_methods_sets_read": 5,
+  "stop": "Registered one followup round completed; original methods support the measurement distinction but do not resolve regional conversion. Further collection requires suitable linked data."
+}

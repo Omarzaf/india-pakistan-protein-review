@@ -1,0 +1,119 @@
+{
+  "date": "2026-10-11",
+  "method": "Rill open/navigate/read only; close used for tab management. Search result snippets are discovery unless explicitly marked otherwise. No source-file downloads.",
+  "limitations": [
+    "Visit log begins after initial workspace and HIES searches; not a complete browser event audit.",
+    "Author datasets, survey population estimates and reported marketing counts have different units of analysis.",
+    "No claim of exhaustive internet coverage."
+  ],
+  "visits": [
+    {
+      "url": "https://catalog.ihsn.org/catalog/9548",
+      "title": "Pakistan - Pakistan Social and Living Standards Measurement Survey 2018-2019"
+    },
+    {
+      "url": "https://www.google.com/search?q=%22Pakistan%22+%22plant+based+meat%22",
+      "title": "\"Pakistan\" \"plant based meat\" - Google Search"
+    },
+    {
+      "url": "https://www.pbs.gov.pk/hies/",
+      "title": "HIES - Pakistan Bureau of Statistics"
+    },
+    {
+      "url": "https://www.greenqueen.com.hk/ghaas-phoos-plant-based-foods-pakistan-vegan-meat/",
+      "title": "Meet Ghaas Phoos Foods, Pakistan's First Vegan Meat Startup"
+    },
+    {
+      "url": "https://www.google.com/search?q=site.pbs.gov.pk+microdata+%222024-25%22+%22consumption%22",
+      "title": "site.pbs.gov.pk microdata \"2024-25\" \"consumption\" - Google Search"
+    },
+    {
+      "url": "https://www.google.com/search?q=%22HIES+2024-25%22+%22Microdata%22+%22zip%22",
+      "title": "\"HIES 2024-25\" \"Microdata\" \"zip\" - Google Search"
+    },
+    {
+      "url": "https://www.google.com/search?q=%22Pakistan%22+%22tofu%22+%22Rs%22",
+      "title": "\"Pakistan\" \"tofu\" \"Rs\" - Google Search"
+    },
+    {
+      "url": "https://www.pbs.gov.pk/hies/",
+      "title": "HIES - Pakistan Bureau of Statistics"
+    },
+    {
+      "url": "https://chiltanpure.com/products/tofu?srsltid=AU7gw4UiJWRys6bOv-YZdNZ10Sp9dCcCAQ9cBfu2WoLiLXxTOXl77jPw",
+      "title": "Tofu / ٹوفو / Weight 250gm ( Only For Lahore ) – ChiltanPure"
+    },
+    {
+      "url": "https://www.google.com/search?q=site.pbs.gov.pk+weekly+SPI+51+items+50+markets+17+cities+chicken+pulse",
+      "title": "site.pbs.gov.pk weekly SPI 51 items 50 markets 17 cities chicken pulse - Google Search"
+    },
+    {
+      "url": "https://www.google.com/search?q=FAOSTAT+household+food+consumption+Pakistan+India+HIES+food+balances+data",
+      "title": "FAOSTAT household food consumption Pakistan India HIES food balances data - Google Search"
+    },
+    {
+      "url": "https://www.fao.org/statistics/highlights-archive/highlights-detail/food-balance-sheets-2010-2023/en",
+      "title": "Food balance sheets 2010–2023"
+    },
+    {
+      "url": "https://www.google.com/search?q=Pakistan+plant+based+protein+soy+milk+Omal+Vegano+data",
+      "title": "Pakistan plant based protein soy milk Omal Vegano data - Google Search"
+    },
+    {
+      "url": "https://www.google.com/search?q=Pakistan+rural+household+panel+survey+2012+2014+food+consumption+IFPRI+dataverse",
+      "title": "Pakistan rural household panel survey 2012 2014 food consumption IFPRI dataverse - Google Search"
+    },
+    {
+      "url": "https://www.google.com/search?q=Pakistan+Food+Systems+Dashboard+district+data+download",
+      "title": "Pakistan Food Systems Dashboard district data download - Google Search"
+    },
+    {
+      "url": "https://www.google.com/search?q=Pakistan+soybean+protein+food+USDA+FAS+2026+oilseeds",
+      "title": "Pakistan soybean protein food USDA FAS 2026 oilseeds - Google Search"
+    },
+    {
+      "url": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/28558",
+      "title": ""
+    },
+    {
+      "url": "https://www.gainhealth.org/resources/reports-and-publications/pakistan-food-systems-dashboard",
+      "title": "Pakistan Food Systems Dashboard | GAIN"
+    },
+    {
+      "url": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/28558",
+      "title": "Pakistan Rural Household Panel Survey (PRHPS), 2012 - IFPRI Dataverse"
+    },
+    {
+      "url": "https://www.foodsystemsdashboard.org/downloads",
+      "title": "Data Downloads - Food Systems Dashboard"
+    },
+    {
+      "url": "https://www.google.com/search?q=Pakistan+soybean+protein+food+USDA+FAS+2026+oilseeds",
+      "title": "Pakistan soybean protein food USDA FAS 2026 oilseeds - Google Search"
+    },
+    {
+      "url": "https://www.fas.usda.gov/data/gain/2026/04/pakistan-oilseeds-and-products-annual",
+      "title": "Pakistan: Oilseeds and Products Annual | USDA Foreign Agricultural Service"
+    },
+    {
+      "url": "https://www.google.com/search?q=%22Pakistan%22+%22alternative+protein%22+%22dataset%22",
+      "title": "\"Pakistan\" \"alternative protein\" \"dataset\" - Google Search"
+    },
+    {
+      "url": "https://www.google.com/search?q=%22Pakistan%22+%22precision+fermentation%22+protein",
+      "title": "\"Pakistan\" \"precision fermentation\" protein - Google Search"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10481291/",
+      "title": "Households food consumption pattern in Pakistan: Evidence from recent household integrated economic survey - PMC"
+    },
+    {
+      "url": "https://www.fao.org/agrifood-economics/news/detail-events/en/c/1757552/",
+      "title": "FAO analysis highlights strategic policy reform to narrow Pakistan’s healthy diet gap | Agrifood Economics | Food and Agriculture Organization of the United Nations"
+    },
+    {
+      "url": "https://www.google.com/search?q=%22Pakistan%22+%22cultured+meat%22+site%3Adata.mendeley.com",
+      "title": "\"Pakistan\" \"cultured meat\" site:data.mendeley.com - Google Search"
+    }
+  ]
+}

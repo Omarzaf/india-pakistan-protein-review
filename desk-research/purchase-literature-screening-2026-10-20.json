@@ -1,0 +1,353 @@
+[
+  {
+    "id": "39203797",
+    "title": "Exploration of the Muribaculaceae Family in the Gut Microbiota: Diversity, Metabolism, and Function.",
+    "publication_date": "2024-08-12",
+    "queries": [
+      {
+        "query": "(plant-based meat OR meat alternatives) AND (India OR Pakistan OR purchase)",
+        "round": "initial"
+      }
+    ],
+    "decision": "exclude_from_priority_methods_set",
+    "reason": "Does not directly identify linked paid purchase in India/Pakistan; review, other geography, biology/nutrition or intention-only design"
+  },
+  {
+    "id": "36673435",
+    "title": "Bioactive Compounds from Fruits as Preservatives.",
+    "publication_date": "2023-01-11",
+    "queries": [
+      {
+        "query": "(plant-based meat OR meat alternatives) AND (India OR Pakistan OR purchase)",
+        "round": "initial"
+      }
+    ],
+    "decision": "exclude_from_priority_methods_set",
+    "reason": "Does not directly identify linked paid purchase in India/Pakistan; review, other geography, biology/nutrition or intention-only design"
+  },
+  {
+    "id": "42763111",
+    "title": "Introduction to alternative proteins.",
+    "publication_date": "2026-08-25",
+    "queries": [
+      {
+        "query": "(plant-based meat OR meat alternatives) AND (India OR Pakistan OR purchase)",
+        "round": "initial"
+      }
+    ],
+    "decision": "exclude_from_priority_methods_set",
+    "reason": "Does not directly identify linked paid purchase in India/Pakistan; review, other geography, biology/nutrition or intention-only design"
+  },
+  {
+    "id": "36306815",
+    "title": "The 2022 report of the Lancet Countdown on health and climate change: health at the mercy of fossil fuels.",
+    "publication_date": "2022-10-25",
+    "queries": [
+      {
+        "query": "(plant-based meat OR meat alternatives) AND (India OR Pakistan OR purchase)",
+        "round": "initial"
+      }
+    ],
+    "decision": "exclude_from_priority_methods_set",
+    "reason": "Does not directly identify linked paid purchase in India/Pakistan; review, other geography, biology/nutrition or intention-only design"
+  },
+  {
+    "id": "38187251",
+    "title": "Towards halal pharmaceutical: Exploring alternatives to animal-based ingredients.",
+    "publication_date": "2023-12-13",
+    "queries": [
+      {
+        "query": "(plant-based meat OR meat alternatives) AND (India OR Pakistan OR purchase)",
+        "round": "initial"
+      }
+    ],
+    "decision": "exclude_from_priority_methods_set",
+    "reason": "Does not directly identify linked paid purchase in India/Pakistan; review, other geography, biology/nutrition or intention-only design"
+  },
+  {
+    "id": "35839248",
+    "title": "Phytosterol: nutritional significance, health benefits, and its uses in poultry and livestock nutrition.",
+    "publication_date": "2022-07-15",
+    "queries": [
+      {
+        "query": "(plant-based meat OR meat alternatives) AND (India OR Pakistan OR purchase)",
+        "round": "initial"
+      }
+    ],
+    "decision": "exclude_from_priority_methods_set",
+    "reason": "Does not directly identify linked paid purchase in India/Pakistan; review, other geography, biology/nutrition or intention-only design"
+  },
+  {
+    "id": "28956626",
+    "title": "Citrus essential oils: Extraction, authentication and application in food preservation.",
+    "publication_date": "2017-11-09",
+    "queries": [
+      {
+        "query": "(plant-based meat OR meat alternatives) AND (India OR Pakistan OR purchase)",
+        "round": "initial"
+      }
+    ],
+    "decision": "exclude_from_priority_methods_set",
+    "reason": "Does not directly identify linked paid purchase in India/Pakistan; review, other geography, biology/nutrition or intention-only design"
+  },
+  {
+    "id": "32899106",
+    "title": "Strategies for Sustainable Substitution of Livestock Meat.",
+    "publication_date": "2020-09-03",
+    "queries": [
+      {
+        "query": "(plant-based meat OR meat alternatives) AND (India OR Pakistan OR purchase)",
+        "round": "initial"
+      }
+    ],
+    "decision": "exclude_from_priority_methods_set",
+    "reason": "Does not directly identify linked paid purchase in India/Pakistan; review, other geography, biology/nutrition or intention-only design"
+  },
+  {
+    "id": "31266492",
+    "title": "A survey of antimicrobial use practices of Tennessee beef producers.",
+    "publication_date": "2019-07-02",
+    "queries": [
+      {
+        "query": "(plant-based meat OR meat alternatives) AND (India OR Pakistan OR purchase)",
+        "round": "initial"
+      }
+    ],
+    "decision": "exclude_from_priority_methods_set",
+    "reason": "Does not directly identify linked paid purchase in India/Pakistan; review, other geography, biology/nutrition or intention-only design"
+  },
+  {
+    "id": "36671245",
+    "title": "Aloe vera: A Sustainable Green Alternative to Exclude Antibiotics in Modern Poultry Production.",
+    "publication_date": "2022-12-27",
+    "queries": [
+      {
+        "query": "(plant-based meat OR meat alternatives) AND (India OR Pakistan OR purchase)",
+        "round": "initial"
+      }
+    ],
+    "decision": "exclude_from_priority_methods_set",
+    "reason": "Does not directly identify linked paid purchase in India/Pakistan; review, other geography, biology/nutrition or intention-only design"
+  },
+  {
+    "id": "39940361",
+    "title": "Dietary Restrictions and Cancer Prevention: State of the Art.",
+    "publication_date": "2025-01-29",
+    "queries": [
+      {
+        "query": "(plant-based meat OR meat alternatives) AND (India OR Pakistan OR purchase)",
+        "round": "initial"
+      }
+    ],
+    "decision": "exclude_from_priority_methods_set",
+    "reason": "Does not directly identify linked paid purchase in India/Pakistan; review, other geography, biology/nutrition or intention-only design"
+  },
+  {
+    "id": "37445154",
+    "title": "Unveiling the Potential of Marine Biopolymers: Sources, Classification, and Diverse Food Applications.",
+    "publication_date": "2023-07-05",
+    "queries": [
+      {
+        "query": "(plant-based meat OR meat alternatives) AND (India OR Pakistan OR purchase)",
+        "round": "initial"
+      }
+    ],
+    "decision": "exclude_from_priority_methods_set",
+    "reason": "Does not directly identify linked paid purchase in India/Pakistan; review, other geography, biology/nutrition or intention-only design"
+  },
+  {
+    "id": "36496577",
+    "title": "Prospects for Plant-Based Meat: Current Standing, Consumer Perceptions, and Shifting Trends.",
+    "publication_date": "2022-11-23",
+    "queries": [
+      {
+        "query": "\"plant-based meat\"[Title/Abstract] AND (purchase[Title/Abstract] OR consumer[Title/Abstract])",
+        "round": "single_followup_round"
+      }
+    ],
+    "decision": "exclude_from_priority_methods_set",
+    "reason": "Does not directly identify linked paid purchase in India/Pakistan; review, other geography, biology/nutrition or intention-only design"
+  },
+  {
+    "id": "39123506",
+    "title": "Plant-Based Meat Analogues and Consumer Interest in 3D-Printed Products: A Mini-Review.",
+    "publication_date": "2024-07-23",
+    "queries": [
+      {
+        "query": "\"plant-based meat\"[Title/Abstract] AND (purchase[Title/Abstract] OR consumer[Title/Abstract])",
+        "round": "single_followup_round"
+      }
+    ],
+    "decision": "exclude_from_priority_methods_set",
+    "reason": "Does not directly identify linked paid purchase in India/Pakistan; review, other geography, biology/nutrition or intention-only design"
+  },
+  {
+    "id": "39493399",
+    "title": "Transforming plant proteins into plant-based meat alternatives: challenges and future scope.",
+    "publication_date": "2024-09-10",
+    "queries": [
+      {
+        "query": "\"plant-based meat\"[Title/Abstract] AND (purchase[Title/Abstract] OR consumer[Title/Abstract])",
+        "round": "single_followup_round"
+      }
+    ],
+    "decision": "exclude_from_priority_methods_set",
+    "reason": "Does not directly identify linked paid purchase in India/Pakistan; review, other geography, biology/nutrition or intention-only design"
+  },
+  {
+    "id": "36145231",
+    "title": "Towards Environmentally Sustainable Diets: Consumer Attitudes and Purchase Intentions for Plant-Based Meat Alternatives in Taiwan.",
+    "publication_date": "2022-09-17",
+    "queries": [
+      {
+        "query": "\"plant-based meat\"[Title/Abstract] AND (purchase[Title/Abstract] OR consumer[Title/Abstract])",
+        "round": "single_followup_round"
+      }
+    ],
+    "decision": "exclude_from_priority_methods_set",
+    "reason": "Does not directly identify linked paid purchase in India/Pakistan; review, other geography, biology/nutrition or intention-only design"
+  },
+  {
+    "id": "35159606",
+    "title": "Millennials' Consumption of and Attitudes toward Meat and Plant-Based Meat Alternatives by Consumer Segment in Finland.",
+    "publication_date": "2022-02-03",
+    "queries": [
+      {
+        "query": "\"plant-based meat\"[Title/Abstract] AND (purchase[Title/Abstract] OR consumer[Title/Abstract])",
+        "round": "single_followup_round"
+      }
+    ],
+    "decision": "exclude_from_priority_methods_set",
+    "reason": "Does not directly identify linked paid purchase in India/Pakistan; review, other geography, biology/nutrition or intention-only design"
+  },
+  {
+    "id": "36300041",
+    "title": "Inspiration or risk? How social media marketing of plant-based meat affects young people's purchase intention.",
+    "publication_date": "2022-10-10",
+    "queries": [
+      {
+        "query": "\"plant-based meat\"[Title/Abstract] AND (purchase[Title/Abstract] OR consumer[Title/Abstract])",
+        "round": "single_followup_round"
+      }
+    ],
+    "decision": "exclude_from_priority_methods_set",
+    "reason": "Does not directly identify linked paid purchase in India/Pakistan; review, other geography, biology/nutrition or intention-only design"
+  },
+  {
+    "id": "33336979",
+    "title": "A review of research on plant-based meat alternatives: Driving forces, history, manufacturing, and consumer attitudes.",
+    "publication_date": "2020-08-13",
+    "queries": [
+      {
+        "query": "\"plant-based meat\"[Title/Abstract] AND (purchase[Title/Abstract] OR consumer[Title/Abstract])",
+        "round": "single_followup_round"
+      }
+    ],
+    "decision": "exclude_from_priority_methods_set",
+    "reason": "Does not directly identify linked paid purchase in India/Pakistan; review, other geography, biology/nutrition or intention-only design"
+  },
+  {
+    "id": "35886523",
+    "title": "Relationship between Personal Values and Intentions to Purchase Plant-Based Meat Alternatives: Application of the Dual Concern Theory.",
+    "publication_date": "2022-07-16",
+    "queries": [
+      {
+        "query": "\"plant-based meat\"[Title/Abstract] AND (purchase[Title/Abstract] OR consumer[Title/Abstract])",
+        "round": "single_followup_round"
+      }
+    ],
+    "decision": "exclude_from_priority_methods_set",
+    "reason": "Does not directly identify linked paid purchase in India/Pakistan; review, other geography, biology/nutrition or intention-only design"
+  },
+  {
+    "id": "33577863",
+    "title": "Alternative proteins, evolving attitudes: Comparing consumer attitudes to plant-based and cultured meat in Belgium in two consecutive years.",
+    "publication_date": "2021-02-10",
+    "queries": [
+      {
+        "query": "\"plant-based meat\"[Title/Abstract] AND (purchase[Title/Abstract] OR consumer[Title/Abstract])",
+        "round": "single_followup_round"
+      }
+    ],
+    "decision": "exclude_from_priority_methods_set",
+    "reason": "Does not directly identify linked paid purchase in India/Pakistan; review, other geography, biology/nutrition or intention-only design"
+  },
+  {
+    "id": "35669048",
+    "title": "Plasma Amino Acid Appearance and Status of Appetite Following a Single Meal of Red Meat or a Plant-Based Meat Analog: A Randomized Crossover Clinical Trial.",
+    "publication_date": "2022-05-04",
+    "queries": [
+      {
+        "query": "\"plant-based meat\"[Title/Abstract] AND (purchase[Title/Abstract] OR consumer[Title/Abstract])",
+        "round": "single_followup_round"
+      }
+    ],
+    "decision": "exclude_from_priority_methods_set",
+    "reason": "Does not directly identify linked paid purchase in India/Pakistan; review, other geography, biology/nutrition or intention-only design"
+  },
+  {
+    "id": "40282797",
+    "title": "Plant-Based Alternatives to Meat Products.",
+    "publication_date": "2025-04-17",
+    "queries": [
+      {
+        "query": "\"plant-based meat\"[Title/Abstract] AND (purchase[Title/Abstract] OR consumer[Title/Abstract])",
+        "round": "single_followup_round"
+      }
+    ],
+    "decision": "exclude_from_priority_methods_set",
+    "reason": "Does not directly identify linked paid purchase in India/Pakistan; review, other geography, biology/nutrition or intention-only design"
+  },
+  {
+    "id": "37722774",
+    "title": "Novel plant-based meat alternatives: Implications and opportunities for consumer nutrition and health.",
+    "publication_date": "2023-06-14",
+    "queries": [
+      {
+        "query": "\"plant-based meat\"[Title/Abstract] AND (purchase[Title/Abstract] OR consumer[Title/Abstract])",
+        "round": "single_followup_round"
+      }
+    ],
+    "decision": "exclude_from_priority_methods_set",
+    "reason": "Does not directly identify linked paid purchase in India/Pakistan; review, other geography, biology/nutrition or intention-only design"
+  },
+  {
+    "id": "42511220",
+    "title": "Perceived Behavioural Control and Animal-Welfare Ethics Predict Cultured-Meat Acceptance in INDIA: An Extended Theory of Planned Behaviour Analysis.",
+    "publication_date": "2026-07-13",
+    "queries": [
+      {
+        "query": "(\"plant-based meat\"[Title/Abstract] OR \"cultured meat\"[Title/Abstract] OR \"meat alternatives\"[Title/Abstract]) AND (India[Title/Abstract] OR Pakistan[Title/Abstract])",
+        "round": "single_followup_round"
+      }
+    ],
+    "decision": "retain_original_read",
+    "reason": "Regional primary intention study; outcome distinction"
+  },
+  {
+    "id": "34945473",
+    "title": "Cultured Meat Prospects for a Billion!",
+    "publication_date": "2021-11-25",
+    "queries": [
+      {
+        "query": "(\"plant-based meat\"[Title/Abstract] OR \"cultured meat\"[Title/Abstract] OR \"meat alternatives\"[Title/Abstract]) AND (India[Title/Abstract] OR Pakistan[Title/Abstract])",
+        "round": "single_followup_round"
+      }
+    ],
+    "decision": "exclude_from_priority_methods_set",
+    "reason": "Does not directly identify linked paid purchase in India/Pakistan; review, other geography, biology/nutrition or intention-only design"
+  },
+  {
+    "id": "39011754",
+    "title": "Smart proteins as a new paradigm for meeting dietary protein sufficiency of India: a critical review on the safety and sustainability of different protein sources.",
+    "publication_date": "2024-07-16",
+    "queries": [
+      {
+        "query": "(\"plant-based meat\"[Title/Abstract] OR \"cultured meat\"[Title/Abstract] OR \"meat alternatives\"[Title/Abstract]) AND (India[Title/Abstract] OR Pakistan[Title/Abstract])",
+        "round": "single_followup_round"
+      }
+    ],
+    "decision": "exclude_from_priority_methods_set",
+    "reason": "Does not directly identify linked paid purchase in India/Pakistan; review, other geography, biology/nutrition or intention-only design"
+  }
+]
