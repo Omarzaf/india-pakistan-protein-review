@@ -5,7 +5,7 @@
   "manuscriptRevision": "2026-10-27",
   "state": "LOCAL_REVIEW_CANDIDATE",
   "publicationAuthorized": false,
-  "humanFactualCodeReview": "pending",
+  "humanFactualCodeReview": "author statement recorded 2026-11-10",
   "scholarlyAcceptance": "pending",
   "files": [
     {
@@ -105,18 +105,18 @@
     },
     {
       "path": "dashboard/documents/chapter.reader.json",
-      "bytes": 14996,
-      "sha256": "771580e20febdcf13aab0f3fd5c4976ec1efa73ab48b18aa043473d72ef7fb7c"
+      "bytes": 15044,
+      "sha256": "9519d3ea9ed60542b07ff11ea8dc5bacb021fb6ced64571f61e41efcc47af665"
     },
     {
       "path": "dashboard/documents/claim-review.csv",
-      "bytes": 13502,
-      "sha256": "edbc6985d1600f8cc1fd6892fc8ae42a26d6f36b15cb1fcda9ca45a6b52dbde7"
+      "bytes": 14512,
+      "sha256": "372a23b032269bf10d76aa14b57b10ac6b4e614b73aef5adad47af03e302fad1"
     },
     {
       "path": "dashboard/documents/claim-review.reader.json",
-      "bytes": 14248,
-      "sha256": "6134d2394b1db4de752460b73580b61b9bfe360d6cfe1992f5b22ff40172fbd2"
+      "bytes": 15176,
+      "sha256": "25dd186ea686f7e6457cca25684e730c89acd31732aa72a40b62b5d675d68c14"
     },
     {
       "path": "dashboard/documents/completion-report.md",
@@ -160,13 +160,13 @@
     },
     {
       "path": "dashboard/documents/dated-context.md",
-      "bytes": 5223,
-      "sha256": "52daeb7a13b1522fea3f055d155ea4c2ff4d5d09f8c3ca7ddb6b1c483fb1d4da"
+      "bytes": 5248,
+      "sha256": "8176f7467509f111f8929f273a6f1fb1427e60e63618bc14369691c5498c54ee"
     },
     {
       "path": "dashboard/documents/dated-context.reader.json",
-      "bytes": 5722,
-      "sha256": "207a00ba8fe0298eebe78490ca6bc41801d233a2ac41ae719e04fd7b68eb10fe"
+      "bytes": 5795,
+      "sha256": "605b88316d1bd273146a7a4eac63db7df323029ec4f296b8747b45a056ed3017"
     },
     {
       "path": "dashboard/documents/driver-evidence.json",
@@ -175,28 +175,28 @@
     },
     {
       "path": "dashboard/documents/driver-evidence.reader.json",
-      "bytes": 28797,
-      "sha256": "01317d3f0d9733111d9434a653213ccf6976529a4175d478d83303ba0ac4f24f"
+      "bytes": 28845,
+      "sha256": "11f15eb564a28fe164c575c51a957c847a31de473791bfc14d8a8bd946369b2f"
     },
     {
       "path": "dashboard/documents/drivers.md",
-      "bytes": 13353,
-      "sha256": "d16a4ffe2665aa57d7765cc49a455b0b1cd7d2e6ca5cfb0c3693bebf5e401c97"
+      "bytes": 13373,
+      "sha256": "7315a79ec0564af69b1b9fa3110638c2faa36f05c82a9fbaf13d7730ff8e2e3b"
     },
     {
       "path": "dashboard/documents/drivers.reader.json",
-      "bytes": 13883,
-      "sha256": "14ac2ef4d654c55f9c2ec66fb11ccb601e369a27a409242ee088ad2fcaec6b9b"
+      "bytes": 13951,
+      "sha256": "d53d3901708945cd70ee70dc069f81f4dc2b3a2724650cbf68e60d8e42dd4c5d"
     },
     {
       "path": "dashboard/documents/gfi-gap.md",
-      "bytes": 11768,
-      "sha256": "3babdc57173e2e615083e4103c3875baaae032dca8e346cf23e715570d02bf3d"
+      "bytes": 11814,
+      "sha256": "7b330a489f0afed9c109a3e84d6bce93476f7fb0af997f6e96d51cddfcd0bc8c"
     },
     {
       "path": "dashboard/documents/gfi-gap.reader.json",
-      "bytes": 12318,
-      "sha256": "f9d54cbf5c0d2958cb9947f90bd51f2846f55a0fd76fefc87f33087d8006911c"
+      "bytes": 12412,
+      "sha256": "11298e10bdd1c0e12dfc2c99f6559f33960bea21e8d2d9fc76ac10ffca4f271f"
     },
     {
       "path": "dashboard/documents/household-audit.md",
@@ -245,8 +245,8 @@
     },
     {
       "path": "dashboard/documents/limitations.reader.json",
-      "bytes": 6385,
-      "sha256": "4ee2e22c2b927423798e5d2960b1797589a05960a74f311e33b7a1144198492a"
+      "bytes": 6433,
+      "sha256": "41cb8ca740fb002f68367f0d89508325eaed140bc8c1e8165475363939a3e46c"
     },
     {
       "path": "dashboard/documents/measurement.md",
@@ -290,13 +290,13 @@
     },
     {
       "path": "dashboard/documents/proxy-method.md",
-      "bytes": 17014,
-      "sha256": "ec9f19469f08ca2d43b7ebbb04336f2820e22a62ec9257e38db877d04fad1805"
+      "bytes": 17043,
+      "sha256": "510efdefa8f731929f316932f4326561dd452867e4066522c7755cdf16829441"
     },
     {
       "path": "dashboard/documents/proxy-method.reader.json",
-      "bytes": 17627,
-      "sha256": "340cb8478484d9830b4f70e421a1c71e93b80294abb9c53a2e23bbad6a08c49a"
+      "bytes": 17704,
+      "sha256": "7fcf2303e6f5c656977b19d84d3d83e1e7d66c1298839cdd66432fbccdadb4e1"
     },
     {
       "path": "dashboard/documents/recommendations.csv",
@@ -305,8 +305,8 @@
     },
     {
       "path": "dashboard/documents/recommendations.reader.json",
-      "bytes": 7676,
-      "sha256": "3644fe1fdb936565c85a99426458471b97afdc8b7609907e4ba0a00fec0e7577"
+      "bytes": 7724,
+      "sha256": "1dd28f622e95f18e3f16a5c335d998a1cfa5b47a6c139fe0888292eb1ce3d944"
     },
     {
       "path": "dashboard/documents/retail-report.md",
@@ -345,13 +345,13 @@
     },
     {
       "path": "dashboard/documents/source-map.json",
-      "bytes": 16773,
-      "sha256": "a7dc83c029be7c1aa5d7fcce26ddcc26d8659737fafda62af270f37ffaa85206"
+      "bytes": 16775,
+      "sha256": "3dc97a8cec4ab5df9b2c3da6345bd4e7a10d7203088a3e98abee7e6e67ae6697"
     },
     {
       "path": "dashboard/documents/source-map.reader.json",
-      "bytes": 18273,
-      "sha256": "03f06b961d4271eca735a0eca69a74ef9ba61276251fc9d9f7706a53a4cabe9a"
+      "bytes": 18323,
+      "sha256": "b811f50006e01f4c538e104bdf8f1e53c7adf418007b92b928c68d447f03df66"
     },
     {
       "path": "dashboard/index.html",
@@ -365,8 +365,8 @@
     },
     {
       "path": "dashboard/pakistan-india-manifest.json",
-      "bytes": 119292,
-      "sha256": "c5e89a0dec1d762c54aef693e6552d4287858c785e96c02d5a701d4b27da5173"
+      "bytes": 119899,
+      "sha256": "d01bfcf639604c91ec32bb651d82ea462d3697c6a1645fc1bcd09265aba77674"
     },
     {
       "path": "dashboard/pakistan-india.css",
@@ -510,8 +510,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 113186,
-      "sha256": "f08c072203ed47e29bcc5afcef4c9f63670f2b24081e6eb79d4ca858ee4ae844"
+      "bytes": 113234,
+      "sha256": "71e0e0fe86d1620d401edb256fe11ef45054bbdcf481aaddaf7232fbfc33e9c9"
     },
     {
       "path": "lib/D3-LICENSE.txt",
@@ -530,8 +530,8 @@
     },
     {
       "path": "review/RIGHTS.md",
-      "bytes": 1695,
-      "sha256": "6fd5490aa56572de83a7d84fb6dbbfdd71197f1dabfff68bb88a02d51cb5a4e2"
+      "bytes": 1728,
+      "sha256": "2091f1d79bfd8ccd710ed464db8613e03aeb24a310d8333254992b3f9ae9ee33"
     },
     {
       "path": "review/build/gfi-gap/REPORT.md",
@@ -625,18 +625,18 @@
     },
     {
       "path": "review/methods/dated-context.md",
-      "bytes": 5223,
-      "sha256": "52daeb7a13b1522fea3f055d155ea4c2ff4d5d09f8c3ca7ddb6b1c483fb1d4da"
+      "bytes": 5248,
+      "sha256": "8176f7467509f111f8929f273a6f1fb1427e60e63618bc14369691c5498c54ee"
     },
     {
       "path": "review/methods/drivers.md",
-      "bytes": 13353,
-      "sha256": "d16a4ffe2665aa57d7765cc49a455b0b1cd7d2e6ca5cfb0c3693bebf5e401c97"
+      "bytes": 13373,
+      "sha256": "7315a79ec0564af69b1b9fa3110638c2faa36f05c82a9fbaf13d7730ff8e2e3b"
     },
     {
       "path": "review/methods/gfi-gap.md",
-      "bytes": 11768,
-      "sha256": "3babdc57173e2e615083e4103c3875baaae032dca8e346cf23e715570d02bf3d"
+      "bytes": 11814,
+      "sha256": "7b330a489f0afed9c109a3e84d6bce93476f7fb0af997f6e96d51cddfcd0bc8c"
     },
     {
       "path": "review/methods/measurement-crosswalk.md",
@@ -645,23 +645,23 @@
     },
     {
       "path": "review/methods/panel-supplement.md",
-      "bytes": 12558,
-      "sha256": "8fa1241ec7f7d4e54b473e620a8068a9df14a71024cb1b56a6b81a33b40a516d"
+      "bytes": 12637,
+      "sha256": "acd123b3a021379dab8407cf307009855ec236dcbcef107a0df61b5594eb2606"
     },
     {
       "path": "review/methods/proxy.md",
-      "bytes": 17014,
-      "sha256": "ec9f19469f08ca2d43b7ebbb04336f2820e22a62ec9257e38db877d04fad1805"
+      "bytes": 17043,
+      "sha256": "510efdefa8f731929f316932f4326561dd452867e4066522c7755cdf16829441"
     },
     {
       "path": "review/provenance/claim-review.csv",
-      "bytes": 13502,
-      "sha256": "edbc6985d1600f8cc1fd6892fc8ae42a26d6f36b15cb1fcda9ca45a6b52dbde7"
+      "bytes": 14512,
+      "sha256": "372a23b032269bf10d76aa14b57b10ac6b4e614b73aef5adad47af03e302fad1"
     },
     {
       "path": "review/provenance/claims.md",
-      "bytes": 12973,
-      "sha256": "a2237633310ae7b74921dfb224ad89e623b8e4c7abf5187a9ae40ee120a5fe99"
+      "bytes": 13061,
+      "sha256": "8f1fc07282fce74f6de48411dc0a7aa205290dced477dca986aba60e67a8939f"
     },
     {
       "path": "review/provenance/proxy-source-ledger.csv",
@@ -670,13 +670,13 @@
     },
     {
       "path": "review/provenance/source-map.json",
-      "bytes": 16773,
-      "sha256": "a7dc83c029be7c1aa5d7fcce26ddcc26d8659737fafda62af270f37ffaa85206"
+      "bytes": 16775,
+      "sha256": "3dc97a8cec4ab5df9b2c3da6345bd4e7a10d7203088a3e98abee7e6e67ae6697"
     },
     {
       "path": "review/provenance/sources.md",
-      "bytes": 10150,
-      "sha256": "6579dd963e2077c417690abb79885ccec1acc014776ad3d8ca92ddd746e62ca6"
+      "bytes": 10248,
+      "sha256": "dc508bafe9e980406b6a8bfc2a3e9cc5127e8f20c6da589c5d643bbbebc45c12"
     },
     {
       "path": "review/report/chapter.md",

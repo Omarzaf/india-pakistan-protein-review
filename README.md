@@ -1,10 +1,10 @@
-# India and Pakistan: alternative-protein spending scenarios
+# India and Pakistan: alternative-protein markets and conditional paths to 2035
 
-**Muhammad Umar Zafar · 27 October 2026 · Local revision candidate**
+**Muhammad Umar Zafar · companion repository to the South Asia report of the Sentient Futures three-report series · working edition, 10 November 2026**
 
-**Existing public dashboard (22 October edition; this revision is not deployed):** [consumption, projections, runs and reviews](https://pakistan-india-protein.vercel.app/dashboard/). The local candidate adds a revised Report and preserves the previous edition. [Website verification and release instructions](https://github.com/Omarzaf/india-pakistan-protein-review/blob/review/WEBSITE.md) describe the separate publication boundary.
+This repository is the single companion to the South Asia report. It holds the report's model, its reproducible numbers, the desk-research record behind them, the halal evidence and the Pakistan scale check. The author recorded human factual and code verification on 10 November 2026 ([record](provenance/human-verification-2026-11-10.md)). Team agreement is pending. The report stays unpublished until the forecast partner consents.
 
-This repository contains a proposed India–Pakistan contribution to a unified research report, its methods, and an offline reproduction of the retained numbers. Team agreement and human factual/code verification are pending. It is ready for a bounded review; it is not a final programme submission or an accepted research finding.
+**Public dashboard:** [consumption, projections, runs and reviews](https://pakistan-india-protein.vercel.app/dashboard/). [Website verification and release instructions](https://github.com/Omarzaf/india-pakistan-protein-review/blob/review/WEBSITE.md) describe the separate publication boundary.
 
 ## Read, inspect, reproduce
 
@@ -49,11 +49,14 @@ The separately authored forecast-elicitation supplement describes repeated model
 | `scripts/` | Offline calculation, document generation and release verification. |
 | `tests/` | Data-integrity and scientific-denominator checks. |
 | `provenance/` | Sources, claim review, source transformations and explicit release allowlist. |
+| `desk-research/` | Search logs, registers, the 916-row evidence ledger and screening records, 12 Sep to 20 Oct 2026. See its README. |
+| `halal/` | Phase One halal review and the seven-condition institution matrix. |
+| `data/pakistan-topdown/`, `build/pakistan-topdown/`, `scripts/pakistan_topdown.py` | Pakistan conventional-value scale check used in Appendix A of the report. It needs the private source captures to rerun; outputs are included. |
 | `build/` | Regenerated tables and computational verification receipt. |
 
 This file-only edition contains no Git history, raw questionnaire, collaborator draft, interview, provider transcript, household microdata or third-party full-text archive. Numerical reproduction begins at the supplied aggregate input table. It does not reacquire every source or repeat the original elicitation. Hashes establish byte identity, not rights or scientific validity.
 
-[RIGHTS.md](RIGHTS.md) records source-specific boundaries. No blanket content or software licence is granted. Human verification must cover all included AI-produced or AI-edited claims, citations, statistics, quotations, data and code. The [AI-use statement](report/limitations-and-ai-use.md) and blank review register make that remaining work explicit.
+[RIGHTS.md](RIGHTS.md) records source-specific boundaries. No blanket content or software licence is granted. Human verification covers all included AI-produced or AI-edited claims, citations, statistics, quotations, data and code. The [claim review register](provenance/claim-review.csv) and the [verification record](provenance/human-verification-2026-11-10.md) hold the entries. The [AI-use statement](report/limitations-and-ai-use.md) and the other files in `report/` are the 27 October draft, kept as written with its original status line. The South Asia report supersedes that draft.
 
 The revision adds [GFI diagnostics](methods/gfi-gap.md), [driver evidence](methods/drivers.md), [dated context](methods/dated-context.md) and [proposed tests](data/recommendations.csv). No historical headline, panel response or reference output was replaced. GFI matching remains a diagnostic, not a new main scenario.
 
@@ -65,6 +68,6 @@ The chapter is modular: place it after the US contribution in a unified report, 
 
 For a correction, identify the exact sentence or data row, the original source and its date, the proposed change and its effect on the outputs. [CONTRIBUTING.md](CONTRIBUTING.md) explains the review sequence.
 
-## Local revision status
+## Status
 
-This candidate is local only. Human factual/code verification, rights and joint-report acceptance remain pending. Existing US panel rows are preserved; no new original-panel equivalence or collaborator approval is claimed. The PDF is separately rendered and visually inspected; the HTML builder does not generate it. The optional `scripts/plot_gfi_gap.py` uses existing Matplotlib tooling to regenerate the supplied figure; offline numerical reproduction uses only the Python standard library.
+The author recorded human factual and code verification on 10 November 2026. Source-specific rights and joint-report acceptance remain pending. Existing US panel rows are preserved; no new original-panel equivalence or collaborator approval is claimed. The PDF is separately rendered and visually inspected; the HTML builder does not generate it. The optional `scripts/plot_gfi_gap.py` uses existing Matplotlib tooling to regenerate the supplied figure; offline numerical reproduction uses only the Python standard library.

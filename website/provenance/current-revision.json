@@ -5,7 +5,7 @@
   "dataSnapshot": "2026-10-22",
   "historicalArchive": "editions/2026-10-22",
   "sourceHtmlSha256": "68780e196ea4c8f0c5c032c0aec14154f55828d66aed27ace6465029b7993ef0",
-  "rootHtmlSha256": "f08c072203ed47e29bcc5afcef4c9f63670f2b24081e6eb79d4ca858ee4ae844",
+  "rootHtmlSha256": "71e0e0fe86d1620d401edb256fe11ef45054bbdcf481aaddaf7232fbfc33e9c9",
   "assets": [
     {
       "source": "report/review.html",
@@ -58,26 +58,26 @@
     {
       "source": "methods/proxy.md",
       "path": "review/methods/proxy.md",
-      "sourceSha256": "ec9f19469f08ca2d43b7ebbb04336f2820e22a62ec9257e38db877d04fad1805",
-      "exportSha256": "ec9f19469f08ca2d43b7ebbb04336f2820e22a62ec9257e38db877d04fad1805"
+      "sourceSha256": "510efdefa8f731929f316932f4326561dd452867e4066522c7755cdf16829441",
+      "exportSha256": "510efdefa8f731929f316932f4326561dd452867e4066522c7755cdf16829441"
     },
     {
       "source": "methods/gfi-gap.md",
       "path": "review/methods/gfi-gap.md",
-      "sourceSha256": "3babdc57173e2e615083e4103c3875baaae032dca8e346cf23e715570d02bf3d",
-      "exportSha256": "3babdc57173e2e615083e4103c3875baaae032dca8e346cf23e715570d02bf3d"
+      "sourceSha256": "7b330a489f0afed9c109a3e84d6bce93476f7fb0af997f6e96d51cddfcd0bc8c",
+      "exportSha256": "7b330a489f0afed9c109a3e84d6bce93476f7fb0af997f6e96d51cddfcd0bc8c"
     },
     {
       "source": "methods/drivers.md",
       "path": "review/methods/drivers.md",
-      "sourceSha256": "d16a4ffe2665aa57d7765cc49a455b0b1cd7d2e6ca5cfb0c3693bebf5e401c97",
-      "exportSha256": "d16a4ffe2665aa57d7765cc49a455b0b1cd7d2e6ca5cfb0c3693bebf5e401c97"
+      "sourceSha256": "7315a79ec0564af69b1b9fa3110638c2faa36f05c82a9fbaf13d7730ff8e2e3b",
+      "exportSha256": "7315a79ec0564af69b1b9fa3110638c2faa36f05c82a9fbaf13d7730ff8e2e3b"
     },
     {
       "source": "methods/dated-context.md",
       "path": "review/methods/dated-context.md",
-      "sourceSha256": "52daeb7a13b1522fea3f055d155ea4c2ff4d5d09f8c3ca7ddb6b1c483fb1d4da",
-      "exportSha256": "52daeb7a13b1522fea3f055d155ea4c2ff4d5d09f8c3ca7ddb6b1c483fb1d4da"
+      "sourceSha256": "8176f7467509f111f8929f273a6f1fb1427e60e63618bc14369691c5498c54ee",
+      "exportSha256": "8176f7467509f111f8929f273a6f1fb1427e60e63618bc14369691c5498c54ee"
     },
     {
       "source": "methods/measurement-crosswalk.md",
@@ -88,8 +88,8 @@
     {
       "source": "methods/panel-supplement.md",
       "path": "review/methods/panel-supplement.md",
-      "sourceSha256": "8fa1241ec7f7d4e54b473e620a8068a9df14a71024cb1b56a6b81a33b40a516d",
-      "exportSha256": "8fa1241ec7f7d4e54b473e620a8068a9df14a71024cb1b56a6b81a33b40a516d"
+      "sourceSha256": "acd123b3a021379dab8407cf307009855ec236dcbcef107a0df61b5594eb2606",
+      "exportSha256": "acd123b3a021379dab8407cf307009855ec236dcbcef107a0df61b5594eb2606"
     },
     {
       "source": "data/README.md",
@@ -148,26 +148,26 @@
     {
       "source": "provenance/claims.md",
       "path": "review/provenance/claims.md",
-      "sourceSha256": "a2237633310ae7b74921dfb224ad89e623b8e4c7abf5187a9ae40ee120a5fe99",
-      "exportSha256": "a2237633310ae7b74921dfb224ad89e623b8e4c7abf5187a9ae40ee120a5fe99"
+      "sourceSha256": "8f1fc07282fce74f6de48411dc0a7aa205290dced477dca986aba60e67a8939f",
+      "exportSha256": "8f1fc07282fce74f6de48411dc0a7aa205290dced477dca986aba60e67a8939f"
     },
     {
       "source": "provenance/sources.md",
       "path": "review/provenance/sources.md",
-      "sourceSha256": "6579dd963e2077c417690abb79885ccec1acc014776ad3d8ca92ddd746e62ca6",
-      "exportSha256": "6579dd963e2077c417690abb79885ccec1acc014776ad3d8ca92ddd746e62ca6"
+      "sourceSha256": "dc508bafe9e980406b6a8bfc2a3e9cc5127e8f20c6da589c5d643bbbebc45c12",
+      "exportSha256": "dc508bafe9e980406b6a8bfc2a3e9cc5127e8f20c6da589c5d643bbbebc45c12"
     },
     {
       "source": "provenance/claim-review.csv",
       "path": "review/provenance/claim-review.csv",
-      "sourceSha256": "edbc6985d1600f8cc1fd6892fc8ae42a26d6f36b15cb1fcda9ca45a6b52dbde7",
-      "exportSha256": "edbc6985d1600f8cc1fd6892fc8ae42a26d6f36b15cb1fcda9ca45a6b52dbde7"
+      "sourceSha256": "372a23b032269bf10d76aa14b57b10ac6b4e614b73aef5adad47af03e302fad1",
+      "exportSha256": "372a23b032269bf10d76aa14b57b10ac6b4e614b73aef5adad47af03e302fad1"
     },
     {
       "source": "provenance/source-map.json",
       "path": "review/provenance/source-map.json",
-      "sourceSha256": "a7dc83c029be7c1aa5d7fcce26ddcc26d8659737fafda62af270f37ffaa85206",
-      "exportSha256": "a7dc83c029be7c1aa5d7fcce26ddcc26d8659737fafda62af270f37ffaa85206"
+      "sourceSha256": "3dc97a8cec4ab5df9b2c3da6345bd4e7a10d7203088a3e98abee7e6e67ae6697",
+      "exportSha256": "3dc97a8cec4ab5df9b2c3da6345bd4e7a10d7203088a3e98abee7e6e67ae6697"
     },
     {
       "source": "provenance/proxy-source-ledger.csv",
@@ -256,8 +256,8 @@
     {
       "source": "RIGHTS.md",
       "path": "review/RIGHTS.md",
-      "sourceSha256": "6fd5490aa56572de83a7d84fb6dbbfdd71197f1dabfff68bb88a02d51cb5a4e2",
-      "exportSha256": "6fd5490aa56572de83a7d84fb6dbbfdd71197f1dabfff68bb88a02d51cb5a4e2"
+      "sourceSha256": "2091f1d79bfd8ccd710ed464db8613e03aeb24a310d8333254992b3f9ae9ee33",
+      "exportSha256": "2091f1d79bfd8ccd710ed464db8613e03aeb24a310d8333254992b3f9ae9ee33"
     }
   ],
   "documents": [

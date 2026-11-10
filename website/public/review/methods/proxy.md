@@ -1,6 +1,6 @@
 # Methods appendix: India–Pakistan spending scenarios
 
-**AI-assisted review draft, 27 October 2026. Human factual/code verification pending. Proposed joint-report methods contribution; definitions are proposed harmonization, not a recorded team agreement.**
+**AI-assisted draft, 27 October 2026. The author recorded human factual and code verification on 10 November 2026. Proposed joint-report methods contribution; definitions are proposed harmonization, not a recorded team agreement.**
 
 ## Read this first: the calculation in plain language
 

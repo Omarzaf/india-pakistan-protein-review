@@ -1,9 +1,9 @@
 {
-  "edition": "2026-10-27-local-review",
+  "edition": "2026-11-10-consolidated-review",
   "selection": "Explicit named file allowlist; manifest itself is the one self-excluded file",
   "source_commit": "aea076871579620bb3474536f3a06e88972f6faf",
   "includes_git_history": false,
-  "human_verification": "pending",
+  "human_verification": "author statement recorded 2026-11-10; see provenance/human-verification-2026-11-10.md",
   "publication_authorized": false,
   "rights_status": "source-specific review pending, including aggregate reuse",
   "files": [
@@ -12,420 +12,616 @@
       "bytes": 77,
       "sha256": "d0ef3e9fa7f626be2e497e8ecd95cc61a13afac1a534eb404b24d051d6cc338d",
       "purpose": ".gitignore",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "CITATION.cff",
-      "bytes": 536,
-      "sha256": "c58a0dfd34d22dc77ffc31bdd240dca77404c2a3c8aaadf4e6707233abf6b2d4",
+      "bytes": 556,
+      "sha256": "4fb8bbaecc6a7fd1f802b1d2cb051ef6f90156ec1fb3edafe66e94bbf52a99de",
       "purpose": "CITATION.cff",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "CONTRIBUTING.md",
       "bytes": 1376,
       "sha256": "c71d9ed4be3087800d5494b95562faaa351744797986a750ce126d730cdaa437",
       "purpose": "CONTRIBUTING.md",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "README.md",
-      "bytes": 6517,
-      "sha256": "c192b9a939a895d282a0759d31e5cf5c1271a9cd4224e8abe559e79b5410063a",
+      "bytes": 7284,
+      "sha256": "064796b5523616696eeef9638959a87f166c83b702b1d6a053913790801abf97",
       "purpose": "README.md",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "RIGHTS.md",
-      "bytes": 1695,
-      "sha256": "6fd5490aa56572de83a7d84fb6dbbfdd71197f1dabfff68bb88a02d51cb5a4e2",
+      "bytes": 1728,
+      "sha256": "2091f1d79bfd8ccd710ed464db8613e03aeb24a310d8333254992b3f9ae9ee33",
       "purpose": "RIGHTS.md",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "build/gfi-gap/REPORT.md",
       "bytes": 12465,
       "sha256": "bb7f4ba9ef061fdc835c1d0173165deea475b0fb40264a003dbe661a44100388",
       "purpose": "build/gfi-gap/REPORT.md",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "build/gfi-gap/artifact-hashes.json",
       "bytes": 1373,
       "sha256": "b85b3cc27542e747a062b7dd640609617ff95120fe4e5d64ffa07ad774ddb991",
       "purpose": "build/gfi-gap/artifact-hashes.json",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "build/gfi-gap/category-growth.csv",
       "bytes": 1913,
       "sha256": "f7f42bc35f8ff8e466b53cd3665104a42a47230467fbed465465905961f7bfba",
       "purpose": "build/gfi-gap/category-growth.csv",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "build/gfi-gap/category-reconciliation.csv",
       "bytes": 288,
       "sha256": "c90328ce42cce115b207ed6aaf5d1fb1ae138e41ea0bd90c96c4d57876041bce",
       "purpose": "build/gfi-gap/category-reconciliation.csv",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "build/gfi-gap/diagnostics.json",
       "bytes": 105866,
       "sha256": "51c10816c94ed7cd954d85d8b91318e3bb723eeda0156898122b112eea9666f5",
       "purpose": "build/gfi-gap/diagnostics.json",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "build/gfi-gap/factor-draws.csv",
       "bytes": 2098332,
       "sha256": "ad067eb76db6a9710b4dc7ca3de97e35eb604331301cf06e145036a78cea8acf",
       "purpose": "build/gfi-gap/factor-draws.csv",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "build/gfi-gap/midpoint-factors.csv",
       "bytes": 436,
       "sha256": "a754b61f7932fee9306efbb495e5e23f749650ae802cd6af6158ab19a9214ce2",
       "purpose": "build/gfi-gap/midpoint-factors.csv",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "build/gfi-gap/reference-checks.csv",
       "bytes": 4693,
       "sha256": "abeaa119e5b86493fe0db33500a2aa22e376cdb382cb2ded108f6e77e7d260b6",
       "purpose": "build/gfi-gap/reference-checks.csv",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "build/gfi-gap/required-growth.csv",
       "bytes": 8588,
       "sha256": "401611319255d9d25c80503800de8c3102830a1be3f22c51ceea8dfae671962e",
       "purpose": "build/gfi-gap/required-growth.csv",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "build/gfi-gap/sensitivity-summary.csv",
       "bytes": 12098,
       "sha256": "d1bfa243bee7c4851b671b0ae3ee4776f3a20909756208d1eecede5a65bc50d7",
       "purpose": "build/gfi-gap/sensitivity-summary.csv",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "build/gfi-gap/target-comparison.csv",
       "bytes": 794,
       "sha256": "c44120cd7574a01b603254fd2137f211e1ac5de03d6636113bc3c4f859983029",
       "purpose": "build/gfi-gap/target-comparison.csv",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
+    },
+    {
+      "path": "build/pakistan-topdown/extracted-inputs.json",
+      "bytes": 15609,
+      "sha256": "0bfaf93639bdd15e3c3b5b9904af73fea25958474a50cc44aae5d641c6b448c8",
+      "purpose": "build/pakistan-topdown/extracted-inputs.json",
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
+    },
+    {
+      "path": "build/pakistan-topdown/naheed_normalized.csv",
+      "bytes": 8261,
+      "sha256": "1502e50038fa0ad73447f6612930ab6d7d179b31149aee113ee28e8f70ef80e4",
+      "purpose": "build/pakistan-topdown/naheed_normalized.csv",
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
+    },
+    {
+      "path": "build/pakistan-topdown/pakistan_topdown.csv",
+      "bytes": 95193,
+      "sha256": "2e4b92a0d9c3b5f7f4a650ffb2f5c63c83cb9959f8c1e4611308a8c43686e955",
+      "purpose": "build/pakistan-topdown/pakistan_topdown.csv",
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
+    },
+    {
+      "path": "build/pakistan-topdown/receipt.json",
+      "bytes": 503,
+      "sha256": "8a385c4f47b49b883896aab0dc0deb9337bb31b11269d951852a30f0068e4604",
+      "purpose": "build/pakistan-topdown/receipt.json",
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "build/panel_aggregates.json",
       "bytes": 3659,
       "sha256": "111e3e334136b2501b8c8060ae1bba18e1f0adfe69862d89df9c9791f919de8b",
       "purpose": "build/panel_aggregates.json",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "build/proxy_scenarios.csv",
       "bytes": 73658,
       "sha256": "98c5a19c94ecd891be7d1a44d24a9004268f160c96f6212c00386a3976c0e7b4",
       "purpose": "build/proxy_scenarios.csv",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "build/tables.md",
       "bytes": 2062,
       "sha256": "2d8d9bdbfc1293e944e8146ea929cbbb36214b7d302db0db6abf766dedd2fc7a",
       "purpose": "build/tables.md",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "build/verification.json",
       "bytes": 626,
       "sha256": "41cc0253ff8fd04e16ce0590f1986af91a1ec1e0e39cfeafe34e1550a8124769",
       "purpose": "build/verification.json",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "data/README.md",
       "bytes": 3178,
       "sha256": "6c1fb5a2db596f46f3c2c97f567ef5616eb9f06ca0f9bcb361ad4e36aade9328",
       "purpose": "data/README.md",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "data/altprotein_proxy_inputs.csv",
       "bytes": 36215,
       "sha256": "93ae9dddbfa59c1930b1deaba3a31a3cc273fa8a43077f9dcf735c0d9e64aa37",
       "purpose": "data/altprotein_proxy_inputs.csv",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "data/driver-evidence.json",
       "bytes": 26622,
       "sha256": "8665627070f2d697aa91b6ad0032108b9f69d61907249a68074565082ce4a4da",
       "purpose": "data/driver-evidence.json",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "data/gfi_categories.csv",
       "bytes": 9888,
       "sha256": "67069e3aef22b06a9d8b37e91fd9e3d9ab59471127f7c87e7cbcf7fd09402227",
       "purpose": "data/gfi_categories.csv",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
+    },
+    {
+      "path": "data/pakistan-topdown/README.md",
+      "bytes": 6726,
+      "sha256": "77dce60971575e429ce4024224d7a1a451bcea68df375f97462c78445e607401",
+      "purpose": "data/pakistan-topdown/README.md",
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
+    },
+    {
+      "path": "data/pakistan-topdown/input-manifest.json",
+      "bytes": 2831,
+      "sha256": "ec807db276b09b57871f3b1f886dae46f6efa672ace78072737b3d247f8d772e",
+      "purpose": "data/pakistan-topdown/input-manifest.json",
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
+    },
+    {
+      "path": "data/pakistan-topdown/sources.json",
+      "bytes": 6265,
+      "sha256": "18670f8c6cdb165bddea216ff36b6d1c4df8e0a2aff429fe35856abe585033c2",
+      "purpose": "data/pakistan-topdown/sources.json",
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "data/panel-attempts.csv",
       "bytes": 20520,
       "sha256": "a83b85f34f2590914c092e2dd6bd7ccb19f9abeb293b4ec276f8e0d735f26228",
       "purpose": "data/panel-attempts.csv",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "data/panel_runs.json",
       "bytes": 22063,
       "sha256": "5ecbd61f6621acb580ddb009e117c55eb3be7a6e6af611b5ac92bb2adb998aee",
       "purpose": "data/panel_runs.json",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "data/recommendations.csv",
       "bytes": 7039,
       "sha256": "349cc5c2dd72d142819d5675c70d55c663603dfac18c0d2a8a12cfc2ce380ed7",
       "purpose": "data/recommendations.csv",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "data/reference_panel_aggregates.json",
       "bytes": 3673,
       "sha256": "24205e16492f060cff726dd8c376f09a65a61171f824840916f7ed4a986ccd9d",
       "purpose": "data/reference_panel_aggregates.json",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "data/reference_proxy_scenarios.csv",
       "bytes": 73658,
       "sha256": "98c5a19c94ecd891be7d1a44d24a9004268f160c96f6212c00386a3976c0e7b4",
       "purpose": "data/reference_proxy_scenarios.csv",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
+    },
+    {
+      "path": "desk-research/README.md",
+      "bytes": 5279,
+      "sha256": "ef2a75571508c1fc6022fb2c19d835ec0443c0eca965dcbe58fde6cec0a31d4e",
+      "purpose": "desk-research/README.md",
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
+    },
+    {
+      "path": "desk-research/comparative-research-log-2026-09-13.md",
+      "bytes": 6764,
+      "sha256": "54eb94cb298f856b823ce83f9efe3f28f4e8847f65a2a6e7e4ca8b6795aac135",
+      "purpose": "desk-research/comparative-research-log-2026-09-13.md",
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
+    },
+    {
+      "path": "desk-research/evidence-ledger-2026-10-13.csv",
+      "bytes": 516394,
+      "sha256": "b651fa2133af7959527ab8c44053d96dcf85df9a58c6e935eddad504c54adbbe",
+      "purpose": "desk-research/evidence-ledger-2026-10-13.csv",
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
+    },
+    {
+      "path": "desk-research/halal-phase1-research-log-2026-09-30.md",
+      "bytes": 2546,
+      "sha256": "e05d76021c154b8f7b9f565e66e44c68f1ac791d1cd13a174aef54f092ae24f6",
+      "purpose": "desk-research/halal-phase1-research-log-2026-09-30.md",
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
+    },
+    {
+      "path": "desk-research/halal-search-log-2026-10-02.json",
+      "bytes": 93373,
+      "sha256": "683fae3eb50021ed1ade990ef34508e67a99e2f910b4b2e76f8708236d965649",
+      "purpose": "desk-research/halal-search-log-2026-10-02.json",
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
+    },
+    {
+      "path": "desk-research/india-pakistan-source-register-2026-09-14.json",
+      "bytes": 38154,
+      "sha256": "1a17f860facc0d95b7008be38f487aeda4b08834bd72f7fc7cabbebf505964a0",
+      "purpose": "desk-research/india-pakistan-source-register-2026-09-14.json",
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
+    },
+    {
+      "path": "desk-research/literature-query-log-2026-09-12.md",
+      "bytes": 6128,
+      "sha256": "eb4308ec9f172a0a6e4fd055c4d47e985f332c1d3d617f23cced19ccea61d92b",
+      "purpose": "desk-research/literature-query-log-2026-09-12.md",
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
+    },
+    {
+      "path": "desk-research/public-data-search-log-2026-10-11.json",
+      "bytes": 5662,
+      "sha256": "87a60592bad3b00c938fa531254554204962312b7bfb0b5f990e6858c2001991",
+      "purpose": "desk-research/public-data-search-log-2026-10-11.json",
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
+    },
+    {
+      "path": "desk-research/purchase-literature-queries-2026-10-20.json",
+      "bytes": 2009,
+      "sha256": "45f87e5dbdd4d28488813d65333ba80b867fc837f77455a475d17a4fbff74f6c",
+      "purpose": "desk-research/purchase-literature-queries-2026-10-20.json",
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
+    },
+    {
+      "path": "desk-research/purchase-literature-screening-2026-10-20.json",
+      "bytes": 15500,
+      "sha256": "4f782b6244324f72412a5930e535e6d7d9ef31244c22f38c50213e599e299c63",
+      "purpose": "desk-research/purchase-literature-screening-2026-10-20.json",
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
+    },
+    {
+      "path": "desk-research/raw-file-manifest-2026-10-13.csv",
+      "bytes": 965418,
+      "sha256": "79396c4fb475ef8bc2d974bd15b89f27598c891285ca1c02ceb79711e34cd102",
+      "purpose": "desk-research/raw-file-manifest-2026-10-13.csv",
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
+    },
+    {
+      "path": "desk-research/survey-findings-2026-09-30.csv",
+      "bytes": 5469,
+      "sha256": "383e756c2d4cab5ca9f9bafff58dce264801695c6ff8b8e4e7a67cd99e368106",
+      "purpose": "desk-research/survey-findings-2026-09-30.csv",
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
+    },
+    {
+      "path": "desk-research/survey-studies-2026-09-30.csv",
+      "bytes": 6580,
+      "sha256": "0b6f101672e8137a166d007b63d2dec8decade6471778cd56a478a20edc1c303",
+      "purpose": "desk-research/survey-studies-2026-09-30.csv",
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
+    },
+    {
+      "path": "halal/README.md",
+      "bytes": 1406,
+      "sha256": "05825202a9df21f6bbb43c825f36dd85e1faa846bec7d0e6e519eeaa35ab509d",
+      "purpose": "halal/README.md",
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
+    },
+    {
+      "path": "halal/institution-matrix.md",
+      "bytes": 29128,
+      "sha256": "add4d10c899ca19fde3a7055ee5f620f60b11d538c40e4f10775ce001f353e27",
+      "purpose": "halal/institution-matrix.md",
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
+    },
+    {
+      "path": "halal/phase1-review.md",
+      "bytes": 54883,
+      "sha256": "315467334767191aaa0d5a2f3a7bd25b27d0dbddd3146358b675280bf285f6c9",
+      "purpose": "halal/phase1-review.md",
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "methods/dated-context.md",
-      "bytes": 5223,
-      "sha256": "52daeb7a13b1522fea3f055d155ea4c2ff4d5d09f8c3ca7ddb6b1c483fb1d4da",
+      "bytes": 5248,
+      "sha256": "8176f7467509f111f8929f273a6f1fb1427e60e63618bc14369691c5498c54ee",
       "purpose": "methods/dated-context.md",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "methods/drivers.md",
-      "bytes": 13353,
-      "sha256": "d16a4ffe2665aa57d7765cc49a455b0b1cd7d2e6ca5cfb0c3693bebf5e401c97",
+      "bytes": 13373,
+      "sha256": "7315a79ec0564af69b1b9fa3110638c2faa36f05c82a9fbaf13d7730ff8e2e3b",
       "purpose": "methods/drivers.md",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "methods/gfi-gap.md",
-      "bytes": 11768,
-      "sha256": "3babdc57173e2e615083e4103c3875baaae032dca8e346cf23e715570d02bf3d",
+      "bytes": 11814,
+      "sha256": "7b330a489f0afed9c109a3e84d6bce93476f7fb0af997f6e96d51cddfcd0bc8c",
       "purpose": "methods/gfi-gap.md",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "methods/measurement-crosswalk.md",
       "bytes": 2653,
       "sha256": "df0f05d2f167aa1192245d001b38bd60a1eecabd3e53e86d2b83096dc2c61f3d",
       "purpose": "methods/measurement-crosswalk.md",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "methods/panel-supplement.md",
-      "bytes": 12558,
-      "sha256": "8fa1241ec7f7d4e54b473e620a8068a9df14a71024cb1b56a6b81a33b40a516d",
+      "bytes": 12637,
+      "sha256": "acd123b3a021379dab8407cf307009855ec236dcbcef107a0df61b5594eb2606",
       "purpose": "methods/panel-supplement.md",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "methods/proxy.md",
-      "bytes": 17014,
-      "sha256": "ec9f19469f08ca2d43b7ebbb04336f2820e22a62ec9257e38db877d04fad1805",
+      "bytes": 17043,
+      "sha256": "510efdefa8f731929f316932f4326561dd452867e4066522c7755cdf16829441",
       "purpose": "methods/proxy.md",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "provenance/claim-review.csv",
-      "bytes": 13502,
-      "sha256": "edbc6985d1600f8cc1fd6892fc8ae42a26d6f36b15cb1fcda9ca45a6b52dbde7",
+      "bytes": 14512,
+      "sha256": "372a23b032269bf10d76aa14b57b10ac6b4e614b73aef5adad47af03e302fad1",
       "purpose": "provenance/claim-review.csv",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
+    },
+    {
+      "path": "provenance/claims-by-section-2026-10-30.csv",
+      "bytes": 237760,
+      "sha256": "e442d01986c9ae953e8449f27ba647ef4ae0fea3221c23d3ee228946b90f3ee6",
+      "purpose": "provenance/claims-by-section-2026-10-30.csv",
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "provenance/claims.md",
-      "bytes": 12973,
-      "sha256": "a2237633310ae7b74921dfb224ad89e623b8e4c7abf5187a9ae40ee120a5fe99",
+      "bytes": 13061,
+      "sha256": "8f1fc07282fce74f6de48411dc0a7aa205290dced477dca986aba60e67a8939f",
       "purpose": "provenance/claims.md",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "provenance/document-build.json",
       "bytes": 1477,
       "sha256": "8f583fa55c184cd52f5c48f7d30c288397516bf721cca368013309bcde4de4a9",
       "purpose": "provenance/document-build.json",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
+    },
+    {
+      "path": "provenance/human-verification-2026-11-10.md",
+      "bytes": 2348,
+      "sha256": "933d5eb836b5f094c1ce96ec76c120fba453a0dc1d010a36d7d5d5d4861b8e10",
+      "purpose": "provenance/human-verification-2026-11-10.md",
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "provenance/proxy-source-ledger.csv",
       "bytes": 2915,
       "sha256": "e9e7865bdfbc818769747d98a66bb3887e4b5b4309914a3ce54662fdbd6aa956",
       "purpose": "provenance/proxy-source-ledger.csv",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "provenance/source-map.json",
-      "bytes": 16773,
-      "sha256": "a7dc83c029be7c1aa5d7fcce26ddcc26d8659737fafda62af270f37ffaa85206",
+      "bytes": 16775,
+      "sha256": "3dc97a8cec4ab5df9b2c3da6345bd4e7a10d7203088a3e98abee7e6e67ae6697",
       "purpose": "provenance/source-map.json",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "provenance/sources.md",
-      "bytes": 10150,
-      "sha256": "6579dd963e2077c417690abb79885ccec1acc014776ad3d8ca92ddd746e62ca6",
+      "bytes": 10248,
+      "sha256": "dc508bafe9e980406b6a8bfc2a3e9cc5127e8f20c6da589c5d643bbbebc45c12",
       "purpose": "provenance/sources.md",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "report/chapter.md",
       "bytes": 14445,
       "sha256": "43773fe5f6b9873c8647e21ccd182be8d505575a684de34a57ee948170cc374b",
       "purpose": "report/chapter.md",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "report/figures/figure-data.json",
       "bytes": 659,
       "sha256": "2088cdc9c4c1f5cdb1e7d18aaa77b19a2eb31a3e677c80e7f80257cfa16834a6",
       "purpose": "report/figures/figure-data.json",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "report/figures/gfi-required-growth.png",
       "bytes": 90089,
       "sha256": "d85949d4eb2caa8770a4d857faad4cf8df86cf0ba28b8348df785293bf91a887",
       "purpose": "report/figures/gfi-required-growth.png",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "report/figures/gfi-required-growth.svg",
       "bytes": 66525,
       "sha256": "963ce0a0dbf7642233c7eb1ce403324efd9395cb57b73f7ff8d8e1dd738ff940",
       "purpose": "report/figures/gfi-required-growth.svg",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "report/limitations-and-ai-use.md",
       "bytes": 5895,
       "sha256": "54fa99a15e210c357e29cd46d55ef417c04f860fde377b51ee572a03eb15953f",
       "purpose": "report/limitations-and-ai-use.md",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "report/report.css",
       "bytes": 4191,
       "sha256": "15a15b6ccae976f2af6efddfb593147332fdaf4c65b6aa8e02ea3f12cdafb3df",
       "purpose": "report/report.css",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "report/review.html",
       "bytes": 112497,
       "sha256": "68780e196ea4c8f0c5c032c0aec14154f55828d66aed27ace6465029b7993ef0",
       "purpose": "report/review.html",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "report/review.pdf",
       "bytes": 954283,
       "sha256": "e4a31b6259c94d29fa31212f580a7bed8b766af78f39b500c21294749264ba01",
       "purpose": "report/review.pdf",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "scripts/build_altprotein_proxy.py",
       "bytes": 26082,
       "sha256": "06aaabc7b9c1af1d680c2d6b11b021884513e812f3c914e7904be1589decc8bf",
       "purpose": "scripts/build_altprotein_proxy.py",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "scripts/build_documents.py",
       "bytes": 5623,
       "sha256": "6797fb5a4da76f8919be59c365f15168e06edd9ecca56b0f30142ff64129179b",
       "purpose": "scripts/build_documents.py",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "scripts/build_panel.py",
       "bytes": 4819,
       "sha256": "8451d59989168293df64e8c5b525ba024085dd5708a0553627b72101cfeb4309",
       "purpose": "scripts/build_panel.py",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "scripts/check_release.py",
       "bytes": 7071,
       "sha256": "43d1933ced271384714f3f052ade8e1d3d07909e07b412d1a4d42ecf97453e17",
       "purpose": "scripts/check_release.py",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "scripts/gfi_gap.py",
       "bytes": 40048,
       "sha256": "f60a34c6510ca9667daf567426254856164de6960771c0a5161c29a09f264c89",
       "purpose": "scripts/gfi_gap.py",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
+    },
+    {
+      "path": "scripts/pakistan_topdown.py",
+      "bytes": 20380,
+      "sha256": "ee26fcb452f6ebf06977d90dfcf1713cab263da8cd81d7d9076db4ac8904f55f",
+      "purpose": "scripts/pakistan_topdown.py",
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "scripts/plot_gfi_gap.py",
       "bytes": 4526,
       "sha256": "2195251cc0602f8a2c68d6bc01151a3caf00518006e162b910421f469453d5bd",
       "purpose": "scripts/plot_gfi_gap.py",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "scripts/reproduce.py",
       "bytes": 5269,
       "sha256": "44c9431cec08265ee7756f20dfa61e606a016f91b66a159fdc6ea0fca172fa24",
       "purpose": "scripts/reproduce.py",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
+    },
+    {
+      "path": "tests/test_consolidation.py",
+      "bytes": 3846,
+      "sha256": "afe68c1606f8237bf31acfb1600c62dab9a8245fb9ff15afd52988ef1cb56d5c",
+      "purpose": "tests/test_consolidation.py",
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "tests/test_gfi_gap.py",
       "bytes": 17877,
       "sha256": "c9b7e3e0493323ba6c7f8353908c919c4800aeaf628819c6a2a10758afea4565",
       "purpose": "tests/test_gfi_gap.py",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
+    },
+    {
+      "path": "tests/test_human_verification.py",
+      "bytes": 4554,
+      "sha256": "1b0bb99e1055101fda104ee73a2da046672f49c534a59353742715d01f4eec22",
+      "purpose": "tests/test_human_verification.py",
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "tests/test_release_boundary.py",
       "bytes": 6023,
       "sha256": "67b01748666f16e46b8e2d6d522336f0a156f67b118098c91ad36b84a897c51e",
       "purpose": "tests/test_release_boundary.py",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "tests/test_reproduction.py",
       "bytes": 4891,
       "sha256": "b8e78ee013806f7a4793d51de29b5a4e55f4a863f50f129151460daf4fbb4fc6",
       "purpose": "tests/test_reproduction.py",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     },
     {
       "path": "tests/test_revision_contract.py",
       "bytes": 19965,
       "sha256": "0bb2fac27bfbfcc73fbd40355149fbce73237270af68db07159626297da16c7c",
       "purpose": "tests/test_revision_contract.py",
-      "release_status": "local_review_candidate_human_and_rights_review_pending"
+      "release_status": "author_verified_2026-11-10_rights_review_pending"
     }
   ],
   "source_commit_note": "Historical engine baseline; revised local commit recorded separately at handoff"

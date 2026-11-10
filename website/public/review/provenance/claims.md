@@ -1,6 +1,6 @@
 # Claim and source review map
 
-Every claim remains pending human factual verification. C25 from the private coordination audit is intentionally excluded: collaborator draft details are not part of this package. The source map below binds manuscript claims to originals or packaged row IDs; the numerical checks establish reproduction only.
+The author recorded human factual and code verification on 10 November 2026 ([record](human-verification-2026-11-10.md), [register](claim-review.csv)). C25 from the private coordination audit is intentionally excluded: collaborator draft details are not part of this package. The source map below binds manuscript claims to originals or packaged row IDs; the numerical checks establish reproduction only.
 
 | ID | Claim / permitted use | Original or packaged locator | Acceptance limit |
 |---|---|---|---|
@@ -34,7 +34,7 @@ The review register also includes whole-document, bibliography, code, data and r
 
 ## 27 October revision claims
 
-Agent source/arithmetic review is recorded separately from the pending human register.
+Agent source/arithmetic review is recorded separately from the human register.
 
 | ID | Claim / permitted use | Locator | Acceptance limit |
 |---|---|---|---|

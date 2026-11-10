@@ -1,6 +1,6 @@
 # Rights and attribution
 
-This is a review candidate. It does not grant a blanket licence to code, prose, data, instruments or source material. Human author verification, permission to release and source-specific rights review remain pending.
+This is a review candidate. It does not grant a blanket licence to code, prose, data, instruments or source material. The author recorded human verification on 10 November 2026. Permission to release and source-specific rights review remain pending.
 
 | Material | Attribution and boundary |
 |---|---|

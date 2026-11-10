@@ -1,6 +1,6 @@
 # Demand drivers, obstacles and proposed tests
 
-**Local review candidate, 27 October 2026. Human factual, code and editorial review pending.**
+**Driver evidence, 27 October 2026. The author recorded human factual and code verification on 10 November 2026.**
 
 These eight factors organize the argument. They are not an exhaustive census of demand drivers or eight estimated causal effects. A possible mechanism, an observed association, a policy announcement and a model assumption support different claims. India and Pakistan evidence remains separate, and missing Pakistan evidence is not filled with an Indian or US estimate.
 

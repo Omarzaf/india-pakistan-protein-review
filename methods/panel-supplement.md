@@ -1,6 +1,6 @@
 # Separate forecast-elicitation supplement
 
-**AI-assisted methods draft, 22 October 2026. Human verification pending. Authored for Muhammad Umar Zafar. This is a separate protocol and sample, not an accepted joint result.**
+**AI-assisted methods draft, 22 October 2026. The author recorded human factual and code verification on 10 November 2026. Authored for Muhammad Umar Zafar. This is a separate protocol and sample, not an accepted joint result.**
 
 ## 1. Purpose and limits
 
@@ -93,4 +93,4 @@ Run `python scripts/reproduce.py` from the package root to reconstruct the **hea
 
 The complete elicitation is not independently rerunnable from a public package while questionnaire rights remain unresolved. An integrity hash does not grant redistribution rights. Retain original records privately and state this reproducibility boundary. Publicly proposed rows and metadata still require a content/rights review and human verification.
 
-No other author's acceptance or agreement is claimed. Human factual/code review, author approval and source-specific release review are outstanding. Joint inclusion requires a separate editorial decision. Source pointers and hashes are recorded in the companion claim map and provenance files.
+No other author's acceptance or agreement is claimed. The author recorded human factual and code verification on 10 November 2026. Source-specific release checks are outstanding. Joint inclusion requires a separate editorial decision. Source pointers and hashes are recorded in the companion claim map and provenance files.

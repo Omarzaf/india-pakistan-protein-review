@@ -1,6 +1,6 @@
 # Sources and provenance
 
-Human factual and source-rights verification remain pending. The [machine-readable ledger](proxy-source-ledger.csv) identifies every source family used in the 106-row input table, its recorded vintage, prior access date and recorded rights statement. Those earlier dates are not claims of fresh retrieval. Input `raw_sha256` values identify retained captures; the captures themselves are excluded.
+The author recorded human factual and code verification on 10 November 2026 ([record](human-verification-2026-11-10.md)). Source-rights checks remain pending. The [machine-readable ledger](proxy-source-ledger.csv) identifies every source family used in the 106-row input table, its recorded vintage, prior access date and recorded rights statement. Those earlier dates are not claims of fresh retrieval. Input `raw_sha256` values identify retained captures; the captures themselves are excluded.
 
 | Source family | Original / locator | Use and boundary |
 |---|---|---|
