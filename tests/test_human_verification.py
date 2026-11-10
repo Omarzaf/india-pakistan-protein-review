@@ -98,6 +98,12 @@ class HumanVerificationTests(unittest.TestCase):
                 found = [m.group(0) for m in STALE.finditer(text)]
                 self.assertEqual(found, [])
 
+    def test_driver_ledger_records_author_review(self) -> None:
+        ledger = json.loads((ROOT / "data/driver-evidence.json").read_text(encoding="utf-8"))
+        self.assertEqual(len(ledger["drivers"]), 8)
+        for driver in ledger["drivers"]:
+            self.assertEqual(driver["review_disposition"], f"verified_by_author_{DATE}")
+
     def test_scholarly_review_of_halal_readings_stays_open(self) -> None:
         matrix = (ROOT / "halal/institution-matrix.md").read_text(encoding="utf-8")
         self.assertIn("qualified human review remains pending", matrix)

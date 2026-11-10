@@ -67,6 +67,7 @@ These are proposed learning activities. They are not a ranking of expected retur
 | R05 Pakistan feasibility assessment | D07 | Verify facilities, staff, inputs and product need before deciding whether an ingredient-application trial is feasible. |
 | R06 AI/non-AI comparison | D07, D08 | Measure usable output, consistency and total unit cost against a credible non-AI process; assess retail pass-through separately. |
 | R07 Policy stage register | D05, D06 | Track documented implementation and product decisions; do not convert an announcement into a growth bonus. |
+| R08 Pakistan sales baseline | D01, D02, D07 | Define the basket and valuation and collect transaction or audited distributor data; if national coverage fails, publish a bounded baseline. Added from the final South Asia report on 10 November 2026. |
 
 The register's 8–12-week purchase follow-ups, 3–6-month technical pilots and quarterly policy reviews are proposed design horizons, not empirical findings or booked activities. Feasibility, sample, comparator, cost ceiling and decision threshold must be set before a study begins. Current evidence does not justify numeric success thresholds. Product-specific assurance questions must be resolved before any proposed sale, regardless of a nominal study timetable.
 
