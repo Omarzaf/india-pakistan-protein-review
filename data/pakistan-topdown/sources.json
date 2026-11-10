@@ -24,7 +24,7 @@
       }
     ],
     "scope": "Official national average of the SPI urban-market sample; not a census of rural and urban transactions",
-    "verification": "PDF visual and text match; human verification pending"
+    "verification": "PDF visual and text match; author verification recorded 2026-11-10"
   },
   {
     "source_id": "pbs_spi_20251224_summary",
@@ -36,7 +36,7 @@
     "sha256": "04f72ea20c975c3be0ab26be81e648723169365a5c2eb50e271c9d30679df725",
     "locator": "physical PDF page1 opening",
     "scope": "51 items, 50 markets,17cities; matching annex quantities",
-    "verification": "Text checked; human verification pending"
+    "verification": "Text checked; author verification recorded 2026-11-10"
   },
   {
     "source_id": "fao_fbs_2025_10_28",

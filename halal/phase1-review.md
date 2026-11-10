@@ -2,7 +2,7 @@
 
 Phase One research review by Muhammad Umar Zafar · 30 September 2026
 
-AI-assisted working draft; human verification pending. Public-source repository edition; not mentor-approved. See the evidence registers and release scope.
+AI-assisted working draft. The author recorded human factual and code verification on 10 November 2026. Public-source repository edition; not mentor-approved and not reviewed by a qualified scholar or lawyer. See the evidence registers and release scope.
 
 The sources support a conditional, process-specific account of cultivated chicken. Donor origin, procurement, culture inputs and the identity of the resulting material remain decisive questions. Contemporary institutional statements create routes for further assessment, but the reviewed sources do not establish one rule shared by every school, a halal certificate for a named product, or permission to sell it in every focal country.
 

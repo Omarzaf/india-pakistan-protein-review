@@ -1,6 +1,6 @@
 # Does older sector optimism explain the GFI difference?
 
-**Bounded retained-source review, 27 October 2026. Local review candidate; human verification pending.**
+**Bounded retained-source review, 27 October 2026. The author recorded human factual and code verification on 10 November 2026.**
 
 The retained sources support a limited conclusion: upbeat US sector messaging existed in 2021–22, alongside evidence of a slowdown. They do **not** identify the cause of GFI India/Deloitte's scenario assumptions. An older-information explanation remains a plausible, untested hypothesis, not the demonstrated reason for the numerical gap.
 

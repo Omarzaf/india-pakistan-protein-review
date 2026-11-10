@@ -1,6 +1,6 @@
 # Why these scenarios sit below GFI India
 
-**Local review candidate, 27 October 2026. Numerical diagnostics; human factual/code verification pending.**
+**Numerical diagnostics, 27 October 2026. The author recorded human factual and code verification on 10 November 2026.**
 
 The retained India 2030 median is $187.8 million, compared with $964.4 million for GFI's low domestic scenario under the existing conditional price conversion. This appendix asks which parts of that disagreement are demonstrated by the equations and which remain hypotheses. No historical headline is replaced. The companion `scripts/gfi_gap.py` writes its results separately in `build/gfi-gap/`.
 
@@ -99,6 +99,6 @@ The retained overlap sensitivity lowers India's 2030 median from $187.8 million 
 
 From the offline package, run `python scripts/reproduce.py` and `python scripts/gfi_gap.py`, followed by the unit suite. The numerical companion reproduces 55 overlapping values at the original six-decimal precision; the retained engine still reproduces all 127 reference rows byte for byte. Its new output files are separate. Tests cover source missingness, category reconciliation, hand-calculable growth examples, target inversion, exact draw factors, paired random-number ordering, monotonic floor changes, bounds and deterministic repeatability.
 
-These checks establish implementation consistency. Source-specific human factual/code review, scientific acceptance and rights decisions remain pending. Results may be inspected locally without implying that a release or joint-report inclusion has been approved.
+These checks establish implementation consistency. The author recorded human factual and code verification on 10 November 2026. Scientific acceptance and rights decisions remain pending. Results may be inspected locally without implying that a release or joint-report inclusion has been approved.
 
 [^gap-source]: GFI India and Deloitte India, [*Smart Protein Economic Analysis*](https://gfi-india.org/wp-content/uploads/2024/06/GFI-India-economic-analysis.pdf), physical PDF page 1 (Methodology), page 2 (scenario explanation), and page 4 (domestic table). The 2022 context and original reported values are retained; the URL upload path is not treated as a publication date.

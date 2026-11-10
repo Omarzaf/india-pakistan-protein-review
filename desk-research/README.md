@@ -15,6 +15,17 @@ These files record the desk research behind the South Asia report, from 12 Septe
 | `raw-file-manifest-2026-10-13.csv`                                                             | Evidence edition, 13 Oct                           | 1,987 raw-file rows behind the ledger. The raw files themselves are not redistributed                    |
 | `purchase-literature-queries-2026-10-20.json`, `purchase-literature-screening-2026-10-20.json` | Bounded purchase-literature check, 20 Oct          | 3 PubMed and 3 web queries; 27 records screened, 1 retained. Frozen on 22 Oct and not used in the report |
 
+## Stages held elsewhere
+
+The report's Table 3 lists eleven stages. Seven have files in this folder. The other four are accounted for here.
+
+| Stage | Where it is |
+| ----- | ----------- |
+| Orientation, 5 Sep | Not in this repository. |
+| Mentor leads, 15 Sep | Not in this repository. The mentors shared the leads privately. |
+| Model inputs, 13 to 15 Oct | [`data/altprotein_proxy_inputs.csv`](../data/altprotein_proxy_inputs.csv) (106 rows) and [`provenance/proxy-source-ledger.csv`](../provenance/proxy-source-ledger.csv) |
+| Diagnostics and writing, 27 to 30 Oct | [`methods/gfi-gap.md`](../methods/gfi-gap.md), [`data/driver-evidence.json`](../data/driver-evidence.json) and [`provenance/claims-by-section-2026-10-30.csv`](../provenance/claims-by-section-2026-10-30.csv) (438 rows) |
+
 ## Tiers in the evidence ledger
 
 | Tier | Meaning                                                     | Rows |

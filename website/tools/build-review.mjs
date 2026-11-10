@@ -37,7 +37,7 @@ export function rootReport(source) {
     return `${attr}="${resolved.pathname}${resolved.search}${resolved.hash}"`;
   });
   const nav = '<nav class="report-actions" aria-label="Research site"><a href="/" aria-current="page">Report</a><a href="/dashboard/">Dashboard</a><a href="/editions/2026-10-22/">Historical edition</a><a href="/review/report/review.pdf">Download PDF</a></nav>';
-  const note = '<aside class="edition-note">27 October 2026 local review candidate. Historical model results and 22 October data are retained. Human factual/code review and release approval remain pending.</aside>';
+  const note = '<aside class="edition-note">27 October 2026 local review candidate. Historical model results and 22 October data are retained. The author recorded human factual and code verification on 10 November 2026. Release approval remains pending.</aside>';
   return translated.replace(/<div class="figure-scroll"/g, '<p class="table-hint">Scroll the figure horizontally on a narrow screen.</p><div class="figure-scroll"').replace(/<body[^>]*>/, match => match + '\n' + nav + '\n' + note);
 }
 
@@ -102,7 +102,7 @@ function updateDocuments() {
     const suffix = path.extname(source);
     const publicPath = existing?.path ?? `/dashboard/documents/${id}${suffix}`;
     const digest = sha256(bytes);
-    const note = 'Exact local review-candidate document, revised 27 October. Publication approval and human factual/code review remain pending.';
+    const note = 'Exact local review-candidate document, revised 27 October. Publication approval remains pending. The author recorded human factual and code verification on 10 November 2026.';
     write(publicPath.slice(1), bytes);
     const doc = {id, title, path: publicPath, kind, sha256: digest, originalSourceSha256: digest, exportSha256: digest, publicationProjection: 'exact', publicationNote: note, manuscriptRevision: revision, packagePath: source};
     if (kind !== 'pdf') {
@@ -117,7 +117,7 @@ function updateDocuments() {
   manifest.counts.documents = manifest.documents.length;
   manifest.counts.retainedClaimReviewItems = 30;
   manifest.datasets.claims.title = 'Retained 22 October claim inventory';
-  manifest.datasets.claims.caveat = 'Historical 30-row inventory. Read the current manuscript review document for the 27 October revision; all human review remains pending.';
+  manifest.datasets.claims.caveat = 'Historical 30-row inventory. Read the current manuscript review document for the 27 October revision; its rows keep their 22 October state. The author review recorded on 10 November 2026 is in the current register.';
   manifest.publication = {...manifest.publication, priorAuthorizedDate: manifest.publication.authorizedDate ?? manifest.publication.priorAuthorizedDate, authorizedDate: null, manuscriptRevision: revision, publicationAuthorized: false, state: 'LOCAL_REVIEW_CANDIDATE', noNewAcquisitionOrModelRun: false, noNewSourceAcquisitionOrElicitation: true, newNumericalDiagnostics: true, originalAndExportDigestsSeparate: true};
   fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, 2) + '\n');
   return definitions.map(([id, source]) => ({id, source}));

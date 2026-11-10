@@ -1,6 +1,6 @@
 # Halal evidence
 
-Two files carry the halal evidence the South Asia report draws on. Both were prepared in an earlier workstream that covered more countries than the report, and both are kept as they were checked, apart from removing links to files outside this repository.
+Two files carry the halal evidence the South Asia report draws on. Both were prepared in an earlier workstream that covered more countries than the report, and both are kept as they were checked, apart from removing links to files outside this repository and updating the status line of `phase1-review.md` on 10 November 2026.
 
 | File                    | Date        | What it holds                                                                                                                             |
 | ----------------------- | ----------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
