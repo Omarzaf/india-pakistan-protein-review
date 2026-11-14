@@ -10,6 +10,7 @@ On 10 November 2026 the author, Muhammad Umar Zafar, stated that he had verified
 | [claims-by-section-2026-10-30.csv](claims-by-section-2026-10-30.csv) | `human_review` reads `verified by author 2026-11-10` on 432 rows. The 6 rows with status `unresolved` read `reviewed by author 2026-11-10; assumption remains unresolved`. In 89 rows the `notes` text that said human review was pending now gives the same date. |
 | [release-allowlist.json](release-allowlist.json) | `human_verification` and each file's `release_status` record the statement. |
 | `data/driver-evidence.json` | `review_disposition` reads `verified_by_author_2026-11-10` on all 8 drivers. This field was missed in the first pass and corrected later the same day. |
+| [proxy-source-ledger.csv](proxy-source-ledger.csv) | `human_factual_verification` reads `verified by author 2026-11-10` on all 9 rows; `source_rights_verification` stays `pending`. Missed in the first pass and corrected on 14 November 2026, together with one RIGHTS.md row and one sentence in `sources.md`. |
 | README, CITATION.cff, RIGHTS.md, `methods/`, `provenance/sources.md`, `provenance/claims.md`, `provenance/source-map.json`, `data/pakistan-topdown/sources.json`, `halal/phase1-review.md` | Status lines that said human verification was pending now give the date of the author's statement. |
 
 ## How it was recorded

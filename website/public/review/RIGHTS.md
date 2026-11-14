@@ -4,7 +4,7 @@ This is a review candidate. It does not grant a blanket licence to code, prose, 
 
 | Material | Attribution and boundary |
 |---|---|
-| Regional chapter, methods, synthesis and new verification scripts | Prepared for Muhammad Umar Zafar with AI assistance. Author review and a release/licence decision are outstanding. |
+| Regional chapter, methods, synthesis and new verification scripts | Prepared for Muhammad Umar Zafar with AI assistance. The author recorded verification on 10 November 2026. A release and licence decision is outstanding. |
 | Adapted proxy engine | Derived from the author's retained research code; original file hash and the extraction change are in `provenance/source-map.json`. No third-party dependency is bundled. |
 | Extracted numerical facts | Attributed to their source IDs in the input CSV and source ledger. A fact extraction does not grant rights in the source PDF, website, workbook or database. Source-specific terms require review before redistribution beyond this review context. |
 | Model-output quantiles and attempt metadata | Selected quantitative fields and integrity hashes; no raw answers, prompts, source documents or provider events. Provider terms and questionnaire-derived rights remain a release-review question. |

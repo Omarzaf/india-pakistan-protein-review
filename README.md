@@ -1,14 +1,14 @@
 # India and Pakistan: alternative-protein markets and conditional paths to 2035
 
-**Muhammad Umar Zafar · companion repository to the South Asia report of the Sentient Futures three-report series · working edition, 10 November 2026**
+**Muhammad Umar Zafar · companion repository to the South Asia report in the Sentient Futures two-report series · repository edition of 14 November 2026**
 
-This repository is the single companion to the South Asia report. It holds the report's model, its reproducible numbers, the desk-research record behind them, the halal evidence and the Pakistan scale check. The author recorded human factual and code verification on 10 November 2026 ([record](provenance/human-verification-2026-11-10.md)). Team agreement is pending. The report stays unpublished until the forecast partner consents.
+This repository is the single companion to the South Asia report, *What Will the World Eat in 2035? Alternative Proteins in India and Pakistan* (draft of 12 November 2026, finalised 13 November 2026). That report is the main text and is not yet published. This repository holds the report's model, its reproducible numbers, the desk-research record behind them, the halal evidence and the Pakistan scale check. The author recorded human factual and code verification on 10 November 2026 ([record](provenance/human-verification-2026-11-10.md)). Team agreement is pending. The report stays unpublished until the forecast partner consents.
 
 **Public dashboard:** [consumption, projections, runs and reviews](https://pakistan-india-protein.vercel.app/dashboard/). [Website verification and release instructions](https://github.com/Omarzaf/india-pakistan-protein-review/blob/review/WEBSITE.md) describe the separate publication boundary.
 
 ## Read, inspect, reproduce
 
-1. **Read:** [contribution and methods](report/review.html), [PDF](report/review.pdf), or [editable chapter](report/chapter.md).
+1. **Read:** the South Asia report is the main text; it is not yet published. The files in `report/` are the earlier 27 October draft, kept as an archive: [27 October chapter and methods (HTML)](report/review.html), [27 October PDF](report/review.pdf), or [27 October editable chapter](report/chapter.md). The report's figures and tables draw on `build/`, `data/` and `methods/`.
 2. **Inspect:** [measurement crosswalk](methods/measurement-crosswalk.md), [source ledger](provenance/sources.md), [claim review register](provenance/claim-review.csv), and [data dictionary](data/README.md).
 3. **Reproduce:** use Python 3.12 (verified on 3.12.13). The numerical path uses the standard library, packaged aggregate inputs and no network or model calls.
 
@@ -31,7 +31,7 @@ python -m unittest discover -s tests -v
 python scripts/check_release.py
 ```
 
-No package installation is needed. These commands regenerate the unchanged 127 proxy-output rows, 18 panel summaries from 60 retained responses, and the separate GFI diagnostic artifacts. Reproduction checks byte agreement for the proxy CSV and a maximum absolute difference of 1e-12 for the panel summaries. The tests also reject corrupt runs and check the comparison denominator. Other Python versions have not been certified for byte-identical output.
+No package installation is needed. A dated record of the latest full rerun is in [provenance/rerun-2026-11-14.md](provenance/rerun-2026-11-14.md). These commands regenerate the unchanged 127 proxy-output rows, 18 panel summaries from 60 retained responses, and the separate GFI diagnostic artifacts. Reproduction checks byte agreement for the proxy CSV and a maximum absolute difference of 1e-12 for the panel summaries. The tests also reject corrupt runs and check the comparison denominator. Other Python versions have not been certified for byte-identical output.
 
 ## The argument
 
@@ -51,7 +51,7 @@ The separately authored forecast-elicitation supplement describes repeated model
 | `provenance/` | Sources, claim review, source transformations and explicit release allowlist. |
 | `desk-research/` | Search logs, registers, the 916-row evidence ledger and screening records, 12 Sep to 20 Oct 2026. See its README. |
 | `halal/` | Phase One halal review and the seven-condition institution matrix. |
-| `data/pakistan-topdown/`, `build/pakistan-topdown/`, `scripts/pakistan_topdown.py` | Pakistan conventional-value scale check used in Appendix A of the report. It needs the private source captures to rerun; outputs are included. |
+| `data/pakistan-topdown/`, `build/pakistan-topdown/`, `scripts/pakistan_topdown.py` | Pakistan conventional-value scale check used in Section 5.2 and Appendix A of the report. Readers cannot rerun it from this repository: it needs retailer and source captures that are not redistributed. The normalized outputs and the script are included for inspection. |
 | `build/` | Regenerated tables and computational verification receipt. |
 
 This file-only edition contains no Git history, raw questionnaire, collaborator draft, interview, provider transcript, household microdata or third-party full-text archive. Numerical reproduction begins at the supplied aggregate input table. It does not reacquire every source or repeat the original elicitation. Hashes establish byte identity, not rights or scientific validity.
@@ -70,4 +70,4 @@ For a correction, identify the exact sentence or data row, the original source a
 
 ## Status
 
-The author recorded human factual and code verification on 10 November 2026. Source-specific rights and joint-report acceptance remain pending. Existing US panel rows are preserved; no new original-panel equivalence or collaborator approval is claimed. The PDF is separately rendered and visually inspected; the HTML builder does not generate it. The optional `scripts/plot_gfi_gap.py` uses existing Matplotlib tooling to regenerate the supplied figure; offline numerical reproduction uses only the Python standard library.
+The author recorded human factual and code verification on 10 November 2026. This edition of 14 November 2026 aligns the repository text with the South Asia report finalised on 13 November 2026; no number, input or output changed. Four gates remain pending: source-specific rights, release permission (`publication_authorized: false` in the allowlist), team and joint-report acceptance, and qualified scholarly review of the halal readings. Existing US panel rows are preserved; no new original-panel equivalence or collaborator approval is claimed. The PDF is separately rendered and visually inspected; the HTML builder does not generate it. The optional `scripts/plot_gfi_gap.py` uses existing Matplotlib tooling to regenerate the supplied figure; offline numerical reproduction uses only the Python standard library.
