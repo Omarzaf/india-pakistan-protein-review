@@ -1,9 +1,10 @@
 cff-version: 1.2.0
-message: "Cite as an AI-assisted working edition. The author recorded human verification on 10 November 2026. Team acceptance is pending."
+message: "Cite as the companion repository to the South Asia report (finalised 13 November 2026). AI-assisted; the author recorded human verification on 10 November 2026. Team acceptance and release permission are pending."
 title: "India and Pakistan: alternative-protein spending scenarios and separate forecast-elicitation methods"
 type: dataset
 authors:
   - family-names: Zafar
     given-names: Muhammad Umar
-version: "2026-11-10-consolidated"
+version: "2026-11-14-report-sync"
+date-released: "2026-11-14"
 abstract: "Conditional spending scenarios and an offline numerical reproduction package. A proposed unified-report contribution; no claim of calibration or joint acceptance."

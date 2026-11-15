@@ -148,20 +148,20 @@
     {
       "source": "provenance/claims.md",
       "path": "review/provenance/claims.md",
-      "sourceSha256": "8f1fc07282fce74f6de48411dc0a7aa205290dced477dca986aba60e67a8939f",
-      "exportSha256": "8f1fc07282fce74f6de48411dc0a7aa205290dced477dca986aba60e67a8939f"
+      "sourceSha256": "b44fabc16c1a6ea0d788a7e9f0e151aa2f05421a32876b6bbf4cfa3335d13318",
+      "exportSha256": "b44fabc16c1a6ea0d788a7e9f0e151aa2f05421a32876b6bbf4cfa3335d13318"
     },
     {
       "source": "provenance/sources.md",
       "path": "review/provenance/sources.md",
-      "sourceSha256": "dc508bafe9e980406b6a8bfc2a3e9cc5127e8f20c6da589c5d643bbbebc45c12",
-      "exportSha256": "dc508bafe9e980406b6a8bfc2a3e9cc5127e8f20c6da589c5d643bbbebc45c12"
+      "sourceSha256": "1d499647de6cef57eff3d1ca40bee5dcfed5688487d6ec13f5f967182de7e3b2",
+      "exportSha256": "1d499647de6cef57eff3d1ca40bee5dcfed5688487d6ec13f5f967182de7e3b2"
     },
     {
       "source": "provenance/claim-review.csv",
       "path": "review/provenance/claim-review.csv",
-      "sourceSha256": "372a23b032269bf10d76aa14b57b10ac6b4e614b73aef5adad47af03e302fad1",
-      "exportSha256": "372a23b032269bf10d76aa14b57b10ac6b4e614b73aef5adad47af03e302fad1"
+      "sourceSha256": "c8cedc2f69609ea32d8cc5ec1550c666ad804d34cd73d2cfc70b90a96fbca21d",
+      "exportSha256": "c8cedc2f69609ea32d8cc5ec1550c666ad804d34cd73d2cfc70b90a96fbca21d"
     },
     {
       "source": "provenance/source-map.json",
@@ -172,8 +172,8 @@
     {
       "source": "provenance/proxy-source-ledger.csv",
       "path": "review/provenance/proxy-source-ledger.csv",
-      "sourceSha256": "e9e7865bdfbc818769747d98a66bb3887e4b5b4309914a3ce54662fdbd6aa956",
-      "exportSha256": "e9e7865bdfbc818769747d98a66bb3887e4b5b4309914a3ce54662fdbd6aa956"
+      "sourceSha256": "b0d25ecece5b115c4cb738143c4594c2fde8e127f9c3a9c1d714f6247d3a96de",
+      "exportSha256": "b0d25ecece5b115c4cb738143c4594c2fde8e127f9c3a9c1d714f6247d3a96de"
     },
     {
       "source": "build/gfi-gap/REPORT.md",
@@ -256,8 +256,8 @@
     {
       "source": "RIGHTS.md",
       "path": "review/RIGHTS.md",
-      "sourceSha256": "2091f1d79bfd8ccd710ed464db8613e03aeb24a310d8333254992b3f9ae9ee33",
-      "exportSha256": "2091f1d79bfd8ccd710ed464db8613e03aeb24a310d8333254992b3f9ae9ee33"
+      "sourceSha256": "b1f58bf00b085c2eaeb6722579a797d16a7dc15016c17ea8658268798fea1d84",
+      "exportSha256": "b1f58bf00b085c2eaeb6722579a797d16a7dc15016c17ea8658268798fea1d84"
     }
   ],
   "documents": [

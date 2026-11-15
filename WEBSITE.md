@@ -16,7 +16,7 @@ node website/tools/serve.mjs
 
 Open `http://127.0.0.1:8832/`. The preview serves only allowlisted public files and applies the dashboard's production security policy. Missing or private paths return 404.
 
-The review-package checker remains unchanged and intentionally rejects active website content. Export the current explicit passive allowlist before running it (61 files for this revision, rather than the historical 37):
+The review-package checker remains unchanged and intentionally rejects active website content. Export the current explicit passive allowlist before running it (90 files for the 14 November 2026 edition: 89 allowlisted files plus the allowlist itself):
 
 ```sh
 review_export=$(mktemp -d)
